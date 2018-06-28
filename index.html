@@ -3,12 +3,23 @@
 
   <head>
 
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120614437-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120614437-1');
+      </script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="BlueWallet - Bitcoin wallet">
+    <meta name="author" content="Bluewallet Services S.R.L.">
 
-    <title>BlueWallet.io</title>
+    <title>BlueWallet - Bitcoin wallet</title>
 
     <!-- Bootstrap core CSS -->
     <link href="ven/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,12 +51,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#download">Download</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
@@ -59,28 +70,152 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">BlueWallet is a new opensource wallet for Bitcoin designed for iOS.</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Download Now</a>
+              <h1 class="mb-5">BlueWallet is a new opensource Bitcoin wallet designed for iOS.</h1>
+
+              <a class="badge-link2"  href="https://itunes.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040?l=ru&ls=1&mt=8" target="_blank"><img  style="height: 50px;" src="img/app-store-badge.svg" alt=""></a>
+              <a href="#features" class="btn btn-outline btn-xl js-scroll-trigger">Learn More</a>
             </div>
+
           </div>
+
           <div class="col-lg-5 my-auto">
             <div class="device-container">
               <div class="device-mockup iphone6_plus portrait white">
                 <div class="device">
                   <div class="screen">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/gif.gif" class="img-fluid" alt="" style="margin-top: -5px">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                      <iframe style="margin-left: 3px;margin-top: 1px;" src="https://appetize.io/embed/gdh1d4wgp6p7txwf6brhjeyt54?device=iphone8&amp;scale=75&amp;orientation=portrait&amp;osVersion=11.3&amp;deviceColor=white&amp;screenOnly=true" width="378px" height="800px" frameborder="0" scrolling="no"></iframe>
                   </div>
                 </div>
+
               </div>
+                <a style="margin-left: 25%; text-decoration: none;" href="https://appetize.io/embed/gdh1d4wgp6p7txwf6brhjeyt54?device=iphone8&scale=100&orientation=portrait&osVersion=11.3&deviceColor=white" target="_blank">Open in new window</a>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+
+
+
+
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Features</h2>
+                <p class="text-muted"></p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <img src="img/demo-screen-1.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="button">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="fa fa-github"></i>
+                                    <h3>Open Source </h3>
+                                    <p class="text-muted">Since this app is MIT licensed, you can build it and run it on your own! Made with ReactNative</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-home text-primary"></i>
+                                    <h3>Be in control</h3>
+                                    <p class="text-muted">Private keys never leave your device</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-key text-primary"></i>
+                                    <h3>Full encryption</h3>
+                                    <p class="text-muted">On top of iOS multi-layer encryption, Blue Wallet encrypts everyting with additional user password. And yes, biometric security is not reliable</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-target text-primary"></i>
+                                    <h3>Plausible deniability</h3>
+                                    <p class="text-muted">Fake password which decrypts fake wallets. For special cases when you are forced to disclose your access</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <img src="img/demo-screen-2.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="button">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-calculator text-primary"></i>
+                                    <h3>Flexible fees</h3>
+                                    <p class="text-muted">Starting from 1 Satoshi</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-rocket text-primary"></i>
+                                    <h3>Replace-By-Fee (RBF)</h3>
+                                    <p class="text-muted">Speed-up your transactions by increasing the fee (BIP125). You can also change destination address for non-confirmed tx</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-wrench text-primary"></i>
+                                    <h3>SegWit</h3>
+                                    <p class="text-muted">SegWit supported (in P2SH-compatibility mode)</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-envelope-open text-primary"></i>
+                                    <h3>Export TXHEX</h3>
+                                    <p class="text-muted">Get transaction's TXHEX without broadcasting it and broadcast with relay of your choice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <section class="download bg-primary text-center" id="download">
       <div class="container">
@@ -90,114 +225,13 @@
             <!-- <p>Our app is available on any mobile device! Download now to get started!</p> -->
             <div class="badges">
               <!--<a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>-->
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+              <a class="badge-link" href="https://itunes.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040?l=ru&ls=1&mt=8" target="_blank"><img src="img/app-store-badge.svg" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-<!--
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>Our Features</h2>
-          <p class="text-muted">Check out what you can do with this app theme!</p>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 my-auto">
-  <div class="list-group">
-    <a href="#" class="list-group-item active">
-      Linked item in .list-group
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="badge">44</span>
-    </a>
-    <a href="#" class="list-group-item">Linked item in .list-group with Chevron and Badge
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="badge badge-primary">14</span>
-    </a>
-    <a href="#" class="list-group-item">This is a preview of BS3
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="badge">5</span>
-    </a>
-    <a href="#" class="list-group-item">What happened to `badge-success`?
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="badge badge-success">88</span>
-    </a>
-    <a href="#" class="list-group-item">Vestibulum at eros
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="badge">69</span>
-    </a>
-  </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
-    <!-- <section class="features" id="features">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>Our Features</h2>
-          <p class="text-muted">Check out what you can do with this app theme!</p>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Device Mockups</h3>
-                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-camera text-primary"></i>
-                    <h3>Flexible Use</h3>
-                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-present text-primary"></i>
-                    <h3>Free to Use</h3>
-                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-lock-open text-primary"></i>
-                    <h3>Open Source</h3>
-                    <p class="text-muted">Since this app is MIT licensed, you can build it and run on your own!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
 
     <!-- <section class="cta">
@@ -210,7 +244,7 @@
       <div class="overlay"></div>
     </section> -->
 
-    <section class="contact bg-primary" id="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h2>Contact
           <i class="fa fa-heart"></i>
@@ -221,16 +255,15 @@
               <i class="fa fa-twitter"></i>
             </a>
           </li>-->
-          <!--<li class="list-inline-item social-facebook">
-            <a href="#">
-              <i class="fa fa-facebook"></i>
+          <li class="list-inline-item social-github">
+            <a href="https://github.com/Overtorment/BlueWallet" target="_blank">
+              <i class="fa fa-github"></i>
             </a>
-          </li>-->
+          </li>
           <li class="list-inline-item social-facebook">
-            <a href="mailto:contact at bluewallet.io">
+            <a href="mailto:bluewallet at bluewallet.io">
               <i class="fa fa-envelope"></i>               
-            </a>            
-
+            </a>
           </li>
         </ul>
       </div>
@@ -238,7 +271,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; BlueWallet Services. Calle Beller 51, Puerto Plata, 57000, Republica Dominicana. All Rights Reserved.</p>
+        <p>&copy; BlueWallet Services S.R.L. Calle Beller 51, Puerto Plata, 57000, Republica Dominicana. All Rights Reserved.</p>
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="privacy.txt">Privacy</a>
