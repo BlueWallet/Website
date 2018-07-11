@@ -2,6 +2,7 @@
 #mainNav {
     border-color: fade-out($gray-darker, .95);
     background-color: white;
+    padding: 48px 0;
     @include transition-all;
     @include heading-font;
     .navbar-brand {
@@ -20,22 +21,16 @@
     .navbar-nav {
         > li {
             > a {
-                font-size: 11px;
+                font-size: 19px;
                 @include alt-font;
                 &.active {
                     color: $theme-primary !important;
                     background-color: transparent;
-                    &:hover {
-                        background-color: transparent;
-                    }
                 }
             }
             > a,
             > a:focus {
                 color: $gray-darker;
-                &:hover {
-                    color: $theme-primary;
-                }
             }
         }
     }
@@ -51,10 +46,7 @@
         }
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
-            color: fade-out(white, .3);
-            &:hover {
-                color: white;
-            }
+            color: $dark-blue;
         }
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .9);
