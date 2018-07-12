@@ -1,10 +1,20 @@
 // Styling for the features section
 section.features {
      background: $light-blue;
+     padding-bottom: 0px !important;
     .section-heading {
-        margin-bottom: 100px;
+        margin-bottom: 128px;
         h2 {
             margin-top: 0;
+            color: white;
+        }
+        strong {
+            font-weight: 600;
+        }
+        @media(min-width: 992px) {
+            h2 {
+                text-align: left;
+            }
         }
         p {
             margin-bottom: 0;
@@ -22,20 +32,48 @@ section.features {
         }
     }
     .feature-item {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 0px;
+        padding-bottom: 96px;
         text-align: center;
         h3 {
-            font-size: 30px;
+            font-size: 22px;
+            letter-spacing: 0px;
+            color: white;
+            font-weight: 600;
+        }
+        p {
+            color: white;
+            font-size: 13px;
         }
         i {
             font-size: 80px;
             display: block;
             margin-bottom: 15px;
-            background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-            background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+            background: white;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
+    .fwhite {
+        background: white;
+        padding: 96px 0 0 0;
+        .section-heading h2 {
+                color: $dark-blue;
+        }
+    .feature-item {
+        h3 {
+            color: $dark-blue;
+        }
+        p {
+            color: $dark-blue;
+        }
+        i {
+            background: $dark-blue;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    }
+
 }
+

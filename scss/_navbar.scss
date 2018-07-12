@@ -13,7 +13,11 @@
             color: darken($theme-primary, 10%);
         }
     }
+    .navbar-brand { 
+        margin: 0 auto;
+    }
     .navbar-toggler {
+        display: none;
         font-size: 12px;
         padding: 8px 10px;
         color: $gray-darker;

@@ -2,8 +2,7 @@
 header.masthead {
     position: relative;
     width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 60px;
 
     color: $dark-blue;
     background: white;
@@ -28,8 +27,6 @@ header.masthead {
         max-width: 325px;
         margin-right: auto;
         margin-left: auto;
-        bottom: 0;
-        position: absolute;
         .bluebig img {
                 width: 100%;
         }
@@ -47,6 +44,8 @@ header.masthead {
         }
         .device-container {
             max-width: 100%;
+            bottom: 0;
+            position: absolute;
         }
     }
 }
