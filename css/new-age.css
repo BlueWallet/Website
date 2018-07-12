@@ -415,6 +415,10 @@ section.contact .reach img {
   width: 168px;
 }
 
+section.contact .reach p {
+  margin-top: 8px;
+}
+
 footer {
   padding: 25px 0;
   text-align: left;
