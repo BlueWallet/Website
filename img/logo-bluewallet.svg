@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="78px" viewBox="0 0 136 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="2.83824061%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#174697" offset="0%"></stop>
+            <stop stop-color="#0C2550" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.8843027%" id="linearGradient-2">
+            <stop stop-color="#3F78DC" offset="0%"></stop>
+            <stop stop-color="#2F5FB3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="2.72534321%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#8BD7F9" offset="0%"></stop>
+            <stop stop-color="#68BBE1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-158.000000, -48.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="3528"></rect>
+            <g id="Group-2" transform="translate(158.000000, 48.000000)">
+                <g id="Group">
+                    <rect id="Rectangle-Copy" fill="url(#linearGradient-1)" x="0" y="0" width="77" height="77" rx="17"></rect>
+                    <rect id="Rectangle-Copy-2" fill="url(#linearGradient-2)" x="0" y="18" width="77" height="58" rx="17"></rect>
+                    <rect id="Rectangle-Copy-3" fill="url(#linearGradient-3)" x="0" y="37" width="77" height="41" rx="17"></rect>
+                    <text id="blue-copy" font-family="Calibri-Bold, Calibri" font-size="20" font-weight="bold" letter-spacing="-0.08613446" fill="#FFFFFF">
+                        <tspan x="31.9496127" y="65">blue</tspan>
+                    </text>
+                </g>
+                <text id="wallet" font-family="Calibri-Bold, Calibri" font-size="20" font-weight="bold" letter-spacing="-0.08613446" fill="#0C2550">
+                    <tspan x="85.1334034" y="65">wallet</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
