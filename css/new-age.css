@@ -303,6 +303,10 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
+section.features .feature-item.bottom {
+  padding-bottom: 60px;
+}
+
 section.features .fwhite {
   background: white;
   padding: 96px 0 0 0;
