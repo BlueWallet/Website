@@ -237,13 +237,47 @@ section.features {
   padding-bottom: 0px !important;
 }
 
+section.features button {
+  margin-bottom: 96px;
+  padding: 12px 60px !important;
+}
+
+section.features button.btn-primary {
+  background: #CCDDF9;
+  border-color: #CCDDF9;
+  color: #2F5FB3;
+}
+
+section.features button.btn-primary:hover {
+  background: #2F5FB3;
+  border-color: #2F5FB3;
+  color: #CCDDF9;
+}
+
+section.features a {
+  text-decoration: none;
+  width: 100%;
+}
+
+section.features .btn-link {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  section.features .section-heading {
+    margin: 0 auto;
+  }
+}
+
 section.features .section-heading {
-  margin-bottom: 128px;
+  margin-bottom: 46px;
 }
 
 section.features .section-heading h2 {
   margin-top: 0;
   color: white;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 section.features .section-heading strong {
@@ -260,10 +294,42 @@ section.features .section-heading p {
   margin-bottom: 0;
 }
 
-section.features .device-container,
-section.features .feature-item {
-  max-width: 325px;
-  margin: 0 auto;
+@media (min-width: 992px) {
+  section.features .device-container,
+  section.features .feature-item {
+    width: 100%;
+    transition: all 0.5s ease;
+    padding: 8px 16px;
+  }
+  section.features .device-container:hover,
+  section.features .feature-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  section.features .device-container,
+  section.features .feature-item {
+    text-align: center;
+  }
+  section.features .device-container i,
+  section.features .feature-item i {
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+}
+
+section.features .device-container p,
+section.features .feature-item p {
+  margin: 0px;
+}
+
+@media (min-width: 992px) {
+  section.features .fwhite .feature-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
 }
 
 section.features .device-container {
@@ -277,9 +343,7 @@ section.features .device-container {
 }
 
 section.features .feature-item {
-  padding-top: 0px;
-  padding-bottom: 146px;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 section.features .feature-item h3 {
@@ -295,12 +359,27 @@ section.features .feature-item p {
 }
 
 section.features .feature-item i {
-  font-size: 80px;
-  display: block;
-  margin-bottom: 15px;
   background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: block;
+  font-size: 80px;
+}
+
+@media (min-width: 992px) {
+  section.features .feature-item i {
+    display: none;
+  }
+}
+
+section.features .app-preview img {
+  width: 320px;
+}
+
+@media (max-width: 991px) {
+  section.features .app-preview {
+    display: none;
+  }
 }
 
 section.features .feature-item.bottom {
