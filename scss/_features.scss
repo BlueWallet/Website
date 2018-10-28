@@ -144,4 +144,34 @@ section.features {
     }
 
 }
-
+.navbar-collapse {
+    @media(max-width: 992px) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+.single-page {
+    background: rgba(0,0,0, 0.1);
+    border-radius: 50%;
+    a {
+        padding: 32px 18px;
+        line-height: 50px;
+    }
+}
+.features-page {
+    background: #fff;
+    h2 {
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .feature-item {
+        padding: 32px 0 32px 0;
+    }
+    a:link, a:active, a:visited {
+        text-decoration: underline;
+    }
+}
