@@ -252,9 +252,15 @@ section.download h2 strong {
   font-weight: 600;
 }
 
+@media (max-width: 991px) {
+  section.download h2 {
+    font-size: 24px;
+  }
+}
+
 section.download .badges .badge-link {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 section.download .badges .badge-link:last-child {
@@ -332,6 +338,12 @@ section.features .section-heading strong {
   }
 }
 
+@media (max-width: 991px) {
+  section.features .section-heading h2 {
+    font-size: 36px;
+  }
+}
+
 section.features .section-heading p {
   margin-bottom: 0;
 }
@@ -353,14 +365,13 @@ section.features .section-heading p {
 @media (max-width: 991px) {
   section.features .device-container,
   section.features .feature-item {
-    text-align: center;
     padding-left: 16px;
     padding-right: 16px;
   }
   section.features .device-container i,
   section.features .feature-item i {
     margin-bottom: 16px;
-    margin-top: 24px;
+    margin-right: 16px;
   }
 }
 
@@ -406,8 +417,8 @@ section.features .feature-item i {
   background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: block;
-  font-size: 80px;
+  font-size: 44px;
+  float: left;
 }
 
 @media (min-width: 992px) {
