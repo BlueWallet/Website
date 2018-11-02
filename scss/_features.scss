@@ -44,6 +44,11 @@ section.features {
                 text-align: left;
             }
         }
+        @media(max-width: 991px) {
+            h2 {
+                font-size: 36px;
+            }
+        }
         p {
             margin-bottom: 0;
         }
@@ -60,12 +65,11 @@ section.features {
             }
         }
         @media(max-width: 991px) {
-            text-align: center;
             padding-left: 16px;
             padding-right: 16px;
             i {
                 margin-bottom: 16px;
-                margin-top: 24px;
+                margin-right: 16px;
             }
         }
         p {
@@ -102,8 +106,8 @@ section.features {
             background: white;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: block;
-            font-size: 80px;
+            font-size: 44px;
+            float: left;
         }
         @media(min-width: 992px) {
             i {
