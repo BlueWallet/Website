@@ -10,7 +10,6 @@ header.masthead {
     background: white;
     .header-content {
         margin-bottom: 100px;
-
         text-align: center;
         h1 {
             font-size: 30px;
@@ -21,6 +20,15 @@ header.masthead {
             font-size: 26px;
             margin-bottom: 0px;
         }
+         @media (max-width: 991px) {
+            h2 {
+        font-size: 18px;
+        }
+        h1 {
+        font-size: 28px
+        }
+    }
+
     }
      @media (max-width: 991px) {
         .header-content {
@@ -31,23 +39,21 @@ header.masthead {
         .cta li:first-child {
             float: left;
         }
+        .cta li {
+        margin: 0 auto;
+        text-align: center;
+        }
     }
     @media (max-width: 991px) {
-        .cta li:first-child {
-        margin: 0 auto;
+        .cta li {
+        margin: 0 auto 32px 0;
         text-align: center;
-        float: auto;
-        } 
-        .cta li:first-child {
-        margin-bottom: 24px;
+        width: 50%;
+        float: left;
         }
         .cta li img{ 
-        width: 200px;
+        width: 150px;
         }
-    }
-    .cta li {
-        margin: 0 auto;
-        text-align: center;
     }
     .light-blue {
         color: $light-blue;

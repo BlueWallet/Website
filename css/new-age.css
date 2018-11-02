@@ -165,6 +165,15 @@ header.masthead .header-content h2 {
 }
 
 @media (max-width: 991px) {
+  header.masthead .header-content h2 {
+    font-size: 18px;
+  }
+  header.masthead .header-content h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 991px) {
   header.masthead .header-content {
     margin-bottom: 40px;
   }
@@ -174,25 +183,22 @@ header.masthead .header-content h2 {
   header.masthead .cta li:first-child {
     float: left;
   }
+  header.masthead .cta li {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 @media (max-width: 991px) {
-  header.masthead .cta li:first-child {
-    margin: 0 auto;
+  header.masthead .cta li {
+    margin: 0 auto 32px 0;
     text-align: center;
-    float: auto;
-  }
-  header.masthead .cta li:first-child {
-    margin-bottom: 24px;
+    width: 50%;
+    float: left;
   }
   header.masthead .cta li img {
-    width: 200px;
+    width: 150px;
   }
-}
-
-header.masthead .cta li {
-  margin: 0 auto;
-  text-align: center;
 }
 
 header.masthead .light-blue {
