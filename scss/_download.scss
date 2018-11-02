@@ -11,6 +11,10 @@ section.download {
         strong {
             font-weight: 600;
         }
+    @media (max-width: 991px) {
+        h2 {
+        font-size: 24px;
+        }
     }
     .badges {
         .badge-link {
