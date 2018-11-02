@@ -2,9 +2,7 @@
 header.masthead {
     position: relative;
     width: 100%;
-    @media (min-width: 992px) {
-        padding-top: 60px;
-    }
+    padding-top: 60px;
 
     color: $dark-blue;
     background: white;
@@ -21,33 +19,6 @@ header.masthead {
             font-size: 26px;
             margin-bottom: 0px;
         }
-    }
-     @media (max-width: 991px) {
-        .header-content {
-        margin-bottom: 40px;
-        }
-    }
-     @media (min-width: 992px) {
-        .cta li:first-child {
-            float: left;
-        }
-    }
-    @media (max-width: 991px) {
-        .cta li:first-child {
-        margin: 0 auto;
-        text-align: center;
-        float: auto;
-        } 
-        .cta li:first-child {
-        margin-bottom: 24px;
-        }
-        .cta li img{ 
-        width: 200px;
-        }
-    }
-    .cta li {
-        margin: 0 auto;
-        text-align: center;
     }
     .light-blue {
         color: $light-blue;
