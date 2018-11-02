@@ -23,7 +23,7 @@ section.features {
      .btn-link {
         color: #fff;
      }
-    @media(max-width: 992px) {
+    @media(max-width: 991px) {
         .section-heading {
             margin: 0 auto;
         }
@@ -59,8 +59,10 @@ section.features {
                 border-radius: 8px;
             }
         }
-        @media(max-width: 992px) {
+        @media(max-width: 991px) {
             text-align: center;
+            padding-left: 16px;
+            padding-right: 16px;
             i {
                 margin-bottom: 16px;
                 margin-top: 24px;
