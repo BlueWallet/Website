@@ -138,9 +138,14 @@ section h2 {
 header.masthead {
   position: relative;
   width: 100%;
-  padding-top: 60px;
   color: #0C2550;
   background: white;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: 60px;
+  }
 }
 
 header.masthead .header-content {
@@ -157,6 +162,37 @@ header.masthead .header-content h2 {
   font-weight: 400;
   font-size: 26px;
   margin-bottom: 0px;
+}
+
+@media (max-width: 991px) {
+  header.masthead .header-content {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead .cta li:first-child {
+    float: left;
+  }
+}
+
+@media (max-width: 991px) {
+  header.masthead .cta li:first-child {
+    margin: 0 auto;
+    text-align: center;
+    float: auto;
+  }
+  header.masthead .cta li:first-child {
+    margin-bottom: 24px;
+  }
+  header.masthead .cta li img {
+    width: 200px;
+  }
+}
+
+header.masthead .cta li {
+  margin: 0 auto;
+  text-align: center;
 }
 
 header.masthead .light-blue {
@@ -263,7 +299,7 @@ section.features .btn-link {
   color: #fff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   section.features .section-heading {
     margin: 0 auto;
   }
@@ -308,10 +344,12 @@ section.features .section-heading p {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   section.features .device-container,
   section.features .feature-item {
     text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   section.features .device-container i,
   section.features .feature-item i {
