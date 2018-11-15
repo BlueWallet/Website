@@ -154,21 +154,21 @@ header.masthead .header-content {
 }
 
 header.masthead .header-content h1 {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-header.masthead .header-content h2 {
   font-weight: 400;
   font-size: 26px;
   margin-bottom: 0px;
 }
 
+header.masthead .header-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 @media (max-width: 991px) {
-  header.masthead .header-content h2 {
+  header.masthead .header-content h1 {
     font-size: 18px;
   }
-  header.masthead .header-content h1 {
+  header.masthead .header-content h2 {
     font-size: 28px;
   }
 }
@@ -225,7 +225,7 @@ header.masthead .device-container .bluebig img {
   header.masthead .header-content {
     text-align: left;
   }
-  header.masthead .header-content h1 {
+  header.masthead .header-content h2 {
     font-size: 50px;
   }
   header.masthead .device-container {
