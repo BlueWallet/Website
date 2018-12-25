@@ -464,6 +464,58 @@ section.features .fwhite .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
+section.features .flightning {
+  background: #29353C;
+  padding: 96px 0 0 0;
+  color: #fff;
+}
+
+section.features .flightning .section-heading h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+section.features .flightning .section-heading h3 {
+  font-size: 35px;
+  color: #fff;
+  padding: 0px 16px;
+}
+
+section.features .flightning .feature-item {
+  background: none;
+}
+
+section.features .flightning .feature-item p {
+  font-size: 18px;
+}
+
+section.features .flightning .lightning-wallet {
+  text-align: center;
+  padding-top: 60px;
+}
+
+section.features .flightning .lightning-wallet img {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section.features .flightning a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  section.features .flightning
+.section-heading h2 {
+    font-size: 28px;
+  }
+  section.features .flightning
+.section-heading h3 {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 992px) {
   .navbar-collapse {
     position: absolute;

@@ -134,20 +134,65 @@ section.features {
         .section-heading h2 {
                 color: $dark-blue;
         }
-    .feature-item {
-        h3 {
-            color: $dark-blue;
-        }
-        p {
-            color: $dark-blue;
-        }
-        i {
-            background: $dark-blue;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .feature-item {
+            h3 {
+                color: $dark-blue;
+            }
+            p {
+                color: $dark-blue;
+            }
+            i {
+                background: $dark-blue;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
+    .flightning {
+        background: #29353C;
+        padding: 96px 0 0 0;
+        color: #fff;
+
+        .section-heading h2 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .section-heading h3 {
+            font-size: 35px;
+            color: #fff;
+            padding: 0px 16px;
+        }
+        .feature-item {
+            background: none;
+        }
+        .feature-item p {
+            font-size: 18px;
+        }
+        .lightning-wallet {
+            text-align: center;
+            padding-top: 60px;
+        }
+        .lightning-wallet img {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
     }
+    @media(max-width: 991px) {
+        .flightning 
+            .section-heading h2 {
+                font-size: 28px;
+            }
+        .flightning 
+            .section-heading h3 {
+                font-size: 24px;
+            }
+        }
+    
 
 }
 .navbar-collapse {
