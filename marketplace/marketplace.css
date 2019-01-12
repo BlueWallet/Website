@@ -18,7 +18,7 @@ a {
   grid-template-areas: "appicon apptext";
   padding: 16px 0;
   margin: 0 16px;
-  border-bottom: 1px solid #D8D8D8;
+  border-bottom: 1px solid #EEF0F4;
 }
 .appicon { 
 	grid-area: appicon; 
