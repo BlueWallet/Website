@@ -538,6 +538,10 @@ section.features .flightning a {
   background: #fff;
 }
 
+.features-page h1 {
+  font-weight: 600;
+}
+
 .features-page h2 {
   font-weight: 600;
 }
@@ -553,6 +557,29 @@ section.features .flightning a {
 
 .features-page a:link, .features-page a:active, .features-page a:visited {
   text-decoration: underline;
+}
+
+.features-page .single {
+  width: 100%;
+  margin: 48px 0;
+}
+
+.features-page .single img {
+  max-width: 300px;
+  margin-bottom: 32px;
+}
+
+.features-page .single a:link, .features-page .single a:active, .features-page .single a:visited {
+  text-decoration: none;
+}
+
+.features-page .tippin {
+  width: 100%;
+  margin: 48px 0;
+}
+
+.features-page .tippin .button-filled {
+  margin: 0 auto;
 }
 
 section.cta {
