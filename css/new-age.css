@@ -198,6 +198,7 @@ header.masthead .header-content h2 {
   }
   header.masthead .cta li img {
     width: 150px;
+    max-width: 100%;
   }
 }
 
