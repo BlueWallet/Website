@@ -712,6 +712,22 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   text-decoration: none;
 }
 
+.foot-menu {
+  background: #CCDDF9;
+  border-radius: 30px;
+  padding: 4px 16px;
+  font-size: 14px;
+  color: #0C2550;
+}
+
+.foot-menu a {
+  color: #0C2550;
+}
+
+.foot-menu a:hover, .foot-menu a:focus, .foot-menu a:active, .foot-menu a.active {
+  text-decoration: none;
+}
+
 #mc_embed_signup2 {
   margin: 40px 0 96px 0;
 }
