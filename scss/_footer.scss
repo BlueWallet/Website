@@ -34,6 +34,23 @@ footer {
         }
     }
 }
+.foot-menu{
+    background: #CCDDF9;
+    border-radius: 30px;
+    padding: 4px 16px;
+    font-size: 14px;
+    color: #0C2550;
+    a {
+        color: #0C2550;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active 
+        {
+            text-decoration: none;
+        }
+    }
+}
 #mc_embed_signup2 {margin: 40px 0 96px 0;}
 #mc_embed_signup2 form {text-align:center; padding:10px 0 10px 0;}
 .mc-field-group { display: inline-block; } /* positions input field horizontally */
