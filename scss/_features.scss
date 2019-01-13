@@ -212,6 +212,9 @@ section.features {
 }
 .features-page {
     background: #fff;
+    h1 {
+        font-weight: 600;
+    }
     h2 {
         font-weight: 600;
     }
@@ -224,5 +227,23 @@ section.features {
     }
     a:link, a:active, a:visited {
         text-decoration: underline;
+    }
+    .single {
+        width: 100%;
+        margin: 48px 0;
+        img {
+            max-width: 300px;
+            margin-bottom: 32px;
+        }
+        a:link, a:active, a:visited {
+            text-decoration: none;
+        }
+    }
+    .tippin {
+        width: 100%;
+        margin: 48px 0;
+        .button-filled {
+            margin: 0 auto;
+        }
     }
 }
