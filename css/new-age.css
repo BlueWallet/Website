@@ -886,3 +886,79 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 11px;
   padding: 15px 45px;
 }
+
+.lightning {
+  background: #1E2A2F;
+  color: #fff;
+}
+
+.lighting2 {
+  background: #2A383F;
+}
+
+.lighting2 h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.lighting2 .app-preview img {
+  width: 75%;
+}
+
+.lightning #mainNav {
+  background: transparent;
+}
+
+.lightning a {
+  color: #fff;
+}
+
+.lightning-page h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.imghero img {
+  width: 100%;
+  max-width: 600px;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.lcontent {
+  margin-top: 40px;
+  font-weight: 100;
+}
+
+.lcontent a {
+  text-decoration: underline;
+}
+
+.lighting2 h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.lighting2 p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.done {
+  background: #d9ead3;
+  color: #38761d;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-size: 11px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.done.not {
+  background: #c9daf8;
+  color: #1155cc;
+}
+
+.lighting2 .desc {
+  padding-top: 40px;
+}
