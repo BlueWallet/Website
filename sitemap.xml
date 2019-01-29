@@ -11,7 +11,17 @@
 </url>
 <url>
   <loc>https://bluewallet.io/features.html</loc>
-  <lastmod>2018-11-13T17:34:18+00:00</lastmod>
+  <lastmod>2019-28-13T17:34:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bluewallet.io/lightning-wallet.html</loc>
+  <lastmod>2019-28-13T17:34:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bluewallet.io/donate.html</loc>
+  <lastmod>2019-28-13T17:34:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 </urlset>
