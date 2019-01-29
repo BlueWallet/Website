@@ -46,3 +46,19 @@ section {
         font-size: 48px;
     }
 }
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: auto !important;
+  }
+  .single-page a {
+      padding: 32px 18px;
+      line-height: 38px !important;
+  }
+  #mainNav .navbar-nav > li > a {
+    font-size: 15px !important;
+  }
+
+}
