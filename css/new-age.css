@@ -734,20 +734,26 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   text-decoration: none;
 }
 
+.fmenu a {
+  text-decoration: none;
+}
+
 .foot-menu {
-  background: #CCDDF9;
+  background: rgba(104, 187, 225, 0.3);
   border-radius: 30px;
   padding: 4px 16px;
   font-size: 14px;
   color: #0C2550;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
-.foot-menu a {
-  color: #0C2550;
+.lightning .foot-menu {
+  color: #ffffff;
 }
 
-.foot-menu a:hover, .foot-menu a:focus, .foot-menu a:active, .foot-menu a.active {
-  text-decoration: none;
+.foot-menu:hover {
+  background: rgba(104, 187, 225, 0.6);
 }
 
 #mc_embed_signup2 {
@@ -1145,4 +1151,108 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 section.lndhub button {
   margin-top: 96px;
   padding: 12px 60px !important;
+}
+
+header.masthead.lapps .header-content h1 {
+  font-size: 72px;
+  font-weight: 800;
+  margin-bottom: 70px;
+}
+
+header.masthead.lapps .header-content p {
+  font-size: 22px;
+}
+
+@media (max-width: 992px) {
+  header.masthead.lapps .header-content h1 {
+    font-size: 300%;
+  }
+  header.masthead.lapps .header-content p {
+    font-size: 16px;
+  }
+}
+
+.lapps2 {
+  background: #68BBE1;
+  position: relative;
+  color: white;
+  padding: 96px 0 147px 0;
+}
+
+.lapps2 h1 {
+  font-size: 72px;
+  font-weight: 800;
+  margin-bottom: 70px;
+}
+
+.lapps2 p {
+  font-size: 24px;
+}
+
+.lapps2 button {
+  padding: 28px 98px;
+  border: 5px solid #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 108px;
+}
+
+.lapps2 a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .lapps2 h1 {
+    text-align: center;
+    font-size: 240%;
+  }
+  .lapps2 p {
+    text-align: center;
+    font-size: 18px;
+  }
+  .lapps2 button {
+    margin: 24px auto 190px auto;
+    text-align: center;
+    padding: 20px 60px;
+  }
+  .lapps2 .bltk {
+    text-align: center;
+  }
+}
+
+.lappsimage {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.lappsimage img {
+  width: 50%;
+}
+
+.lapps-features {
+  background: #ffffff;
+  position: relative;
+  padding: 96px 0;
+}
+
+.lapps-features h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 90px;
+}
+
+.lapps-features p {
+  font-size: 22px;
+  margin-top: 32px;
+}
+
+.lapps-features img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lappfooter {
+  background: #ffffff;
 }
