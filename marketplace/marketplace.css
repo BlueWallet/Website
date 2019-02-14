@@ -41,3 +41,15 @@ a {
 .appicon img { 
 	width: 48px; 
 }
+.highlight {
+  background: #E8F2FD;
+}
+.highlight small {
+  display: block;
+  color: #2F5FB3;
+  font-weight: bold;
+}
+.highlight .high {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
