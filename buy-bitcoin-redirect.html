@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>Country: <span id="country"></span></div>
+    <div>State: <span id="state"></span></div>
+    <div>City: <span id="city"></span></div>
+    <div>Latitude: <span id="latitude"></span></div>
+    <div>Longitude: <span id="longitude"></span></div>
+    <div>IP: <span id="ipv4"></span></div>
+    <div>country_code: <span id="country_code"></span></div>
+    
+    <a href="https://old.changelly.com/?ref_id=rtagfcvnwiwvhm99">Click here if you are not being redirected</a>
+    <script>
+	$.ajax({
+		url: "https://geoip-db.com/jsonp",
+		jsonpCallback: "callback",
+		dataType: "jsonp",
+		error: function(){
+		  window.location = 'https://old.changelly.com/?ref_id=rtagfcvnwiwvhm99';
+		},
+		success: function( location ) {
+			$('#country').html(location.country_name);
+			$('#state').html(location.state);
+			$('#city').html(location.city);
+			$('#latitude').html(location.latitude);
+			$('#longitude').html(location.longitude);
+			$('#ipv4').html(location.IPv4);  
+			$('#country_code').html(location.country_code);
+			if (location.country_code == 'ZA' || location.country_code == 'ZAF' || location.country_code == 'ZAR') {
+			  window.location = 'https://ice3x.com?ref=14342738';
+			}  else {
+  			window.location = 'https://old.changelly.com/?ref_id=rtagfcvnwiwvhm99';
+			}
+		}
+	});		
+    </script>
+</body>
+</html>
