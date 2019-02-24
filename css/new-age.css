@@ -302,6 +302,24 @@ section.download .badges .badge-link:last-child {
   }
 }
 
+@media (max-width: 768px) {
+  section.download .desktop {
+    display: none;
+  }
+}
+
+section.download .desktop a {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 16px 24px;
+  border-radius: 40px;
+  margin: 60px 0 0 0;
+  display: inline-block;
+}
+
+section.download .desktop a:hover {
+  text-decoration: none;
+}
+
 section.features {
   background: #68BBE1;
   padding-bottom: 0px !important;
