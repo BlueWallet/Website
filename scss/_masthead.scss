@@ -9,7 +9,7 @@ header.masthead {
     color: $dark-blue;
     background: white;
     .header-content {
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         text-align: center;
         h1 {
             font-weight: 400;
@@ -88,4 +88,18 @@ header.masthead {
 section.features .flightning button {
     margin-bottom: 0px;
     padding: 12px 60px !important;
+}
+@media(max-width: 768px) {
+        .desktop {
+            display: none;
+        }
+    }
+.desktop a {
+    padding: 16px 0px;
+    border-radius: 40px;
+    margin: 0 0;
+    display: inline-block;
+    &:hover {
+        text-decoration: underline;
+    }
 }
