@@ -22,6 +22,7 @@
     }
     .navbar-nav {
         > li {
+            position: relative;
             > a {
                 font-size: 19px;
                 @include alt-font;
@@ -34,7 +35,36 @@
             > a:focus {
                 color: $gray-darker;
             }
+            > ul {
+                display: none;
+                position: absolute;
+                top: 40px;
+                right: 0;
+                z-index: 999;
+                background: #fff;
+                box-shadow: 0 1px 6px #ccc;
+                border-radius: 6px;
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                li a {
+                    padding: 16px 24px;
+                    display: block;
+                    text-decoration: none;
+                    width: 200px;
+                    font-weight: 600;
+                    &:hover {
+                            background: #EFF7FC;
+                   
+                    }
+                }
+            }
+            
         }
+        > li:hover
+        > ul {
+                display: inline-block;
+            }
     }
     @media (min-width: 992px) {
         border-color: transparent;
