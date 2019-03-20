@@ -3,8 +3,6 @@
     border-color: fade-out($gray-darker, .95);
     background-color: white;
     padding: 48px 0;
-    @include transition-all;
-    @include heading-font;
     .navbar-brand {
         color: $theme-primary;
         @include heading-font;
