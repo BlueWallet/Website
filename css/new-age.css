@@ -69,12 +69,6 @@ section h2 {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
   padding: 48px 0;
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
-  letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
@@ -99,6 +93,10 @@ section h2 {
   color: #222222;
 }
 
+#mainNav .navbar-nav > li {
+  position: relative;
+}
+
 #mainNav .navbar-nav > li > a {
   font-size: 19px;
   font-family: 'Calibri', 'Helvetica', 'Arial', 'sans-serif';
@@ -114,6 +112,37 @@ section h2 {
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
   color: #222222;
+}
+
+#mainNav .navbar-nav > li > ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 999;
+  background: #fff;
+  box-shadow: 0 1px 6px #ccc;
+  border-radius: 6px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#mainNav .navbar-nav > li > ul li a {
+  padding: 16px 24px;
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  font-weight: 600;
+}
+
+#mainNav .navbar-nav > li > ul li a:hover {
+  background: #EFF7FC;
+}
+
+#mainNav .navbar-nav > li:hover
+> ul {
+  display: inline-block;
 }
 
 @media (min-width: 992px) {
