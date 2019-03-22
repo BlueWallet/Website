@@ -42,14 +42,16 @@ a {
 	width: 48px; 
 }
 .highlight {
-  background: #E8F2FD;
+  background: #FFEDF6;
+  margin: 16px 8px 0 8px;
+  border-radius: 6px;
 }
-.highlight small {
-  display: block;
-  color: #2F5FB3;
-  font-weight: bold;
+.highlight .grid-container {
+  border-bottom: transparent 1px solid;
 }
-.highlight .high {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+.highlight p {
+  color: #ff8b8b;
+}
+.highlight h2 {
+  color: #E55A5A;
 }
