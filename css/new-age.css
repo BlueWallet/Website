@@ -1305,6 +1305,12 @@ header.masthead.lapps .header-content p {
   font-weight: bold;
 }
 
+@media (max-width: 992px) {
+  .first .section-heading h1 {
+    font-size: 32px !important;
+  }
+}
+
 .onchain-page .download {
   background: #EEFAFF;
   padding: 280px 0;
@@ -1320,6 +1326,13 @@ header.masthead.lapps .header-content p {
   margin-bottom: 38px;
 }
 
+@media (max-width: 992px) {
+  .onchain-page .lcontent {
+    font-size: 13px !important;
+    margin-top: 24px;
+  }
+}
+
 .wallet-types {
   background: #EEFAFF;
   overflow: hidden;
@@ -1329,13 +1342,19 @@ header.masthead.lapps .header-content p {
   font-weight: bold;
 }
 
+@media (max-width: 992px) {
+  .wallet-types h2 {
+    font-size: 32px !important;
+  }
+}
+
 .slick-slide {
   width: 380px;
 }
 
 @media (max-width: 991px) {
   .slick-slide {
-    width: 320px;
+    width: 300px;
   }
 }
 
@@ -1411,6 +1430,26 @@ button:focus {
   margin-bottom: 24px;
 }
 
+@media (max-width: 992px) {
+  .create-import h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .create-import p {
+    font-size: 13px !important;
+  }
+}
+
 .create-import p {
   font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  .stuff .order1 {
+    flex: 1;
+    order: 1;
+  }
+  .stuff .order2 {
+    order: 2;
+  }
 }

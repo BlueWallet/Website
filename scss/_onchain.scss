@@ -1,6 +1,13 @@
-.first .section-heading h1 {
-	font-size: 88px;
-	font-weight: bold;
+.first .section-heading {
+	h1 {
+		font-size: 88px;
+		font-weight: bold;
+	}
+	@media (max-width: 992px) {
+		h1 {
+			font-size: 32px !important;
+		}	
+	}
 }
 .onchain-page .download {
 	background: #EEFAFF;
@@ -9,16 +16,29 @@
 .onchain footer {
 	background: #fff;
 }
-.onchain-page .lcontent {
-	font-size: 18px;
-	font-weight: 300;
-	margin-bottom: 38px;
+.onchain-page {
+	.lcontent {
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 38px;
+	}
+	@media (max-width: 992px) {
+		.lcontent {
+			font-size: 13px !important;
+			margin-top: 24px;
+		}	
+	}
 }
 .wallet-types {
 	background: #EEFAFF;
 	overflow: hidden;
 	h2 {
 		font-weight: bold;
+	}
+	@media (max-width: 992px) {
+		h2 {
+			font-size: 32px !important;
+		}
 	}
 }
 .myslider {
@@ -27,7 +47,7 @@
 .slick-slide {
 	width: 380px;
 	@media (max-width: 991px) {
-		width: 320px;
+		width: 300px;
 	}
 	img {
 		width: 100%;
@@ -91,7 +111,27 @@ button:focus {
 		font-size: 50px;
 		margin-bottom: 24px;
 	}
+	@media (max-width: 992px) {
+		h2 {
+			text-align: center;
+			font-size: 32px;
+		}
+		p {
+		font-size: 13px !important;
+		}
+	}
 	p {
 		font-size: 16px;
 	}
+}
+.stuff {
+@media (max-width: 992px) {
+	 .order1 {
+	 	flex:1;
+	 	order: 1;
+	 	}
+	 	.order2 {
+	 	order: 2;
+	 	}
+	 }
 }
