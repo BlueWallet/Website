@@ -11,6 +11,16 @@ body {
 a {
 	text-decoration: none
 }
+.section {
+  margin: 24px 16px 0px 16px;
+}
+.section.first {
+  margin-top: 0px;
+}
+.section h3 {
+  margin: 0px;
+  font-size: 16px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 48px 1fr;
@@ -19,6 +29,9 @@ a {
   padding: 16px 0;
   margin: 0 16px;
   border-bottom: 1px solid #EEF0F4;
+}
+.grid-container.tippin{
+  border-bottom: 0px solid transparent;
 }
 .appicon { 
 	grid-area: appicon; 
@@ -42,16 +55,33 @@ a {
 	width: 48px; 
 }
 .highlight {
-  background: #FFEDF6;
-  margin: 16px 8px 0 8px;
+  background: url(img/boltathon.png) no-repeat center;
+  height: 228px;
+  background-size: cover;
+  margin: 16px 16px 24px 16px;
+  border-radius: 12px;
+  position: relative;
+}
+.highlight .content {
+  background: #fff;
   border-radius: 6px;
+  margin: 0 16px 16px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  padding: 12px 16px;
 }
-.highlight .grid-container {
-  border-bottom: transparent 1px solid;
+.highlight .content h2 {
+  color: #0C2550;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
 }
-.highlight p {
-  color: #ff8b8b;
-}
-.highlight h2 {
-  color: #E55A5A;
+.highlight .content p{
+  color: #81868E;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
 }
