@@ -95,6 +95,7 @@ section h2 {
 
 #mainNav .navbar-nav > li {
   position: relative;
+  margin-left: 16px;
 }
 
 #mainNav .navbar-nav > li > a {
@@ -112,6 +113,10 @@ section h2 {
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
   color: #222222;
+}
+
+#mainNav .navbar-nav > li > a:hover {
+  color: #0056b3;
 }
 
 #mainNav .navbar-nav > li > ul {
