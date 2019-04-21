@@ -5,16 +5,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <div>Country: <span id="country"></span></div>
-    <div>State: <span id="state"></span></div>
-    <div>City: <span id="city"></span></div>
-    <div>Latitude: <span id="latitude"></span></div>
-    <div>Longitude: <span id="longitude"></span></div>
-    <div>IP: <span id="ipv4"></span></div>
     <div>country_code: <span id="country_code"></span></div>
     
     <a href="https://old.changelly.com/?ref_id=rtagfcvnwiwvhm99">Click here if you are not being redirected</a>
     <script>
+    var safello_countries = ["SE", "GB", "AD", "AT", "AX", "BE", "CH", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GG", "GI", "GR", "HR", "HU", "IE", "IM", "IS", "IT", "JE", "LI", "LT", "LU", "LV", "MC", "ME", "MT", "NL", "NO", "PL", "PT", "SI", "SK", "SM", "IC"];
+    var u = new URLSearchParams(window.location.search);
+    var address = u.get('address') || '';
+
 	$.ajax({
 		url: "https://geoip-db.com/jsonp",
 		jsonpCallback: "callback",
@@ -23,15 +21,11 @@
 		  window.location = 'https://old.changelly.com/?ref_id=rtagfcvnwiwvhm99';
 		},
 		success: function( location ) {
-			$('#country').html(location.country_name);
-			$('#state').html(location.state);
-			$('#city').html(location.city);
-			$('#latitude').html(location.latitude);
-			$('#longitude').html(location.longitude);
-			$('#ipv4').html(location.IPv4);  
 			$('#country_code').html(location.country_code);
 			if (location.country_code == 'ZA' || location.country_code == 'ZAF' || location.country_code == 'ZAR') {
 			  window.location = 'https://ice3x.com?ref=14342738';
+			} else if (safello_countries.indexOf(location.country_code) !== -1) {
+ 			  window.location = 'https://app.safello.com/sdk/quickbuy.html?appId=4904c769-8a1d-43ca-8bd0-896520c94fdf&theme=bluewallet&layout=app&address=' + address;
 			}  else {
   			window.location = 'https://old.changelly.com/?ref_id=rtagfcvnwiwvhm99';
 			}
