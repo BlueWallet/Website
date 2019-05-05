@@ -6,27 +6,37 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://bluewallet.io/</loc>
-  <lastmod>2018-11-13T17:34:18+00:00</lastmod>
+  <lastmod>2019-05-05T17:34:18+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://bluewallet.io/bitcoin-wallet</loc>
+  <lastmod>2019-05-05T17:34:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://bluewallet.io/features.html</loc>
-  <lastmod>2019-28-13T17:34:18+00:00</lastmod>
+  <lastmod>2019-05-05T17:34:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bluewallet.io/lightning</loc>
-  <lastmod>2019-28-13T17:34:18+00:00</lastmod>
+  <lastmod>2019-05-05T17:34:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bluewallet.io/lapps</loc>
-  <lastmod>2019-28-13T17:34:18+00:00</lastmod>
+  <lastmod>2019-05-05T17:34:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bluewallet.io/watch-app</loc>
+  <lastmod>2019-05-05T17:34:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bluewallet.io/donate.html</loc>
-  <lastmod>2019-28-13T17:34:18+00:00</lastmod>
+  <lastmod>2019-03-13T17:34:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 </urlset>

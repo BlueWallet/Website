@@ -23,6 +23,7 @@
     .navbar-nav {
         > li {
             position: relative;
+            margin-left: 16px;
             > a {
                 font-size: 19px;
                 @include alt-font;
@@ -34,6 +35,9 @@
             > a,
             > a:focus {
                 color: $gray-darker;
+            }
+            > a:hover {
+                color: #0056b3;
             }
             > ul {
                 display: none;
