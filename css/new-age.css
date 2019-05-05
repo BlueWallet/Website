@@ -1329,6 +1329,136 @@ header.masthead.lapps .header-content p {
   background: #ffffff;
 }
 
+body.watch-app {
+  background: #f9f9f9;
+}
+
+.watch-app #mainNav {
+  background: #f9f9f9;
+}
+
+header.masthead.watch-app {
+  background: #f9f9f9;
+}
+
+header.masthead.watch-app .header-content {
+  color: #312F2D;
+}
+
+header.masthead.watch-app .header-content h1 {
+  font-size: 72px;
+  font-weight: 800;
+  margin-bottom: 48px;
+}
+
+header.masthead.watch-app .header-content p {
+  font-size: 22px;
+}
+
+@media (max-width: 992px) {
+  header.masthead.watch-app .header-content h1 {
+    font-size: 300%;
+  }
+  header.masthead.watch-app .header-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .watch-app .wat {
+    margin-bottom: 80px;
+  }
+}
+
+.watch-app .cta {
+  margin-top: 74px;
+}
+
+@media (max-width: 992px) {
+  .watch-app .cta {
+    margin-top: 32px;
+    margin-bottom: 160px;
+  }
+}
+
+@media (max-width: 992px) {
+  .watch-app .cta li {
+    width: 100% !important;
+  }
+}
+
+.bighead3 {
+  text-align: center;
+}
+
+.bighead3 img {
+  width: 90%;
+}
+
+.watch-preview h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #312F2D;
+}
+
+@media (max-width: 992px) {
+  .watch-preview .col1 {
+    flex: 1;
+    order: 2;
+  }
+  .watch-preview h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.watch-features .bighead3 {
+  padding: 40px;
+}
+
+.watch-features .desc p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #0C2550;
+}
+
+@media (min-width: 991px) {
+  .watch-features .desc2 {
+    position: absolute;
+    bottom: 160px;
+  }
+  .watch-features .desc3 {
+    position: absolute;
+    top: 60px;
+  }
+  .watch-features .desc4 {
+    position: absolute;
+    bottom: 220px;
+  }
+}
+
+@media (max-width: 992px) {
+  .watch-features .desc {
+    text-align: center;
+    margin: 24px 0;
+  }
+}
+
+.watch-features .desc p.title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #2F5FB3;
+}
+
+.watchdown h2 {
+  color: #312F2D !important;
+}
+
+.watchfooter {
+  background: #f9f9f9;
+}
+
 .first .section-heading h1 {
   font-size: 88px;
   font-weight: bold;
