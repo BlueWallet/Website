@@ -40,6 +40,7 @@
     var safello_countries = ["SE", "GB", "AD", "AT", "AX", "BE", "CH", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GG", "GI", "GR", "HR", "HU", "IE", "IM", "IS", "IT", "JE", "LI", "LT", "LU", "LV", "MC", "ME", "MT", "NL", "NO", "PL", "PT", "SI", "SK", "SM", "IC"];
     var u = new URLSearchParams(window.location.search);
     var address = u.get('address') || '';
+    var safello_state_token = u.get('safelloStateToken')
 
     $.ajax({
       url: "https://geoip-db.com/jsonp",
@@ -53,7 +54,13 @@
         if (location.country_code == 'ZA' || location.country_code == 'ZAF' || location.country_code == 'ZAR') {
           window.location = 'https://ice3x.com?ref=14342738';
         } else if (safello_countries.indexOf(location.country_code) !== -1) {
-          window.location = 'https://app.safello.com/sdk/quickbuy.html?appId=4904c769-8a1d-43ca-8bd0-896520c94fdf&country=' + location.country_code + '&theme=bluewallet&layout=app&address=' + address;
+          var safello_url = 'https://app.safello.com/sdk/quickbuy.html?appId=4904c769-8a1d-43ca-8bd0-896520c94fdf&country=' + location.country_code + '&theme=bluewallet&layout=app&address=' + address;
+          
+          if (safello_state_token) {
+            safello_url += '&stateToken=' + safello_state_token
+          }
+          
+          window.location = safello_url
         }  else {
           window.location = 'https://old.changelly.com/?ref_id=rtagfcvnwiwvhm99';
         }
