@@ -54,7 +54,7 @@
         if (location.country_code == 'ZA' || location.country_code == 'ZAF' || location.country_code == 'ZAR') {
           window.location = 'https://ice3x.com?ref=14342738';
         } else if (safello_countries.indexOf(location.country_code) !== -1) {
-          var safello_url = 'https://app.safello.com/sdk/quickbuy.html?appId=4904c769-8a1d-43ca-8bd0-896520c94fdf&country=' + location.country_code + '&theme=bluewallet&layout=app&address=' + address;
+          var safello_url = 'https://app.safello.com/sdk/quickbuy.html?appId=4904c769-8a1d-43ca-8bd0-896520c94fdf&utm_source=BlueWallet&utm_medium=Wallet&country=' + location.country_code + '&theme=bluewallet&layout=app&address=' + address;
           
           if (safello_state_token) {
             safello_url += '&stateToken=' + safello_state_token
