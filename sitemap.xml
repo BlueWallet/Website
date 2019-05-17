@@ -25,6 +25,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://bluewallet.io/watch-only</loc>
+  <lastmod>2019-05-17T17:34:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://bluewallet.io/lapps</loc>
   <lastmod>2019-05-05T17:34:18+00:00</lastmod>
   <priority>0.80</priority>
