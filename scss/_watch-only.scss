@@ -1,0 +1,160 @@
+.watch-only {
+	background: #212121;
+	color: #fff;
+}
+.watch-only .single-page {
+	background: rgba(255,255,255,0.4);
+}
+.watch-only #mainNav .navbar-nav > li > a, .watch-only #mainNav .navbar-nav > li > a:focus {
+	color: #fff;
+}
+.only-features {
+	background: #111111;
+}
+.only-features h2, .howtodoit h2, .lndhub h2 {
+	font-size: 50px;
+	font-weight: bold;
+}
+.first h2 {
+		font-size: 34px;
+	}
+@media (max-width: 992px) {
+	.only-page h1 {
+		font-size: 32px !important;
+	}
+	.only-features h2, .howtostart h2, .lndhub h2 {
+		font-size: 42px !important;
+	}
+	.first h2 {
+		font-size: 22px;
+	}
+}
+.first {
+		padding: 0;
+	}
+.howtostart h2{
+	margin-bottom: 60px;
+}
+.howtostart h5 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.howtostart p {
+	font-size: 15px;
+	font-weight: 300;
+}
+.only-features .app-preview img {
+	width: 75%;
+}
+.watch-only #mainNav {
+	background: transparent;
+}
+.watch-only a {
+	color: #fff;
+}
+.only-page h1 {
+	font-size: 50px;
+	font-weight: 600;
+}
+.imghero img {
+	width: 100%;
+	max-width: 600px;
+	height: 50%;
+	margin: 0 auto;
+}
+.only-page .lcontent {
+	margin: 60px 0 40px 0;
+	font-weight: 400;
+	font-size: 15px;
+}
+.lcontent a {
+	text-decoration: underline;
+}
+.only-features h4 {
+	font-size: 24px;
+	font-weight: 500;
+}
+.only-features p {
+	font-size: 15px;
+	font-weight: 200;
+}
+.bips {
+	background: rgba(255,255,255,.1);
+	color: #ffffff;
+	border-radius: 20px;
+	padding: 4px 8px;
+	font-size: 11px;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+.only-features .desc {
+	padding-top: 40px;
+}
+.explain {
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 88px;
+    @media (min-width: 769px) {
+    background: rgba(255,255,255,0.2);
+}
+@media (min-width: 992px) {
+    border-radius: 0 16px 16px 0;
+    }
+}
+@media (min-width: 992px) {
+    .explain.last {
+        border-radius: 16px 0px 0px 16px;
+    }
+}
+.explain img {
+    max-width: 220px;
+    @media (max-width: 991px) {
+        max-width: 45%;
+    }
+    @media (min-width: 992px) {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+    }
+}
+.explain .number {
+    font-size: 70px;
+    font-weight: bolder;
+    color: #000000;
+    @media (max-width: 768px) {
+        color: #ffffff;
+    }
+    margin-left: 40px;
+}
+.explain.last .number {
+    margin-right: 40px;
+}
+.explain p {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 0;
+    @media (min-width: 992px) {
+    margin: 0 0 0 40px;
+    }
+    @media (max-width: 768px) { 
+        margin-top: 36px;
+    }
+}
+.howtodoit h2 {
+    margin-bottom: 120px;
+}
+.watch-only .download {
+    background: #111111;
+    padding: 280px 0;
+}
+.watch-only section.download h2 {
+    color: #ffffff;
+}
+.watch-only footer {
+    background: #111111;
+}
+.watch-only .foot-menu {
+    background: rgba(255,255,255,.2);
+    color: #ffffff;
+}
