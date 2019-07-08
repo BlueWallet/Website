@@ -64,7 +64,7 @@ a {
   position: relative;
 }
 .highlight .content {
-  background: #fff;
+  background: rgba(255,255,255,.2);
   border-radius: 6px;
   margin: 0 16px 16px;
   position: absolute;
@@ -75,13 +75,13 @@ a {
   padding: 12px 16px;
 }
 .highlight .content h2 {
-  color: #0C2550;
+  color: #fff;
   font-size: 18px;
   margin: 0px;
   padding: 0px;
 }
 .highlight .content p{
-  color: #81868E;
+  color: #fff;
   font-size: 14px;
   margin: 0px;
   padding: 0px;
