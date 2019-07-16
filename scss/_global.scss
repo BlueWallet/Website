@@ -39,7 +39,22 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
+.apk {
+    @media (max-width: 991px) {
+    text-align: center;
+     }
+    a {
+        padding: 8px 24px;
+        background: rgba(0,0,0,.05);
+        border-radius: 6px;
+        display: inline-block;
+        color: #9AA0AA;
+        @media (max-width: 991px) {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
 section {
     padding: 96px 0;
     h2 {
