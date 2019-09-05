@@ -28,8 +28,10 @@
     "dependencies": {
         "bootstrap": "4.0.0",
         "font-awesome": "4.7.0",
+        "gatsby-plugin-netlify-cms": "^4.1.13",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
+        "netlify-cms-app": "^2.9.7",
         "simple-line-icons": "2.4.1"
     },
     "devDependencies": {
