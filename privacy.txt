@@ -39,6 +39,13 @@ Third-party disclosure
 
 We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.
 
+Creators of BlueWallet never received any inquiries from NSA, FBI, FSB or any other government institution.
+
+Nor NSA nor any other government institution was ever granted access to BlueWallet's end users data.
+
+Nor NSA nor any other government institution was ever granted permission to install backdoor or other potentially malicious code
+in any part of BlueWallet's software.
+
 Third-party links
 
 We do not include or offer third-party products or services on our website.
@@ -76,7 +83,7 @@ We collect your email address in order to:
 To be in accordance with CANSPAM, we agree to the following:
 
 If at any time you would like to unsubscribe from receiving future emails, you can email us at
-rca2ec@trafficrobot.tk and we will promptly remove you from ALL correspondence.
+bluewallet@bluewallet.io and we will promptly remove you from ALL correspondence.
 
 Contacting Us
 
@@ -87,4 +94,4 @@ Calle Beller 51
 Puerto Plata, 57000
 Republica Dominicana
 
-Last Edited on 2018-03-10
+Last Edited on 2019-10-16
