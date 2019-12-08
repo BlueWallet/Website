@@ -1,0 +1,2 @@
+* [fee94ba](https://github.com/TryGhost/Casper/commit/fee94ba) 3.0.5 - Nazar Gargol
+* [bf4b8d7](https://github.com/TryGhost/Casper/commit/bf4b8d7) ✨ Added secondary navigation (#664) - Peter Zimon
