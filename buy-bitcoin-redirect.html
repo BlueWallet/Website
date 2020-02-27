@@ -43,7 +43,8 @@
     var safello_state_token = u.get('safelloStateToken')
     if (safello_state_token == 'TEST') {
     	// for the sake of testing
-    	return alert(safello_state_token);
+    	alert(safello_state_token);
+    	throw new Error("Script execution terminated");
     }
 
     $.ajax({
