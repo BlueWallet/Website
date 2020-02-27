@@ -41,6 +41,10 @@
     var u = new URLSearchParams(window.location.search);
     var address = u.get('address') || '';
     var safello_state_token = u.get('safelloStateToken')
+    if (safello_state_token == 'TEST') {
+    	// for the sake of testing
+    	return alert(safello_state_token);
+    }
 
     $.ajax({
       url: "https://geoip-db.com/jsonp",
