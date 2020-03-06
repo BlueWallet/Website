@@ -3,8 +3,10 @@ section.features {
      background: $light-blue;
      padding-bottom: 0px !important;
      button {
-        margin-bottom: 96px;
+        margin-top: 50px;
+        margin-bottom: 86px;
         padding: 12px 60px !important;
+        transition: all 0.5s ease;
      }
      button.btn-primary {
         background: #CCDDF9;
@@ -41,7 +43,7 @@ section.features {
         }
         @media(min-width: 992px) {
             h2 {
-                text-align: left;
+                padding: 0px;
             }
         }
         @media(max-width: 991px) {
@@ -53,34 +55,34 @@ section.features {
             margin-bottom: 0;
         }
     }
+
     .device-container,
     .feature-item {
+        transition: all 0.5s ease;
+            padding: 16px 16px;
+            background: rgba(255,255,255,.15);
+            border-radius: 6px;
+            box-shadow: 0px 6px 11px 0px rgba(30,30,30,.05);
         @media(min-width: 992px) {
-            width: 100%;
-            transition: all 0.5s ease;
-            padding: 8px 16px;
-            &:hover {
-                background: rgba(0,0,0,.1);
-                border-radius: 8px;
-            }
+            width: 95%;
         }
         @media(max-width: 991px) {
-            padding-left: 16px;
-            padding-right: 16px;
-            i {
-                margin-bottom: 16px;
-                margin-right: 16px;
-            }
+           width: 90%;
+           margin: 0 auto;
         }
+        &:hover {
+            transform: scale(0.99);
+        }
+
         p {
             margin: 0px;
         }
     }
     @media(min-width: 992px) {
         .fwhite{
-            .feature-item:hover {
-                background: rgba(0,0,0,.05);
-                border-radius: 8px;
+            .feature-item {
+                box-shadow: 0px 2px 11px 3px rgba(36,92,141,.08);
+                
             }
         }
     }
@@ -91,28 +93,16 @@ section.features {
         }
     }
     .feature-item {
-        margin-bottom: 40px;
+        margin-bottom: 24px;
         h3 {
-            font-size: 22px;
+            font-size: 20px;
             letter-spacing: 0px;
             color: white;
             font-weight: 600;
         }
         p {
             color: white;
-            font-size: 13px;
-        }
-        i {
-            background: white;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 44px;
-            float: left;
-        }
-        @media(min-width: 992px) {
-            i {
-            display: none;
-            }
+            font-size: 14px;
         }
     }
     .app-preview {
@@ -148,26 +138,21 @@ section.features {
             }
         }
     }
-    .flightning {
-        background: #29353C;
+    .fwatchonly {
+        background: #191919;
         padding: 96px 0 0 0;
         color: #fff;
 
         .section-heading h2 {
             font-size: 50px;
             font-weight: bold;
+            font-size: 64px;
         }
-        .section-heading h3 {
-            font-size: 35px;
-            color: #fff;
-            padding: 0px 16px;
+        button {
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
         }
-        .feature-item {
-            background: none;
-        }
-        .feature-item p {
-            font-size: 18px;
-        }
+
         .lightning-wallet {
             text-align: center;
             padding-top: 60px;
@@ -187,14 +172,35 @@ section.features {
             .section-heading h2 {
                 font-size: 28px;
             }
-        .flightning 
-            .section-heading h3 {
-                font-size: 24px;
-            }
         }
-    
 
 }
+.blog {
+        background: #F7FBFF;
+        h2 {
+            font-weight: 600;
+            font-size: 40px;
+        }
+        .medium-widget {
+            padding: 40px 0;
+        }
+        .medium-widget-article__item {
+            background: #fff;
+            margin-right: 24px;
+            box-shadow: 0px 2px 16px 0px rgba(20,44,66,.1);
+            border-radius: 6px;
+            padding: 0px;
+            .medium-widget-article__image img {
+                border-radius: 8px 8px 0px 0px;
+            }
+            .medium-widget-article__content {
+                padding: 16px 24px;
+            }
+        }
+         .medium-widget-article__item:last-child {
+            margin-right: 0px;
+        }
+    }
 .navbar-collapse {
     @media(max-width: 992px) {
         position: absolute;

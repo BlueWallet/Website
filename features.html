@@ -71,11 +71,25 @@
         <a class="navbar-brand js-scroll-trigger" href="/">
           <img src="img/logo-bluewallet.svg" alt="BlueWallet - Bitcoin Wallet">
         </a>
-        <div class="navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="single-page nav-item">
-                  <a href="/"><i class="fa fa-arrow-left"></i> home</a>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/">Home</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/features.html">Features</a>
+                  <ul>
+                    <li><a class="sublink" href="/features.html">View all</a></li>
+                    <li><a class="sublink" href="/bitcoin-wallet">Bitcoin Wallets</a></li>
+                    <li><a class="sublink" href="/lightning">Lightning Wallets</a></li>
+                     <li><a class="sublink" href="/watch-only">Watch-only Wallets</a></li>
+                    <li><a class="sublink" href="/lapps">Lapp Marketplace</a></li> 
+                    <li><a class="sublink" href="/watch-app">Watch App</a></li> 
+                  </ul>
               </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://help.bluewallet.io">Help</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -253,12 +267,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
-    <script>
-      window.intercomSettings = {
-        app_id: "fvsg6e4i"
-      };
-    </script>
-    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fvsg6e4i';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
   </body>
 
 </html>

@@ -272,7 +272,7 @@ header.masthead .header-content h2 {
 }
 
 header.masthead .light-blue {
-  color: #68BBE1;
+  color: #57BBE4;
 }
 
 header.masthead .device-container {
@@ -370,13 +370,15 @@ section.download .badges .badge-link:last-child {
 }
 
 section.features {
-  background: #68BBE1;
+  background: #57BBE4;
   padding-bottom: 0px !important;
 }
 
 section.features button {
-  margin-bottom: 96px;
+  margin-top: 50px;
+  margin-bottom: 86px;
   padding: 12px 60px !important;
+  transition: all 0.5s ease;
 }
 
 section.features button.btn-primary {
@@ -423,7 +425,7 @@ section.features .section-heading strong {
 
 @media (min-width: 992px) {
   section.features .section-heading h2 {
-    text-align: left;
+    padding: 0px;
   }
 }
 
@@ -437,31 +439,33 @@ section.features .section-heading p {
   margin-bottom: 0;
 }
 
+section.features .device-container,
+section.features .feature-item {
+  transition: all 0.5s ease;
+  padding: 16px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  box-shadow: 0px 6px 11px 0px rgba(30, 30, 30, 0.05);
+}
+
 @media (min-width: 992px) {
   section.features .device-container,
   section.features .feature-item {
-    width: 100%;
-    transition: all 0.5s ease;
-    padding: 8px 16px;
-  }
-  section.features .device-container:hover,
-  section.features .feature-item:hover {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    width: 95%;
   }
 }
 
 @media (max-width: 991px) {
   section.features .device-container,
   section.features .feature-item {
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 90%;
+    margin: 0 auto;
   }
-  section.features .device-container i,
-  section.features .feature-item i {
-    margin-bottom: 16px;
-    margin-right: 16px;
-  }
+}
+
+section.features .device-container:hover,
+section.features .feature-item:hover {
+  transform: scale(0.99);
 }
 
 section.features .device-container p,
@@ -470,9 +474,8 @@ section.features .feature-item p {
 }
 
 @media (min-width: 992px) {
-  section.features .fwhite .feature-item:hover {
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
+  section.features .fwhite .feature-item {
+    box-shadow: 0px 2px 11px 3px rgba(36, 92, 141, 0.08);
   }
 }
 
@@ -487,11 +490,11 @@ section.features .device-container {
 }
 
 section.features .feature-item {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 section.features .feature-item h3 {
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0px;
   color: white;
   font-weight: 600;
@@ -499,21 +502,7 @@ section.features .feature-item h3 {
 
 section.features .feature-item p {
   color: white;
-  font-size: 13px;
-}
-
-section.features .feature-item i {
-  background: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 44px;
-  float: left;
-}
-
-@media (min-width: 992px) {
-  section.features .feature-item i {
-    display: none;
-  }
+  font-size: 14px;
 }
 
 section.features .app-preview img {
@@ -553,43 +542,35 @@ section.features .fwhite .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
-section.features .flightning {
-  background: #29353C;
+section.features .fwatchonly {
+  background: #191919;
   padding: 96px 0 0 0;
   color: #fff;
 }
 
-section.features .flightning .section-heading h2 {
+section.features .fwatchonly .section-heading h2 {
   font-size: 50px;
   font-weight: bold;
+  font-size: 64px;
 }
 
-section.features .flightning .section-heading h3 {
-  font-size: 35px;
-  color: #fff;
-  padding: 0px 16px;
+section.features .fwatchonly button {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
 }
 
-section.features .flightning .feature-item {
-  background: none;
-}
-
-section.features .flightning .feature-item p {
-  font-size: 18px;
-}
-
-section.features .flightning .lightning-wallet {
+section.features .fwatchonly .lightning-wallet {
   text-align: center;
   padding-top: 60px;
 }
 
-section.features .flightning .lightning-wallet img {
+section.features .fwatchonly .lightning-wallet img {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
 }
 
-section.features .flightning a {
+section.features .fwatchonly a {
   color: #fff;
   text-decoration: underline;
 }
@@ -599,10 +580,39 @@ section.features .flightning a {
 .section-heading h2 {
     font-size: 28px;
   }
-  section.features .flightning
-.section-heading h3 {
-    font-size: 24px;
-  }
+}
+
+.blog {
+  background: #F7FBFF;
+}
+
+.blog h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.blog .medium-widget {
+  padding: 40px 0;
+}
+
+.blog .medium-widget-article__item {
+  background: #fff;
+  margin-right: 24px;
+  box-shadow: 0px 2px 16px 0px rgba(20, 44, 66, 0.1);
+  border-radius: 6px;
+  padding: 0px;
+}
+
+.blog .medium-widget-article__item .medium-widget-article__image img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.blog .medium-widget-article__item .medium-widget-article__content {
+  padding: 16px 24px;
+}
+
+.blog .medium-widget-article__item:last-child {
+  margin-right: 0px;
 }
 
 @media (max-width: 992px) {
@@ -662,7 +672,7 @@ section.features .flightning a {
 }
 
 .features-page .feature-item i {
-  color: #68BBE1;
+  color: #57BBE4;
 }
 
 .features-page a:link, .features-page a:active, .features-page a:visited {
@@ -768,7 +778,7 @@ section.contact .people a {
 }
 
 section.contact .people a:hover {
-  color: #68BBE1;
+  color: #57BBE4;
 }
 
 section.contact .reach h3 {
@@ -896,7 +906,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border-radius: 3px;
   letter-spacing: .03em;
   color: #fff;
-  background-color: #68BBE1;
+  background-color: #57BBE4;
   box-sizing: border-box;
   height: 32px;
   line-height: 32px;
@@ -1270,7 +1280,7 @@ header.masthead.lapps .header-content p {
 }
 
 .lapps2 {
-  background: #68BBE1;
+  background: #57BBE4;
   position: relative;
   color: white;
   padding: 96px 0 147px 0;
