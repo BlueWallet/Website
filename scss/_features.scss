@@ -190,19 +190,95 @@ section.features {
             box-shadow: 0px 2px 16px 0px rgba(20,44,66,.1);
             border-radius: 6px;
             padding: 0px;
+            transition: all 0.5s ease;
             .medium-widget-article__image img {
                 border-radius: 8px 8px 0px 0px;
             }
+            &:hover {
+                transform: scale(0.99);
+                box-shadow: 0px 2px 30px 5px rgba(20,44,66,.1);
+            }
             .medium-widget-article__content {
                 padding: 16px 24px;
+
+                a {
+                    color: $dark-blue;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
+                }
             }
         }
          .medium-widget-article__item:last-child {
             margin-right: 0px;
         }
+        p {
+            margin-bottom: 16px;
+        }
+        .subscribe {
+            margin: 80px 0 0 0;
+        }
     }
+.opensource {
+    margin: 180px 0 90px 0;
+    box-shadow: 0px 2px 16px 0px rgba(20,44,66,.1);
+    padding: 30px 32px;
+    border-radius: 8px;
+    h3 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    p {
+        margin: 0;
+    }
+     @media(max-width: 767px) {
+        p {
+        margin-bottom: 40px;
+        }
+     }
+}
+.utils {
+     transition: all 0.5s ease;
+
+    a {
+        display: inline-block;
+        width: 100%;
+        padding: 16px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    div {
+        padding: 0;
+        border-radius: 6px;
+    }
+    div:hover {
+        background: #F7FBFF;
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 200;
+        margin: 0px;
+    }
+    img {
+            margin-bottom: 16px;
+        }
+    @media(min-width: 992px) {
+        text-align: left;
+        img {
+            float: left;
+            margin-right: 16px;
+            margin-bottom: 0px;
+        }
+    }
+}
 .navbar-collapse {
-    @media(max-width: 992px) {
+    @media(max-width: 991px) {
         position: absolute;
         top: 20px;
         right: 20px;
