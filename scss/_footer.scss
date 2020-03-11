@@ -38,19 +38,20 @@ footer {
     text-decoration: none;
 }
 .foot-menu{
-    background: rgba(104,187,225,0.3);
-    border-radius: 30px;
+    background: rgba(104,187,225,0.1);
+    border-radius: 6px;
     padding: 4px 16px;
     font-size: 14px;
     color: #0C2550;
     display: inline-block;
     margin-bottom: 8px;
+    margin: 0 4px;
 }
 .lightning .foot-menu{ 
     color: #ffffff;
 }
 .foot-menu:hover{
-    background: rgba(104,187,225,0.6);
+    background: rgba(104,187,225,0.3);
 }
 #mc_embed_signup2 {clear:left; width:100%;}
 #mc_embed_signup2 form {text-align:center; padding:10px 0 10px 0;}
@@ -88,6 +89,9 @@ footer {
     &::-ms-input-placeholder { /* Microsoft Edge */
       color: #AFBCD2; 
     }
+    &:active, &:focus {
+        outline: none;
+    }
 }
 #mc_embed_signup2 label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
 #mc_embed_signup2 .clear {display: inline-block;} /* positions button horizontally in line with input */
@@ -106,6 +110,10 @@ footer {
     transition: all 0.23s ease-in-out 0s;
     float: left;
     height: 53px;
+    @media(max-width: 991px) {
+        padding:16px 8px;
+        width: auto !important;
+    }
 }
 #mc_embed_signup2 .button:hover {background-color: $dark-blue; cursor:pointer;}
 #mc_embed_signup2 div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}

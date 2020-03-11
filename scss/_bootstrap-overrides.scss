@@ -29,11 +29,22 @@
 }
 
 .btn {
-    border-radius: 300px;
+    border-radius: 6px;
     @include alt-font;
 }
-
+.navbar-toggler {
+    border: none;
+}
 .btn-xl {
     font-size: 11px;
     padding: 15px 45px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    outline: 0;
+    box-shadow: none;
+    background: rgba(104,187,225,0.1);
 }

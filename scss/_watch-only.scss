@@ -1,6 +1,7 @@
 .watch-only {
 	background: #212121;
 	color: #fff;
+
 }
 .watch-only .single-page {
 	background: rgba(255,255,255,0.4);
@@ -8,8 +9,97 @@
 .watch-only #mainNav .navbar-nav > li > a, .watch-only #mainNav .navbar-nav > li > a:focus {
 	color: #fff;
 }
+.coldcard {
+	margin: 96px 0;
+	.video-container {
+		margin-top: 70px;
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px; height: 0; overflow: hidden;
+		}
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 94.9%;
+	}
+	.downcold {
+		margin: 40px 0 0px 0;
+	    box-shadow: 0px 2px 16px 5px rgba(0,0,0,.5);
+	    background: rgba(255,255,255,0.05);
+	    padding: 30px 32px;
+	    border-radius: 8px;
+	    h3 {
+	        font-size: 28px;
+	        font-weight: bold;
+	    }
+	    p {
+	        margin: 0;
+	    }
+	    @media(max-width: 767px) {
+	    	div {
+	    		text-align: center !important;
+	    	}
+	        p {
+	        margin-bottom: 40px;
+	        }
+	    }
+	    .bitten {
+	    	background: #fff;
+	    	color: #111;
+	    	border-radius: 6px;
+	    	padding: 8px 32px;
+	    	display: inline-block;
+	    	font-weight: 600;
+	    	transition: all 0.5s ease;
+	    	&:hover {
+	    		text-decoration: none;
+	    		background: rgba(255,255,255,0.8);
+	    	}
+	    }
+	}
+}
 .only-features {
+	@media(max-width: 991px) {
+        .app-preview {
+            display: none;
+        }
+    }
 	background: #111111;
+	.feature-item {
+		h4 {
+            font-size: 20px;
+            letter-spacing: 0px;
+            color: white;
+            font-weight: 600;
+        }
+        p {
+            color: white;
+            font-size: 14px;
+        }
+        transition: all 0.5s ease;
+            padding: 16px 16px;
+            background: rgba(255,255,255,.05);
+            border-radius: 6px;
+            box-shadow: 0px 6px 16px 5px rgba(0,0,0,.1);
+            margin-bottom: 24px;
+        @media(min-width: 992px) {
+            width: 95%;
+        }
+        @media(max-width: 991px) {
+           width: 90%;
+           margin: 0 auto 24px auto;
+        }
+        &:hover {
+            transform: scale(0.99);
+        }
+        p {
+            margin: 0px;
+        }
+    }
 }
 .only-features h2, .howtodoit h2, .lndhub h2 {
 	font-size: 50px;
@@ -18,7 +108,7 @@
 .first h2 {
 		font-size: 34px;
 	}
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.only-page h1 {
 		font-size: 32px !important;
 	}
@@ -94,13 +184,13 @@
     text-align: center;
     padding: 60px 0;
     margin-bottom: 88px;
-    @media (min-width: 769px) {
-    background: rgba(255,255,255,0.2);
+    @media (max-width: 991px) {
+        margin-bottom: 0px;
+    }
 }
 @media (min-width: 992px) {
     border-radius: 0 16px 16px 0;
     }
-}
 @media (min-width: 992px) {
     .explain.last {
         border-radius: 16px 0px 0px 16px;
@@ -139,14 +229,23 @@
     }
     @media (max-width: 768px) { 
         margin-top: 36px;
+        font-size: 28px;
     }
 }
 .howtodoit h2 {
     margin-bottom: 120px;
+    @media(max-width: 991px) {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 40px;
+    }
 }
 .watch-only .download {
     background: #111111;
     padding: 280px 0;
+    @media(max-width: 991px) {
+        padding: 96px 0 0 0;
+    }
 }
 .watch-only section.download h2 {
     color: #ffffff;

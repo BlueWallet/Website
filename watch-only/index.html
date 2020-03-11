@@ -63,16 +63,34 @@
   <body id="page-top" class="watch-only">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/">
           <img src="../img/logo-bluewallet-dark.svg" alt="BlueWallet - Bitcoin Wallet">
         </a>
-        <div class="navbar-collapse" id="navbarResponsive">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="single-page nav-item">
-                  <a href="/"><i class="fa fa-arrow-left"></i> home</a>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/">Home</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/features.html">Features</a>
+                  <ul>
+                    <li><a class="sublink" href="/features.html">View all</a></li>
+                    <li><a class="sublink" href="/bitcoin-wallet">Bitcoin Wallets</a></li>
+                    <li><a class="sublink" href="/lightning">Lightning Wallets</a></li>
+                    <li><a class="sublink" href="/watch-only">Watch-only Wallets</a></li>
+                    <li><a class="sublink" href="/lapps">Lapp Marketplace</a></li> 
+                    <li><a class="sublink" href="/watch-app">Watch App</a></li> 
+                  </ul>
               </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://help.bluewallet.io">Help</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -97,40 +115,58 @@
     </section>
     <section class="only-features">
       <div class="container">
-         <div class="section-heading">
-            <h2>Features</h2>
-            <p class="text-muted"></p>
-          </div>
         <div class="col-md-12">
-        <div class="row">
-          <div class="col-lg-5 app-preview text-center">
-            <img src="../img/watchfeatures.png" alt="watch-only wallet bitcoin">
-          </div>
-          <div class="col-lg-7 desc">
-            <div class="row">
-              <div class="feature-item"> 
-                  <h4>xpub <span class="bips">bip44</span></h4>
-                  <p>a <strong>xpub</strong> address derived from <strong>bip44</strong> refers to the non segwit addresses. These addresses begin with a 1</p>
-              </div>
-              <div class="feature-item"> 
-                  <h4>ypub<span class="bips">bip49</span></h4>
-                  <p>a <strong>ypub</strong> address derived from <strong>bip49</strong> refers to the segwit compatible addresses. These addresses begin with a 3</p>
-              </div>
-              <div class="feature-item"> 
-                  <h4>zpub<span class="bips">bip84</span></h4>
-                  <p>a <strong>zpub</strong> address derived from <strong>bip84</strong> refers to the native segwit addresses. These addresses begin with a bc1</p>
-              </div>
-              <div class="feature-item"> 
-                  <h4>Public Address</h4>
-                  <p>You can also monitor any public address that you may have. And see what is happening with this address</p>
-              </div>
-              <div class="feature-item"> 
-                  <h4>Receive</h4>
-                  <p>All watch-only type wallets also allows you to receive and generate QR codes for that purpose</p>
+          <div class="row">
+            <div class="col-lg-5 app-preview text-center">
+              <img src="../img/watchfeatures.png" alt="watch-only wallet bitcoin">
+            </div>
+            <div class="col-lg-7 desc">
+              <div class="row">
+                <div class="section-heading">
+                   <h2>Features</h2>
+                    <br />
+                </div>
+                <div class="feature-item"> 
+                    <h4>xpub/ypub/zpub <span class="bips">bip44/49/84</span></h4>
+                    <p>a <strong>x/y/zpub or master public key</strong> address can be passed to generate receinving addresses</p>
+                </div>
+                <div class="feature-item"> 
+                    <h4>Public Address</h4>
+                    <p>Monitor any public address that you may have</p>
+                </div>
+                <div class="feature-item"> 
+                    <h4>Receive</h4>
+                    <p>Generate adresses and QR codes for receiving</p>
+                </div>
+                <div class="feature-item"> 
+                    <h4>Send <span class="bips">new</span></h4>
+                    <p>Send transactions by signing them offline or with another wallet</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="row">
+            <div class="col-md-12 coldcard">
+              <div class="section-heading">
+                <h2>Coldcard integration</h2>
+                <p>Use your wallets with ease on your mobile app while leaving your keys cold. Ability to create, send and receive transactions.</p>
+              </div>
+              <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/7pBhTRiwQL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="row downcold">
+                <div class="col-md-9">
+                  <div class="text-left">
+                    <h3>Get your Coldcard today</h3>
+                    <p>Recommended last generation hardware wallet</p>
+                  </div>
+                </div>
+                <div class="col-md-3 my-auto text-right">
+                  <a href="https://store.coinkite.com/promo/0000F744324741B35AAB" target="_blank" class="bitten">know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -141,12 +177,11 @@
           <p class="text-muted"></p>
         </div>
       </div>
-        <div class="col-md-12">
+    
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-7 explain">
-            
+            <div class="col-lg-7 explain"><!-- explain -->
               <div class="row">
-
                 <div class="col-md-2 my-auto">
                   <span class="number my-auto">1</span>
                 </div>
@@ -156,35 +191,33 @@
                 <div class="col-md-8 my-auto">
                   <p>Tap on <strong>add wallet</strong> icon</p>
                 </div>
-         
               </div>
-
-
             </div> <!-- explain -->
           </div>
-           <div class="row justify-content-end">
-            <div class="col-lg-8 align-self-end explain last">
-            
-              <div class="row">
-                 <div class="col-md-2 my-auto">
-                  <span class="number my-auto">2</span>
-                </div>
-                 <div class="col-md-2">
-                  <img src="../img/importwallet.png" alt="create a wallet">
-                </div>
-                <div class="col-md-8 my-auto">
-                  <p>Go to the option <strong>import wallet</strong></p>
-                </div>
-               
+        </div>
+        <div class="container-fluid">
+            <div class="col-md-12">
+              <div class="row justify-content-end">
+                <div class="col-lg-8 align-self-end explain last"><!-- explain -->
+                  <div class="row">
+                     <div class="col-md-2 my-auto">
+                      <span class="number my-auto">2</span>
+                    </div>
+                     <div class="col-md-2">
+                      <img src="../img/importwallet.png" alt="create a wallet">
+                    </div>
+                    <div class="col-md-8 my-auto">
+                      <p>Go to the option <strong>import wallet</strong></p>
+                    </div>
+                  </div>
+                </div> <!-- explain -->
               </div>
-
-            </div> <!-- explain -->
-          </div>
-           <div class="row">
-            <div class="col-lg-8 explain">
-            
+            </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 explain"><!-- explain -->
               <div class="row">
-
                 <div class="col-md-2 my-auto">
                   <span class="number my-auto">3</span>
                 </div>
@@ -194,12 +227,8 @@
                 <div class="col-md-8 col-8 my-auto mx-auto">
                   <p>Import with <strong>text or by QR code</strong></p>
                 </div>
-         
               </div>
-
             </div> <!-- explain -->
-
-
           </div>
         </div>
       
@@ -229,20 +258,16 @@
     <div class="fmenu">
           <a href="/donate.html"><span class="foot-menu">Donate</span></a>
           <a href="/features.html"><span class="foot-menu">Features</span></a>
-          <a href="/bitcoin-wallet"><span class="foot-menu">Bitcoin wallet</span></a>
-          <a href="/lightning"><span class="foot-menu">Lightning wallet</span></a>
-          <a href="/watch-only"><span class="foot-menu">Watch-only</span></a>
-          <a href="/lapps"><span class="foot-menu">Lapp marketplace</span></a>
-          <a href="/watch-app"><span class="foot-menu">Watch-app</span></a>
+          <a href="/about"><span class="foot-menu">About</span></a>
         </div>
         <br />
         <span>&copy; BlueWallet Services S.R.L. All Rights Reserved.</span>
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="/privacy.txt">Privacy</a>
+            <a href="/privacy">Privacy</a>
           </li>
           <li class="list-inline-item">
-            <a href="/terms.txt">Terms</a>
+            <a href="/tos">Terms</a>
           </li>
         </ul>
   </div>

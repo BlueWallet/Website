@@ -11,21 +11,21 @@ header.masthead {
     .header-content {
         margin-bottom: 20px;
         text-align: center;
-        h1 {
+        h2 {
             font-weight: 400;
-            font-size: 22px;
+            font-size: 28px;
             margin-bottom: 0px;
         }
-        h2 {
-            font-size: 30px;
+        h1 {
+            font-size: 50px;
             font-weight: 600;
         }
          @media (max-width: 991px) {
-            h1 {
-            font-size: 18px;
-            }
             h2 {
-            font-size: 28px
+            font-size: 15px;
+            }
+            h1 {
+            font-size: 38px
             }
         }
 
@@ -77,7 +77,7 @@ header.masthead {
         .header-content {
             text-align: left;
             h2 {
-                font-size: 50px;
+                font-size: 20px;
             }
         }
         .device-container {

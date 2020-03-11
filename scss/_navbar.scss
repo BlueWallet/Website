@@ -1,8 +1,20 @@
 // Styling for the navbar
+#mainNav.navbar-dark .navbar-nav > li > ul {
+        background-color: #111;
+        box-shadow: 0 1px 6px #000; 
+        li > a {
+            
+            &:hover {
+                    background: rgba(255,255,255,0.05);
+                    border-radius: 6px;
+            }
+        }
+    }
 #mainNav {
     border-color: fade-out($gray-darker, .95);
     background-color: white;
     padding: 48px 0;
+
     .navbar-brand {
         color: $theme-primary;
         @include heading-font;
@@ -11,12 +23,16 @@
             color: darken($theme-primary, 10%);
         }
     }
+
+    
     .navbar-brand { 
         margin: 0 auto;
     }
     .navbar-toggler {
-        display: none;
-        font-size: 12px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 22px;
         padding: 8px 10px;
         color: $gray-darker;
     }
@@ -24,8 +40,10 @@
         > li {
             position: relative;
             margin-left: 16px;
+
             > a {
                 font-size: 19px;
+
                 @include alt-font;
                 &.active {
                     color: $theme-primary !important;
@@ -37,28 +55,30 @@
                 color: $gray-darker;
             }
             > a:hover {
-                color: #0056b3;
+                
             }
-            > ul {
-                display: none;
-                position: absolute;
-                top: 40px;
-                right: 0;
+            > .dropdown-menu {
+                
                 z-index: 999;
                 background: #fff;
-                box-shadow: 0 1px 6px #ccc;
+                box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
                 border-radius: 6px;
                 list-style: none;
                 padding: 0px;
                 margin: 0px;
-                li a {
+                border: none;
+
+                a {
                     padding: 16px 24px;
                     display: block;
                     text-decoration: none;
                     width: 200px;
                     font-weight: 600;
+
                     &:hover {
-                            background: #EFF7FC;
+                        border-radius: 6px;
+                        background: #EFF7FC;
+                        color: $theme-primary !important;
                    
                     }
                 }
@@ -69,6 +89,15 @@
         > ul {
                 display: inline-block;
             }
+    }
+    .nav-link {
+        border-radius: 6px;
+        padding: 6px 16px;
+        transition: all 0.5s ease;
+        &:hover {
+        background: rgba(104,187,225,0.1);
+
+        }
     }
     @media (min-width: 992px) {
         border-color: transparent;

@@ -3,10 +3,14 @@ section.features {
      background: $light-blue;
      padding-bottom: 0px !important;
      button {
+        border-radius: 300px;
         margin-top: 50px;
         margin-bottom: 86px;
         padding: 12px 60px !important;
         transition: all 0.5s ease;
+        &:hover {
+            background: #fff;
+        }
      }
      button.btn-primary {
         background: #CCDDF9;
@@ -144,13 +148,23 @@ section.features {
         color: #fff;
 
         .section-heading h2 {
-            font-size: 50px;
+            
             font-weight: bold;
             font-size: 64px;
+            @media(max-width: 991px) {
+                font-size: 50px;
+                margin-bottom: 40px;
+            }
         }
         button {
+            border-radius: 300px;
             margin-top: 20px !important;
             margin-bottom: 20px !important;
+            border: 1px solid #fff;
+            &:hover {
+                background: #fff;
+                color: #111;
+            }
         }
 
         .lightning-wallet {
@@ -184,6 +198,12 @@ section.features {
         .medium-widget {
             padding: 40px 0;
         }
+        .medium-widget-article__row {
+            @media(max-width: 991px) {
+                display: block;
+            }
+
+        }
         .medium-widget-article__item {
             background: #fff;
             margin-right: 24px;
@@ -197,6 +217,9 @@ section.features {
             &:hover {
                 transform: scale(0.99);
                 box-shadow: 0px 2px 30px 5px rgba(20,44,66,.1);
+            }
+            @media(max-width: 991px) {
+                margin: 24px 0;
             }
             .medium-widget-article__content {
                 padding: 16px 24px;
@@ -277,13 +300,7 @@ section.features {
         }
     }
 }
-.navbar-collapse {
-    @media(max-width: 991px) {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-}
+
 .single-page {
     background: rgba(0,0,0, 0.1);
     border-radius: 30px;
