@@ -40,6 +40,7 @@
     var safello_countries = ["SE"];
     var u = new URLSearchParams(window.location.search);
     var address = u.get('address') || '';
+    var force_country = u.get('force_country') || '';
     var safello_state_token = u.get('safelloStateToken')
     if (safello_state_token == 'TEST') {
     	// for the sake of testing
@@ -48,7 +49,7 @@
     }
 
     $.ajax({
-      url: "https://geoip-db.com/jsonp",
+      url: "https://geolocation-db.com/jsonp",
       jsonpCallback: "callback",
       dataType: "jsonp",
       error: function(){
@@ -56,6 +57,7 @@
       },
       success: function( location ) {
         console.log('country_code', location.country_code);
+        if (force_country) location.country_code = force_country;
         if (location.country_code == 'ZA' || location.country_code == 'ZAF' || location.country_code == 'ZAR') {
           window.location = 'https://ice3x.com?ref=14342738';
         } else if (safello_countries.indexOf(location.country_code) !== -1) {
