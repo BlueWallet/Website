@@ -16,7 +16,7 @@
     <meta name="description" content="Lightning Wallet for your Bitcoin wallet available for iOS and android">
     <meta name="author" content="Bluewallet Services S.R.L.">
 
-    <title>Lightning Wallet - Bluewallet Bitcoin wallet for iOS and Android</title>
+    <title>LndHUB - Bluewallet lightning network wallet for iOS and Android</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../ven/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -63,13 +63,13 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="page-lndhub">
 
    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/">
-          <img src="../img/logo-bluewallet.svg" alt="BlueWallet - Bitcoin and Lightning Wallet">
+          <img src="../img/logo-bluewallet-dark.svg" alt="BlueWallet - Bitcoin and Lightning Wallet">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
@@ -110,47 +110,86 @@
         </div>
       </div>
     </nav>
-
-  <section class="contact" id="contact">
+ 
+    <section class="first">
+    <div class="container">
+        <div class="section-heading">
+            <img src="../img/lndhub-logo.svg">
+            <h1>A Lightning Hub</h1>
+        </div>
+          <div class="col-lg-12 my-auto">
+            <div class="row">
+               <p class="">A free and open source, <strong>multiple account plugin for Lightning</strong> built on top of the <a href="https://github.com/lightningnetwork/lnd" target="_blank">Lightning Network Deamon</a>. It allows that a group of users run different accounts with only one node in a trust-minimized setup. 
+               </p>
+               <p>Ideal for hosted shared services or groups, families and friends that want to share their own node.</p>
+            </div>
+            <div class="row imghero">
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/bluewallet/lndhub" data-size="large" data-show-count="true" aria-label="Star bluewallet/lndhub on GitHub">Star</a>
+            </div>
+            
+        </div>
+    </div> <!-- container -->
+    </section>
+    <section class="works">
       <div class="container">
-        <h2>About</h2>
-        <p>We are <strong>Bitcoin</strong> enthusiasts focused on bringing the revolution to the people. 🔥<br />Reach out, we will appreciate your feedback.</p>
-        
-        <div class="row">
-          <div class="col-lg-4 people">
-            <a href="https://twitter.com/overtorment" target="_blank"><img src="../img/igor.png"></a>
-            <h3><a href="https://twitter.com/overtorment" target="_blank">Igor Korsakov</a></h3>
-            <p>London</p>
-            <p>Engineering</p>
+         <div class="section-heading">
+            <h2>How does it work</h2>
+            <p class="text-muted"></p>
           </div>
-          <div class="col-lg-4 people">
-            <a href="https://twitter.com/nvcoelho" target="_blank"><img src="../img/nuno.png"></a>
-            <h3><a href="https://twitter.com/nvcoelho" target="_blank">Nuno Coelho</a></h3>
-            <p>Barcelona</p>
-            <p>Product & UX</p>
-          </div>
-          <div class="col-lg-4 people">
-            <a href="https://twitter.com/marcosrdz" target="_blank"><img src="../img/marcos.png"></a>
-            <h3><a href="https://twitter.com/marcosrdz" target="_blank">Marcos Rodriguez</a></h3>
-            <p>Atlanta</p>
-            <p>Engineering</p>
+        <div class="col-md-12">
+          <div class="row">
+            <img src="../img/lndhub-graph.png" alt="lightning network">
+            <p>The user sends a transaction to a dedicated top-up address, and this balance is added to his account on LNDhub. Then, the user can use this balance to pay Lightning invoices. But under the hood, it’s actually LNDhub who pays the invoice, deducting user’s account balance. It works the same way when the user wants to receive a Lightning payment - it’s LNDhub who creates the Lightning invoice and actually receives coins on one of it’s channels.
+</p>
           </div>
         </div>
-    
+      </div>
+    </section>
+    <section class="where">
+      <div class="container">
+        <div class="col-md-12">
         <div class="row">
-          <div class="col-lg-12 reach">
-            <h3>Contact us</h3>
-            <div> <a href="mailto:bluewallet@bluewallet.io">bluewallet@bluewallet.io</a></div>
-            <p>
-              <a href="https://t.me/bluewallet" target="_blank"><i class="fa fa-telegram"></i> telegram</a> / <a href="https://github.com/bluewallet/bluewallet" target="_blank"><i class="fa fa-github"></i> github</a> / <a href="https://www.reddit.com/r/bluewallet/" target="_blank"><i class="fa fa-reddit"></i> reddit</a> / <a href="https://twitter.com/bluewalletio" target="_blank"><i class="fa fa-twitter"></i> twitter</a></p>
+          <div class="col-lg-5 app-preview text-center">
+            <img src="../img/lightningbluewallet.png" alt="blue wallet bitcoin">
           </div>
-        </div>
+          <div class="col-lg-7 desc my-auto">
 
-        
+            <div class="row">
+              <div class="section-heading">
+                <h2>Where can I test it?</h2>
+                <p class="text-muted"></p>
+            </div>
+              <div class="feature-item"> 
+                  
+                  <p>Live on <strong>Blue wallet</strong>, a bitcoin wallet for iOS and android. <strong>LNDhub</strong> implementation on Blue wallet takes full advantage of this new payments network. 
+
+                  <p>Enabling Blue wallet users to have unfairly cheap and blazing fast Bitcoin transactions.</p>
+
+                  <div class="badges">
+              <a class="badge-link" href="https://itunes.apple.com/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank"><img src="../img/app-store-badge-white.svg" alt="app store link"></a>
+              <a class="badge-link" href="https://play.google.com/store/apps/details?id=io.bluewallet.bluewallet" target="_blank"><img src="../img/play-store-badge-white.svg" alt="play store link"></a>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row downhub">
+                <div class="col-md-9">
+                  <div class="text-left">
+                    <h3>LndHUB introduction</h3>
+                    <p>Read the article on medium</p>
+                  </div>
+                </div>
+                <div class="col-md-3 my-auto text-right">
+                  <a href="https://medium.com/bluewallet/bluewallet-brings-zero-configuration-lightning-payments-to-ios-and-android-30137a69f071" target="_blank" class="bitten">know more</a>
+                </div>
+              </div>
       </div>
     </section>
 
-<footer>
+    <footer class="lndhub-footer">
       <div class="container">
        
         <div class="fmenu">
@@ -170,7 +209,6 @@
         </ul>
       </div>
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="../ven/jquery/jquery.min.js"></script>
     <script src="../ven/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -180,6 +218,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="../js/new-age.min.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 
 </html>
