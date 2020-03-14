@@ -91,14 +91,41 @@ section h2 {
   }
 }
 
-#mainNav.navbar-dark .navbar-nav > li > ul {
+#mainNav.navbar-dark .navbar-nav
+> li
+a {
+  color: #fff !important;
+}
+
+#mainNav.navbar-dark .dropdown-menu {
+  background: #111 !important;
+}
+
+#mainNav.navbar-dark .nav-link:hover, #mainNav.navbar-dark .nav-link:focus {
+  background: #111 !important;
+}
+
+#mainNav.navbar-dark .sublink:hover {
+  background: rgba(255, 255, 255, 0.02) !important;
+  color: #fff !important;
+}
+
+> ul {
   background-color: #111;
   box-shadow: 0 1px 6px #000;
 }
 
-#mainNav.navbar-dark .navbar-nav > li > ul li > a:hover {
-  background: rgba(255, 255, 255, 0.05);
+> ul li > a {
+  color: #fff !important;
+}
+
+> ul li > a:hover {
+  background: black !important;
   border-radius: 6px;
+}
+
+#mainNav.navbar-dark .navbar-toggler {
+  color: #fff;
 }
 
 #mainNav {
@@ -130,13 +157,28 @@ section h2 {
   color: #222222;
 }
 
+#mainNav .navbar-collapse {
+  margin-top: 32px;
+}
+
+@media (max-width: 776px) {
+  #mainNav .navbar-collapse .dropdown-menu {
+    box-shadow: none !important;
+  }
+  #mainNav .navbar-collapse .sublink {
+    text-align: center;
+    width: 100% !important;
+  }
+}
+
 #mainNav .navbar-nav > li {
   position: relative;
   margin-left: 16px;
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 19px;
+  font-size: 19px !important;
+  color: #0C2550 !important;
   font-family: 'Calibri', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: bold;
   letter-spacing: 0px;
@@ -174,7 +216,7 @@ section h2 {
 #mainNav .navbar-nav > li > .dropdown-menu a:hover {
   border-radius: 6px;
   background: #EFF7FC;
-  color: #0C2550 !important;
+  color: #0C2550;
 }
 
 #mainNav .navbar-nav > li:hover
@@ -186,6 +228,7 @@ section h2 {
   border-radius: 6px;
   padding: 6px 16px;
   transition: all 0.5s ease;
+  text-align: center;
 }
 
 #mainNav .nav-link:hover {
@@ -1848,10 +1891,6 @@ button:focus {
   background: rgba(255, 255, 255, 0.4);
 }
 
-.watch-only #mainNav .navbar-nav > li > a, .watch-only #mainNav .navbar-nav > li > a:focus {
-  color: #fff;
-}
-
 .coldcard {
   margin: 96px 0;
 }
@@ -2069,6 +2108,7 @@ button:focus {
   text-align: center;
   padding: 60px 0;
   margin-bottom: 88px;
+  border-radius: 0px 16px 16px 0px;
 }
 
 @media (max-width: 991px) {
@@ -2078,12 +2118,15 @@ button:focus {
 }
 
 @media (min-width: 992px) {
-  border-radius: 0 16px 16px 0;
+  .explain {
+    border-radius: 0 16px 16px 0;
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
 
 @media (min-width: 992px) {
   .explain.last {
-    border-radius: 16px 0px 0px 16px;
+    border-radius: 16px 0px 0px 16px !important;
   }
 }
 

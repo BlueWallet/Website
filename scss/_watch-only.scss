@@ -6,9 +6,6 @@
 .watch-only .single-page {
 	background: rgba(255,255,255,0.4);
 }
-.watch-only #mainNav .navbar-nav > li > a, .watch-only #mainNav .navbar-nav > li > a:focus {
-	color: #fff;
-}
 .coldcard {
 	margin: 96px 0;
 	.video-container {
@@ -184,18 +181,20 @@
     text-align: center;
     padding: 60px 0;
     margin-bottom: 88px;
+    border-radius: 0px 16px 16px 0px;
     @media (max-width: 991px) {
         margin-bottom: 0px;
     }
+	@media (min-width: 992px) {
+	    border-radius: 0 16px 16px 0;
+	    background: rgba(255,255,255,0.1);
+	}
 }
 @media (min-width: 992px) {
-    border-radius: 0 16px 16px 0;
-    }
-@media (min-width: 992px) {
-    .explain.last {
-        border-radius: 16px 0px 0px 16px;
-    }
-}
+	    .explain.last {
+	        border-radius: 16px 0px 0px 16px !important;
+	    }
+	}
 .explain img {
     max-width: 220px;
     @media (max-width: 991px) {

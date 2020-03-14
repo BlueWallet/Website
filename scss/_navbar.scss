@@ -1,15 +1,39 @@
 // Styling for the navbar
-#mainNav.navbar-dark .navbar-nav > li > ul {
+#mainNav.navbar-dark .navbar-nav 
+> li 
+a {
+    color: #fff !important;
+}
+#mainNav.navbar-dark .dropdown-menu {
+    background: #111 !important;
+}
+#mainNav.navbar-dark .nav-link {
+    &:hover, &:focus {
+        background: #111 !important;
+    }
+}
+#mainNav.navbar-dark .sublink {
+    &:hover {
+        background: rgba(255,255,255,0.02) !important;
+        color: #fff !important;
+    }
+}
+> ul {
         background-color: #111;
         box-shadow: 0 1px 6px #000; 
         li > a {
-            
+            color: #fff !important;
             &:hover {
-                    background: rgba(255,255,255,0.05);
+                    background: rgba(0,0,0,1) !important;
                     border-radius: 6px;
             }
         }
     }
+#mainNav.navbar-dark {
+    .navbar-toggler {
+        color: #fff;
+    }
+}
 #mainNav {
     border-color: fade-out($gray-darker, .95);
     background-color: white;
@@ -36,13 +60,26 @@
         padding: 8px 10px;
         color: $gray-darker;
     }
+    .navbar-collapse {
+        margin-top: 32px;
+        @media (max-width: 776px) {
+            .dropdown-menu {
+                box-shadow: none !important;
+            }
+            .sublink {
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }
     .navbar-nav {
         > li {
             position: relative;
             margin-left: 16px;
 
             > a {
-                font-size: 19px;
+                font-size: 19px !important;
+                color: $theme-primary !important;
 
                 @include alt-font;
                 &.active {
@@ -78,7 +115,7 @@
                     &:hover {
                         border-radius: 6px;
                         background: #EFF7FC;
-                        color: $theme-primary !important;
+                        color: $theme-primary;
                    
                     }
                 }
@@ -94,6 +131,7 @@
         border-radius: 6px;
         padding: 6px 16px;
         transition: all 0.5s ease;
+        text-align: center;
         &:hover {
         background: rgba(104,187,225,0.1);
 
