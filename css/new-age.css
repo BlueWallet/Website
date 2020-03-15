@@ -824,10 +824,12 @@ section.features .fwatchonly a {
 
 .features-page h1 {
   font-weight: 600;
+  margin: 60px 0 40px 0;
 }
 
 .features-page h2 {
   font-weight: 600;
+  margin: 60px 0 40px 0;
 }
 
 .features-page h3 {
@@ -1599,15 +1601,15 @@ header.masthead.lapps .header-content p {
 }
 
 body.watch-app {
-  background: #f9f9f9;
+  background: #fff;
 }
 
 .watch-app #mainNav {
-  background: #f9f9f9;
+  background: #fff;
 }
 
 header.masthead.watch-app {
-  background: #f9f9f9;
+  background: #fff;
 }
 
 header.masthead.watch-app .header-content {
@@ -1725,7 +1727,7 @@ header.masthead.watch-app .header-content p {
 }
 
 .watchfooter {
-  background: #f9f9f9;
+  background: #fff;
 }
 
 .first .section-heading h1 {
