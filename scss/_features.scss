@@ -146,7 +146,8 @@ section.features {
         background: #191919;
         padding: 96px 0 0 0;
         color: #fff;
-
+        position: relative;
+        overflow: hidden;
         .section-heading h2 {
             
             font-weight: bold;
@@ -191,6 +192,7 @@ section.features {
 }
 .blog {
         background: #F7FBFF;
+        z-index: 99999;
         h2 {
             font-weight: 600;
             font-size: 40px;

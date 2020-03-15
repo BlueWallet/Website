@@ -91,6 +91,25 @@ section h2 {
   }
 }
 
+@media (min-width: 992px) {
+  .come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 1.5s;
+  }
+  .already-visible {
+    transform: translateY(0);
+    animation: none;
+  }
+  @keyframes come-in {
+    to {
+      transform: translateY(0);
+    }
+  }
+}
+
 #mainNav.navbar-dark .navbar-nav
 > li
 a {
@@ -621,6 +640,8 @@ section.features .fwatchonly {
   background: #191919;
   padding: 96px 0 0 0;
   color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 section.features .fwatchonly .section-heading h2 {
@@ -672,6 +693,7 @@ section.features .fwatchonly a {
 
 .blog {
   background: #F7FBFF;
+  z-index: 99999;
 }
 
 .blog h2 {
