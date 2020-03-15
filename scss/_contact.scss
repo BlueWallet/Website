@@ -1,9 +1,9 @@
 // Styling for the download section
 section.contact {
-    text-align: center;
-    padding: 96px 0;
-    h2 {
-        font-size: 48px;
+    
+    padding: 36px 0;
+    h2, h1 {
+        font-size: 38px;
         margin-top: 0px;
         margin-bottom: 24px;
         font-weight: 600;
@@ -11,7 +11,7 @@ section.contact {
     }
     p {
         font-size: 16px;
-        margin-bottom: 0px;
+        margin-bottom: 24px;
     }
     .people {
         margin-top: 96px;

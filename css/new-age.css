@@ -929,12 +929,11 @@ section.cta .overlay {
 }
 
 section.contact {
-  text-align: center;
-  padding: 96px 0;
+  padding: 36px 0;
 }
 
-section.contact h2 {
-  font-size: 48px;
+section.contact h2, section.contact h1 {
+  font-size: 38px;
   margin-top: 0px;
   margin-bottom: 24px;
   font-weight: 600;
@@ -943,7 +942,7 @@ section.contact h2 {
 
 section.contact p {
   font-size: 16px;
-  margin-bottom: 0px;
+  margin-bottom: 24px;
 }
 
 section.contact .people {
