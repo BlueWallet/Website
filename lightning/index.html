@@ -65,22 +65,51 @@
 
   <body id="page-top" class="lightning">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+   <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/">
-          <img src="../img/logo-bluewallet-dark.svg" alt="BlueWallet - Bitcoin Wallet">
+          <img src="../img/logo-bluewallet-dark.svg" alt="BlueWallet - Bitcoin and Lightning Wallet">
         </a>
-        <div class="navbar-collapse" id="navbarResponsive">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="single-page nav-item">
-                  <a href="/"><i class="fa fa-arrow-left"></i> home</a>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/">Home</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Features
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="sublink" href="/features">View all</a>
+                    <a class="sublink" href="/bitcoin-wallet">Bitcoin Wallets</a>
+                    <a class="sublink" href="/watch-only">Watch-only Wallets</a>
+                    <a class="sublink" href="/lightning">Lightning Wallets</a>
+                  </div>
+                  
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="sublink" href="/lndhub">LndHUB</a>
+                    <a class="sublink" href="/watch-app">Watch App</a>
+                    <a class="sublink" href="/lapps">Lapp Marketplace</a>
+                  </div>
+    
+              </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://help.bluewallet.io">Help</a>
+            </li>
           </ul>
+        </div>
         </div>
       </div>
     </nav>
-
   <div class="lightning-page">
     <section class="first">
     <div class="container">
@@ -244,9 +273,9 @@
               <div class="col-md-7">
                 <p><strong>LNDhub</strong> is the opensource technology powering Bluewallet’s Lightning wallets. It uses <a href="https://github.com/lightningnetwork/lnd" target="_blank"><strong>LND</strong></a> as its core and provides user accounts and an accounting system to allow a seemless user experience.</p>
 
-                <p>With LNDhub you can run your own Lightning node and bank system. Create Accounts to your family or friends, protecting them with your own node and let them be onboard to the Lightning revolution.</p>
+                <p>With LNDhub you can run your own Lightning node. Create Accounts to your family or friends, protecting them with your own node and let them be onboard to the Lightning Network.</p>
 
-                <p>LNDhub allows you to create an Opensource Bank. Think about that for a second.</p>
+                <p>LNDhub allows you to create your Opensource bank.</p>
               </div>
               <div class="col-md-5 logo">
                 <img src="../img/lndhub.svg">
@@ -282,44 +311,35 @@
   </div> <!-- page div -->
 
 <footer class="lightning">
-  <div class="container">
-    <div class="fmenu">
+      <div class="container">
+       
+        <div class="fmenu">
           <a href="/donate.html"><span class="foot-menu">Donate</span></a>
-          <a href="/features.html"><span class="foot-menu">Features</span></a>
-          <a href="/bitcoin-wallet"><span class="foot-menu">Bitcoin wallet</span></a>
-          <a href="/lightning"><span class="foot-menu">Lightning wallet</span></a>
-          <a href="/watch-only"><span class="foot-menu">Watch-only</span></a>
-          <a href="/lapps"><span class="foot-menu">Lapp marketplace</span></a>
-          <a href="/watch-app"><span class="foot-menu">Watch-app</span></a>
+          <a href="/features"><span class="foot-menu">Features</span></a>
+          <a href="/about"><span class="foot-menu">About</span></a>
         </div>
         <br />
         <span>&copy; BlueWallet Services S.R.L. All Rights Reserved.</span>
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="/privacy.txt">Privacy</a>
+            <a href="/privacy">Privacy</a>
           </li>
           <li class="list-inline-item">
-            <a href="/terms.txt">Terms</a>
+            <a href="/tos">Terms</a>
           </li>
         </ul>
-  </div>
-</footer>
-
+      </div>
+    </footer>
     <!-- Bootstrap core JavaScript -->
-    <script src="ven/jquery/jquery.min.js"></script>
-    <script src="ven/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../ven/jquery/jquery.min.js"></script>
+    <script src="../ven/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="ven/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../ven/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
-    <script>
-      window.intercomSettings = {
-        app_id: "fvsg6e4i"
-      };
-    </script>
-    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fvsg6e4i';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <script src="../js/new-age.min.js"></script>
+    
   </body>
 
 </html>

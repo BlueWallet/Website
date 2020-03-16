@@ -13,10 +13,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Watch-only wallets for cold storage and paper wallets. Bitcoin wallet available for iOS and android">
+    <meta name="description" content="Lightning Wallet for your Bitcoin wallet available for iOS and android">
     <meta name="author" content="Bluewallet Services S.R.L.">
 
-    <title>Watch-only Wallet - Bitcoin wallet for iOS and Android</title>
+    <title>LndHUB - Bluewallet lightning network wallet for iOS and Android</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../ven/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +27,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../device-mockups/device-mockups.min.css">
 
     <!-- Custom styles for this template -->
     <link href="../css/new-age.css" rel="stylesheet">
@@ -43,26 +46,26 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- og:tags -->
-    <meta property="og:image" content="https://bluewallet.io/img/watch-only-hero.png" />
-    <meta name="twitter:image" content="https://bluewallet.io/img/watch-only-hero.png" />
+    <meta property="og:image" content="https://bluewallet.io/img/lightning-wallet2.png" />
+    <meta name="twitter:image" content="https://bluewallet.io/img/lightning-wallet2.png" />
 
     <meta property="og:site_name" content="BlueWallet - Bitcoin wallet" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="A Bitcoin wallet for iOS. Easy to use and secure" />
-    <meta property="og:url" content="https://bluewallet.io/watch-only" />
-    <meta property="og:title" content="Watch-only Wallet - Bitcoin wallet for iOS and Android" />
+    <meta property="og:url" content="https://bluewallet.io/lightning" />
+    <meta property="og:title" content="BlueWallet - Bitcoin wallet" />
     <meta property="fb:app_id" content="254973701957449" />
     <meta property="fb:pages" content="499685187154976" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Watch-only Wallet - Bitcoin wallet for iOS and Android" />
+    <meta name="twitter:title" content="BlueWallet - Bitcoin wallet" />
     <meta name="twitter:description" content="A Bitcoin wallet for iOS. Easy to use and secure" />
-    <meta name="twitter:url" content="https://bluewallet.io/watch-only" />
+    <meta name="twitter:url" content="https://bluewallet.io/lightning" />
 
   </head>
 
-  <body id="page-top" class="watch-only">
+  <body id="page-top" class="page-lndhub">
 
-    <!-- Navigation -->
+   <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/">
@@ -76,7 +79,7 @@
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="/">Home</a>
               </li>
-             <li class="nav-item">
+              <li class="nav-item">
                   <a class="nav-link btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Features
                   </a>
@@ -107,166 +110,86 @@
         </div>
       </div>
     </nav>
-
-
-  <div class="only-page">
+ 
     <section class="first">
     <div class="container">
-        <div class="section-heading text-center">
-            <h1>Watch only</h1>
+        <div class="section-heading">
+            <img src="../img/lndhub-logo.svg">
+            <h1>A Lightning Hub</h1>
         </div>
           <div class="col-lg-12 my-auto">
             <div class="row">
-               <p class="lcontent text-center">Watch only wallets allows you to keep an eye on your cold storage or paper wallet without touching your private key. Easily import your public address, xpub or ypub and watch it from your app without ever touching it.</p>
+               <p class="">A free and open source, <strong>multiple account plugin for Lightning</strong> built on top of the <a href="https://github.com/lightningnetwork/lnd" target="_blank">Lightning Network Deamon</a>. It allows that a group of users run different accounts with only one node in a trust-minimized setup. 
+               </p>
+               <p>Ideal for hosted shared services or groups, families and friends that want to share their own node.</p>
             </div>
             <div class="row imghero">
-               <img src="../img/watch-only-hero.png">
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/bluewallet/lndhub" data-size="large" data-show-count="true" aria-label="Star bluewallet/lndhub on GitHub">Star</a>
             </div>
             
         </div>
     </div> <!-- container -->
     </section>
-    <section class="only-features">
+    <section class="works">
       <div class="container">
+         <div class="section-heading">
+            <h2>How does it work</h2>
+            <p class="text-muted"></p>
+          </div>
         <div class="col-md-12">
           <div class="row">
-            <div class="col-lg-5 app-preview text-center">
-              <img src="../img/watchfeatures.png" alt="watch-only wallet bitcoin">
-            </div>
-            <div class="col-lg-7 desc">
-              <div class="row">
-                <div class="section-heading">
-                   <h2>Features</h2>
-                    <br />
-                </div>
-                <div class="feature-item"> 
-                    <h4>xpub/ypub/zpub <span class="bips">bip44/49/84</span></h4>
-                    <p>a <strong>x/y/zpub or master public key</strong> address can be passed to generate receiving addresses</p>
-                </div>
-                <div class="feature-item"> 
-                    <h4>Public Address</h4>
-                    <p>Monitor any public address that you may have</p>
-                </div>
-                <div class="feature-item"> 
-                    <h4>Receive</h4>
-                    <p>Generate adresses and QR codes for receiving</p>
-                </div>
-                <div class="feature-item"> 
-                    <h4>Send <span class="bips">new</span></h4>
-                    <p>Send transactions by signing them offline or with another wallet</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 coldcard">
-              <div class="section-heading">
-                <h2>Coldcard integration</h2>
-                <p>Use your wallets with ease on your mobile app while leaving your keys cold. Ability to create, send and receive transactions.</p>
-              </div>
-              <div class="video-container">
-                <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/7pBhTRiwQL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="row downcold">
-                <div class="col-md-9">
-                  <div class="text-left">
-                    <h3>Get your Coldcard today</h3>
-                    <p>Recommended last generation hardware wallet</p>
-                  </div>
-                </div>
-                <div class="col-md-3 my-auto text-right">
-                  <a href="https://store.coinkite.com/promo/0000F744324741B35AAB" target="_blank" class="bitten">know more</a>
-                </div>
-              </div>
-            </div>
+            <img src="../img/lndhub-graph.png" alt="lightning network">
+            <p>The user sends a transaction to a dedicated top-up address, and this balance is added to his account on LNDhub. Then, the user can use this balance to pay Lightning invoices. But under the hood, it’s actually LNDhub who pays the invoice, deducting user’s account balance. It works the same way when the user wants to receive a Lightning payment - it’s LNDhub who creates the Lightning invoice and actually receives coins on one of it’s channels.
+</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="howtodoit">
+    <section class="where">
       <div class="container">
-        <div class="section-heading">
-          <h2>How does it work?</h2>
-          <p class="text-muted"></p>
-        </div>
-      </div>
-    
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-7 explain"><!-- explain -->
-              <div class="row">
-                <div class="col-md-2 my-auto">
-                  <span class="number my-auto">1</span>
-                </div>
-                <div class="col-md-2">
-                  <img src="../img/addwallet.png" alt="create a wallet">
-                </div>
-                <div class="col-md-8 my-auto">
-                  <p>Tap on <strong>add wallet</strong> icon</p>
-                </div>
-              </div>
-            </div> <!-- explain -->
-          </div>
-        </div>
-        <div class="container-fluid">
-            <div class="col-md-12">
-              <div class="row justify-content-end">
-                <div class="col-lg-8 align-self-end explain last"><!-- explain -->
-                  <div class="row">
-                     <div class="col-md-2 my-auto">
-                      <span class="number my-auto">2</span>
-                    </div>
-                     <div class="col-md-2">
-                      <img src="../img/importwallet.png" alt="create a wallet">
-                    </div>
-                    <div class="col-md-8 my-auto">
-                      <p>Go to the option <strong>import wallet</strong></p>
-                    </div>
-                  </div>
-                </div> <!-- explain -->
-              </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-8 explain"><!-- explain -->
-              <div class="row">
-                <div class="col-md-2 my-auto">
-                  <span class="number my-auto">3</span>
-                </div>
-                <div class="col-md-2">
-                  <img src="../img/importok.png" alt="create a wallet">
-                </div>
-                <div class="col-md-8 col-8 my-auto mx-auto">
-                  <p>Import with <strong>text or by QR code</strong></p>
-                </div>
-              </div>
-            </div> <!-- explain -->
-          </div>
-        </div>
-      
-    </section>
-
-   <section class="download text-center" id="download">
-      <div class="container">
+        <div class="col-md-12">
         <div class="row">
-          <div class="col-md-12 mx-auto">
-            <h2 class="section-heading">Crafted for <strong>iOS</strong> and <strong>android</strong><br />by <strong>Bitcoin users</strong></h2>
-            <!-- <p>Our app is available on any mobile device! Download now to get started!</p> -->
-            <div class="badges">
+          <div class="col-lg-5 app-preview text-center">
+            <img src="../img/lightningbluewallet.png" alt="blue wallet bitcoin">
+          </div>
+          <div class="col-lg-7 desc my-auto">
+
+            <div class="row">
+              <div class="section-heading">
+                <h2>Where can I test it?</h2>
+                <p class="text-muted"></p>
+            </div>
+              <div class="feature-item"> 
+                  
+                  <p>Live on <strong>Blue wallet</strong>, a bitcoin wallet for iOS and android. <strong>LNDhub</strong> implementation on Blue wallet takes full advantage of this new payments network. 
+
+                  <p>Enabling Blue wallet users to have unfairly cheap and blazing fast Bitcoin transactions.</p>
+
+                  <div class="badges">
               <a class="badge-link" href="https://itunes.apple.com/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank"><img src="../img/app-store-badge-white.svg" alt="app store link"></a>
               <a class="badge-link" href="https://play.google.com/store/apps/details?id=io.bluewallet.bluewallet" target="_blank"><img src="../img/play-store-badge-white.svg" alt="play store link"></a>
             </div>
+              </div>
+            </div>
           </div>
         </div>
+        </div>
+        <div class="row downhub">
+                <div class="col-md-9">
+                  <div class="text-left">
+                    <h3>LndHUB introduction</h3>
+                    <p>Read the article on medium</p>
+                  </div>
+                </div>
+                <div class="col-md-3 my-auto text-right">
+                  <a href="https://medium.com/bluewallet/bluewallet-brings-zero-configuration-lightning-payments-to-ios-and-android-30137a69f071" target="_blank" class="bitten">know more</a>
+                </div>
+              </div>
       </div>
     </section>
 
-
-
-  </div> <!-- page div -->
-
-<footer>
+    <footer class="lndhub-footer">
       <div class="container">
        
         <div class="fmenu">
@@ -286,7 +209,6 @@
         </ul>
       </div>
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="../ven/jquery/jquery.min.js"></script>
     <script src="../ven/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -296,7 +218,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="../js/new-age.min.js"></script>
-   
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 
 </html>

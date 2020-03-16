@@ -67,17 +67,48 @@
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/">
-          <img src="../img/logo-bluewallet.svg" alt="BlueWallet - Bitcoin Wallet">
+          <img src="../img/logo-bluewallet.svg" alt="BlueWallet - Bitcoin and Lightning Wallet">
         </a>
-        <div class="navbar-collapse" id="navbarResponsive">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-              <li class="single-page nav-item">
-                  <a href="/"><i class="fa fa-arrow-left"></i> home</a>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/">Home</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Features
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="sublink" href="/features">View all</a>
+                    <a class="sublink" href="/bitcoin-wallet">Bitcoin Wallets</a>
+                    <a class="sublink" href="/watch-only">Watch-only Wallets</a>
+                    <a class="sublink" href="/lightning">Lightning Wallets</a>
+                  </div>
+                  
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="sublink" href="/lndhub">LndHUB</a>
+                    <a class="sublink" href="/watch-app">Watch App</a>
+                    <a class="sublink" href="/lapps">Lapp Marketplace</a>
+                  </div>
+    
+              </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://help.bluewallet.io">Help</a>
+            </li>
           </ul>
+        </div>
         </div>
       </div>
     </nav>
+
 
     <header class="masthead watch-app">
       <div class="container wat h-100">
@@ -168,38 +199,35 @@
    
 
     <footer class="watchfooter">
-       <div class="container">
-         <div class="fmenu">
+      <div class="container">
+       
+        <div class="fmenu">
           <a href="/donate.html"><span class="foot-menu">Donate</span></a>
-          <a href="/features.html"><span class="foot-menu">Features</span></a>
-          <a href="/bitcoin-wallet"><span class="foot-menu">Bitcoin wallet</span></a>
-          <a href="/lightning"><span class="foot-menu">Lightning wallet</span></a>
-          <a href="/watch-only"><span class="foot-menu">Watch-only</span></a>
-          <a href="/lapps"><span class="foot-menu">Lapp marketplace</span></a>
-          <a href="/watch-app"><span class="foot-menu">Watch-app</span></a>
+          <a href="/features"><span class="foot-menu">Features</span></a>
+          <a href="/about"><span class="foot-menu">About</span></a>
         </div>
         <br />
         <span>&copy; BlueWallet Services S.R.L. All Rights Reserved.</span>
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="/privacy.txt">Privacy</a>
+            <a href="/privacy">Privacy</a>
           </li>
           <li class="list-inline-item">
-            <a href="/terms.txt">Terms</a>
+            <a href="/tos">Terms</a>
           </li>
         </ul>
       </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="ven/jquery/jquery.min.js"></script>
-    <script src="ven/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../ven/jquery/jquery.min.js"></script>
+    <script src="../ven/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="ven/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../ven/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
+    <script src="../js/new-age.min.js"></script>
 
   </body>
 

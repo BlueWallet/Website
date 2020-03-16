@@ -42,6 +42,8 @@ p {
 .apk {
     @media (max-width: 991px) {
     text-align: center;
+    font-size: 15px;
+
      }
     a {
         padding: 8px 24px;
@@ -52,6 +54,7 @@ p {
         @media (max-width: 991px) {
             text-align: center;
             margin: 0 auto;
+            background: #fff;
         }
     }
 }
@@ -61,13 +64,16 @@ section {
         font-size: 48px;
     }
 }
+.privacy {
+    padding: 40px 0;
+    h2 {
+        font-weight: bold;
+        font-size: 28px;
+        padding-bottom: 24px;
+    }
+}
 @media (max-width: 992px) {
-  .navbar-collapse {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: auto !important;
-  }
+
   .single-page a {
       padding: 32px 18px;
       line-height: 38px !important;
@@ -76,4 +82,21 @@ section {
     font-size: 15px !important;
   }
 
+}
+@media (min-width: 992px) {
+  .come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 1.5s;
+  }
+  .already-visible {
+    transform: translateY(0);
+    animation: none;
+  }
+
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
 }

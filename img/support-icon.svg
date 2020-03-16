@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>support-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="bluewallet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bluewallet-site" transform="translate(-547.000000, -4678.000000)">
+            <g id="about" transform="translate(0.000000, 3906.000000)">
+                <g id="Group-13-Copy" transform="translate(541.000000, 765.000000)">
+                    <g id="support-icon">
+                        <polygon id="Path" points="0 0 76 0 76 76 0 76"></polygon>
+                        <path d="M37.5,7 C20.112,7 6,21.112 6,38.5 C6,55.888 20.112,70 37.5,70 C54.888,70 69,55.888 69,38.5 C69,21.112 54.888,7 37.5,7 Z M37.5,63.7 C23.6085,63.7 12.3,52.3915 12.3,38.5 C12.3,37.5865 12.363,36.673 12.4575,35.791 C19.8915,32.4835 25.782,26.404 28.869,18.8755 C34.5705,26.9395 43.9575,32.2 54.573,32.2 C57.03,32.2 59.3925,31.9165 61.6605,31.381 C62.322,33.6175 62.7,36.0115 62.7,38.5 C62.7,52.3915 51.3915,63.7 37.5,63.7 Z" id="Shape" fill="#0070FF" fill-rule="nonzero"></path>
+                        <path d="M28.05,37.7125 C25.8765,37.7125 24.1125,39.4765 24.1125,41.65 C24.1125,43.8235 25.8765,45.5875 28.05,45.5875 C30.2235,45.5875 31.9875,43.8235 31.9875,41.65 C31.9875,39.4765 30.2235,37.7125 28.05,37.7125 Z" id="Path" fill="#153F88" fill-rule="nonzero"></path>
+                        <path d="M46.95,37.7125 C44.7765,37.7125 43.0125,39.4765 43.0125,41.65 C43.0125,43.8235 44.7765,45.5875 46.95,45.5875 C49.1235,45.5875 50.8875,43.8235 50.8875,41.65 C50.8875,39.4765 49.1235,37.7125 46.95,37.7125 Z" id="Path" fill="#153F88" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
