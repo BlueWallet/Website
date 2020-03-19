@@ -2250,7 +2250,7 @@ button:focus {
 }
 
 .page-lndhub .first {
-  padding: 86px 0 180px 0;
+  padding: 86px 0 180px 0 !important;
   height: 80vh;
 }
 
@@ -2299,6 +2299,7 @@ img {
 
 .works img {
   max-width: 100%;
+  height: auto;
 }
 
 .where h2 {
