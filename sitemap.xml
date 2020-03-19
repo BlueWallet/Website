@@ -32,16 +32,26 @@
 <url>
   <loc>https://bluewallet.io/lapps</loc>
   <lastmod>2020-03-16T17:34:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://bluewallet.io/watch-app</loc>
   <lastmod>2020-03-16T17:34:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://bluewallet.io/lndhub</loc>
+  <lastmod>2020-03-16T17:34:18+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://bluewallet.io/about</loc>
+  <lastmod>2020-03-16T17:34:18+00:00</lastmod>
+  <priority>0.50</priority>
 </url>
 <url>
   <loc>https://bluewallet.io/donate.html</loc>
   <lastmod>2019-03-13T17:34:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.40</priority>
 </url>
 </urlset>
