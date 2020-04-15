@@ -38,6 +38,7 @@
   <div class="lds-dual-ring"></div>
   <script>
     var safello_countries = ["SE"];
+    var xanpool_countries = ["SG", "HK", "TH", "PH", "IN", "ID", "VN", "MY"];
     var u = new URLSearchParams(window.location.search);
     var address = u.get('address') || '';
     var force_country = u.get('force_country') || '';
@@ -68,6 +69,10 @@
           }
           
           window.location = safello_url
+        } else if (xanpool_countries.indexOf(location.country_code) !== -1) {
+          var xanpool_url = "https://widget.xanpool.com/?apiKey=7e3o3bzh5f2opybhhkqgo63yfbqykmll&cryptoCurrency=btc&transactionType=buy&isWebView=true";
+          if (address) xanpool_url += "&wallet=" + address;
+          window.location = xanpool_url;
         } else {
           var moonpay_url = 'https://moonpay-redirect.herokuapp.com/?apiKey=pk_live_IkhSI2lIXSiolwakfd95QFD4p3908cZa&enabledPaymentMethods=credit_debit_card%2Csepa_bank_transfer%2Cgbp_bank_transfer&currencyCode=BTC&colorCode=%2368BBE1&showWalletAddressForm=true';
           if (address) moonpay_url += '&walletAddress=' + address;
