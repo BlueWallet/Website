@@ -73,8 +73,10 @@
           var xanpool_url = "https://widget.xanpool.com/?apiKey=7e3o3bzh5f2opybhhkqgo63yfbqykmll&cryptoCurrency=btc&transactionType=buy&isWebView=true";
           if (address) xanpool_url += "&wallet=" + address;
           window.location = xanpool_url;
-        }  else {
-          window.location = 'https://changenow.io?link_id=7ccc7c1c261e17';
+        } else {
+          var moonpay_url = 'https://moonpay-redirect.herokuapp.com/?apiKey=pk_live_IkhSI2lIXSiolwakfd95QFD4p3908cZa&enabledPaymentMethods=credit_debit_card%2Csepa_bank_transfer%2Cgbp_bank_transfer&currencyCode=BTC&colorCode=%2368BBE1&showWalletAddressForm=true';
+          if (address) moonpay_url += '&walletAddress=' + address;
+          window.location = moonpay_url;
         }
       }
     });
