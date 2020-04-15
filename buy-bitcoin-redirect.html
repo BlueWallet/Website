@@ -70,7 +70,7 @@
           
           window.location = safello_url
         } else if (xanpool_countries.indexOf(location.country_code) !== -1) {
-          var xanpool_url = "https://checkout.xanpool.com/?apiKey=7e3o3bzh5f2opybhhkqgo63yfbqykmll&cryptoCurrency=btc&transactionType=buy";
+          var xanpool_url = "https://widget.xanpool.com/?apiKey=7e3o3bzh5f2opybhhkqgo63yfbqykmll&cryptoCurrency=btc&transactionType=buy&isWebView=true";
           if (address) xanpool_url += "&wallet=" + address;
           window.location = xanpool_url;
         }  else {
