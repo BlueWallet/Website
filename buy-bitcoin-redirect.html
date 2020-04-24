@@ -39,8 +39,11 @@
   <script>
     var safello_countries = ["SE"];
     var xanpool_countries = ["SG", "HK", "TH", "PH", "IN", "ID", "VN", "MY"];
+    var moonpay_currencies = ["EUR", "GBP", "USD"];
+    var xanpool_currencies = ["SGD", "HKD", "THB", "PHP", "INR", "IDR", "VND", "MYR", "SGD", "HKD", "PHP", "INR", "VND", "THB"];
     var u = new URLSearchParams(window.location.search);
     var address = u.get('address') || '';
+    var currency = u.get('currency') || '';
     var force_country = u.get('force_country') || '';
     var safello_state_token = u.get('safelloStateToken')
     if (safello_state_token == 'TEST') {
@@ -72,10 +75,12 @@
         } else if (xanpool_countries.indexOf(location.country_code) !== -1) {
           var xanpool_url = "https://widget.xanpool.com/?apiKey=7e3o3bzh5f2opybhhkqgo63yfbqykmll&cryptoCurrency=btc&transactionType=buy&isWebView=true";
           if (address) xanpool_url += "&wallet=" + address;
+          if (xanpool_currencies.indexOf(currency) !== -1) xanpool_url += "&currency=" + currency;
           window.location = xanpool_url;
         } else {
           var moonpay_url = 'https://moonpay-redirect.herokuapp.com/?apiKey=pk_live_IkhSI2lIXSiolwakfd95QFD4p3908cZa&enabledPaymentMethods=credit_debit_card%2Csepa_bank_transfer%2Cgbp_bank_transfer&currencyCode=BTC&colorCode=%2368BBE1&showWalletAddressForm=true';
           if (address) moonpay_url += '&walletAddress=' + address;
+          if (moonpay_currencies.indexOf(currency) !== -1) moonpay_url += '&baseCurrencyCode=' + currency;
           window.location = moonpay_url;
         }
       }
