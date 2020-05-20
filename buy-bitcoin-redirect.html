@@ -41,6 +41,8 @@
     var xanpool_countries = ["SG", "HK", "TH", "PH", "IN", "ID", "VN", "MY"];
     var moonpay_currencies = ["EUR", "GBP", "USD"];
     var xanpool_currencies = ["SGD", "HKD", "THB", "PHP", "INR", "IDR", "VND", "MYR", "SGD", "HKD", "PHP", "INR", "VND", "THB"];
+    var mercuryo_countries = ["RU", "UA", "BY"];
+    var mercuryo_currencies = ["EUR", "RUB", "USD", "IDR", "KRW", "JPY", "TRY", "GBP", "UAH", "ARS"];
     var u = new URLSearchParams(window.location.search);
     var address = u.get('address') || '';
     var currency = u.get('currency') || '';
@@ -77,6 +79,11 @@
           if (address) xanpool_url += "&wallet=" + address;
           if (xanpool_currencies.indexOf(currency) !== -1) xanpool_url += "&currency=" + currency;
           window.location = xanpool_url;
+        } else if (mercuryo_countries.indexOf(location.country_code) !== -1) {
+          var mercuryo_url = "https://exchange.mercuryo.io/?widget_id=4d94cb57-60a4-4804-82a8-257aa94bcb73&utm_source=BlueWallet&utm_medium=referral&type=buy&currency=BTC&fix_currency=true";
+          if (address) mercuryo_url += "&address=" + address;
+          if (mercuryo_currencies.indexOf(currency) !== -1) mercuryo_url += "&fiat_currency=" + currency;
+          window.location = mercuryo_url;
         } else {
           var moonpay_url = 'https://moonpay-redirect.herokuapp.com/?apiKey=pk_live_IkhSI2lIXSiolwakfd95QFD4p3908cZa&enabledPaymentMethods=credit_debit_card%2Csepa_bank_transfer%2Cgbp_bank_transfer&currencyCode=BTC&colorCode=%2368BBE1&showWalletAddressForm=true';
           if (address) moonpay_url += '&walletAddress=' + address;
