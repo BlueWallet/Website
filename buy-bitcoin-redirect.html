@@ -4,7 +4,7 @@
   <title></title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <noscript>
-    <meta http-equiv="Refresh" content="0;URL=https://old.changelly.com/?ref_id=rtagfcvnwiwvhm99"/>
+    <meta http-equiv="Refresh" content="0;URL=https://exchange.mercuryo.io/?widget_id=4d94cb57-60a4-4804-82a8-257aa94bcb73&utm_source=BlueWallet&utm_medium=referral&type=buy&currency=BTC&fix_currency=true"/>
   </noscript>
   <style>
     .lds-dual-ring {
@@ -38,10 +38,10 @@
   <div class="lds-dual-ring"></div>
   <script>
     var safello_countries = ["SE"];
-    var xanpool_countries = ["SG", "HK", "TH", "PH", "IN", "ID", "VN", "MY"];
+    var xanpool_countries = ["TH", "PH", "IN", "ID", "VN", "MY"]; // + "SG", "HK",
     var moonpay_currencies = ["EUR", "GBP", "USD"];
     var xanpool_currencies = ["SGD", "HKD", "THB", "PHP", "INR", "IDR", "VND", "MYR", "SGD", "HKD", "PHP", "INR", "VND", "THB"];
-    var mercuryo_countries = ["RU", "UA", "BY"];
+    var mercuryo_countries = ["RU", "UA", "BY", "AM", "AZ", "BY", "GEN", "KZ", "KE", "LA", "MD", "MC", "ME", "SM", "RS", "TJ", "UZ", "SG", "HK", "KR"];
     var mercuryo_currencies = ["EUR", "RUB", "USD", "IDR", "KRW", "JPY", "TRY", "GBP", "UAH", "ARS"];
     var u = new URLSearchParams(window.location.search);
     var address = u.get('address') || '';
@@ -58,8 +58,8 @@
       url: "https://geolocation-db.com/jsonp",
       jsonpCallback: "callback",
       dataType: "jsonp",
-      error: function(){
-        window.location = 'https://changenow.io?link_id=7ccc7c1c261e17';
+      error: function() {
+        window.location = 'https://exchange.mercuryo.io/?widget_id=4d94cb57-60a4-4804-82a8-257aa94bcb73&utm_source=BlueWallet&utm_medium=referral&type=buy&currency=BTC&fix_currency=true';
       },
       success: function( location ) {
         console.log('country_code', location.country_code);
