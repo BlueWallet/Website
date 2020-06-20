@@ -1,0 +1,135 @@
+.local-top .section-heading {
+	h1 {
+		font-size: 72px;
+		font-weight: bold;
+	}
+	@media (max-width: 992px) {
+		h1 {
+			font-size: 42px !important;
+		}	
+	}
+}
+.local-top {
+	padding: 0;
+	p {
+		font-size: 22px;
+		@media (max-width: 991px) {
+			font-size: 16px;
+		}
+	}
+	.imghero img {
+		max-width: 440px;
+	}
+	.badges {
+		margin: 32px 0;
+		@media (min-width: 992px) {
+			.badge-link {
+				margin: 0 8px;
+			}
+		}
+		@media (max-width: 991px) {
+			.badge-link {
+				margin: 8px 0;
+				display: inline-block;
+			}
+		}
+	}
+}
+.local-features {
+	padding: 0;
+	h2 {
+		color: #0070FF;
+		font-size: 48px;
+		font-weight: 600;
+		margin: 120px 0 0 0;
+		padding: 90px 0;
+		@media (max-width: 991px) {
+			margin: 0;
+		}
+	}
+	.tell {
+		
+			div {
+			border-radius: 8px;
+			box-shadow: 0px 3px 18px 3px rgba(36, 92, 141, 0.08);
+			padding: 48px 24px;
+			
+			@media (min-width: 992px) {
+				margin: 0 0 180px 0;
+				max-width: 31%;
+				margin: 0 12px;
+				&:last-child {
+				margin-right: 0;
+				}
+				&:first-child {
+				margin-left: 0;
+				}
+			}
+			@media (max-width: 991px) {
+				margin: 0 0 24px 0;
+			}
+		}
+	}
+	h4 {
+		color: #0070FF;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	p {
+		color: #919EB3;
+		font-size: 15px;
+		margin: 0;
+	}
+	.localexplain {
+		div {
+			@media (max-width: 991px) {
+				display: flex;
+				flex-direction: column;
+				margin: 24px 0;
+			}
+		}
+		.order1 {
+			@media (max-width: 991px) {
+				order: 1;
+			}
+		}
+		.order2 {
+			@media (max-width: 991px) {
+				order: 2;
+			}
+		}
+		p {
+			display: block;
+			margin: 32px 0;
+			
+		}
+		span {
+			color: #062453;
+			font-weight: bold;
+			display: inline-block;
+		}
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	.hodlhodl {
+		border-radius: 18px;
+		margin: 200px 0 100px 0;
+		padding: 80px 40px;
+		background: rgb(13,137,252);
+		background: linear-gradient(90deg, rgba(13,137,252,1) 0%, rgba(62,181,239,1) 100%);
+		@media (max-width: 991px) {
+			margin: 100px 0 0px 0;
+		}
+		p {
+			color: #fff;
+			font-weight: 540;
+			font-size: 20px;
+			margin: 0;
+			@media (max-width: 991px) {
+				text-align: center;
+				margin-top: 32px;
+			}
+		}
+	}
+}
