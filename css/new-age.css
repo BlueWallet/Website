@@ -2389,3 +2389,105 @@ img {
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+
+.local-top .section-heading h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .local-top .section-heading h1 {
+    font-size: 32px !important;
+  }
+}
+
+.local-top {
+  padding: 0;
+}
+
+.local-top p {
+  font-size: 22px;
+}
+
+.local-top .imghero img {
+  max-width: 440px;
+}
+
+.local-top .badges {
+  margin: 32px 0;
+}
+
+@media (min-width: 991px) {
+  .local-top .badges .badge-link {
+    margin: 0 8px;
+  }
+}
+
+.local-features {
+  padding: 0;
+}
+
+.local-features h2 {
+  color: #0070FF;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 120px 0 0 0;
+  padding: 90px 0;
+}
+
+.local-features .tell {
+  margin: 0 0 180px 0;
+}
+
+.local-features .tell div {
+  border-radius: 8px;
+  box-shadow: 0px 6px 18px 3px rgba(36, 92, 141, 0.08);
+  margin: 0 12px;
+  max-width: 31%;
+  padding: 48px 24px;
+}
+
+.local-features .tell div:last-child {
+  margin-right: 0;
+}
+
+.local-features .tell div:first-child {
+  margin-left: 0;
+}
+
+.local-features h4 {
+  color: #0070FF;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.local-features p {
+  color: #919EB3;
+  font-size: 15px;
+  margin: 0;
+}
+
+.local-features .localexplain p {
+  display: block;
+  margin: 32px;
+}
+
+.local-features .localexplain span {
+  color: #062453;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.local-features .hodlhodl {
+  border-radius: 18px;
+  margin: 160px 0;
+  padding: 80px 40px;
+  background: #0d89fc;
+  background: linear-gradient(90deg, #0d89fc 0%, #3eb5ef 100%);
+}
+
+.local-features .hodlhodl p {
+  color: #fff;
+  font-weight: 540;
+  font-size: 20px;
+}

@@ -1,0 +1,87 @@
+.local-top .section-heading {
+	h1 {
+		font-size: 72px;
+		font-weight: bold;
+	}
+	@media (max-width: 992px) {
+		h1 {
+			font-size: 32px !important;
+		}	
+	}
+}
+.local-top {
+	padding: 0;
+	p {
+		font-size: 22px;
+	}
+	.imghero img {
+		max-width: 440px;
+	}
+	.badges {
+		margin: 32px 0;
+		@media (min-width: 991px) {
+			.badge-link {
+				margin: 0 8px;
+			}
+		}
+	}
+}
+.local-features {
+	padding: 0;
+	h2 {
+		color: #0070FF;
+		font-size: 48px;
+		font-weight: 600;
+		margin: 120px 0 0 0;
+		padding: 90px 0;
+	}
+	.tell {
+		margin: 0 0 180px 0;
+			div {
+			border-radius: 8px;
+			box-shadow: 0px 6px 18px 3px rgba(36, 92, 141, 0.08);
+			margin: 0 12px;
+			max-width: 31%;
+			padding: 48px 24px;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+	h4 {
+		color: #0070FF;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	p {
+		color: #919EB3;
+		font-size: 15px;
+		margin: 0;
+	}
+	.localexplain {
+		p{
+			display: block;
+			margin: 32px;
+		}
+		span {
+			color: #062453;
+			font-weight: bold;
+			display: inline-block;
+		}
+	}
+	.hodlhodl {
+		border-radius: 18px;
+		margin: 160px 0;
+		padding: 80px 40px;
+		background: rgb(13,137,252);
+		background: linear-gradient(90deg, rgba(13,137,252,1) 0%, rgba(62,181,239,1) 100%);
+		p {
+			color: #fff;
+			font-weight: 540;
+			font-size: 20px;
+		}
+	}
+}
