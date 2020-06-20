@@ -2523,6 +2523,10 @@ img {
   display: inline-block;
 }
 
+.local-features a:hover {
+  text-decoration: none;
+}
+
 .local-features .hodlhodl {
   border-radius: 18px;
   margin: 200px 0 100px 0;
