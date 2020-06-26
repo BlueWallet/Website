@@ -5,23 +5,6 @@ body {
   color: #0C2550;
 }
 
-.producthunt {
-  padding: 24px 0;
-  background: #f5f5f5;
-  text-align: center;
-}
-
-.producthunt span {
-  font-weight: 600;
-  margin: 24px;
-}
-
-@media (max-width: 991px) {
-  .producthunt span {
-    display: block;
-  }
-}
-
 body {
   font-family: 'Helvetica', 'Arial', 'sans-serif';
 }

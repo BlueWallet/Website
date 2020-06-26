@@ -5,20 +5,6 @@ body {
     height: 100%;
     color: $dark-blue;
 }
-.producthunt {
-  padding: 24px 0;
-  background: #f5f5f5;
-  text-align: center;
-  span {
-    font-weight: 600;
-    margin: 24px;
-  }
-  @media (max-width: 991px) {
-    span {
-      display: block;
-    }
-  }
-}
 
 body {
     @include body-font;
