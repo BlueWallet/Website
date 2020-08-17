@@ -1,0 +1,127 @@
+body.desktop-app {
+	background: #fff;
+}
+.desktop-app #mainNav {
+	background: #fff;
+}
+header.masthead.desktop-app {
+	background: #fff;
+}
+.desktop-app .header-content {
+	color: #000000;
+	h1 {
+		font-size: 72px;
+		font-weight: 800;
+		margin-bottom: 18px;
+	}
+	p {
+		font-size: 22px;
+	}
+	@media (max-width: 992px) {
+		h1 {
+			font-size: 250%;
+		}
+		p {
+			font-size: 16px;
+		}
+
+	}
+}
+.desktop-app .wat {
+	@media (max-width: 992px) {
+		margin-bottom: 80px;
+	}
+}
+.desktop-app .cta {
+	margin: 32px;
+}
+.desktop-app .cta li {
+	@media (max-width: 992px) {
+	width: 100% !important;
+	}
+}
+.desktop-app .bighead3 {
+	text-align: center;
+}
+.desktop-app .bighead3 img {
+	width: 100%;
+}
+.desktop-app .local-features {
+	padding: 0;
+	margin-bottom: 90px;
+	h2 {
+		color: #000000;
+		font-size: 48px;
+		font-weight: 600;
+		margin: 0;
+		padding: 90px 0;
+		@media (max-width: 991px) {
+			margin: 0;
+		}
+	}
+	.tell {
+		
+			div {
+			border-radius: 8px;
+			box-shadow: 0px 3px 18px 3px rgba(36, 92, 141, 0.08);
+			padding: 48px 24px;
+			
+			@media (min-width: 992px) {
+				margin: 0 0 180px 0;
+				max-width: 31%;
+				margin: 0 12px;
+				&:last-child {
+				margin-right: 0;
+				}
+				&:first-child {
+				margin-left: 0;
+				}
+			}
+			@media (max-width: 991px) {
+				margin: 0 0 24px 0;
+			}
+		}
+	}
+	h4 {
+		color: #000000;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	p {
+		color: #666666;
+		font-size: 15px;
+		margin: 0;
+	}
+	.localexplain {
+		div {
+			@media (max-width: 991px) {
+				display: flex;
+				flex-direction: column;
+				margin: 24px 0;
+			}
+		}
+		.order1 {
+			@media (max-width: 991px) {
+				order: 1;
+			}
+		}
+		.order2 {
+			@media (max-width: 991px) {
+				order: 2;
+			}
+		}
+		p {
+			display: block;
+			margin: 32px 0;
+			
+		}
+		span {
+			color: #062453;
+			font-weight: bold;
+			display: inline-block;
+		}
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
