@@ -912,6 +912,16 @@ section.features .fwatchonly a {
   margin: 0 auto;
 }
 
+.warning {
+  background: #F4D096;
+  color: #A46A09;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-size: 11px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
 section.cta {
   position: relative;
   padding: 250px 0;
