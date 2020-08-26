@@ -59,29 +59,12 @@ header.masthead.desktop-app {
 			margin: 0;
 		}
 	}
-	.tell {
-		
-			div {
+	.featme {
 			border-radius: 8px;
 			box-shadow: 0px 3px 18px 3px rgba(36, 92, 141, 0.08);
 			padding: 48px 24px;
-			
-			@media (min-width: 992px) {
-				margin: 0 0 180px 0;
-				max-width: 31%;
-				margin: 0 12px;
-				&:last-child {
-				margin-right: 0;
-				}
-				&:first-child {
-				margin-left: 0;
-				}
-			}
-			@media (max-width: 991px) {
-				margin: 0 0 24px 0;
-			}
+			margin-bottom: 24px;
 		}
-	}
 	h4 {
 		color: #000000;
 		font-size: 20px;
