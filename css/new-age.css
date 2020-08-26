@@ -2644,30 +2644,11 @@ header.masthead.desktop-app {
   }
 }
 
-.desktop-app .local-features .tell div {
+.desktop-app .local-features .featme {
   border-radius: 8px;
   box-shadow: 0px 3px 18px 3px rgba(36, 92, 141, 0.08);
   padding: 48px 24px;
-}
-
-@media (min-width: 992px) {
-  .desktop-app .local-features .tell div {
-    margin: 0 0 180px 0;
-    max-width: 31%;
-    margin: 0 12px;
-  }
-  .desktop-app .local-features .tell div:last-child {
-    margin-right: 0;
-  }
-  .desktop-app .local-features .tell div:first-child {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .desktop-app .local-features .tell div {
-    margin: 0 0 24px 0;
-  }
+  margin-bottom: 24px;
 }
 
 .desktop-app .local-features h4 {
