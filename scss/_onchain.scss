@@ -1,0 +1,137 @@
+.first .section-heading {
+	h1 {
+		font-size: 88px;
+		font-weight: bold;
+	}
+	@media (max-width: 992px) {
+		h1 {
+			font-size: 32px !important;
+		}	
+	}
+}
+.onchain-page .download {
+	background: #EEFAFF;
+	padding: 280px 0;
+}
+.onchain footer {
+	background: #fff;
+}
+.onchain-page {
+	.lcontent {
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 38px;
+	}
+	@media (max-width: 992px) {
+		.lcontent {
+			font-size: 13px !important;
+			margin-top: 24px;
+		}	
+	}
+}
+.wallet-types {
+	background: #EEFAFF;
+	overflow: hidden;
+	h2 {
+		font-weight: bold;
+	}
+	@media (max-width: 992px) {
+		h2 {
+			font-size: 32px !important;
+		}
+	}
+}
+.myslider {
+
+}
+.slick-slide {
+	width: 380px;
+	@media (max-width: 991px) {
+		width: 300px;
+	}
+	img {
+		width: 100%;
+	}
+	h3 {
+		font-size: 22px;
+		font-weight: bold;
+		padding: 0 16px;
+	}
+	p {
+		font-size: 13px;
+		padding: 0 16px;
+	}
+}
+.slick-arrow {
+	position: absolute;
+	background: rgba(0,0,0,0.1);
+	border-radius: 20px;
+	border: none;
+	padding: 4px 16px;
+	min-width: 100px;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	&:hover {
+		background: rgba(12,37,80,0.6);
+		color: #ffffff;
+		cursor: pointer;
+		outline: 0 none;
+	}
+	:active {
+		outline: 0 transparent !important;
+		border: 0;
+		box-shadow: none;
+	}
+}
+button:focus {
+	outline: 0 transparent !important;
+	border: 0;
+	box-shadow: none;
+}
+.app-preview img {
+	max-width: 100%;
+}
+.slider {
+	padding-top: 84px;
+	padding-bottom: 56px;
+}
+.slick-prev {
+	left: 16px;
+	top: 32px;
+}
+.slick-next {
+	top: 32px;
+	left: 144px;
+}
+.create-import {
+	h2 {
+		font-weight: bold;
+		font-size: 50px;
+		margin-bottom: 24px;
+	}
+	@media (max-width: 992px) {
+		h2 {
+			text-align: center;
+			font-size: 32px;
+		}
+		p {
+		font-size: 13px !important;
+		}
+	}
+	p {
+		font-size: 16px;
+	}
+}
+.stuff {
+@media (max-width: 992px) {
+	 .order1 {
+	 	flex:1;
+	 	order: 1;
+	 	}
+	 	.order2 {
+	 	order: 2;
+	 	}
+	 }
+}

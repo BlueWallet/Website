@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 a {
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 200;
 }
 
@@ -38,6 +38,10 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+.apk {
+  color: #9AA0AA;
 }
 
 @media (max-width: 991px) {
@@ -48,9 +52,6 @@ p {
 }
 
 .apk a {
-  padding: 8px 24px;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 6px;
   display: inline-block;
   color: #9AA0AA;
 }
@@ -155,7 +156,7 @@ a {
 
 #mainNav .navbar-brand {
   color: #0C2550;
-  font-family: 'Helvetica', 'Arial', 'sans-serif';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 200;
 }
 
@@ -314,8 +315,8 @@ header.masthead .header-content h2 {
 }
 
 header.masthead .header-content h1 {
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 @media (max-width: 991px) {
@@ -909,6 +910,16 @@ section.features .fwatchonly a {
 
 .features-page .tippin .button-filled {
   margin: 0 auto;
+}
+
+.warning {
+  background: #F4D096;
+  color: #A46A09;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-size: 11px;
+  vertical-align: middle;
+  margin-left: 8px;
 }
 
 section.cta {
@@ -2388,4 +2399,301 @@ img {
 .lndhub-footer .foot-menu {
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
+}
+
+.local-top .section-heading h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .local-top .section-heading h1 {
+    font-size: 42px !important;
+  }
+}
+
+.local-top {
+  padding: 0;
+}
+
+.local-top p {
+  font-size: 22px;
+}
+
+@media (max-width: 991px) {
+  .local-top p {
+    font-size: 16px;
+  }
+}
+
+.local-top .imghero img {
+  max-width: 440px;
+}
+
+.local-top .badges {
+  margin: 32px 0;
+}
+
+@media (min-width: 992px) {
+  .local-top .badges .badge-link {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .local-top .badges .badge-link {
+    margin: 8px 0;
+    display: inline-block;
+  }
+}
+
+.local-features {
+  padding: 0;
+}
+
+.local-features h2 {
+  color: #0070FF;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 120px 0 0 0;
+  padding: 90px 0;
+}
+
+@media (max-width: 991px) {
+  .local-features h2 {
+    margin: 0;
+  }
+}
+
+.local-features .tell div {
+  border-radius: 8px;
+  box-shadow: 0px 3px 18px 3px rgba(36, 92, 141, 0.08);
+  padding: 48px 24px;
+}
+
+@media (min-width: 992px) {
+  .local-features .tell div {
+    margin: 0 0 180px 0;
+    max-width: 31%;
+    margin: 0 12px;
+  }
+  .local-features .tell div:last-child {
+    margin-right: 0;
+  }
+  .local-features .tell div:first-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .local-features .tell div {
+    margin: 0 0 24px 0;
+  }
+}
+
+.local-features h4 {
+  color: #0070FF;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.local-features p {
+  color: #919EB3;
+  font-size: 15px;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .local-features .localexplain div {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .local-features .localexplain .order1 {
+    order: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .local-features .localexplain .order2 {
+    order: 2;
+  }
+}
+
+.local-features .localexplain p {
+  display: block;
+  margin: 32px 0;
+}
+
+.local-features .localexplain span {
+  color: #062453;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.local-features a:hover {
+  text-decoration: none;
+}
+
+.local-features .hodlhodl {
+  border-radius: 18px;
+  margin: 200px 0 100px 0;
+  padding: 80px 40px;
+  background: #0d89fc;
+  background: linear-gradient(90deg, #0d89fc 0%, #3eb5ef 100%);
+}
+
+@media (max-width: 991px) {
+  .local-features .hodlhodl {
+    margin: 100px 0 0px 0;
+  }
+}
+
+.local-features .hodlhodl p {
+  color: #fff;
+  font-weight: 540;
+  font-size: 20px;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .local-features .hodlhodl p {
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+
+body.desktop-app {
+  background: #fff;
+}
+
+.desktop-app #mainNav {
+  background: #fff;
+}
+
+header.masthead.desktop-app {
+  background: #fff;
+}
+
+.desktop-app .header-content {
+  color: #000000;
+}
+
+.desktop-app .header-content h1 {
+  font-size: 72px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.desktop-app .header-content p {
+  font-size: 22px;
+}
+
+@media (max-width: 992px) {
+  .desktop-app .header-content h1 {
+    font-size: 250%;
+  }
+  .desktop-app .header-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .desktop-app .wat {
+    margin-bottom: 80px;
+  }
+}
+
+.desktop-app .cta {
+  margin: 32px;
+}
+
+@media (max-width: 992px) {
+  .desktop-app .cta li {
+    width: 100% !important;
+  }
+}
+
+.desktop-app .bighead3 {
+  text-align: center;
+}
+
+.desktop-app .bighead3 img {
+  width: 100%;
+}
+
+.desktop-app .local-features {
+  padding: 0;
+  margin-bottom: 90px;
+}
+
+.desktop-app .local-features h2 {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+  padding: 90px 0;
+}
+
+@media (max-width: 991px) {
+  .desktop-app .local-features h2 {
+    margin: 0;
+  }
+}
+
+.desktop-app .local-features .featme {
+  border-radius: 8px;
+  box-shadow: 0px 3px 18px 3px rgba(36, 92, 141, 0.08);
+  padding: 48px 24px;
+  margin-bottom: 24px;
+}
+
+.desktop-app .local-features h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.desktop-app .local-features p {
+  color: #666666;
+  font-size: 15px;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .desktop-app .local-features .localexplain div {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop-app .local-features .localexplain .order1 {
+    order: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop-app .local-features .localexplain .order2 {
+    order: 2;
+  }
+}
+
+.desktop-app .local-features .localexplain p {
+  display: block;
+  margin: 32px 0;
+}
+
+.desktop-app .local-features .localexplain span {
+  color: #062453;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.desktop-app .local-features a:hover {
+  text-decoration: none;
 }

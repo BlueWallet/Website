@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hhlogo</title>
+    <g id="LocalTrader" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="localtrader" transform="translate(-215.000000, -2848.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(160.000000, 2785.000000)">
+                <g id="hhlogo" transform="translate(55.000000, 63.000000)">
+                    <path d="M36,72 C16.092,72 0,55.828 0,36.052 C0,16.275 16.092,0 36,0 C55.908,0 72,16.172 72,35.948 C72,55.725 55.908,72 36,72 Z M36,6.18 C19.496,6.18 6.19,19.57 6.19,35.948 C6.19,52.326 19.598,65.717 36,65.717 C52.504,65.717 65.81,52.327 65.81,35.948 C65.81,19.571 52.402,6.18 36,6.18 Z" id="Shape"></path>
+                    <g id="Group" transform="translate(11.000000, 18.000000)">
+                        <path d="M0.9,22.8 L11.9,22.8 L11.9,25.8 L0.9,25.8 L0.9,22.8 Z M0.9,13.8 L11.9,13.8 L11.9,16.8 L0.9,16.8 L0.9,13.8 Z M16.9,16.8 L34.9,16.8 L34.9,22.8 L16.9,22.8 L16.9,16.8 Z" id="Shape"></path>
+                        <path d="M10.9,0.8 L17.9,0.8 L17.9,36.8 L10.9,36.8 L10.9,0.8 L10.9,0.8 Z M39.9,22.8 L50.9,22.8 L50.9,25.8 L39.9,25.8 L39.9,22.8 Z M39.9,13.8 L50.9,13.8 L50.9,16.8 L39.9,16.8 L39.9,13.8 Z" id="Shape"></path>
+                        <polygon id="Path" points="33.9 0.8 40.9 0.8 40.9 36.8 33.9 36.8"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

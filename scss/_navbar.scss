@@ -1,0 +1,173 @@
+// Styling for the navbar
+#mainNav.navbar-dark .navbar-nav 
+> li 
+a {
+    color: #fff !important;
+}
+#mainNav.navbar-dark .dropdown-menu {
+    background: #111 !important;
+}
+#mainNav.navbar-dark .nav-link {
+    &:hover, &:focus {
+        background: #111 !important;
+    }
+}
+#mainNav.navbar-dark .sublink {
+    &:hover {
+        background: rgba(255,255,255,0.02) !important;
+        color: #fff !important;
+    }
+}
+> ul {
+        background-color: #111;
+        box-shadow: 0 1px 6px #000; 
+        li > a {
+            color: #fff !important;
+            &:hover {
+                    background: rgba(0,0,0,1) !important;
+                    border-radius: 6px;
+            }
+        }
+    }
+#mainNav.navbar-dark {
+    .navbar-toggler {
+        color: #fff;
+    }
+}
+#mainNav {
+    border-color: fade-out($gray-darker, .95);
+    background-color: white;
+    padding: 48px 0;
+
+    .navbar-brand {
+        color: $theme-primary;
+        @include heading-font;
+        &:hover,
+        &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+
+    
+    .navbar-brand { 
+        margin: 0 auto;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 22px;
+        padding: 8px 10px;
+        color: $gray-darker;
+    }
+    .navbar-collapse {
+        margin-top: 32px;
+        @media (max-width: 776px) {
+            .dropdown-menu {
+                box-shadow: none !important;
+            }
+            .sublink {
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }
+    .navbar-nav {
+        > li {
+            position: relative;
+            margin: 0 2px;
+
+            > a {
+                font-size: 19px !important;
+                color: $theme-primary !important;
+
+                @include alt-font;
+                &.active {
+                    color: $theme-primary !important;
+                    background-color: transparent;
+                }
+            }
+            > a,
+            > a:focus {
+                color: $gray-darker;
+            }
+            > a:hover {
+                
+            }
+            > .dropdown-menu {
+                
+                z-index: 999;
+                background: #fff;
+                box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+                border-radius: 6px;
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                border: none;
+
+                a {
+                    padding: 16px 24px;
+                    display: block;
+                    text-decoration: none;
+                    width: 200px;
+                    font-weight: 600;
+
+                    &:hover {
+                        border-radius: 6px;
+                        background: #EFF7FC;
+                        color: $theme-primary;
+                   
+                    }
+                }
+            }
+            
+        }
+        > li:hover
+        > ul {
+                display: inline-block;
+            }
+    }
+    .nav-link {
+        border-radius: 6px;
+        padding: 6px 16px;
+        transition: all 0.5s ease;
+        text-align: center;
+        &:hover {
+        background: rgba(104,187,225,0.1);
+
+        }
+    }
+    @media (min-width: 992px) {
+        border-color: transparent;
+        background-color: transparent;
+        .navbar-brand {
+            color: fade(white, 70%);
+            &:hover,
+            &:focus {
+                color: white;
+            }
+        }
+        .navbar-nav > li > a,
+        .navbar-nav > li > a:focus {
+            color: $dark-blue;
+        }
+        &.navbar-shrink {
+            border-color: fade-out($gray-darker, .9);
+            background-color: white;
+            .navbar-brand {
+                color: $gray-darker;
+                &:hover,
+                &:focus {
+                    color: $theme-primary;
+                }
+            }
+            .navbar-nav > li > a,
+            .navbar-nav > li > a:focus {
+                color: $gray-darker;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+        }
+    }
+}

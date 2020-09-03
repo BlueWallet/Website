@@ -1,0 +1,128 @@
+// Styling for the footer
+footer {
+    padding: 96px 0;
+    text-align: center;
+    background: #fff;
+    font-size: 12px;
+    color: #AFBCD2;
+    a {
+        color: #AFBCD2;
+    }
+    p {
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+        color: $theme-primary;
+    }
+    h2 {
+        font-weight: bold;
+        text-align: center;
+        color: $theme-primary;
+    }
+    ul {
+        margin-bottom: 0;
+        li {
+            a {
+                font-size: 12px;
+                &:hover,
+                &:focus,
+                &:active,
+                &.active {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.fmenu a {
+    text-decoration: none;
+}
+.foot-menu{
+    background: rgba(104,187,225,0.1);
+    border-radius: 6px;
+    padding: 4px 16px;
+    font-size: 14px;
+    color: #0C2550;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin: 0 4px;
+}
+.lightning .foot-menu{ 
+    color: #ffffff;
+}
+.foot-menu:hover{
+    background: rgba(104,187,225,0.3);
+}
+#mc_embed_signup2 {clear:left; width:100%;}
+#mc_embed_signup2 form {text-align:center; padding:10px 0 10px 0;}
+.mc-field-group { display: inline-block; } 
+#mc_embed_signup_scroll {
+    justify-content: center!important;
+    width: 90%;
+    display: inline-flex;
+}
+#mc_embed_signup2 input.email {
+    font-family:"Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; 
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 2px 16px 0px rgba(20,44,66,.1);
+    border-radius: 6px 0 0 6px; 
+    color: $dark-blue; 
+    background-color: #fff; 
+    box-sizing:border-box;  
+    padding: 16px; 
+    display: inline-block; 
+    margin: 0; 
+    width: 90%;
+    max-width:350px;
+    float: left;
+    height: 53px;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #AFBCD2; 
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #AFBCD2; 
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #AFBCD2; 
+    }
+    &:active, &:focus {
+        outline: none;
+    }
+}
+#mc_embed_signup2 label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup2 .clear {display: inline-block;} /* positions button horizontally in line with input */
+#mc_embed_signup2 .button {
+    box-shadow: 0px 2px 16px 0px rgba(20,44,66,.1);
+    font-size: 13px; 
+    border: none; 
+    border-radius: 0px 6px 6px 0; 
+    letter-spacing: .03em; 
+    color: #fff; 
+    background-color: $light-blue; 
+    box-sizing:border-box; 
+    padding:16px 32px; 
+    display: inline-block; 
+    margin: 0; 
+    transition: all 0.23s ease-in-out 0s;
+    float: left;
+    height: 53px;
+    @media(max-width: 991px) {
+        padding:16px 8px;
+        width: auto !important;
+    }
+}
+#mc_embed_signup2 .button:hover {background-color: $dark-blue; cursor:pointer;}
+#mc_embed_signup2 div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup2 div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup2 #mce-error-response {display:none;}
+#mc_embed_signup2 #mce-success-response {color:#529214;}
+#mc_embed_signup2 label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+@media (max-width: 768px) {
+    #mc_embed_signup2 input.email {width:100%; margin-bottom:5px;}
+    #mc_embed_signup2 .clear {display: block; width: 100%; float: left;}
+    #mc_embed_signup2 .button {width: 100%; margin:0; }
+}

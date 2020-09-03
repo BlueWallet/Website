@@ -1,0 +1,105 @@
+// Styling for the masthead
+header.masthead {
+    position: relative;
+    width: 100%;
+    @media (min-width: 992px) {
+        padding-top: 60px;
+    }
+
+    color: $dark-blue;
+    background: white;
+    .header-content {
+        margin-bottom: 20px;
+        text-align: center;
+        h2 {
+            font-weight: 400;
+            font-size: 28px;
+            margin-bottom: 0px;
+        }
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+         @media (max-width: 991px) {
+            h2 {
+            font-size: 15px;
+            }
+            h1 {
+            font-size: 38px
+            }
+        }
+
+
+    }
+    
+     @media (max-width: 991px) {
+        .header-content {
+        margin-bottom: 40px;
+        }
+    }
+     @media (min-width: 992px) {
+        .cta li:first-child {
+            float: left;
+        }
+        .cta li {
+        margin: 0 auto;
+        text-align: center;
+        }
+    }
+    @media (max-width: 991px) {
+        .cta li {
+        margin: 0 auto 32px 0;
+        text-align: center;
+        width: 50%;
+        float: left;
+        }
+        .cta li img{ 
+        width: 150px;
+        max-width: 100%;
+        }
+    }
+    .light-blue {
+        color: $light-blue;
+    }
+    .device-container {
+        max-width: 325px;
+        margin-right: auto;
+        margin-left: auto;
+        .bluebig img {
+                width: 100%;
+        }
+    }
+    @media (min-width: 992px) {
+        height: 60vh;
+        min-height: 530px;
+        padding-top: 0;
+        padding-bottom: 0;
+        .header-content {
+            text-align: left;
+            h2 {
+                font-size: 20px;
+            }
+        }
+        .device-container {
+            max-width: 100%;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}
+section.features .flightning button {
+    margin-bottom: 0px;
+    padding: 12px 60px !important;
+}
+@media(max-width: 768px) {
+        .desktop {
+            display: none;
+        }
+    }
+.desktop a {
+    padding: 16px 0px;
+    border-radius: 40px;
+    margin: 0 0;
+    display: inline-block;
+    text-decoration: underline;
+}
