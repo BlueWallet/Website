@@ -86,7 +86,7 @@
           if (mercuryo_currencies.indexOf(currency) !== -1) mercuryo_url += "&fiat_currency=" + currency;
           window.location = mercuryo_url;
         } else {
-          var moonpay_url = 'https://moonpay-redirect.herokuapp.com/?apiKey=pk_live_IkhSI2lIXSiolwakfd95QFD4p3908cZa&enabledPaymentMethods=credit_debit_card%2Csepa_bank_transfer%2Cgbp_bank_transfer&currencyCode=BTC&colorCode=%2368BBE1&showWalletAddressForm=false';
+          var moonpay_url = 'https://moonpay-redirect.herokuapp.com/?apiKey=pk_live_IkhSI2lIXSiolwakfd95QFD4p3908cZa&enabledPaymentMethods=credit_debit_card%2Capple_pay%2Csepa_bank_transfer%2Cgbp_bank_transfer&currencyCode=BTC&colorCode=%2368BBE1&showWalletAddressForm=false';
           if (address) moonpay_url += '&walletAddress=' + address;
           if (moonpay_currencies.indexOf(currency) !== -1) moonpay_url += '&baseCurrencyCode=' + currency;
           window.location = moonpay_url;
