@@ -1,3 +1,6 @@
+- title: Coin Control
+  desc: Allows you to see, label, freeze or select coins (UTXO) to build transactions, for an improved wallet management.
+
 - title: Payjoin
   desc: Payjoin or Pay-to-endpoint, it's a feature that allows to break common chain analysis heuristics, where to participants build a transaction together.
 
