@@ -1,0 +1,27 @@
+<div class="uk-section-large uk-padding-remove-horizontal">
+   <div class="uk-container">
+    {% if include.title %}
+        <h3 class="uk-h3">{{ include.title }}</h3>
+    {% endif %}
+        <div class="uk-child-width-expand@s" uk-grid>
+            <div>
+                <div class="newsletter uk-box-shadow-medium uk-card-hover border-radius-medium">
+                    <form action="https://bluewallet.us17.list-manage.com/subscribe/post-json?u=6733da37320f82a3dbe84a9cc&amp;id=2474ce3b66&c=?" method="get" id="mc-embedded-subscribe-form" name="newslettermail" class="validate">
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your email here..." required>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+                        </div>
+                        <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+                        <div id="subscribe-result">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="uk-margin-auto-vertical">
+               <div class="uk-child-width-expand@s socialinks" uk-grid>
+                    {% include social-networks.html %}
+               </div>
+            </div>
+        </div>
+    </div>
+</div>

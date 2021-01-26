@@ -1,0 +1,79 @@
+# Navbar left menu navigation links
+
+right:
+  - title: Home
+    url: /
+
+  - title: Features
+    dropdown:
+
+      - title: View All
+        url: /features/
+
+      - divider: true
+
+      - title: Bitcoin Wallet
+        url: /bitcoin-wallet/
+
+      - title: Watch-only Wallet
+        url: /watch-only/
+
+      - title: Multisig Vault
+        url: /multisig-wallet/
+
+      - title: Lightning Wallet
+        url: /lightning/
+
+  - title: Support
+    url: /docs/intro/
+# Navbar right menu navigation links
+
+# right:
+
+  # - title: Changelog
+  #  url: /changelog-timeline/
+  #  button: primary-outline
+
+  # - title: Contact
+  #  url: /contact/
+  #  button: success
+
+  # - title: Changelog
+  #   url: /contact/
+  #   button: default
+
+  # - title: Contact
+  #   url: /contact/
+  #   button: primary
+
+  # - title: Changelog
+  #   url: /contact/
+  #   button: secondary
+
+  # - title: Contact
+  #   url: /contact/
+  #   button: danger
+
+  # - title: Changelog
+  #   url: /contact/
+  #   button: success
+
+  # - title: Contact
+  #   url: /contact/
+  #   button: warning
+
+  # - title: Changelog
+  #   url: /contact/
+  #   button: primary-outline
+
+  # - title: Contact
+  #   url: /contact/
+  #   button: danger-outline
+
+  # - title: Changelog
+  #   url: /contact/
+  #   button: success-outline
+
+  # - title: Contact
+  #   url: /contact/
+  #   button: warning-outline 

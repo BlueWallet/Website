@@ -1,0 +1,240 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+.merda {
+	height: 598px;
+	 @media (max-width: 767px) {
+	 	margin-bottom: 60px !important;
+	 }
+}
+.uk-navbar {
+	padding: 26px 0;
+	a {
+		font-weight: 700;
+	}
+}
+.uk-heading-primary {
+	margin-bottom: 24px;
+}
+.uk-navbar-dropdown {
+	width: 260px !important;
+}
+.uk-navbar-dropdown-nav li {
+	font-size: 1rem;
+	padding: 4px 16px;
+	&:hover {
+		border-radius: 6px;
+		background: #F2F4F7;
+	}
+}
+.uk-nav-divider:hover {
+	background: transparent !important;
+}
+.bounce {
+	transition: all 0.5s ease;
+	&:active {
+		transform: scale(0.97);
+	}
+	@media (max-width: 767px) {
+		max-width: 200px;
+	}
+}
+.poster {
+	max-width: 300px;
+    height: 611px;
+    position: relative;
+    border-radius: 42px;
+   	margin: 0 auto 60px auto;
+    padding: 0;
+    @media (min-width: 768px) {
+    	width: 300px;
+	    height: 611px;
+	    position: absolute;
+	    top: 40%;
+	    left: 50%;
+	    margin: -250px 0 0 -160px;
+	    border-radius: 42px;
+	    box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+	    overflow: hidden;
+	    flex: auto;
+	    align-self: center;
+	    justify-content: center;
+	    padding: 0;
+	    background-color: #1C1C1D;
+    }
+}
+@media (min-width: 768px) {
+	.poster .shine {
+	  position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	  z-index: 100;
+	}
+}
+.poster .layer-4 {
+	position: absolute;
+    top: 0px;
+    left: -5px;
+    right: -3px;
+    bottom: -10px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -webkit-transition: 0.1s;
+          transition: 0.1s;
+  background-image: url("{{ site.uploads | absolute_url }}/bluewallet.png");
+}
+.uk-card:hover {
+	transition: all 0.2s ease;
+}
+.people img {
+	max-width: 80px;
+}
+.newsletter {	
+	padding: 12px;
+	border: 1px solid #A5B7CA;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	transition: all 0.4s ease;
+	@media (max-width: 767px) {
+		margin-bottom: 32px !important;
+	}
+	input.email {
+		height: 50px;
+		border: 0;
+		width: 100%;
+		font-size: 16px;
+		font-weight: 500;
+		color: #7E91AE;
+		&::placeholder {
+			color: #7E91AE;
+		}
+		&:active, &:focus {
+			outline: none;
+		}
+	}
+	input.mc-button {
+		height: 50px;
+		border: 0;
+		background: #0070FF;
+		border-radius: 6px;
+		padding: 0 32px;
+		color: #ffffff;
+		font-size: 16px;
+		display: inline-block;
+		font-weight: 600;
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		@media (max-width: 767px) {
+			right: 6px;
+			padding: 0 8px;
+			font-size: 13px;
+		}
+	}
+}
+.socialinks {
+	font-size: 19px;
+	font-weight: 600;
+	a {
+		padding: 12px 16px !important;
+		color: #637082;
+		display: inline-block;
+		border-radius: 6px;
+		transition: all 0.3s ease;
+		&:hover {
+			background: #F2F4F7;
+			text-decoration: none;
+			color: #637082;
+		}
+	}
+}
+.imghere {
+	width: 100%;
+    max-width: 600px;
+    height: 50%;
+    margin: 72px auto 0 auto;
+    .localtrader {
+    	max-width: 440px;
+    	width: 100%;
+    }
+}
+.watch-demo img {
+	max-width: 580px;
+	width: 100%;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.features {
+	background: #F1F4F6;
+	border-radius: 8px;
+	display: block;
+	box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+	img {
+		max-width: 350px;
+		width: 100%;
+	}
+	.special {
+		max-width: 490px;
+		width: 100%;
+	}
+}
+.flex {
+	display: flex;
+}
+@media (max-width: 960px) {
+	.first-mobile {
+		order: 1;
+	}
+	.second-mobile {
+		order: 2;
+	}
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.explain img{
+	max-width: 160px;
+}
+.reasons {
+	background: #F2F4F7;
+}
+.uk-badge {
+	border-radius: 500px;
+	background:  #0070FF;
+	padding: 13px 20px;
+	display: inline-block;
+	color: #ffffff !important;
+	font-weight: bold;
+}
+// System fonts
+@import "system-font-css/_system-font";
+
+// Custom variables and variable overwrites.
+@import "theme/variables";
+
+// Import default variables and available mixins.
+@import "uikit/variables-theme";
+@import "uikit/mixins-theme";
+
+// Custom mixin overwrites.
+@import "theme/mixins";
+
+// Import UIkit.
+@import "theme/uikit";
+
+// Other vendor styles
+// @import "syntax-highlighting/cld";
+@import "syntax-highlighting/bw";

@@ -1,0 +1,31 @@
+# Boxes include navigation
+
+- title: Watch-only Wallets
+  desc: Easily connect to your hardware wallet and manage your cold storage.
+  icon: watch-only
+  url: /watch-only/
+
+- title: Multisig Vaults
+  desc: The best security available on the Bitcoin protocol. Create wallets with multiple keys.
+  icon: ms-vault
+  url: /multisig-wallet/
+
+- title: Lightning Wallets
+  desc: Unfairly cheap and blazing fast transactions on Bitcoin.
+  icon: lightning
+  url: /lightning/
+
+- title: Notifications
+  desc: Get notified of all transactions you are sending or receiving.
+  icon: notifications
+  url: /features/#notifications
+
+- title: Plausible Deniability
+  desc: Create multiple storages or fake ones in case of a forced disclosure.
+  icon: pdeniability
+  url: /features/#pdeniability
+
+- title: Transactions control
+  desc: Choose your fees when sending. Easily Bump, Cancel or Batch transactions.
+  icon: fees
+  url: /features/#bump

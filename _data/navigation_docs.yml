@@ -1,0 +1,28 @@
+- title: Help section
+  docs:
+  - intro
+  - create-bitcoin-wallet
+  - create-lightning-wallet
+  - backup-wallet
+  - recover-wallet
+  - manual-entropy
+  - batching
+  - multisig-spend
+
+- title: Hardware Wallets
+  docs:
+  - coldcard
+  - coldcard-dropbox
+  - coldcard-watch
+  - cobo-vault
+
+- title: Local Trader
+  docs:
+  - local-trader
+
+- title: LNDhub
+  docs:
+  - lndhub-ubuntu
+  - lndhub-macos
+  - lndhub-raspibolt
+
