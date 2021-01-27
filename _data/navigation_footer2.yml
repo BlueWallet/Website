@@ -1,0 +1,14 @@
+# Footer navigation links
+
+- title: Terms of use
+  url: /tos/
+
+- title: Privacy policy
+  url: /privacy/
+
+- title: Contact
+  url: /about/
+
+- title: Blog
+  url: /blog/
+

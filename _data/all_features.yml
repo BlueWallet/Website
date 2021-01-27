@@ -1,0 +1,66 @@
+- title: Coin Control
+  desc: Allows you to see, label, freeze or select coins (UTXO) to build transactions, for an improved wallet management.
+
+- title: Payjoin
+  desc: Payjoin or Pay-to-endpoint, it's a feature that allows to break common chain analysis heuristics, where to participants build a transaction together.
+
+- title: Plug-in your Bitcoin node
+  desc: Ability to plug-in your own Bitcoin Full node through Electrum Personal Server (EPS), ElectrumX or Electrs. Don't trust, verify for a maximum sovereignty.
+
+- title: Offline mode
+  desc: In case you don't have internet connection, BlueWallet will allow you to generate wallets or addresses to be able to receive offline.
+
+- title: Custom entropy
+  desc: Ability to manually generate entropy for wallet creation with Coins and Dices. This is an advanced feature, use with caution.
+
+- title: Coldcard support
+  desc: Connect to your Coldcard wallet with ease. Support for PSBT and Watch-only wallets. Allows for receiving and sending transactions by signing them offline.
+
+- title: CoboVault support
+  desc: Support for Cobo Vault hardware wallet. With one of the first of its kind Air-gapped, PSBT with animated QR codes support.
+
+- title: Hardware Wallets
+  desc: Ability to connect and work with Hardware Wallets that support PSBT. After importing your wallet on watch-only mode, go to the wallet options and turn on "hardware wallet" mode.
+
+- title: PSBT
+  desc: Support for PSBT - Partially Signed Bitcoin Transactions, BIP 174. Under the hood transactions on BlueWallet are using and constructed by the PSBT standard.
+
+- title: Broadcast Transaction
+  desc: Ability to broadcast a transaction that was previsously signed on BlueWallet or elsewhere.
+
+- title: Multiple Storage
+  desc: Besides having one storage for all your wallets, you can have multiple encrypted storages, that can be accessed by different passwords. This is useful in case you don't want to have all your wallets in the same storage, or you have other family members or employees accessing or using the app.
+
+- title: Full encryption
+  desc: On top of the phone multi-layer encryption, blue wallet can encrypt everything with an added password. Biometric security (touch ID, Face ID) is not safe, so you will have an additional password to encrypt your wallet instead.
+
+- title: Your keys (bip39)
+  desc: On your Bitcoin wallet your Private keys (Seed) never leave your device. You can at any moment generate backups and export/import your wallets, with full control of what to do with your private keys.
+
+- title: HD wallets
+  desc: The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), allows creating child keys from parent keys in a hierarchy. The HD Wallets will generate for you a different address for each transactions.
+
+- title: SegWit
+  desc: SegWit supported in P2SH-compatibility mode and bech32 Native mode. Segwit was a massive upgrade to the Bitcoin Protocol released in 2017. You will find all wallets with SegWit enabled by default. Find more about SegWit here.
+
+- title: Export TXHEX
+  desc: You can get your transaction HEX (TXHEX) without broadcasting it, and only do it with the relay of your choice.
+
+- title: Dark mode
+  desc: BlueWallet is now available in Dark mode for iOS and android.
+
+- title: LNurl
+  desc: Support for the LNurl protocol with LNurl-pay and LNurl-withdraw. This features allows you to have an easier interaction with the Lightning Network and services that support LNurl.
+
+- title: Marketplace
+  desc: Support for the LNurl protocol with LNurl-pay and LNurl-withdraw. This features allows you to have an easier interaction with the Lightning Network and services that support LNurl.
+
+- title: Lightning Browser
+  desc: A Lightning browser supporting the webLN standard to help you use and discover new services.
+
+- title: Multi-currency
+  desc: BlueWallet supports more than 30 currencies, including USD, AUD, BRL, CAD, CHF, CZK, CNY, EUR, GDP, HRK, INR, JPY, MXN, MYR, RUB, and more.
+
+- title: Open Source
+  desc: BlueWallet is built on a public repo, up-to-date and available on the BlueWallet GitHub. This means that any user can build it and run it on his own, without any custodial dependencies. Verify the code and contribute to the wallet development.
+

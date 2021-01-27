@@ -1,0 +1,33 @@
+<div class="uk-section-large">
+  <div class="uk-container uk-text-left uk-animation-slide-bottom-medium">
+    <div class="uk-container{{container}}">
+      <div class="uk-grid-match uk-text-center uk-grid-small" data-uk-grid>
+        <div>
+          <div class="uk-card uk-card-small uk-card-body uk-inline reasons border-radius-medium">
+            <img src="{{ site.uploads | absolute_url }}/local-trader/lndhub-logo.svg" alt="lndhub bluewallet lightning">
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="uk-heading-hero uk-text-left">A Lightning Hub</h1>
+    <p class="uk-text-lead">A free and open source, <strong>multiple account plugin for Lightning</strong> built on top of the Lightning Network Deamon. It allows that a group of users run different accounts with only one node in a trust-minimized setup.</p>
+    <p class="uk-text-lead">Ideal for hosted shared services or groups, families and friends that want to share their own node.</p>
+    <!-- Place this tag where you want the button to render. -->
+    <br />
+    <a class="github-button" href="https://github.com/bluewallet/lndhub" data-size="large" data-show-count="true" aria-label="Star bluewallet/lndhub on GitHub">Star</a>
+  </div>
+</div>
+
+<div class="uk-section-large">
+  <div class="uk-container{{container}}">
+      <h1 class="uk-h1">How does it work</h1>
+      <img src="{{ site.uploads | absolute_url }}/local-trader/lndhub-graph.png" alt="lndhub bluewallet lightning">
+      <div class="uk-margin-large uk-card uk-card-body">
+        <p class="uk-text-lead">The user sends a transaction to a dedicated top-up address, and this balance is added to his account on LNDhub. Then, the user can use this balance to pay Lightning invoices. But under the hood, it’s actually LNDhub who pays the invoice, deducting user’s account balance. It works the same way when the user wants to receive a Lightning payment - it’s LNDhub who creates the Lightning invoice and actually receives coins on one of it’s channels.</p>
+      </div>
+  </div>
+</div>
+
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>

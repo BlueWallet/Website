@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {% include head.html %}
+
+    <body>
+
+    {% include navbar.html %}
+
+    {{ content }}
+
+    {% include offcanvas-docs.html %}
+
+    {% include offcanvas.html %}
+
+    {% if page.layout != 'doc' %}
+        {% include footer.html %}
+    {% endif %}
+
+    {% if page.layout == 'doc' %}
+        {% include hook-pre-closing-body-doc.html %}
+    {% endif %}
+
+    {% include hook-pre-closing-body.html %}
+
+    </body>
+
+</html>

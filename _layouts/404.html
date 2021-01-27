@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {% include head.html %}
+
+    <body>
+
+    {% include navbar.html %}
+
+    <div class="uk-section">
+        <div class="uk-container">
+           <h2 class="uk-text-center">The Times 03/Jan/2009 Chancellor on brink of second bailout for banks</h2>
+        </div>
+    </div>
+
+    {% include offcanvas-docs.html %}
+
+    {% include offcanvas.html %}
+
+    {% if page.layout != 'doc' %}
+        {% include footer.html %}
+    {% endif %}
+
+    {% if page.layout == 'doc' %}
+        {% include hook-pre-closing-body-doc.html %}
+    {% endif %}
+
+    {% include hook-pre-closing-body.html %}
+
+    </body>
+
+</html>

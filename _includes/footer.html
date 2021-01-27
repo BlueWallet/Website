@@ -1,0 +1,64 @@
+{% include newsletter.html title="Get the updates directly on your email" %}
+
+{% include promo.html %}
+
+<footer class="uk-section uk-text-center uk-text-muted">
+    <div class="uk-container">
+
+        <div class="uk-padding-small uk-padding-remove-horizontal uk-padding-remove-top">
+            <h4 class="uk-h4 uk-text-left">Products</h4>
+            <ul class="uk-subnav">
+                {% for link in site.data.navigation_footer %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = '' | relative_url %}
+                    {% endif %}
+                    {% if link.url == page.url %}
+                        {% assign current = ' class="uk-active"' %}
+                    {% else %}
+                        {% assign current = null %}
+                    {% endif %}
+                    {% if link.title %}
+                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <h4 class="uk-h4 uk-text-left">© BlueWallet</h4>
+
+        <div class="uk-child-width-1-2@m uk-grid-match uk-margin-remove-vertical" data-uk-grid>
+            <div>
+                <div class="uk-padding-remove-horizontal uk-margin-remove-vertical">
+                    
+                    <ul class="uk-subnav uk-margin-remove-vertical">
+                        {% for link in site.data.navigation_footer2 %}
+                            {% if link.url contains 'http' %}
+                                {% assign domain = '' %}
+                            {% else %}
+                                {% assign domain = '' | relative_url %}
+                            {% endif %}
+                            {% if link.url == page.url %}
+                                {% assign current = ' class="uk-active"' %}
+                            {% else %}
+                                {% assign current = null %}
+                            {% endif %}
+                            {% if link.title %}
+                                <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-padding-remove-horizontal uk-margin-remove-vertical">
+                <ul class="uk-subnav uk-align-right@m uk-margin-remove">
+                    <li class="uk-align-right@m uk-text-left uk-padding-remove-horizontal">
+                        <a href="bitcoin:36JxaUrpDzkEerkTf1FzwHNE1Hb7cCjgJV">36JxaUrpDzkEerkTf1FzwHNE1Hb7cCjgJV</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
