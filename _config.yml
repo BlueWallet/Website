@@ -20,6 +20,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
 url: "https://bluewallet.io" # the base hostname & protocol for your site, e.g. https://example.com
 
+# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
+permalink:          /:title/
+
+
+# Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
+logo: logo-bluewallet.svg   
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
@@ -70,18 +76,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-# Site subpath, e.g. /blog
-baseurl:            ""
-
-# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
-permalink:          /:title/
-
-# Site base hostname & protocol, e.g. http://example.com
-url:                "https://bluewallet.io"
-
-# Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo: logo-bluewallet.svg              
+           
 
 navbar:
     sticky:         false

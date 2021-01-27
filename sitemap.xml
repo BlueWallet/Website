@@ -25,6 +25,11 @@
   <priority>0.90</priority>
 </url>
 <url>
+  <loc>https://bluewallet.io/multisig-wallet/</loc>
+  <lastmod>2021-01-27T17:34:18+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
   <loc>https://bluewallet.io/desktop-bitcoin-wallet/</loc>
   <lastmod>2020-08-10T13:34:18+00:00</lastmod>
   <priority>0.90</priority>
@@ -38,11 +43,6 @@
   <loc>https://bluewallet.io/lightning/</loc>
   <lastmod>2020-03-16T17:34:18+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bluewallet.io/lapps/</loc>
-  <lastmod>2020-03-16T17:34:18+00:00</lastmod>
-  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://bluewallet.io/watch-app/</loc>
@@ -60,8 +60,13 @@
   <priority>0.50</priority>
 </url>
 <url>
-  <loc>https://bluewallet.io/donate.html</loc>
-  <lastmod>2019-03-13T17:34:18+00:00</lastmod>
-  <priority>0.40</priority>
+  <loc>https://bluewallet.io/blog</loc>
+  <lastmod>2021-01-27T17:34:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bluewallet.io/docs/intro/</loc>
+  <lastmod>2021-01-27T17:34:18+00:00</lastmod>
+  <priority>0.50</priority>
 </url>
 </urlset>
