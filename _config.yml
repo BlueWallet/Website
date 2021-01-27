@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: BlueWallet - Bitcoin Wallet for iOS and Android
-email: your-email@example.com
+email: bluewallet@bluewallet.io
 description: >- # this means to ignore newlines until "baseurl:"
   Bitcoin wallet and Lightning wallet for iOS and Android extremely simple and powerful. Open source, Segwit and HD wallets, lightning network, plausible deniability, replace by fee and full encryption
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
-url: "https://jekyll-netlify-boilerplate.netlify.com" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://bluewallet.io" # the base hostname & protocol for your site, e.g. https://example.com
 
 
 # Enable section IDs in frontmatter, useful for identifying current page
@@ -78,7 +78,7 @@ baseurl:            ""
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://ncoelho.github.io/jekyll-netlify-boilerplate/"
+url:                "https://bluewallet.io"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo: logo-bluewallet.svg              
