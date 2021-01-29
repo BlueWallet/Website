@@ -3,7 +3,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
-  <meta property="og:image" content="{% if site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.uploads | absolute_url }}{{ site.logo }}{% endif %}"/>
+
+  {% if page.cover %}
+  <meta property="og:image" content="{{ site.uploads | absolute_url }}cover/{{ page.cover }}"/>
+  <meta name="twitter:image" content="{{ site.uploads | absolute_url }}cover/{{ page.cover }}" />
+  {% else %}
+  <meta property="og:image" content="{{ site.uploads | absolute_url }}cover/home.png"/>
+  <meta name="twitter:image" content="{{ site.uploads | absolute_url }}cover/home.png" />
+  {% endif %}
+
+  <meta property="og:site_name" content="{{ page.title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="fb:app_id" content="254973701957449" />
+  <meta property="fb:pages" content="499685187154976" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "uploads/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
