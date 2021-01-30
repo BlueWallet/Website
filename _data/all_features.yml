@@ -53,7 +53,7 @@
   desc: Support for the LNurl protocol with LNurl-pay and LNurl-withdraw. This features allows you to have an easier interaction with the Lightning Network and services that support LNurl.
 
 - title: Marketplace
-  desc: A Marketplace of Lightning enabled apps to help you discover new services on the this new fast settlement protocol.
+  desc: A Marketplace of Lightning enabled apps to help you discover new services on this new fast settlement protocol.
 
 - title: Lightning Browser
   desc: A Lightning browser supporting the webLN standard to help you use and discover new services.
