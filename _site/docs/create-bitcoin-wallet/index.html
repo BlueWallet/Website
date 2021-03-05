@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>How to create a Bitcoin wallet | BlueWallet - Bitcoin Wallet for iOS and Android</title>
+<title>Create a Bitcoin wallet | BlueWallet - Bitcoin Wallet for iOS and Android</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="How to create a Bitcoin wallet" />
+<meta property="og:title" content="Create a Bitcoin wallet" />
 <meta name="author" content="Nuno Coelho" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Creating a Bitcoin wallet on BlueWallet is easy." />
@@ -17,9 +17,9 @@
 <meta property="og:url" content="https://bluewallet.io/docs/create-bitcoin-wallet/" />
 <meta property="og:site_name" content="BlueWallet - Bitcoin Wallet for iOS and Android" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-29T17:11:55+01:00" />
+<meta property="article:published_time" content="2021-03-05T11:21:36+01:00" />
 <script type="application/ld+json">
-{"headline":"How to create a Bitcoin wallet","dateModified":"2021-01-29T17:11:55+01:00","url":"https://bluewallet.io/docs/create-bitcoin-wallet/","datePublished":"2021-01-29T17:11:55+01:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"Nuno Coelho"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bluewallet.io/docs/create-bitcoin-wallet/"},"author":{"@type":"Person","name":"Nuno Coelho"},"description":"Creating a Bitcoin wallet on BlueWallet is easy.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"Create a Bitcoin wallet","dateModified":"2021-03-05T11:21:36+01:00","url":"https://bluewallet.io/docs/create-bitcoin-wallet/","datePublished":"2021-03-05T11:21:36+01:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"Nuno Coelho"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bluewallet.io/docs/create-bitcoin-wallet/"},"author":{"@type":"Person","name":"Nuno Coelho"},"description":"Creating a Bitcoin wallet on BlueWallet is easy.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -28,15 +28,15 @@
   <meta name="twitter:image" content="https://bluewallet.io/uploads/cover/home.png" />
   
 
-  <meta property="og:site_name" content="How to create a Bitcoin wallet" />
+  <meta property="og:site_name" content="Create a Bitcoin wallet" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="" />
   <meta property="og:url" content="https://bluewallet.io/docs/create-bitcoin-wallet/" />
-  <meta property="og:title" content="How to create a Bitcoin wallet" />
+  <meta property="og:title" content="Create a Bitcoin wallet" />
   <meta property="fb:app_id" content="254973701957449" />
   <meta property="fb:pages" content="499685187154976" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="How to create a Bitcoin wallet" />
+  <meta name="twitter:title" content="Create a Bitcoin wallet" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:url" content="https://bluewallet.io/docs/create-bitcoin-wallet/" />
 
@@ -237,19 +237,23 @@
                     
                       
                       
-                      <li class="uk-active"><a href="/docs/create-bitcoin-wallet/">How to create a Bitcoin wallet</a></li>
+                      <li class="uk-active"><a href="/docs/create-bitcoin-wallet/">Create a Bitcoin wallet</a></li>
                     
                       
                       
-                      <li class=""><a href="/docs/create-lightning-wallet/">How to create a Lightning wallet</a></li>
+                      <li class=""><a href="/docs/import-wallet/">Import a wallet</a></li>
                     
                       
                       
-                      <li class=""><a href="/docs/backup-wallet/">How to backup/export a wallet</a></li>
+                      <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
                     
                       
                       
-                      <li class=""><a href="/docs/recover-wallet/">How to recover your wallet</a></li>
+                      <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/recover-wallet/">Recover your wallet</a></li>
                     
                       
                       
@@ -259,14 +263,18 @@
                       
                       <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
                     
+                    </ul>
+                    
+                    <h5>Cold storage</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/sign-offline/">Sign a transaction offline</a></li>
+                    
                       
                       
                       <li class=""><a href="/docs/multisig-spend/">Vaults - spending</a></li>
-                    
-                    </ul>
-                    
-                    <h5>Hardware Wallets</h5>
-                    <ul class="uk-nav uk-nav-default doc-nav">
                     
                       
                       
@@ -325,7 +333,7 @@
                         
                     
 
-                    <h1 class="uk-article-title uk-margin-remove-top">How to create a Bitcoin wallet</h1>
+                    <h1 class="uk-article-title uk-margin-remove-top">Create a Bitcoin wallet</h1>
 
                     
                      <!--
@@ -404,17 +412,17 @@ you’ll see more options for creating the wallet.</p>
 
   <p>The first group of options is for the wallet type:</p>
 
-  <h5>HD SegWit (BIP84 Bech32 Native)</h5>
+  <h5>SegWit HD (BIP84 Bech32 - Native)</h5>
 
-  <p>???</p>
+  <p>Is the latest bitcoin address type. It will save the most on fees and it will give you multiple addresses for best practice when it comes to protect your privacy.</p>
+
+  <h5>SegWit HD (BIP49 PS2H - Wrapped)</h5>
+
+  <p>It is a compromise to the new addresses type above, it provides better compatibility with older addrress types and most services like exchanges, but a smaller save on fees.</p>
 
   <h5>SegWit (P2SH)</h5>
 
-  <p>???</p>
-
-  <h6>HD SegWit (BIP49 PS2H)</h6>
-
-  <p>???</p>
+  <p>This is a single address wallet, in case you want a wallet with just one address. The others will give you a new address every time you make a transaction. This is not good for privacy for instance, only use it if you know what you are doing.</p>
 
   <h4>Manual entropy</h4>
 
@@ -422,43 +430,6 @@ you’ll see more options for creating the wallet.</p>
 
   <p>When you’re ready, you can click on “Create” to make your new wallet.</p>
 
-  <h3>Importing a wallet</h3>
-
-  <p>Instead of creating a new wallet, you can chose to import a wallet from another source or a wallet that you’ve previously created on BlueWallet.</p>
-
-  <p>Click on “Import wallet” to open the import screen.</p>
-
-  <figure data-uk-lightbox="animation: slide" class="phone-screenshot-image">
-    <a class="uk-inline" href="https://bluewallet.io/uploads/import-wallet.png">
-        <img src="https://bluewallet.io/uploads/import-wallet.png" alt="Import wallet" />
-        <div class="uk-position-center">
-            <span data-uk-overlay-icon=""></span>
-        </div>
-    </a>
-    
-</figure>
-
-  <p>In this text area you can post your: mnemonic, private key or WIF.</p>
-
-  <h4>Mnemonic</h4>
-
-  <p>???</p>
-
-  <h4>Private key</h4>
-
-  <p>???</p>
-
-  <h4>WIF</h4>
-
-  <p>???</p>
-
-  <h4>??? What else can the user import</h4>
-
-  <p>After you’ve entered your import source in the text area, click “Import” to create an imported wallet.</p>
-
-  <h4>Scanning or importing a file</h4>
-
-  <p>What is this feature for??? What can you scan? What type of file can you import?</p>
 </div>
 
                         
@@ -492,8 +463,8 @@ you’ll see more options for creating the wallet.</p>
                   
                   
                   
-                    <h5>How to create a Lightning wallet</h5>
-                    <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/docs/create-lightning-wallet/">Next &rarr;</a></div>
+                    <h5>Import a wallet</h5>
+                    <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/docs/import-wallet/">Next &rarr;</a></div>
                 
             </div>
         </div>
@@ -643,7 +614,7 @@ you’ll see more options for creating the wallet.</p>
     
 
     
-        <li><a href="/docs/create-lightning-wallet/">How to create a Lightning wallet</a></li>
+        <li><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
         
         
     
@@ -723,19 +694,23 @@ you’ll see more options for creating the wallet.</p>
         
           
           
-          <li class="uk-active"><a href="/docs/create-bitcoin-wallet/">How to create a Bitcoin wallet</a></li>
+          <li class="uk-active"><a href="/docs/create-bitcoin-wallet/">Create a Bitcoin wallet</a></li>
         
           
           
-          <li class=""><a href="/docs/create-lightning-wallet/">How to create a Lightning wallet</a></li>
+          <li class=""><a href="/docs/import-wallet/">Import a wallet</a></li>
         
           
           
-          <li class=""><a href="/docs/backup-wallet/">How to backup/export a wallet</a></li>
+          <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
         
           
           
-          <li class=""><a href="/docs/recover-wallet/">How to recover your wallet</a></li>
+          <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/recover-wallet/">Recover your wallet</a></li>
         
           
           
@@ -745,14 +720,18 @@ you’ll see more options for creating the wallet.</p>
           
           <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
         
+        </ul>
+        
+        <h5 class="uk-margin-top">Cold storage</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/sign-offline/">Sign a transaction offline</a></li>
+        
           
           
           <li class=""><a href="/docs/multisig-spend/">Vaults - spending</a></li>
-        
-        </ul>
-        
-        <h5 class="uk-margin-top">Hardware Wallets</h5>
-        <ul class="uk-nav uk-nav-default doc-nav">
         
           
           

@@ -1,5 +1,5 @@
 ---
-title: How to create a Lightning wallet
+title: Create a Lightning wallet
 tags: [setup]
 ---
 
@@ -34,16 +34,11 @@ you'll see one more option for creating the wallet.
 
 Lightning functionality in BlueWallet is powered by [LNDHub](http://lndhub.io/), an open source service that we created for this purpose. We host our own instance of this service and BlueWallet connects to it by default. However, for more privacy you can host your own instance and connect to it.
 
-To do that, you can add the address of your node in the specified text field.
+To do that, you can add the address of your lndhub instance in the specified text field.
 
-#### Provide entropy
-
-Is the "Provide entropy" feature applicable to Lightning wallets???
 
 </div>
 
 When you're ready, you can click on "Create" to make your new wallet.
 
-### Importing a wallet
 
-??? is it possible to import a Lightning wallet?
