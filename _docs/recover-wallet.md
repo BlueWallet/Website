@@ -1,5 +1,5 @@
 ---
-title: How to recover your wallet
+title: Recover your wallet
 subtitle: Recover your wallet on external software
 tags:
   - usage
@@ -8,15 +8,15 @@ BlueWallet provides 12 or 24 word mnemonic seeds for onchain Segwit wallets. The
 
 ### BIP44
 
-{% include alert.html style="success" text="m/44'" %}
+{% include alert.html style="success" text="m/44'/0'/0'" %}
 
 ### BIP49
 
-{% include alert.html style="success" text="m/49'" %}
+{% include alert.html style="success" text="m/49'/0'/0'" %}
 
 ### BIP84
 
-{% include alert.html style="success" text="m/84'/0'/0''" %}
+{% include alert.html style="success" text="m/84'/0'/0'" %}
 
 You can use Electrum wallet on desktop (electrum.org) to recover this wallets at any moment.
 

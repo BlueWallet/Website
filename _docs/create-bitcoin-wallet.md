@@ -1,5 +1,5 @@
 ---
-title: How to create a Bitcoin wallet
+title: Create a Bitcoin wallet
 tags:
   - setup
 ---
@@ -34,17 +34,18 @@ you'll see more options for creating the wallet.
 
 The first group of options is for the wallet type:
 
-##### HD SegWit (BIP84 Bech32 Native)
+##### SegWit HD (BIP84 Bech32 - Native)
 
-???
+Is the latest bitcoin address type. It will save the most on fees and it will give you multiple addresses for best practice when it comes to protect your privacy.
+
+##### SegWit HD (BIP49 PS2H - Wrapped)
+
+It is a compromise to the new addresses type above, it provides better compatibility with older addrress types and most services like exchanges, but a smaller save on fees.
 
 ##### SegWit (P2SH)
 
-???
+This is a single address wallet, in case you want a wallet with just one address. The others will give you a new address every time you make a transaction. This is not good for privacy for instance, only use it if you know what you are doing.
 
-###### HD SegWit (BIP49 PS2H)
-
-???
 
 #### Manual entropy
 
@@ -52,32 +53,3 @@ BlueWallet supports manual entropy. See [here](./manual-entropy.md) for more det
 
 When you're ready, you can click on "Create" to make your new wallet.
 
-### Importing a wallet
-
-Instead of creating a new wallet, you can chose to import a wallet from another source or a wallet that you've previously created on BlueWallet.
-
-Click on "Import wallet" to open the import screen.
-
-{% include phone-screenshot-image.html img="import-wallet.png" alt="Import wallet" %}
-
-In this text area you can post your: mnemonic, private key or WIF.
-
-#### Mnemonic
-
-???
-
-#### Private key
-
-???
-
-#### WIF
-
-???
-
-#### ??? What else can the user import
-
-After you've entered your import source in the text area, click "Import" to create an imported wallet.
-
-#### Scanning or importing a file
-
-What is this feature for??? What can you scan? What type of file can you import?

@@ -1,10 +1,10 @@
 ---
-title: How to backup/export a wallet
+title: Backup/export a wallet
 subtitle: Access to private keys and recover of wallets
 tags: [usage]
 ---
 
-To backup or export your wallet is pretty simple. This backup is the "key", usually a mnemonic (set of 24 words) or just a "text" that will give you access to your wallet if you lose your device, uninstall the app, etc. In short, if something wrong happens and you want/need to get access to your wallet again.
+To backup or export your wallet is pretty simple. This backup is the "key", usually a mnemonic (set of 12 or 24 words) or just a "text" that will give you access to your wallet if you lose your device, uninstall the app, etc. In short, if something wrong happens and you want/need to get access to your wallet again.
 
 ### Things to know
 On bluewallet every wallet has its own backup and there's no global backup for all wallets that you can create, this is something you need to do individually for each wallet. We advise to backup all wallets.
