@@ -1,0 +1,31 @@
+<div class="uk-section section-hero uk-position-relative" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+    <div class="uk-container uk-container-small">
+        <h1 class="uk-heading-primary uk-text-center uk-margin-remove-top">Can we help? 👇</h1>
+            <div class="hero-search">
+
+                    <!-- Html Elements for Search -->
+                    <div class="uk-position-relative">
+                        <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
+                            <span class="uk-search-icon-flip" data-uk-search-icon></span>
+                            <input id="search-hero" class="uk-search-input uk-box-shadow-large" type="search" placeholder="{{ site.data.translation[site.lang].search_placeholder | default: "Search for answers" }}" autocomplete="off">
+                        </form>
+                        <ul id="search-hero-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
+                    </div>
+                    <br />
+                     <p class="uk-text-lead uk-text-center">or contact the team for any doubts <span class="uk-label">bluewallet@bluewallet.io</span></p>
+
+                    <script>
+                    SimpleJekyllSearch({
+                        searchInput: document.getElementById('search-hero'),
+                        resultsContainer: document.getElementById('search-hero-results'),
+                        noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
+                        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                        json: '/search.json'
+                    });
+
+                    searchResults("search-hero");
+
+                    </script>
+            </div>
+	</div>
+</div>

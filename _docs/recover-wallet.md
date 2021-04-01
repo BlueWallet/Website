@@ -1,8 +1,7 @@
 ---
 title: Recover your wallet
 subtitle: Recover your wallet on external software
-tags:
-  - usage
+tags: [usage, featured]
 ---
 BlueWallet provides 12 or 24 word mnemonic seeds for onchain Segwit wallets. These are standard BIP44, BIP49 and BIP84 addresses with the following derivation paths:
 

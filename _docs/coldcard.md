@@ -1,7 +1,7 @@
 ---
-title: Coldcard
-subtitle: Coldcard with Bluewallet - Lightning SD card
-tags: [hww]
+title: Coldcard with Bluewallet
+subtitle: Using a Lightning SD card
+tags: [hww, usage, featured]
 ---
 
   <div class="uk-container{{container}}">

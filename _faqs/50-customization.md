@@ -1,5 +1,5 @@
 ---
-title: Payment in transit
+title: Payment in transition
 categories: [problems]
 ---
 

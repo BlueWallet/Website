@@ -17,9 +17,9 @@
 <meta property="og:url" content="https://bluewallet.io/docs/intro/" />
 <meta property="og:site_name" content="BlueWallet - Bitcoin Wallet for iOS and Android" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-03-05T11:21:36+01:00" />
+<meta property="article:published_time" content="2021-04-01T18:17:18+02:00" />
 <script type="application/ld+json">
-{"headline":"Help and documentation","dateModified":"2021-03-05T11:21:36+01:00","url":"https://bluewallet.io/docs/intro/","datePublished":"2021-03-05T11:21:36+01:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"Nuno Coelho"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bluewallet.io/docs/intro/"},"author":{"@type":"Person","name":"Nuno Coelho"},"description":"Contact support for any doubts bluewallet@bluewallet.io","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"Help and documentation","dateModified":"2021-04-01T18:17:18+02:00","url":"https://bluewallet.io/docs/intro/","datePublished":"2021-04-01T18:17:18+02:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"Nuno Coelho"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bluewallet.io/docs/intro/"},"author":{"@type":"Person","name":"Nuno Coelho"},"description":"Contact support for any doubts bluewallet@bluewallet.io","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -203,7 +203,7 @@
                             
                                 
                                     
-                                        <li class="uk-active"><a href="/docs/intro/" >Support</a></li>
+                                        <li><a href="/docs/" >Support</a></li>
                                                                                                         
                                 
                             
@@ -278,7 +278,7 @@
                     
                       
                       
-                      <li class=""><a href="/docs/coldcard/">Coldcard</a></li>
+                      <li class=""><a href="/docs/coldcard/">Coldcard with Bluewallet</a></li>
                     
                       
                       
@@ -367,7 +367,7 @@
         
 
         
-            <p class="uk-text-lead">Find quick answers to frequent questions asked by customers</p>
+            <p class="uk-text-lead">Find quick answers to frequent questions asked by fellow bitcoiners</p>
         
 
         
@@ -375,14 +375,20 @@
         <ul class="uk-margin-medium-top" data-uk-accordion="multiple: true">
             
                 <li>
-                    <a class="lightbox uk-accordion-title uk-box-shadow-hover-small" href="#">Not enough balance</a>
-                    <div class="article-content uk-accordion-content link-primary">When this error appears it means the app already nows upfront that you don't have enough balance, usually because of the fees the service will charge on your transaction. 
+                    <a class="lightbox uk-accordion-title uk-box-shadow-hover-small" href="#">Recover a wallet</a>
+                    <div class="article-content uk-accordion-content link-primary">To recover or import a wallet you go to the import feature under `add wallet` ➤ `import wallet`. Then you would need to write your seed words. Like a sentence, without numbers, in the order it was given and with a space in between each word. 
+
+For instance: clock boat sunshine 
+
+In case you have doubts on any word, [here's the list](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt) of words:
+
 </div>                
                 </li>
             
                 <li>
-                    <a class="lightbox uk-accordion-title uk-box-shadow-hover-small" href="#">Not enough confirmed inputs</a>
-                    <div class="article-content uk-accordion-content link-primary">When this error appears it means that you still have one onchain transaction ongoing. Duo to limitations bluewallet supports only one transaction in simultaneous.
+                    <a class="lightbox uk-accordion-title uk-box-shadow-hover-small" href="#">Transaction without confirmations</a>
+                    <div class="article-content uk-accordion-content link-primary">Transactions confirmations depend on fee value. Bigger the fee, higher in the priority pool they will be. You can check [mempool.space](https://mempool.space) and search for your transaction there (with your transaction ID) and also see the state of the network and transactions mempool general state.
+﻿
 </div>                
                 </li>
             
@@ -412,7 +418,7 @@ The wallet provides a way to manually refresh. Go inside the wallet you want to 
                 </li>
             
                 <li>
-                    <a class="lightbox uk-accordion-title uk-box-shadow-hover-small" href="#">Payment in transit</a>
+                    <a class="lightbox uk-accordion-title uk-box-shadow-hover-small" href="#">Payment in transition</a>
                     <div class="article-content uk-accordion-content link-primary">This state happens when your payment was sent to the network, but it didn't get a response back. So bluewallet doesn't know what happen, if it failed, if it succeed, etc.
 
 This payment usually enters in a "limbo" state that can go from 24h up to some days.
@@ -525,10 +531,6 @@ This is the worst known case at the moment on the network.</div>
     
 
     
-        <li><a href="/docs/changelog/">Creating a changelog</a></li>
-        
-        
-    
 
     
 
@@ -537,68 +539,6 @@ This is the worst known case at the moment on the network.</div>
 
     
 
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-        <li><a href="/docs/contact/">Contact form (via FormSpree)</a></li>
-        
-        
-    
-
-    
-
-    
-    
-
-    
-
-    
-        <li><a href="/docs/create-bitcoin-wallet/">Create a Bitcoin wallet</a></li>
-        
-        
     
 
     
@@ -612,7 +552,103 @@ This is the worst known case at the moment on the network.</div>
         <li><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
         
         
-            
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+        <li><a href="/docs/manual-entropy/">Adding manual entropy</a></li>
+        
+        
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
     </ul>
 </div>
 
@@ -690,7 +726,7 @@ This is the worst known case at the moment on the network.</div>
         
           
           
-          <li class=""><a href="/docs/coldcard/">Coldcard</a></li>
+          <li class=""><a href="/docs/coldcard/">Coldcard with Bluewallet</a></li>
         
           
           
@@ -805,7 +841,7 @@ This is the worst known case at the moment on the network.</div>
                 
 
                 
-                    <li class="uk-active"><a href="/docs/intro/" >Support</a></li>
+                    <li><a href="/docs/" >Support</a></li>
                 
                 
             
