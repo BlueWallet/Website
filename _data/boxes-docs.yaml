@@ -1,0 +1,13 @@
+# Boxes include navigation
+
+- title: Bitcoin Wallets
+  desc: How to create and recover wallets. Information about Transactions.
+  url: /docs/create-bitcoin-wallet/
+
+- title: Cold Storage
+  desc: Connect to your favourite device and learn how to do transactions offline.
+  url: /docs/coldcard/
+
+- title: Multisig Vaults
+  desc: Understand Multisig, its complexities and how to better handle it for yourself.
+  url: /docs/multisig-wallet/

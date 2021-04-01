@@ -1,6 +1,5 @@
 - title: Help section
   docs:
-  - intro
   - create-bitcoin-wallet
   - import-wallet
   - create-lightning-wallet
@@ -12,11 +11,16 @@
 - title: Cold storage
   docs:
   - sign-offline
-  - multisig-spend
   - coldcard
   - coldcard-dropbox
   - coldcard-watch
   - cobo-vault
+
+- title: Multisig
+  docs:
+  - multisig-wallet
+  - create-multisig-wallet
+  - multisig-spend
 
 - title: Local Trader
   docs:

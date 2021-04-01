@@ -7,5 +7,5 @@ To recover or import a wallet you go to the import feature under `add wallet` âž
 
 For instance: clock boat sunshine 
 
-In case you have doubts on any word, [here's the list](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt) of words:
+In case you have doubts on any word, [here's the list](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt) of words
 
