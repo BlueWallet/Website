@@ -1,5 +1,5 @@
 ---
-title: Recover your wallet
+title: Recover on another wallet
 subtitle: Recover your wallet on external software
 tags: [usage, featured]
 ---

@@ -48,7 +48,7 @@ This is a single address wallet, in case you want a wallet with just one address
 
 #### Manual entropy
 
-BlueWallet supports manual entropy. See [here](./manual-entropy.md) for more details.
+BlueWallet supports manual entropy. See [here](../manual-entropy/) for more details.
 
 When you're ready, you can click on "Create" to make your new wallet.
-
+</div>

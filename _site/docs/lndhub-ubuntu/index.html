@@ -17,9 +17,9 @@
 <meta property="og:url" content="https://bluewallet.io/docs/lndhub-ubuntu/" />
 <meta property="og:site_name" content="BlueWallet - Bitcoin Wallet for iOS and Android" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-01T22:32:10+02:00" />
+<meta property="article:published_time" content="2021-04-02T00:09:03+02:00" />
 <script type="application/ld+json">
-{"headline":"LNDhub on VPS with Ubuntu","dateModified":"2021-04-01T22:32:10+02:00","url":"https://bluewallet.io/docs/lndhub-ubuntu/","datePublished":"2021-04-01T22:32:10+02:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"Nuno Coelho"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bluewallet.io/docs/lndhub-ubuntu/"},"author":{"@type":"Person","name":"Nuno Coelho"},"description":"To avoid rewriting things already well explained in other tutorials, I leave here a link to set up your Bitcoin&amp;Lightning node on Ubuntu 16.04, if you already have one you can jump to Step 1.\\ You can follow this or other guides as long as LND is the implementation of choice for Lightning, we will apply the necessary changes to configurations files in the next steps. If you are starting from scratch, I suggest to execute this on a VPS, for example a Digital Ocean’s droplet.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"LNDhub on VPS with Ubuntu","dateModified":"2021-04-02T00:09:03+02:00","url":"https://bluewallet.io/docs/lndhub-ubuntu/","datePublished":"2021-04-02T00:09:03+02:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"Nuno Coelho"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bluewallet.io/docs/lndhub-ubuntu/"},"author":{"@type":"Person","name":"Nuno Coelho"},"description":"To avoid rewriting things already well explained in other tutorials, I leave here a link to set up your Bitcoin&amp;Lightning node on Ubuntu 16.04, if you already have one you can jump to Step 1.\\ You can follow this or other guides as long as LND is the implementation of choice for Lightning, we will apply the necessary changes to configurations files in the next steps. If you are starting from scratch, I suggest to execute this on a VPS, for example a Digital Ocean’s droplet.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -224,16 +224,12 @@
     <div class="uk-container">
         <div class="uk-grid-large" data-uk-grid>
 
-
+            
             <div class="sidebar-fixed-width uk-visible@m">
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     
                     <h5>Help section</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
-                    
-                      
-                      
-                      <li class=""><a href="/docs/intro/">Help and documentation</a></li>
                     
                       
                       
@@ -253,7 +249,7 @@
                     
                       
                       
-                      <li class=""><a href="/docs/recover-wallet/">Recover your wallet</a></li>
+                      <li class=""><a href="/docs/recover-wallet/">Recover on another wallet</a></li>
                     
                       
                       
@@ -274,10 +270,6 @@
                     
                       
                       
-                      <li class=""><a href="/docs/multisig-spend/">Vaults - spending</a></li>
-                    
-                      
-                      
                       <li class=""><a href="/docs/coldcard/">Coldcard with Bluewallet</a></li>
                     
                       
@@ -291,6 +283,23 @@
                       
                       
                       <li class=""><a href="/docs/cobo-vault/">Cobo Vault</a></li>
+                    
+                    </ul>
+                    
+                    <h5>Multisig</h5>
+                    <ul class="uk-nav uk-nav-default doc-nav">
+                    
+                      
+                      
+                      <li class=""><a href="/docs/multisig-wallet/">Multisig Vault General</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/create-multisig-wallet/">How to create a Vault</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/multisig-spend/">Vaults - spending</a></li>
                     
                     </ul>
                     
@@ -322,6 +331,7 @@
                     
                 </div>
             </div>
+            
 
             <div class="uk-width-1-1 uk-width-expand@m">
 
@@ -332,9 +342,9 @@
                             <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span uk-icon="icon: lifesaver"></span>&nbsp;Documentation</a>
                         
                     
-
+                    
                     <h1 class="uk-article-title uk-margin-remove-top">LNDhub on VPS with Ubuntu</h1>
-
+                    
                     
                      <!--
                     <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
@@ -356,7 +366,7 @@
 </div> 
                     </div>
                     -->
-                    <div class="article-content link-primary">
+                    <div class="article-content">
                         <p>To avoid rewriting things already well explained in other tutorials, I leave here <a href="https://gist.github.com/bretton/0b22a0503a9eba09df86a23f3d625c13">a link to set up</a> your Bitcoin&amp;Lightning node on Ubuntu 16.04, if you already have one you can jump to Step 1.\
 You can follow this or other guides as long as LND is the implementation of choice for Lightning, we will apply the necessary changes to configurations files in the next steps. If you are starting from scratch, I suggest to execute this on a VPS, for example a Digital Ocean’s droplet.</p>
 
@@ -657,6 +667,9 @@ Your bank is born, let’s take a moment to think about what you achieved here: 
 
   
   
+
+  
+  
     <div class="uk-margin-large-top paginate-post">
         <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
             <div>
@@ -691,6 +704,15 @@ Your bank is born, let’s take a moment to think about what you achieved here: 
     
 
     <ul class="uk-list link-secondary">
+    
+
+    
+    
+
+    
+
+    
+
     
 
     
@@ -862,6 +884,15 @@ Your bank is born, let’s take a moment to think about what you achieved here: 
     
 
     
+
+    
+    
+
+    
+
+    
+
+    
     </ul>
 </div>
 
@@ -894,10 +925,6 @@ Your bank is born, let’s take a moment to think about what you achieved here: 
         
           
           
-          <li class=""><a href="/docs/intro/">Help and documentation</a></li>
-        
-          
-          
           <li class=""><a href="/docs/create-bitcoin-wallet/">Create a Bitcoin wallet</a></li>
         
           
@@ -914,7 +941,7 @@ Your bank is born, let’s take a moment to think about what you achieved here: 
         
           
           
-          <li class=""><a href="/docs/recover-wallet/">Recover your wallet</a></li>
+          <li class=""><a href="/docs/recover-wallet/">Recover on another wallet</a></li>
         
           
           
@@ -935,10 +962,6 @@ Your bank is born, let’s take a moment to think about what you achieved here: 
         
           
           
-          <li class=""><a href="/docs/multisig-spend/">Vaults - spending</a></li>
-        
-          
-          
           <li class=""><a href="/docs/coldcard/">Coldcard with Bluewallet</a></li>
         
           
@@ -952,6 +975,23 @@ Your bank is born, let’s take a moment to think about what you achieved here: 
           
           
           <li class=""><a href="/docs/cobo-vault/">Cobo Vault</a></li>
+        
+        </ul>
+        
+        <h5 class="uk-margin-top">Multisig</h5>
+        <ul class="uk-nav uk-nav-default doc-nav">
+        
+          
+          
+          <li class=""><a href="/docs/multisig-wallet/">Multisig Vault General</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/create-multisig-wallet/">How to create a Vault</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/multisig-spend/">Vaults - spending</a></li>
         
         </ul>
         

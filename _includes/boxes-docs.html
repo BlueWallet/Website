@@ -1,0 +1,48 @@
+{% if include.columns %}
+    {% assign columns = include.columns %}
+    {% if columns == '1' %}
+        {% assign container = ' uk-container-xsmall' %}
+    {% elsif columns == '2' %}
+        {% assign container = ' uk-container-small' %}
+    {% else %}
+        {% assign container = '' %}
+    {% endif %}
+{% else %}
+    {% assign columns = 3 %}
+    {% assign container = '' %}
+{% endif %}
+
+<div class="uk-section">
+    <div class="uk-container{{container}}">
+
+        <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top uk-grid-small" data-uk-grid>
+        {% for item in site.data.boxes-docs %}
+            
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-medium border-light">
+                    {% if item.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = '' | relative_url %}
+                   
+                   
+                    <a class="uk-position-cover" href="{{ domain }}{{ item.url }}" {% if item.url contains 'http' %}{% endif %}></a>
+                     {% endif %}
+                    {% if item.icon %}
+                    <span data-uk-icon="icon: {{ item.icon }}; ratio: 3.4" class="">
+                        <img src="{{ site.uploads | absolute_url }}/{{ item.icon }}.svg" alt="download bitcoin wallet for ios">
+                    </span>
+                    {% endif %}
+                    {% if item.title %}
+                        <h3 class="uk-card-title uk-margin">{{ item.title }}</h3>
+                    {% endif %}
+                    {% if item.desc %}
+                        <p>{{ item.desc }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            
+        {% endfor %}
+        </div>
+    </div>
+</div>

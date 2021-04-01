@@ -6,7 +6,8 @@ layout: default
     <div class="uk-container">
         <div class="uk-grid-large" data-uk-grid>
 
-
+            {% if page.sidebar == 'nosidebar' %}
+            {% else %}
             <div class="sidebar-fixed-width uk-visible@m">
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     {% for section in site.data.navigation_docs %}
@@ -21,6 +22,7 @@ layout: default
                     {% endfor %}
                 </div>
             </div>
+            {% endif %}
 
             <div class="uk-width-1-1 uk-width-expand@m">
 
@@ -33,16 +35,17 @@ layout: default
                             <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span uk-icon="icon: lifesaver"></span>&nbsp;Documentation</a>
                         {% endif %}
                     {% endif %}
-
+                    {% if page.sidebar == 'nosidebar' %}
+                    {% else %}
                     <h1 class="uk-article-title uk-margin-remove-top">{{ page.title | escape }}</h1>
-
+                    {% endif %}
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted uk-margin-top uk-margin-medium-bottom">{{ page.subtitle }}</p>{% endif %}
                      <!--
                     <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom uk-flex uk-flex-middle">
                         {% include post-meta.html %} 
                     </div>
                     -->
-                    <div class="article-content link-primary">
+                    <div class="article-content">
                         {{ content }}
                         {% if site.share.doc %}
                             {% include share.html %}
