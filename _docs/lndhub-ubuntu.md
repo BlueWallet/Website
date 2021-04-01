@@ -1,6 +1,5 @@
 ---
 title: LNDhub on VPS with Ubuntu
-subtitle: Coldcard with Bluewallet - Lightning SD card
 tags:
   - lndhub
 ---

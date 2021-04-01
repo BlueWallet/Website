@@ -1,6 +1,5 @@
 ---
 title: LNDhub with raspibolt
-subtitle: Coldcard with Bluewallet - Lightning SD card
 tags:
   - lndhub
 ---

@@ -1,7 +1,7 @@
 ---
 title: Backup/export a wallet
 subtitle: Access to private keys and recover of wallets
-tags: [usage]
+tags: [usage, featured]
 ---
 
 To backup or export your wallet is pretty simple. This backup is the "key", usually a mnemonic (set of 12 or 24 words) or just a "text" that will give you access to your wallet if you lose your device, uninstall the app, etc. In short, if something wrong happens and you want/need to get access to your wallet again.

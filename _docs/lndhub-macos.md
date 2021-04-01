@@ -1,6 +1,5 @@
 ---
 title: LNDHub on Mac OSX
-subtitle: Coldcard with Bluewallet - Lightning SD card
 tags:
   - lndhub
 ---

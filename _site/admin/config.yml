@@ -44,7 +44,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Docs"
     folder: "_docs"
     sort: "title:asc"
-    create: false
+    create: create
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}

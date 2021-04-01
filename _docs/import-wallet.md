@@ -1,7 +1,6 @@
 ---
 title: Import a wallet
-tags:
-  - setup
+tags: [usage, featured]
 ---
 
 Instead of creating a new wallet, you can chose to import a wallet from another source or a wallet that you've previously created on BlueWallet.

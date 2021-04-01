@@ -1,6 +1,7 @@
 ---
-title: Not enough confirmed inputs
+title: Transaction without confirmations
 categories: [problems]
 ---
 
-When this error appears it means that you still have one onchain transaction ongoing. Duo to limitations bluewallet supports only one transaction in simultaneous.
+Transactions confirmations depend on fee value. Bigger the fee, higher in the priority pool they will be. You can check [mempool.space](https://mempool.space) and search for your transaction there (with your transaction ID) and also see the state of the network and transactions mempool general state.
+﻿

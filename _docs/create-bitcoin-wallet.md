@@ -1,7 +1,6 @@
 ---
 title: Create a Bitcoin wallet
-tags:
-  - setup
+tags: [usage, featured]
 ---
 Creating a Bitcoin wallet on BlueWallet is easy.
 
