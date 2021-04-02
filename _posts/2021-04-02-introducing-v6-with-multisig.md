@@ -2,6 +2,7 @@
 layout: post
 title: "Introducing v6 with Multisig "
 date: 2021-04-02 12:56:23
+categories: news, updates
 ---
 Version 6 of BlueWallet has been introduced a couple of months ago and it brings all the power of [Multisig to a mobile app](https://bluewallet.io/multisig-wallet/). 
 
