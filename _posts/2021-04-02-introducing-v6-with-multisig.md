@@ -13,8 +13,6 @@ The goal is simple, as a user learns about bitcoin and goes on its own self-sove
       </div>
   </div>
 
-
-
 ## What is Multisig?
 
 A Multisig Vault is a wallet with multiple keys. This allows you to exponentially increase security (if used correctly) or for shared custody as well. Shared custody is when you want to share a wallet with a group of people.
@@ -45,8 +43,6 @@ To import a Multisig, use your multisig backup file and use the import feature. 
 
 By default BlueWallet will generate a 2of3 Vault. To create a different quorum or to change the address type you can activate the advanced options in the Settings. 
 
-
-
-For tutorials and documentation you can check the support section. 
+For tutorials and documentation you can check the [support section](https://bluewallet.io/docs). 
 
 We will keep improving and building on top of the current foundation, which in terms of user experience and security seems pretty solid.
