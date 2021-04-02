@@ -59,4 +59,4 @@ Check out this review from [BTC Sessions](https://www.youtube.com/channel/UChzLn
   </div>
 
 \
-Give it go, feedback and violent reactions welcomed :)
+Give it a go, feedback and violent reactions welcomed :)
