@@ -573,6 +573,9 @@
             margin: 60px auto 0 auto;
             .uk-search-input {
                 height: 80px;
+                @media (max-width: $breakpoint-small) {
+                    height: 66px;
+                }
                 border-radius: 50px;
                 font-size: 1.25rem;
                 font-style: normal;

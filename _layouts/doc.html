@@ -28,15 +28,10 @@ layout: default
 
                 <article class="uk-article">
 
-                    {% if page.layout == 'doc' %}
-                        {% if site.data.translation[site.lang].mobile_nav_docs %}
-                            <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span uk-icon="icon: lifesaver"></span>&nbsp;Documentation</a>
-                        {% else %}
-                            <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span uk-icon="icon: lifesaver"></span>&nbsp;Documentation</a>
-                        {% endif %}
-                    {% endif %}
+                  
                     {% if page.sidebar == 'nosidebar' %}
                     {% else %}
+                     <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas-docs" data-uk-toggle><span uk-icon="icon: lifesaver"></span>&nbsp;Documentation</a>
                     <h1 class="uk-article-title uk-margin-remove-top">{{ page.title | escape }}</h1>
                     {% endif %}
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted uk-margin-top uk-margin-medium-bottom">{{ page.subtitle }}</p>{% endif %}
