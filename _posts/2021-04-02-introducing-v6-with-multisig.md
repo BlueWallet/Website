@@ -47,6 +47,15 @@ By default BlueWallet will generate a 2of3 Vault. To create a different quorum o
 
 For tutorials and documentation you can check the [support section](https://bluewallet.io/docs). 
 
-We will keep improving and building on top of the current foundation, which in terms of user experience and security seems pretty solid.\
+We will keep improving and building on top of the current foundation, which in terms of user experience and security seems pretty solid.
+
+Check out this review from [BTC Sessions](https://www.youtube.com/channel/UChzLnWVsl3puKQwc5PoO6Zg) to have real feeling on all the power it gives you.
+
+<div class="uk-container{{container}}">
+      <div class="videoWrapper">
+        <iframe src="https://www.youtube.com/embed/E1qcYkSerko?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+      </div>
+  </div>
+
 \
 Give it go, feedback and violent reactions welcomed :)
