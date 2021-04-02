@@ -43,4 +43,10 @@ To import a Multisig, use your multisig backup file and use the import feature. 
 
 ## Advanced options
 
-By default BlueWallet will generate a 2of3 Vault. To create a different quorum or to change the address type you can activate the advanced options in the Settings.
+By default BlueWallet will generate a 2of3 Vault. To create a different quorum or to change the address type you can activate the advanced options in the Settings. 
+
+
+
+For tutorials and documentation you can check the support section. 
+
+We will keep improving and building on top of the current foundation, which in terms of user experience and security seems pretty solid.
