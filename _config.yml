@@ -84,22 +84,22 @@ navbar:
   
 # Default author settings
 author:
-    name:           Nuno Coelho
+    name:           Nuno
     title:          Product & UX  
     avatar:         nuno.png
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
     nuno:
-      name:         Nuno Coelho
+      name:         Nuno
       title:        Product & UX  
       avatar:       nuno.png
     igor:
-      name:         Igor Korsakov
+      name:         Igor
       title:        Engineering     
       avatar:       igor.png
     marcos:
-      name:         Marcos Rodriguez
+      name:         Marcos
       title:        Engineering    
       avatar:       marcos.png
     
