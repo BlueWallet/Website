@@ -2,9 +2,9 @@
 title: Multisig Vault General 
 tags: [usage, featured]
 ---
-A Multisig Vault is a wallet with multiple keys. This allows you to exponentially increse security (if used correctly) or for shared custody as well. Shared custody is When you want to share a wallet with a group of people.
+A Multisig Vault is a wallet with multiple keys. This allows you to exponentially increase security (if used correctly) or for shared custody as well. Shared custody is when you want to share a wallet with a group of people.
 
-Multiple devices are advised. The Vault will work with other BlueWallet apps and PSBT compatible wallets, like Electrum, Specter, Coldcard, Cobo vault, etc. It is advided that you use multiple devices, and considered store these devices in multiple locations if you see it is fit for your use case.
+Multiple devices are advised. The Vault will work with other BlueWallet apps and PSBT compatible wallets, like Electrum, Specter, Coldcard, Cobo vault, etc. It is advised that you use multiple devices, and considered store these devices in multiple locations if you see it is fit for your use case.
 
 {% include image.html img="tip2.png" alt="Multisig bitcoin wallet" %}
 
