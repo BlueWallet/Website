@@ -16,11 +16,11 @@ As I write this my bitcoin node is rejecting transactions below the 12 sat/vb ma
 
 Your bitcoin wallet app should be the one to act in your best interests, trying to save as much sats on transactions as possible and, at the same time, give you the full control you need and should have. Most apps out there are doing an embarrassing job on this, with poor fee estimations or simply not even being ready to send and receive Segwit transactions. Which ends-up contributing to the high fee environment we are seeing. 
 
-Let's take a look on all the strategies we have available
+Let's take a look on all the strategies we have available.
 
 ### Segwit wallets
 
-BlueWallet provides Segwit wallets (bech32) by default, which are the ones that help you on saving more on fees. Besides allowing you to save on fees they also optimize the block space you use, which we already saw it was a scarce resource. Now, unfortunately there are still some wallets/exchanges not using Segwit. You can do two things about it. First, stop using them. And two, ask them to upgrade their wallets ffs.
+BlueWallet provides Segwit wallets (bech32) by default, which are the ones that help you on saving more on fees. Besides allowing you to save on fees they also optimize the block space you use, which we already saw that it was a scarce resource. Now, unfortunately there are still some wallets/exchanges not using Segwit. You can do two things about it. First, stop using them. And two, ask them to upgrade their wallets ffs.
 
 ### Fee estimation and Flexible fees 
 
@@ -44,11 +44,15 @@ Cancel transactions using RBF or replace-by-fee  is technique similar to regul
 
 ### Batch send 
 
+<div class="features uk-text-center">
+   <img src="https://bluewallet.io/uploads//features/batch.png" alt="fee estimation">
+</div>
+
 Now a very simple technique that people usually forget and useful when doing more than one transaction is that you can do multiple "sends" on a single transaction. when creating a transaction add as many payees as you want. This helps to save on fees, helps to optimize for block space, etc. So please use it and abuse it, we did spend some time on trying to make a good experience for this feature, so let us know how does it go.
 
 ### Lightning
 
-Not using the block space is probably the best alternative when it comes to fees, and that's what Lightning is about. You can use our Lightning service with zero configuration. Or you can use your own node, [mynodebtc](http://mynodebtc.com/) makes this super simple, and soon the service will be available on [umbrel](https://getumbrel.com/) as well.
+Not using the block space is probably the best alternative when it comes to fees, and that's what [Lightning](https://bluewallet.io/lightning/) is about. You can use our Lightning service with zero configuration. Or you can use your own node, [mynodebtc](http://mynodebtc.com/) makes this super simple, and soon the service will be available on [umbrel](https://getumbrel.com/) as well.
 
 <hr class="uk-margin-medium">
 
