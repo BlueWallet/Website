@@ -4,6 +4,12 @@ title: High fees and transactions pending - What to do
 date: 2021-04-20 09:36:00
 categories: usage, tutorial
 ---
+<div id="bump" class="uk-card">
+     <div class="features uk-text-center">
+           <img src="https://bluewallet.io/uploads//features/fees.png" alt="fee estimation">
+        </div>
+   </div>
+
 As could be predicted a more mature fee market started to develop in this cycle, and we are witnessing a natural competition for block space. Think about block space as another very scarce property of the network, where participants are competing to get their transactions in.
 
 As I write this my bitcoin node is rejecting transactions below the 12 sat/vb mark, the network is full, the next block target is 200 sats/vb. Essentially, it is not looking good, so let's take a look from the user perspective on what can be done to mitigate this and save some satoshis at the same time.
@@ -17,12 +23,6 @@ Let's take a look on all the strategies we have available
 BlueWallet provides Segwit wallets (bech32) by default, which are the ones that help you on saving more on fees. Besides allowing you to save on fees they also optimize the block space you use, which we already saw it was a scarce resource. Now, unfortunately there are still some wallets/exchanges not using Segwit. You can do two things about it. First, stop using them. And two, ask them to upgrade their wallets ffs.
 
 ### Fee estimation and Flexible fees 
-
-<div id="bump" class="uk-card">
-     <div class="features uk-text-center">
-           <img src="https://bluewallet.io/uploads//features/fees.png" alt="fee estimation">
-        </div>
-   </div>
 
 We have a lot going on in the Fees feature, so try to take full advantage of it. It provides you a fee estimation targeting confirmations in 10m, 3h or 1 day. This estimations are done in real time in two ways, first by looking directly to the current mempool state, which is different from most services that are using historical data from the node. It does not mean that one is correct and the other is wrong (both are not great). But in times of fee volatility, it does not help much to look to historical data, you want to look to the data in real time so it adapts faster to the huge swigs we see nowadays. Second, you can see how much you are spending without creating the transaction, just type a value a check the fee result live.
 
