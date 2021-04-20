@@ -1,7 +1,7 @@
 ---
 layout: post
 title: High fees and transactions pending - What to do
-date: 2021-04-20 10:36:20
+date: 2021-04-20 09:36:00
 ---
 As could be predicted a more mature fee market started to develop in this cycle, and we are witnessing a natural competition for block space. Think about block space as another very scarce property of the network, where participants are competing to get their transactions in.
 
@@ -31,7 +31,7 @@ Now that we know this about the fee estimation and that we can manually change i
 
 ### **Bump transaction** 
 
-https://twitter.com/bluewalletio/status/1383426612218134533
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Transactions not confirming? <br><br>Here&#39;s how to bump the fee and increase the transaction priority.<br><br>👩‍🎤 <a href="https://t.co/0OWjrc1Oru">https://t.co/0OWjrc1Oru</a> <a href="https://twitter.com/hashtag/bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">#bitcoin</a> <a href="https://t.co/p7XvimVrdY">pic.twitter.com/p7XvimVrdY</a></p>&mdash; BlueWallet (@bluewalletio) <a href="https://twitter.com/bluewalletio/status/1383426612218134533?ref_src=twsrc%5Etfw">April 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Bump transactions using RBF or replace-by-fee, is useful if you sent a transaction and it’s still unconfirmed (pending) you can replace it with the one with higher fees, making it more attractive for miners to mine, thus, speeding up the confirmation.
 
@@ -47,6 +47,10 @@ Now a very simple technique that people usually forget and useful when doing mor
 
 Not using the block space is probably the best alternative when it comes to fees, and that's what Lightning is about. You can use our Lightning service with zero configuration. Or you can use your own node, [mynodebtc](http://mynodebtc.com/) makes this super simple, and soon the service will be available on [umbrel](https://getumbrel.com/) as well.
 
-There's other more advanced techniques like utxo consolidation strategies, but the ones mentioned should give you the best experience in terms of fees and confirmation times possible at the moment with bitcoin. In essence, you can try to switch to Lightning whenever it is possible, or optimize your usage of the block space.
+There's more advanced techniques like utxo consolidation strategies, but the ones mentioned should give you the best experience in terms of fees and confirmation times possible at the moment with a bitcoin wallet. In essence, you can try to switch to Lightning whenever it is possible, or optimize your usage of the block space, for both yours and others convenience.
 
-This is why it was important to prepare for that in advance.
+This is why it was important to prepare for this scenario in advance, and I'm happy that we did so, there's a lot of work and optimization done in the past couple of years that I believe put BlueWallet in the state of the art in the ecosystem when it comes to fees and transaction optimization for the user. From the top notch fee estimation to the batch experience, to the ability to just cancel a transaction that it is taking too long. 
+
+1 sat/b transaction fees are gone (at least for awhile) and there's now a fee market that we need to optimize for. \
+\
+Keep building!
