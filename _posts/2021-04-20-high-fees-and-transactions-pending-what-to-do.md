@@ -24,9 +24,9 @@ BlueWallet provides Segwit wallets (bech32) by default, which are the ones that 
         </div>
    </div>
 
-We have a lot going on the Fees feature, so try to take full advantage of it. It provides you a fee estimation targeting confirmations in 10m, 3h or 1 day. This estimations are done in real time in two ways, first by looking directly to the current mempool state, which is different from most services that are using historical data from the node. It does not mean that one is correct and the other is wrong (both are not great). But in times of fee volatility, it does not help much to look to historical data, you want to look to the data in real time so it adapts faster to the huge swigs we see nowadays. Second, you can see how much you are spending without creating the transaction, just type a value a check the fee result live.
+We have a lot going on in the Fees feature, so try to take full advantage of it. It provides you a fee estimation targeting confirmations in 10m, 3h or 1 day. This estimations are done in real time in two ways, first by looking directly to the current mempool state, which is different from most services that are using historical data from the node. It does not mean that one is correct and the other is wrong (both are not great). But in times of fee volatility, it does not help much to look to historical data, you want to look to the data in real time so it adapts faster to the huge swigs we see nowadays. Second, you can see how much you are spending without creating the transaction, just type a value a check the fee result live.
 
-Now that we know this about the fee estimation and that we can manually change it and tweak it, we can take better advantage of the next two features. And we can do this by simply sending a smaller fee, and then changing it based on the time it is taking to confirm. 
+Now that we know this about the fee estimation and that we can manually change it and tweak it, we can take better advantage of the next two features. And we can do this by simply sending a smaller fee, and then changing it based on the time it is taking to confirm and our preference. 
 
 ### Bump transaction 
 
