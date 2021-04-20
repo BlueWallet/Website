@@ -16,7 +16,7 @@ As I write this my bitcoin node is rejecting transactions below the 12 sat/vb ma
 
 Your bitcoin wallet app should be the one to act in your best interests, trying to save as much sats on transactions as possible and, at the same time, give you the full control you need and should have. Most apps out there are doing an embarrassing job on this, with poor fee estimations or simply not even being ready to send and receive Segwit transactions. Which ends-up contributing to the high fee environment we are seeing. 
 
-Let's take a look on all the strategies we have available
+Let's take a look on all the strategies we have available.
 
 ### Segwit wallets
 
