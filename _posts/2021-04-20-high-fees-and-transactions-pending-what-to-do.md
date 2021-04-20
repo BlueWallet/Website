@@ -44,11 +44,15 @@ Cancel transactions using RBF or replace-by-fee  is technique similar to regul
 
 ### Batch send 
 
+<div class="features uk-text-center">
+   <img src="https://bluewallet.io/uploads//features/batch.png" alt="fee estimation">
+</div>
+
 Now a very simple technique that people usually forget and useful when doing more than one transaction is that you can do multiple "sends" on a single transaction. when creating a transaction add as many payees as you want. This helps to save on fees, helps to optimize for block space, etc. So please use it and abuse it, we did spend some time on trying to make a good experience for this feature, so let us know how does it go.
 
 ### Lightning
 
-Not using the block space is probably the best alternative when it comes to fees, and that's what Lightning is about. You can use our Lightning service with zero configuration. Or you can use your own node, [mynodebtc](http://mynodebtc.com/) makes this super simple, and soon the service will be available on [umbrel](https://getumbrel.com/) as well.
+Not using the block space is probably the best alternative when it comes to fees, and that's what [Lightning](https://bluewallet.io/lightning/) is about. You can use our Lightning service with zero configuration. Or you can use your own node, [mynodebtc](http://mynodebtc.com/) makes this super simple, and soon the service will be available on [umbrel](https://getumbrel.com/) as well.
 
 <hr class="uk-margin-medium">
 
