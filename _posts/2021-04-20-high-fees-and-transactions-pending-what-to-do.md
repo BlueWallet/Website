@@ -2,7 +2,7 @@
 layout: post
 title: High fees and transactions pending - What to do
 date: 2021-04-20 09:36:00
-categories: usage, tutorial
+categories: List [ "news", "updates" ]
 ---
 <div id="bump" class="uk-card">
      <div class="features uk-text-center">
