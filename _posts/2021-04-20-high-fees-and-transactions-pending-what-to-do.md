@@ -16,7 +16,7 @@ Let's take a look on all the strategies we have available
 
 BlueWallet provides Segwit wallets (bech32) by default, which are the ones that help you on saving more on fees. Besides allowing you to save on fees they also optimize the block space you use, which we already saw it was a scarce resource. Now, unfortunately there are still some wallets/exchanges not using Segwit. You can do two things about it. First, stop using them. And two, ask them to upgrade their wallets ffs.
 
-### **Fee estimation and Flexible fees** 
+### Fee estimation and Flexible fees 
 
 <div id="bump" class="uk-card">
      <div class="features uk-text-center">
@@ -28,7 +28,7 @@ We have a lot going on the Fees feature, so try to take full advantage of it. It
 
 Now that we know this about the fee estimation and that we can manually change it and tweak it, we can take better advantage of the next two features. And we can do this by simply sending a smaller fee, and then changing it based on the time it is taking to confirm. 
 
-### **Bump transaction** 
+### Bump transaction 
 
 <div class="uk-text-center">
 
@@ -38,11 +38,11 @@ Now that we know this about the fee estimation and that we can manually change i
 
 Bump transactions using RBF or replace-by-fee, is useful if you sent a transaction and it’s still unconfirmed (pending) you can replace it with the one with higher fees, making it more attractive for miners to mine, thus, speeding up the confirmation.
 
-### **Cancel transaction** 
+### Cancel transaction 
 
 Cancel transactions using RBF or replace-by-fee  is technique similar to regular RBF, but where the replacement transaction’s output is the address you control, thus, paying to yourself (your wallet address), effectively cancelling the transaction.
 
-### **Batch send** 
+### Batch send 
 
 Now a very simple technique that people usually forget and useful when doing more than one transaction is that you can do multiple "sends" on a single transaction. when creating a transaction add as many payees as you want. This helps to save on fees, helps to optimize for block space, etc. So please use it and abuse it, we did spend some time on trying to make a good experience for this feature, so let us know how does it go.
 
