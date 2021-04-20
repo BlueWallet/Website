@@ -2,6 +2,7 @@
 layout: post
 title: High fees and transactions pending - What to do
 date: 2021-04-20 09:36:00
+categories: usage, tutorial
 ---
 As could be predicted a more mature fee market started to develop in this cycle, and we are witnessing a natural competition for block space. Think about block space as another very scarce property of the network, where participants are competing to get their transactions in.
 
