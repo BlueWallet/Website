@@ -12,7 +12,9 @@ This Privacy policy describes the privacy practices that are applicable to your 
 
 No Use by Children. The App is not intended for use by children under the age of thirteen (13). If you are under the age of thirteen (13), please do not use the App.
 
-The Company does not collect, use or share any personal information about you when you use the App. The Company also does not allow third parties to collect personal information about you when you use the App, or to use tracking technology to track your use of the App.
+The company’s policy is to collect as little user information as possible to ensure a completely private and anonymous user experience when using the Service. We also have no technical means to access your encrypted storage content in any case.
+
+Aggregated data and basic usage events for analytics and application crashes porpuses is collected in order to maintain the integrity of the service and help users debug in case of errors. This data collection can be opt-out by the user at any moment from the application settings privacy options. 
 
 Any information that you provide to us when you communicate with our customer or technical support, will only be used for purposes of addressing your specific support request.
 
@@ -49,5 +51,5 @@ If there are any questions regarding this privacy policy, you may contact us usi
 
 bluewallet@bluewallet.io
 
-Last Edited on 2020-12-16
+Last Edited on 07/05/2021
 

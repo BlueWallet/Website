@@ -4,7 +4,7 @@
   <title></title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <noscript>
-    <meta http-equiv="Refresh" content="0;URL=https://exchange.mercuryo.io/?widget_id=4d94cb57-60a4-4804-82a8-257aa94bcb73&utm_source=BlueWallet&utm_medium=referral&type=buy&currency=BTC&fix_currency=true"/>
+    <meta http-equiv="Refresh" content="0;URL=https://moonpay-redirect.herokuapp.com/?apiKey=pk_live_IkhSI2lIXSiolwakfd95QFD4p3908cZa&enabledPaymentMethods=credit_debit_card%2Capple_pay%2Csepa_bank_transfer%2Cgbp_bank_transfer%2Cgoogle_pay%2Csamsung_pay&currencyCode=BTC&colorCode=%2368BBE1&showWalletAddressForm=false"/>
   </noscript>
   <style>
     .lds-dual-ring {
@@ -60,14 +60,15 @@
       jsonpCallback: "callback",
       dataType: "jsonp",
       error: function() {
-        window.location = 'https://exchange.mercuryo.io/?widget_id=4d94cb57-60a4-4804-82a8-257aa94bcb73&utm_source=BlueWallet&utm_medium=referral&type=buy&currency=BTC&fix_currency=true';
+        var moonpay_url = 'https://moonpay-redirect.herokuapp.com/?apiKey=pk_live_IkhSI2lIXSiolwakfd95QFD4p3908cZa&enabledPaymentMethods=credit_debit_card%2Capple_pay%2Csepa_bank_transfer%2Cgbp_bank_transfer%2Cgoogle_pay%2Csamsung_pay&currencyCode=BTC&colorCode=%2368BBE1&showWalletAddressForm=false';
+        if (address) moonpay_url += '&walletAddress=' + address;
+        if (moonpay_currencies.indexOf(currency) !== -1) moonpay_url += '&baseCurrencyCode=' + currency;
+        window.location = moonpay_url;
       },
       success: function( location ) {
         console.log('country_code', location.country_code);
         if (force_country) location.country_code = force_country;
-        if (location.country_code == 'ZA' || location.country_code == 'ZAF' || location.country_code == 'ZAR') {
-          window.location = 'https://ice3x.com?ref=14342738';
-        } else if (safello_countries.indexOf(location.country_code) !== -1) {
+        if (safello_countries.indexOf(location.country_code) !== -1) {
           var safello_url = 'https://app.safello.com/sdk/quickbuy.html?appId=4904c769-8a1d-43ca-8bd0-896520c94fdf&utm_source=BlueWallet&utm_medium=Wallet&country=' + location.country_code + '&theme=bluewallet&layout=app&address=' + address;
           
           if (safello_state_token) {
