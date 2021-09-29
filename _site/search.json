@@ -5,7 +5,7 @@
       "category" : "",
       "tags"     : "usage, featured",
       "url"      : "/docs/backup-wallet/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -13,7 +13,7 @@
       "category" : "",
       "tags"     : "usage",
       "url"      : "/docs/batching/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -21,7 +21,7 @@
       "category" : "",
       "tags"     : "usage",
       "url"      : "/docs/cobo-vault/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -29,7 +29,7 @@
       "category" : "",
       "tags"     : "hww",
       "url"      : "/docs/coldcard-dropbox/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -37,7 +37,7 @@
       "category" : "",
       "tags"     : "hww",
       "url"      : "/docs/coldcard-watch/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -45,7 +45,7 @@
       "category" : "",
       "tags"     : "hww, usage, featured",
       "url"      : "/docs/coldcard/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -53,7 +53,7 @@
       "category" : "",
       "tags"     : "usage, featured",
       "url"      : "/docs/create-bitcoin-wallet/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -61,7 +61,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/create-lightning-wallet/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -69,7 +69,7 @@
       "category" : "",
       "tags"     : "usage, featured",
       "url"      : "/docs/create-multisig-wallet/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -77,7 +77,7 @@
       "category" : "",
       "tags"     : "usage, featured",
       "url"      : "/docs/import-wallet/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -85,7 +85,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/intro/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -93,7 +93,7 @@
       "category" : "",
       "tags"     : "lndhub",
       "url"      : "/docs/lndhub-macos/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -101,7 +101,7 @@
       "category" : "",
       "tags"     : "lndhub",
       "url"      : "/docs/lndhub-raspibolt/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -109,7 +109,7 @@
       "category" : "",
       "tags"     : "lndhub",
       "url"      : "/docs/lndhub-ubuntu/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -117,7 +117,7 @@
       "category" : "",
       "tags"     : "usage",
       "url"      : "/docs/local-trader/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -125,7 +125,7 @@
       "category" : "",
       "tags"     : "setup",
       "url"      : "/docs/manual-entropy/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -133,7 +133,7 @@
       "category" : "",
       "tags"     : "usage",
       "url"      : "/docs/multisig-spend/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -141,7 +141,7 @@
       "category" : "",
       "tags"     : "usage, featured",
       "url"      : "/docs/multisig-wallet/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -149,7 +149,7 @@
       "category" : "",
       "tags"     : "usage, featured",
       "url"      : "/docs/recover-wallet/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } ,
   
     {
@@ -157,7 +157,7 @@
       "category" : "",
       "tags"     : "usage",
       "url"      : "/docs/sign-offline/",
-      "date"     : "2021-09-29 20:17:58 +0200"
+      "date"     : "2021-09-29 20:26:22 +0200"
     } 
   
 ]
