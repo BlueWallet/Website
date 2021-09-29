@@ -6,12 +6,12 @@
 - title: Desktop App
   url: /desktop-bitcoin-wallet
 
-- title: Local Trader
-  url: /local-trader/
-
 - title: LNDHub
   url: /lndhub/
 
 - title: Apple Watch
   url: /watch-app/
+
+- title: Blog
+  url: /blog/
 
