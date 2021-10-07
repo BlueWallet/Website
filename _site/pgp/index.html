@@ -259,7 +259,9 @@
     <h2 class="uk-h2">PGP Key</h2>
     <p class="uk-text-lead">PGP Key for BlueWallet maintainers</p>
     <br />
-    <pre class="uk-background-muted">-----BEGIN PGP PUBLIC KEY BLOCK-----
+    <div class="uk-card uk-card-default uk-width-2-3@m uk-width-1@s">
+      <div class="uk-card-body">
+          <pre id="p1" class="uk-background-muted">-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGFPcOYBEACobmEIVWWjhkhCAlXxbKPuqNFkhPpvXyizWpzVqwye4QqUVf1Y
 ZTxyOu9yNZ6bM+EYwz/DLa5mfkAodxhGNVYOMYDybtIDBz1cGIojzE16778NfXBJ
@@ -312,8 +314,25 @@ VG6tCorKCNaAtrkdHKYAKASyMsM0+JIBNe0oMzd22O2/An0CPHSxtlITRC6mt3vh
 =HhzW
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
+      </div>
+      <div class="uk-card-footer">
+          <a href="/bluewallet-key.txt" class="uk-button uk-button-primary" download="bluewallet-key.txt">Download</a>
+          <button class="uk-button uk-button-default" onclick="copyToClipboard('#p1')">Copy</button>
+      </div>
+    </div>
+    
   </div>
 </div>
+<script type="text/javascript">
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  alert("Copied to the clipboard ");
+}
+</script>
 
 
                         
