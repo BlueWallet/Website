@@ -26,7 +26,7 @@
   desc: Support for PSBT - Partially Signed Bitcoin Transactions, BIP 174. Under the hood transactions on BlueWallet are using and constructed by the PSBT standard.
 
 - title: Broadcast Transaction
-  desc: Ability to broadcast a transaction that was previsously signed on BlueWallet or elsewhere.
+  desc: Ability to broadcast a transaction that was previously signed on BlueWallet or elsewhere.
 
 - title: Multiple Storage
   desc: Besides having one storage for all your wallets, you can have multiple encrypted storages, that can be accessed by different passwords. This is useful in case you don't want to have all your wallets in the same storage, or you have other family members or employees accessing or using the app.
