@@ -35,10 +35,10 @@ section: true
 netlifycms: true
 
 # set to 'true' to enable Google Analytics tracking code in production builds
-analytics: true
+analytics: false
 
 # Google analytics code, get your code here https://www.google.com/analytics/
-google_analytics: UA-120614437-1
+google_analytics: 
 
 
 # Compress HTML (in liquid via layouts/compress.html)
