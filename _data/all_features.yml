@@ -2,7 +2,7 @@
   desc: Allows you to see, label, freeze or select coins (UTXO) to build transactions, for an improved wallet management.
 
 - title: Payjoin
-  desc: Payjoin or Pay-to-endpoint, it's a feature that allows to break common chain analysis heuristics, where to participants build a transaction together.
+  desc: Payjoin or Pay-to-endpoint, it's a feature that allows to break common chain analysis heuristics, where two participants build a transaction together.
 
 - title: Plug-in your Bitcoin node
   desc: Ability to plug-in your own Bitcoin Full node through Electrum Personal Server (EPS), ElectrumX or Electrs. Don't trust, verify for a maximum sovereignty.
