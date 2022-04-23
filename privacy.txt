@@ -39,8 +39,6 @@ Third-party disclosure
 
 We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.
 
-Creators of BlueWallet never received any inquiries from NSA, FBI, FSB or any other government institution.
-
 Nor NSA nor any other government institution was ever granted access to BlueWallet's end users data.
 
 Nor NSA nor any other government institution was ever granted permission to install backdoor or other potentially malicious code

@@ -20,8 +20,6 @@ Any information that you provide to us when you communicate with our customer or
 
 Third Party App Stores. If you purchase or access the App through a third party app store, such as iTunes or Google Play (an “App Store”), you will have a separate, additional account relationship with that App Store and the information you provide to that App Store will be handled in accordance with the privacy practices of the applicable App Store. App Stores are not partners or representatives of the Company and the Company is not responsible for the acts or omissions of an App Store with regard to the collection, use, maintenance or disclosure of your information. If you want to change your preferences with regard to how an applicable App Store collects or uses your information, you should review the privacy practices of the applicable App Store and adjust your privacy or other settings directly through the applicable App Store. The Company will not receive or have access to any of the information you provide to, or that is collected by, an applicable App Store.
 
-Creators of BlueWallet never received any inquiries from NSA, FBI, FSB or any other government institution.
-
 Nor NSA nor any other government institution was ever granted access to BlueWallet's end users data.
 
 Nor NSA nor any other government institution was ever granted permission to install backdoor or other potentially malicious code in any part of BlueWallet's software.
