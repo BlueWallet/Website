@@ -1,0 +1,12 @@
+<!-- Noticed that on the docs page (https://bluewallet.io/docs/) there is a blue box showing the BW contact email. Figured it would help  users if the email auto copied to their clipboard for seamless contact to you guys-->
+
+ <span class="uk-label" id="copy" onclick="copyEvent('copy')">bluewallet@bluewallet.io</span>
+    
+    <script>
+        function copyEvent(id)
+        {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy")
+        }
+    </script>
