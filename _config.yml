@@ -84,14 +84,14 @@ navbar:
   
 # Default author settings
 author:
-    name:           Nuno
+    name:           BlueWallet
     title:          Product & UX  
     avatar:         nuno.png
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
     nuno:
-      name:         Nuno
+      name:         BlueWallet
       title:        Product & UX  
       avatar:       nuno.png
     igor:
