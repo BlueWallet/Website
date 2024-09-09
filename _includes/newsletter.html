@@ -5,17 +5,24 @@
     {% endif %}
         <div class="uk-child-width-expand@s" uk-grid>
             <div>
-                <div class="newsletter uk-box-shadow-medium uk-card-hover border-radius-medium">
-                    <form action="" method="get" id="mc-embedded-subscribe-form" name="newslettermail" class="validate">
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your email here..." required>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
-                        </div>
-                        <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
-                        <div id="subscribe-result">
-                        </div>
-                    </form>
-                </div>
+                 <h4 class="uk-h4 uk-text-left">Products</h4>
+            <ul class="uk-subnav">
+                {% for link in site.data.navigation_footer %}
+                    {% if link.url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% assign domain = '' | relative_url %}
+                    {% endif %}
+                    {% if link.url == page.url %}
+                        {% assign current = ' class="uk-active"' %}
+                    {% else %}
+                        {% assign current = null %}
+                    {% endif %}
+                    {% if link.title %}
+                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             </div>
             <div class="uk-margin-auto-vertical">
                <div class="uk-child-width-expand@s socialinks" uk-grid>

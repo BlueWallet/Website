@@ -35,11 +35,6 @@
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://bluewallet.io/local-trader/</loc>
-  <lastmod>2020-06-20T17:34:18+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
   <loc>https://bluewallet.io/lightning/</loc>
   <lastmod>2020-03-16T17:34:18+00:00</lastmod>
   <priority>0.80</priority>

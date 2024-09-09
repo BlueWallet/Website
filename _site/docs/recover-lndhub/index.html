@@ -17,9 +17,9 @@
 <meta property="og:url" content="https://bluewallet.io/docs/recover-lndhub/" />
 <meta property="og:site_name" content="BlueWallet - Bitcoin Wallet for iOS and Android" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-06-08T15:01:35+02:00" />
+<meta property="article:published_time" content="2024-09-09T16:58:23+02:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://bluewallet.io/docs/recover-lndhub/"},"url":"https://bluewallet.io/docs/recover-lndhub/","headline":"Recover lndhub account","dateModified":"2023-06-08T15:01:35+02:00","datePublished":"2023-06-08T15:01:35+02:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"BlueWallet"},"author":{"@type":"Person","name":"BlueWallet"},"description":"With the sunset of lndhub.io it is not possible to use the service anymore. However you can request to recover your balance.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://bluewallet.io/docs/recover-lndhub/"},"@type":"BlogPosting","url":"https://bluewallet.io/docs/recover-lndhub/","author":{"@type":"Person","name":"BlueWallet"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"BlueWallet"},"headline":"Recover lndhub account","dateModified":"2024-09-09T16:58:23+02:00","description":"With the sunset of lndhub.io it is not possible to use the service anymore. However you can request to recover your balance.","datePublished":"2024-09-09T16:58:23+02:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -290,15 +290,6 @@
                     
                     </ul>
                     
-                    <h5>Local Trader</h5>
-                    <ul class="uk-nav uk-nav-default doc-nav">
-                    
-                      
-                      
-                      <li class=""><a href="/docs/local-trader/">Use the Local Trader</a></li>
-                    
-                    </ul>
-                    
                     <h5>LNDhub</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
                     
@@ -360,10 +351,12 @@
 <p>You will need two items to be able to recover, your <strong>account information</strong> and a <strong>bitcoin onchain address</strong>. See the details below.</p>
 
 <h3>1- Where to get your account information</h3>
-<p>Inside your lightning wallet you are going to find on the top right the options menu. Usually with the 3 dots icon (…). After you tap the menu you will be taken to the wallet options screen, where you will find the “backup/export” option. This is your account information and starts with <strong>lndhub://</strong></p>
+<p>Inside your lightning wallet you are going to find on the top right the options menu. Usually with the 3 dots icon (…). After you tap the menu you will be taken to the wallet options screen, where you will find the “backup/export” option. This is your account information and starts with <strong>lndhub://</strong>.</p>
+
+<p>Make sure it doesnt end with <code class="highlighter-rouge">.onion</code> - such wallets are usually hosted on private nodes, such as Umbrel.</p>
 
 <h3>2- Bitcoin address</h3>
-<p>You will also need to provide a bitcoin address in order to receive your transaction. Transactions will be processed every few days, so if you don’t receive it right away, wait till a new batch of transactions is done.</p>
+<p>You will also need to provide a regular bitcoin address in order to receive your withdrawal. Transactions are usually processed monthly, begining of each month, so please wait till a new batch of transactions is done.</p>
 
 <p><strong>→ <a href="https://igor120.typeform.com/to/Ou0YJKj7">Recover form here</a></strong></p>
 
@@ -378,9 +371,6 @@
 
                     
 
-
-  
-  
 
   
   
@@ -609,15 +599,6 @@
     
 
     
-
-    
-
-    
-    
-
-    
-
-    
         <li><a href="/docs/manual-entropy/">Adding manual entropy</a></li>
         
         
@@ -768,15 +749,6 @@
           
           
           <li class=""><a href="/docs/multisig-spend/">Vaults - spending</a></li>
-        
-        </ul>
-        
-        <h5 class="uk-margin-top">Local Trader</h5>
-        <ul class="uk-nav uk-nav-default doc-nav">
-        
-          
-          
-          <li class=""><a href="/docs/local-trader/">Use the Local Trader</a></li>
         
         </ul>
         

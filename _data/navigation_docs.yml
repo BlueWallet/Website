@@ -22,10 +22,6 @@
   - create-multisig-wallet
   - multisig-spend
 
-- title: Local Trader
-  docs:
-  - local-trader
-
 - title: LNDhub
   docs:
   - lndhub-ubuntu
