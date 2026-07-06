@@ -58,6 +58,30 @@
 		height: 56px;
 		width: auto;
 	}
+	@media (max-width: 959px) {
+		.uk-navbar-nav > li > a,
+		.uk-navbar-item,
+		.uk-navbar-toggle {
+			height: 62px;
+			min-height: 62px;
+		}
+		.uk-logo {
+			display: flex;
+			align-items: center;
+			height: 62px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		.uk-logo svg.site-logo {
+			display: block;
+			height: 46px !important;
+			width: auto !important;
+			max-height: 46px;
+			#wallet {
+				display: none;
+			}
+		}
+	}
 }
 .section-hero {
 	padding-top: 0;
@@ -68,7 +92,7 @@
 	padding-bottom: 64px;
 	overflow: hidden;
 	.uk-heading-hero {
-		font-size: 2.875rem;
+		font-size: 2.4rem;
 		line-height: 1.1;
 		@media (min-width: 960px) {
 			font-size: 4.5rem;
