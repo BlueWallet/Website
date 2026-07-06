@@ -52,7 +52,7 @@
 
     <body>
 
-    <div>
+    <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 0">
     <nav class="uk-navbar-container">
         <div class="uk-container">
             <div data-uk-navbar>
@@ -214,7 +214,7 @@
 
             
             <div class="sidebar-fixed-width uk-visible@m">
-                <div class="sidebar-docs uk-position-fixed uk-margin-top">
+                <div class="sidebar-docs uk-position-fixed">
                     
                     <h5>Help section</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
@@ -229,11 +229,55 @@
                     
                       
                       
+                      <li class=""><a href="/docs/import-passphrase/">Import with a passphrase</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/import-search-accounts/">Search accounts on import</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/import-custom-derivation/">Custom derivation path on import</a></li>
+                    
+                      
+                      
                       <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
                     
                       
                       
-                      <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+                      <li class=""><a href="/docs/send-bitcoin-transaction/">Send a Bitcoin transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/receive-bitcoin-transaction/">Receive a Bitcoin transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/wallet-details/">Wallet details</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/show-addresses/">See the list of addresses</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/sign-verify-message/">Sign and verify a message</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/manage-wallets/">Manage your wallets</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/search-wallets/">Search for wallets</a></li>
                     
                       
                       
@@ -246,6 +290,34 @@
                       
                       
                       <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/coin-control/">Coin control — select and manage coins</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/transaction-status/">Transaction status screen</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/export-transaction-history/">Export transaction history</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/pending-transactions/">Pending transactions</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/is-it-my-address/">Is it my address?</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/seed-final-word/">Seed final word</a></li>
                     
                     </ul>
                     
@@ -408,6 +480,60 @@
 
   
   
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
     <div class="uk-margin-large-top paginate-post">
         <div class="uk-child-width-expand@s uk-grid-large uk-pagi" data-uk-grid>
             <div>
@@ -442,6 +568,33 @@
     
 
     <ul class="uk-list link-secondary">
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
     
 
     
@@ -631,6 +784,141 @@
     
 
     
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
     </ul>
 </div>
 
@@ -671,11 +959,55 @@
         
           
           
+          <li class=""><a href="/docs/import-passphrase/">Import with a passphrase</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/import-search-accounts/">Search accounts on import</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/import-custom-derivation/">Custom derivation path on import</a></li>
+        
+          
+          
           <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
         
           
           
-          <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+          <li class=""><a href="/docs/send-bitcoin-transaction/">Send a Bitcoin transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/receive-bitcoin-transaction/">Receive a Bitcoin transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/wallet-details/">Wallet details</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/show-addresses/">See the list of addresses</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/sign-verify-message/">Sign and verify a message</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/manage-wallets/">Manage your wallets</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/search-wallets/">Search for wallets</a></li>
         
           
           
@@ -688,6 +1020,34 @@
           
           
           <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/coin-control/">Coin control — select and manage coins</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/transaction-status/">Transaction status screen</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/export-transaction-history/">Export transaction history</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/pending-transactions/">Pending transactions</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/is-it-my-address/">Is it my address?</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/seed-final-word/">Seed final word</a></li>
         
         </ul>
         
@@ -847,7 +1207,6 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="/assets/js/newsletter.js"></script>
-<script src="/assets/js/release-info.js"></script>
 <script src="/assets/js/contribute.js"></script>
 
     </body>

@@ -1,21 +1,37 @@
 ---
-title: Backup/export a wallet
-subtitle: Access to private keys and recover of wallets
+title: Backup and export a wallet
+subtitle: Save your recovery phrase and export wallet credentials
 tags: [usage, featured]
 ---
 
-To backup or export your wallet is pretty simple. This backup is the "key", usually a mnemonic (set of 12 or 24 words) or just a "text" that will give you access to your wallet if you lose your device, uninstall the app, etc. In short, if something wrong happens and you want/need to get access to your wallet again.
+Backing up a BlueWallet wallet means saving the information that lets you recover it later — usually a **12 or 24-word recovery phrase** (seed words, mnemomic seed phrase, etc), or another export format depending on the wallet type. If you lose your phone, uninstall the app, or need to move to a new device, this backup is how you get your wallet back.
 
-### Things to know
-On bluewallet every wallet has its own backup and there's no global backup for all wallets that you can create, this is something you need to do individually for each wallet. We advise to backup all wallets.
+**Important:** Each wallet has its own backup. There is no single backup for all wallets at once — export **every wallet** you use.
 
-### Where to do it
-Inside your wallet you are going to find on the top right an options menu. Usually with the 3 dots icon. After you tap there you will be taken to the wallet options screen, where you will find the "backup/export" option.
+## Open wallet options
 
-<div class="uk-section">
-  <div class="uk-container{{container}}">
-      <div class="videoWrapper">
-        <iframe src="https://www.youtube.com/embed/6KL6JHU_GfY?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-      </div>
-  </div>
-</div>
+From the home screen, open the wallet you want to back up. Tap the **⋯** menu in the top-right corner of the wallet screen.
+
+{% include phone-screenshot-image.html img="backup-wallet-01-wallet-transactions.png" alt="Wallet screen with options menu in the header" %}
+
+This opens **Wallet details** — the settings and information screen for that wallet. See [Wallet details](/docs/wallet-details/) for a full overview of every option.
+
+{% include phone-screenshot-image.html img="backup-wallet-02-wallet-details.png" alt="Wallet details screen" %}
+
+## Export / backup
+
+Scroll down to **Export/Backup** and tap it.
+
+{% include phone-screenshot-image.html img="backup-wallet-03-export-button.png" alt="Export Backup button on wallet details" %}
+
+## Save your backup securely
+
+The export screen shows a QR code you can scan to import the wallet elsewhere, plus the recovery words to write down manually. The orange banner reminds you never to share this information.
+
+{% include phone-screenshot-image.html img="backup-wallet-04-export-screen.png" alt="Wallet export screen with QR code and recovery words" %}
+
+- Write the words down on paper and store them offline in a safe place.
+- Never share your backup with anyone — anyone with these words can access your funds.
+- Do not store screenshots of your backup in cloud photo apps or messengers.
+
+Lightning and other wallet types may show a different export format (such as an LNDHub URL), but the same security rules apply: treat it as a secret and back it up offline.

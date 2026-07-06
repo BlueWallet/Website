@@ -14,6 +14,8 @@ cover: home.png
 
 {% include home-community.html %}
 
+{% include docs-featured-articles.html title="Support articles" subtitle="Step-by-step guides with screenshots" limit="3" id="home-featured-articles" see_all_url="/docs/" %}
+
 <!--
 {% include featured.html tag="featured" title="Popular Articles" subtitle="Selected featured articles to get you started fast in Jekyll" %}
 

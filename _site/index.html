@@ -52,7 +52,7 @@
 
     <body>
 
-    <div>
+    <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 0">
     <nav class="uk-navbar-container">
         <div class="uk-container">
             <div data-uk-navbar>
@@ -209,14 +209,20 @@
 </div>
 
     
-    <div class="uk-section section-hero uk-position-relative uk-scrollspy-inview uk-animation-slide-bottom-medium">
-  <div class="uk-container">
+    <div class="uk-section section-hero section-hero--home uk-position-relative uk-scrollspy-inview uk-animation-slide-bottom-medium">
+  <div class="hero-bg" aria-hidden="true">
+    <picture class="hero-bg__picture">
+      <source media="(min-width: 768px)" srcset="https://bluewallet.io/uploads/hero-background.png" />
+      <img class="hero-bg__img" alt="" decoding="async" />
+    </picture>
+  </div>
+  <div class="hero-bg-gradient hero-bg-gradient--start" aria-hidden="true"></div>
+  <div class="hero-bg-gradient hero-bg-gradient--end" aria-hidden="true"></div>
+  <div class="uk-container uk-position-relative">
     <div class="uk-grid-match" uk-grid="">
       <div class="uk-width-3-5@m">
         <div class="uk-margin-auto-vertical">
-          <div class="uk-text-left@m uk-text-center"><span class="uk-badge" id="hero-version" style="display:none"></span></div>
-          <h1 class="uk-heading-hero uk-text-left@m uk-text-center">Radically Simple &amp;<br />Powerful Bitcoin Wallet</h1>
-          <p class="hero-subtitle uk-text-left@m uk-text-center" id="hero-donate"></p>
+          <h1 class="uk-heading-hero uk-text-left@m uk-text-center">Radically<br />Simple &amp; Powerful<br />Bitcoin Wallet</h1>
           <div class="hero-badges uk-flex-left@m uk-flex-center">
             <a href="https://itunes.apple.com/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank">
               <img class="bounce" src="https://bluewallet.io/uploads//app-store-badge-blue.svg" alt="download bitcoin wallet for ios" />
@@ -503,6 +509,244 @@
   </div>
 </div>
 
+<div class="uk-section section-featured-articles">
+  <div class="uk-container">
+    
+    <div class="section-home-header">
+      <h2 class="uk-h1 uk-margin-remove-top">Support articles</h2>
+      
+      <p class="uk-text-lead uk-margin-small-top">Step-by-step guides with screenshots</p>
+      
+    </div>
+    
+
+    <div class="community-grid" id="home-featured-articles" data-featured-limit="3"><div class="docs-featured-article-item">
+        <a href="/docs/backup-wallet/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/backup-wallet-01-wallet-transactions.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Backup and export a wallet</h3>
+          <p class="community-blog-excerpt">Save your recovery phrase and export wallet credentials</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/bip47-paycodes/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/bip47-paycodes-01-enable.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">BIP47 payment codes</h3>
+          <p class="community-blog-excerpt">Share one reusable code instead of a new address every time</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/broadcast-transaction/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/broadcast-transaction-01-screen.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Broadcast a transaction</h3>
+          <p class="community-blog-excerpt">Broadcast Transaction submits a signed raw transaction to the Bitcoin network...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/coin-control/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/coin-control-01-wallet-details-coins.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Coin control — select and manage coins</h3>
+          <p class="community-blog-excerpt">Coin control lets you view, label, freeze, and hand-pick the UTXOs (coins) us...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/create-bitcoin-wallet/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/bluewallet-first-page.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Create a Bitcoin wallet</h3>
+          <p class="community-blog-excerpt">Creating a Bitcoin wallet on BlueWallet is easy.</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/create-lightning-wallet/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/add-lightning-wallet-with-advanced-options.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Create a Lightning wallet</h3>
+          <p class="community-blog-excerpt"></p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/export-transaction-history/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/export-transaction-history-01-csv-menu.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Export transaction history</h3>
+          <p class="community-blog-excerpt">Download a CSV for accounting, taxes, and bookkeeping</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/import-custom-derivation/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/import-custom-derivation-01-seed-entered.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Custom derivation path on import</h3>
+          <p class="community-blog-excerpt">A derivation path tells BlueWallet how to turn your recovery phrase into addr...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/import-passphrase/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/import-passphrase-01-import-screen.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Import with a passphrase</h3>
+          <p class="community-blog-excerpt">Some wallets use a BIP39 passphrase — sometimes called the “25th word” — in a...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/import-search-accounts/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/import-search-accounts-01-import-screen.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Search accounts on import</h3>
+          <p class="community-blog-excerpt">When you import a recovery phrase, BlueWallet tries to find the correct walle...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/import-wallet/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/import-wallet-01-add-wallet.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Import a wallet</h3>
+          <p class="community-blog-excerpt">Instead of creating a new wallet, you can import one you already have — from ...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/is-it-my-address/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/settings-tools-01-menu.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Is it my address?</h3>
+          <p class="community-blog-excerpt">Before you send bitcoin to an address — or when someone sends you one to doub...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/manage-wallets/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/manage-wallets-01-home.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Manage your wallets</h3>
+          <p class="community-blog-excerpt">The home screen shows your wallets as cards in a carousel. Manage Wallets is ...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/manual-entropy/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/add-manual-entropy.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Adding manual entropy</h3>
+          <p class="community-blog-excerpt">BlueWallet supports manual entropy.</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/pending-transactions/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/pending-transaction-01-status.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Pending transactions</h3>
+          <p class="community-blog-excerpt">A pending transaction has been broadcast to the Bitcoin network but does not ...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/receive-bitcoin-transaction/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/receive-bitcoin-01-wallet.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Receive a Bitcoin transaction</h3>
+          <p class="community-blog-excerpt">Get a Bitcoin address or QR code to receive a payment</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/search-wallets/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/search-wallets-01-bluewllet.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Search for wallets</h3>
+          <p class="community-blog-excerpt">Manage Wallets includes a search bar at the top. Use it to find a wallet by n...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/seed-final-word/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/seed-final-word-01-screen.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Seed final word</h3>
+          <p class="community-blog-excerpt">When you write down a new recovery phrase, the last word is not random — it i...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/send-bitcoin-transaction/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/send-bitcoin-01-wallet.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Send a Bitcoin transaction</h3>
+          <p class="community-blog-excerpt">Pay someone on-chain from your Bitcoin wallet</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/show-addresses/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/show-addresses-01-wallet-details.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">See the list of addresses</h3>
+          <p class="community-blog-excerpt">Browse receive and change addresses for a Bitcoin wallet</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/sign-verify-message/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/sign-verify-message-01-screen.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Sign and verify a message</h3>
+          <p class="community-blog-excerpt">Sign/Verify Message lets you prove that a Bitcoin address belongs to a partic...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/transaction-status/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/transaction-status-01-overview.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Transaction status screen</h3>
+          <p class="community-blog-excerpt">Tap any on-chain transaction in a wallet to open its status screen. This view...</p>
+        </a>
+      </div><div class="docs-featured-article-item">
+        <a href="/docs/wallet-details/" class="community-card community-card--blog">
+          <div class="community-blog-image">
+            <img src="/uploads/wallet-details-01-overview.png" alt="" loading="lazy" />
+          </div>
+          <h3 class="community-blog-title">Wallet details</h3>
+          <p class="community-blog-excerpt">Wallet details is the settings screen for a single wallet. Open it from the w...</p>
+        </a>
+      </div></div>
+
+    
+    <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-text-center uk-margin-medium-top uk-grid-small" data-uk-grid="">
+      <div>
+        <a class="uk-width-1-1 uk-button reasons border-radius-medium uk-card-body uk-text-bold" href="/docs/">
+          <div>
+            <h4 class="uk-margin-remove">See all ➞</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+  (function () {
+    var grid = document.getElementById('home-featured-articles');
+    if (!grid) return;
+
+    var items = Array.prototype.slice.call(grid.querySelectorAll('.docs-featured-article-item'));
+    if (items.length <= 1) return;
+
+    for (var i = items.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = items[i];
+      items[i] = items[j];
+      items[j] = tmp;
+    }
+
+    var limit = parseInt(grid.getAttribute('data-featured-limit'), 10) || 6;
+    limit = Math.min(limit, items.length);
+    items.forEach(function (item, index) {
+      if (index >= limit) {
+        item.parentNode.removeChild(item);
+      } else {
+        grid.appendChild(item);
+      }
+    });
+  })();
+</script>
+
 <!--
 
 <div class="uk-section section-featured">
@@ -519,11 +763,21 @@
         <ul class="uk-list uk-list-large uk-margin-medium-top">
         
             
-            <li><a class="uk-box-shadow-hover-small" href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+            <li><a class="uk-box-shadow-hover-small" href="/docs/backup-wallet/">Backup and export a wallet</a></li>
             
         
             
         
+            
+            <li><a class="uk-box-shadow-hover-small" href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
+            
+        
+            
+        
+            
+        
+            
+            <li><a class="uk-box-shadow-hover-small" href="/docs/coin-control/">Coin control — select and manage coins</a></li>
             
         
             
@@ -545,7 +799,21 @@
             
         
             
+            <li><a class="uk-box-shadow-hover-small" href="/docs/export-transaction-history/">Export transaction history</a></li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
             <li><a class="uk-box-shadow-hover-small" href="/docs/import-wallet/">Import a wallet</a></li>
+            
+        
+            
+        
             
         
             
@@ -567,7 +835,31 @@
             
         
             
+            <li><a class="uk-box-shadow-hover-small" href="/docs/receive-bitcoin-transaction/">Receive a Bitcoin transaction</a></li>
+            
+        
+            
+        
+            
             <li><a class="uk-box-shadow-hover-small" href="/docs/recover-wallet/">Recover on another wallet</a></li>
+            
+        
+            
+        
+            
+        
+            
+            <li><a class="uk-box-shadow-hover-small" href="/docs/send-bitcoin-transaction/">Send a Bitcoin transaction</a></li>
+            
+        
+            
+            <li><a class="uk-box-shadow-hover-small" href="/docs/show-addresses/">See the list of addresses</a></li>
+            
+        
+            
+        
+            
+        
             
         
             
@@ -775,11 +1067,55 @@
         
           
           
+          <li class=""><a href="/docs/import-passphrase/">Import with a passphrase</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/import-search-accounts/">Search accounts on import</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/import-custom-derivation/">Custom derivation path on import</a></li>
+        
+          
+          
           <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
         
           
           
-          <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+          <li class=""><a href="/docs/send-bitcoin-transaction/">Send a Bitcoin transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/receive-bitcoin-transaction/">Receive a Bitcoin transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/wallet-details/">Wallet details</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/show-addresses/">See the list of addresses</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/sign-verify-message/">Sign and verify a message</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/manage-wallets/">Manage your wallets</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/search-wallets/">Search for wallets</a></li>
         
           
           
@@ -792,6 +1128,34 @@
           
           
           <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/coin-control/">Coin control — select and manage coins</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/transaction-status/">Transaction status screen</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/export-transaction-history/">Export transaction history</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/pending-transactions/">Pending transactions</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/is-it-my-address/">Is it my address?</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/seed-final-word/">Seed final word</a></li>
         
         </ul>
         
@@ -1106,7 +1470,6 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="/assets/js/newsletter.js"></script>
-<script src="/assets/js/release-info.js"></script>
 <script src="/assets/js/contribute.js"></script>
 
     </body>

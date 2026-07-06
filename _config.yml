@@ -79,7 +79,7 @@ exclude:
            
 
 navbar:
-    sticky:         false
+    sticky:         true
     search:         false
   
 # Default author settings

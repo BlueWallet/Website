@@ -9,7 +9,7 @@ layout: default
             {% if page.sidebar == 'nosidebar' %}
             {% else %}
             <div class="sidebar-fixed-width uk-visible@m">
-                <div class="sidebar-docs uk-position-fixed uk-margin-top">
+                <div class="sidebar-docs uk-position-fixed">
                     {% for section in site.data.navigation_docs %}
                     <h5>{{ section.title }}</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
