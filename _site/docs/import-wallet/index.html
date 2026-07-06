@@ -11,8 +11,8 @@
 <meta property="og:title" content="Import a wallet" />
 <meta name="author" content="BlueWallet" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Instead of creating a new wallet, you can chose to import a wallet from another source or a wallet that you’ve previously created on BlueWallet." />
-<meta name="twitter:description" property="og:description" content="Instead of creating a new wallet, you can chose to import a wallet from another source or a wallet that you’ve previously created on BlueWallet." />
+<meta name="description" content="Instead of creating a new wallet, you can import one you already have — from another app, a paper backup, or a previous BlueWallet install." />
+<meta name="twitter:description" property="og:description" content="Instead of creating a new wallet, you can import one you already have — from another app, a paper backup, or a previous BlueWallet install." />
 <link rel="canonical" href="https://bluewallet.io/docs/import-wallet/" />
 <meta property="og:url" content="https://bluewallet.io/docs/import-wallet/" />
 <meta property="og:site_name" content="BlueWallet - Bitcoin Wallet for iOS and Android" />
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Import a wallet" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"BlueWallet"},"description":"Instead of creating a new wallet, you can chose to import a wallet from another source or a wallet that you’ve previously created on BlueWallet.","headline":"Import a wallet","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"BlueWallet"},"url":"https://bluewallet.io/docs/import-wallet/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"BlueWallet"},"description":"Instead of creating a new wallet, you can import one you already have — from another app, a paper backup, or a previous BlueWallet install.","headline":"Import a wallet","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://bluewallet.io/logo-bluewallet.svg"},"name":"BlueWallet"},"url":"https://bluewallet.io/docs/import-wallet/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -52,7 +52,7 @@
 
     <body>
 
-    <div>
+    <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 0">
     <nav class="uk-navbar-container">
         <div class="uk-container">
             <div data-uk-navbar>
@@ -214,7 +214,7 @@
 
             
             <div class="sidebar-fixed-width uk-visible@m">
-                <div class="sidebar-docs uk-position-fixed uk-margin-top">
+                <div class="sidebar-docs uk-position-fixed">
                     
                     <h5>Help section</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
@@ -229,11 +229,55 @@
                     
                       
                       
+                      <li class=""><a href="/docs/import-passphrase/">Import with a passphrase</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/import-search-accounts/">Search accounts on import</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/import-custom-derivation/">Custom derivation path on import</a></li>
+                    
+                      
+                      
                       <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
                     
                       
                       
-                      <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+                      <li class=""><a href="/docs/send-bitcoin-transaction/">Send a Bitcoin transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/receive-bitcoin-transaction/">Receive a Bitcoin transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/wallet-details/">Wallet details</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/show-addresses/">See the list of addresses</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/sign-verify-message/">Sign and verify a message</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/manage-wallets/">Manage your wallets</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/search-wallets/">Search for wallets</a></li>
                     
                       
                       
@@ -246,6 +290,34 @@
                       
                       
                       <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/coin-control/">Coin control — select and manage coins</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/transaction-status/">Transaction status screen</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/export-transaction-history/">Export transaction history</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/pending-transactions/">Pending transactions</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/is-it-my-address/">Is it my address?</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/seed-final-word/">Seed final word</a></li>
                     
                     </ul>
                     
@@ -347,13 +419,17 @@
                     </div>
                     -->
                     <div class="article-content">
-                        <p>Instead of creating a new wallet, you can chose to import a wallet from another source or a wallet that you’ve previously created on BlueWallet.</p>
+                        <p>Instead of creating a new wallet, you can import one you already have — from another app, a paper backup, or a previous BlueWallet install.</p>
 
-<p>Click on “Import wallet” to open the import screen.</p>
+<p>You can import using a <strong>recovery phrase (mnemonic)</strong>, a <strong>private key</strong>, or a <strong>WIF</strong>. BlueWallet detects the format automatically.</p>
+
+<h2>Open the import screen</h2>
+
+<p>From the home screen, tap <strong>+</strong> in the top-right corner to open the add-wallet screen, then tap <strong>Import wallet</strong>.</p>
 
 <figure data-uk-lightbox="animation: slide" class="phone-screenshot-image">
-    <a class="uk-inline" href="https://bluewallet.io/uploads/import-wallet.png">
-        <img src="https://bluewallet.io/uploads/import-wallet.png" alt="Import wallet" />
+    <a class="uk-inline" href="/uploads/import-wallet-01-add-wallet.png">
+        <img src="/uploads/import-wallet-01-add-wallet.png" alt="Add wallet screen with Import wallet link" />
         <div class="uk-position-center">
             <span data-uk-overlay-icon=""></span>
         </div>
@@ -361,22 +437,73 @@
     
 </figure>
 
-<p>In this text area you can post your: mnemonic, private key or WIF.</p>
+<h2>Enter your backup</h2>
 
-<h4>Mnemonic Seed</h4>
+<p>On the import screen, paste or type your backup into the text field. The instructions at the top explain what formats are accepted.</p>
 
-<p>You would need to write your seed words. Like a sentence, without numbers, in the order it was given and with a space in between each word.</p>
+<figure data-uk-lightbox="animation: slide" class="phone-screenshot-image">
+    <a class="uk-inline" href="/uploads/import-wallet-02-import-screen.png">
+        <img src="/uploads/import-wallet-02-import-screen.png" alt="Import wallet empty screen" />
+        <div class="uk-position-center">
+            <span data-uk-overlay-icon=""></span>
+        </div>
+    </a>
+    
+</figure>
 
-<p>For instance: clock boat sunshine</p>
+<h3>Recovery phrase (mnemonic)</h3>
 
-<p>In case you have doubts on any word, here’s the list of words:
-<a href="https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt">https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt</a></p>
+<p>Enter your seed words as a sentence: no numbers, in the correct order, with a single space between each word.</p>
 
-<p>After you’ve entered your import source in the text area, click “Import” to recover an imported wallet.</p>
+<p>For example: <code class="language-plaintext highlighter-rouge">clock boat sunshine</code></p>
 
-<h4>Scanning or importing a file</h4>
+<p>If you are unsure about a word, check the <a href="https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt">BIP39 English word list</a>.</p>
 
-<p>You can also scan a QR code or use a file format to import your wallet.</p>
+<figure data-uk-lightbox="animation: slide" class="phone-screenshot-image">
+    <a class="uk-inline" href="/uploads/import-wallet-03-mnemonic-entered.png">
+        <img src="/uploads/import-wallet-03-mnemonic-entered.png" alt="Import screen with recovery words entered" />
+        <div class="uk-position-center">
+            <span data-uk-overlay-icon=""></span>
+        </div>
+    </a>
+    
+</figure>
+
+<p>Use <strong>Paste</strong> to paste from the clipboard, <strong>Scan</strong> to scan a QR code, or <strong>Clear</strong> to reset the field.</p>
+
+<figure data-uk-lightbox="animation: slide" class="phone-screenshot-image">
+    <a class="uk-inline" href="/uploads/import-wallet-04-import-actions.png">
+        <img src="/uploads/import-wallet-04-import-actions.png" alt="Import screen with Paste Scan Clear and Import button" />
+        <div class="uk-position-center">
+            <span data-uk-overlay-icon=""></span>
+        </div>
+    </a>
+    
+</figure>
+
+<p>When everything looks correct, tap <strong>Import</strong>. BlueWallet will recover the wallet and add it to your list.</p>
+
+<h2>Scan a QR code or import a file</h2>
+
+<p>Tap <strong>Scan</strong> on the import screen to open the camera and scan a QR backup. You can also import from a compatible file format using the options in the scan/import menu (⋯ in the top-right corner).</p>
+
+<h2>Advanced import options</h2>
+
+<p>Tap <strong>⋯</strong> on the import screen for extra options:</p>
+
+<ul>
+  <li><a href="/docs/import-passphrase/">Import with a passphrase</a> — if your backup uses a BIP39 passphrase (25th word)</li>
+  <li><a href="/docs/import-search-accounts/">Search accounts on import</a> — scan more derivation paths when recovering a wallet from another app</li>
+  <li><a href="/docs/import-custom-derivation/">Custom derivation path on import</a> — enter a specific BIP32 path when discovery does not find your wallet</li>
+</ul>
+
+<h2>Tips</h2>
+
+<ul>
+  <li>Import each wallet separately — there is no bulk import for multiple wallets at once.</li>
+  <li>Double-check every word before importing. A single typo can make recovery fail.</li>
+  <li>Never enter your backup on a device you do not trust.</li>
+</ul>
 
                         
                     </div>
@@ -409,8 +536,8 @@
                   
                   
                   
-                    <h5>Create a Lightning wallet</h5>
-                    <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/docs/create-lightning-wallet/">Next &rarr;</a></div>
+                    <h5>Import with a passphrase</h5>
+                    <div class="uk-text-right"><a class="remove-underline hvr-forward" href="/docs/import-passphrase/">Next &rarr;</a></div>
                 
             </div>
         </div>
@@ -435,7 +562,7 @@
     
 
     
-        <li><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+        <li><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
         
         
     
@@ -461,7 +588,7 @@
     
 
     
-        <li><a href="/docs/cobo-vault/">Cobo Vault</a></li>
+        <li><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
         
         
     
@@ -474,25 +601,7 @@
     
 
     
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-        <li><a href="/docs/coldcard/">Coldcard with Bluewallet</a></li>
+        <li><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
         
         
             
@@ -536,11 +645,55 @@
         
           
           
+          <li class=""><a href="/docs/import-passphrase/">Import with a passphrase</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/import-search-accounts/">Search accounts on import</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/import-custom-derivation/">Custom derivation path on import</a></li>
+        
+          
+          
           <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
         
           
           
-          <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+          <li class=""><a href="/docs/send-bitcoin-transaction/">Send a Bitcoin transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/receive-bitcoin-transaction/">Receive a Bitcoin transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/wallet-details/">Wallet details</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/show-addresses/">See the list of addresses</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/sign-verify-message/">Sign and verify a message</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/manage-wallets/">Manage your wallets</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/search-wallets/">Search for wallets</a></li>
         
           
           
@@ -553,6 +706,34 @@
           
           
           <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/coin-control/">Coin control — select and manage coins</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/transaction-status/">Transaction status screen</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/export-transaction-history/">Export transaction history</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/pending-transactions/">Pending transactions</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/is-it-my-address/">Is it my address?</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/seed-final-word/">Seed final word</a></li>
         
         </ul>
         
@@ -712,7 +893,6 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="/assets/js/newsletter.js"></script>
-<script src="/assets/js/release-info.js"></script>
 <script src="/assets/js/contribute.js"></script>
 
     </body>

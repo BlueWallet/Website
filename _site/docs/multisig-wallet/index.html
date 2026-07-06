@@ -52,7 +52,7 @@
 
     <body>
 
-    <div>
+    <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; top: 0">
     <nav class="uk-navbar-container">
         <div class="uk-container">
             <div data-uk-navbar>
@@ -214,7 +214,7 @@
 
             
             <div class="sidebar-fixed-width uk-visible@m">
-                <div class="sidebar-docs uk-position-fixed uk-margin-top">
+                <div class="sidebar-docs uk-position-fixed">
                     
                     <h5>Help section</h5>
                     <ul class="uk-nav uk-nav-default doc-nav">
@@ -229,11 +229,55 @@
                     
                       
                       
+                      <li class=""><a href="/docs/import-passphrase/">Import with a passphrase</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/import-search-accounts/">Search accounts on import</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/import-custom-derivation/">Custom derivation path on import</a></li>
+                    
+                      
+                      
                       <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
                     
                       
                       
-                      <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+                      <li class=""><a href="/docs/send-bitcoin-transaction/">Send a Bitcoin transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/receive-bitcoin-transaction/">Receive a Bitcoin transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/wallet-details/">Wallet details</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/show-addresses/">See the list of addresses</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/sign-verify-message/">Sign and verify a message</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/manage-wallets/">Manage your wallets</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/search-wallets/">Search for wallets</a></li>
                     
                       
                       
@@ -246,6 +290,34 @@
                       
                       
                       <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/coin-control/">Coin control — select and manage coins</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/transaction-status/">Transaction status screen</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/export-transaction-history/">Export transaction history</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/pending-transactions/">Pending transactions</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/is-it-my-address/">Is it my address?</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
+                    
+                      
+                      
+                      <li class=""><a href="/docs/seed-final-word/">Seed final word</a></li>
                     
                     </ul>
                     
@@ -352,7 +424,7 @@
 <p>Multiple devices are advised. The Vault will work with other BlueWallet apps and PSBT compatible wallets, like Electrum, Specter, Coldcard, Cobo vault, etc. It is advised that you use multiple devices, and consider store these devices in multiple locations if you see it is fit for your use case.</p>
 
 <figure class="">
-    <img src="https://bluewallet.io/uploads/tip2.png" alt="Multisig bitcoin wallet" />
+    <img src="/uploads/tip2.png" alt="Multisig bitcoin wallet" />
     
 </figure>
 
@@ -361,7 +433,7 @@
 <p>You can create all Vault keys in the same device, and remove or edit these keys later. Having all keys on the same device has the equivalent security of a regular Bitcoin wallet. As advise above, please consider multiple devices from the start.</p>
 
 <figure class="">
-    <img src="https://bluewallet.io/uploads/tip3.png" alt="Multisig bitcoin wallet" />
+    <img src="/uploads/tip3.png" alt="Multisig bitcoin wallet" />
     
 </figure>
 
@@ -370,7 +442,7 @@
 <p>On the wallet options you will find your Vault backup and watch-only (coordination) backup. This backup is like a map to your wallet. It is essential for wallet recover in case you lose one of your seeds.</p>
 
 <figure class="">
-    <img src="https://bluewallet.io/uploads/tip4.png" alt="Multisig bitcoin wallet" />
+    <img src="/uploads/tip4.png" alt="Multisig bitcoin wallet" />
     
 </figure>
 
@@ -379,7 +451,7 @@
 <p>To import a Multisig, use your multisig backup file and use the import feature. If you only have extended keys and seeds, you can use the individual import fields on the Add Vault creation option.</p>
 
 <figure class="">
-    <img src="https://bluewallet.io/uploads/tip5.png" alt="Multisig bitcoin wallet" />
+    <img src="/uploads/tip5.png" alt="Multisig bitcoin wallet" />
     
 </figure>
 
@@ -396,6 +468,60 @@
 
                     
 
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
   
   
@@ -477,7 +603,7 @@
     
 
     
-        <li><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+        <li><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
         
         
     
@@ -503,7 +629,7 @@
     
 
     
-        <li><a href="/docs/cobo-vault/">Cobo Vault</a></li>
+        <li><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
         
         
     
@@ -516,25 +642,7 @@
     
 
     
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-        <li><a href="/docs/coldcard/">Coldcard with Bluewallet</a></li>
+        <li><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
         
         
             
@@ -578,11 +686,55 @@
         
           
           
+          <li class=""><a href="/docs/import-passphrase/">Import with a passphrase</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/import-search-accounts/">Search accounts on import</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/import-custom-derivation/">Custom derivation path on import</a></li>
+        
+          
+          
           <li class=""><a href="/docs/create-lightning-wallet/">Create a Lightning wallet</a></li>
         
           
           
-          <li class=""><a href="/docs/backup-wallet/">Backup/export a wallet</a></li>
+          <li class=""><a href="/docs/send-bitcoin-transaction/">Send a Bitcoin transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/receive-bitcoin-transaction/">Receive a Bitcoin transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/backup-wallet/">Backup and export a wallet</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/wallet-details/">Wallet details</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/show-addresses/">See the list of addresses</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/bip47-paycodes/">BIP47 payment codes</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/sign-verify-message/">Sign and verify a message</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/manage-wallets/">Manage your wallets</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/search-wallets/">Search for wallets</a></li>
         
           
           
@@ -595,6 +747,34 @@
           
           
           <li class=""><a href="/docs/batching/">Send to many or Batching</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/coin-control/">Coin control — select and manage coins</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/transaction-status/">Transaction status screen</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/export-transaction-history/">Export transaction history</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/pending-transactions/">Pending transactions</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/is-it-my-address/">Is it my address?</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/broadcast-transaction/">Broadcast a transaction</a></li>
+        
+          
+          
+          <li class=""><a href="/docs/seed-final-word/">Seed final word</a></li>
         
         </ul>
         
@@ -754,7 +934,6 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="/assets/js/newsletter.js"></script>
-<script src="/assets/js/release-info.js"></script>
 <script src="/assets/js/contribute.js"></script>
 
     </body>

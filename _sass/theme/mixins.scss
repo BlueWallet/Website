@@ -511,8 +511,9 @@
     .sidebar-docs {
         width: $docs-sidebar-width - $global-medium-gutter;
         padding-right: $global-medium-gutter;
-        top: 112px;
-        bottom: 70px;
+        top: 80px;
+        margin-top: 0;
+        bottom: 24px;
         overflow-y: scroll;
         overflow-x: hidden;
         > h5 {
