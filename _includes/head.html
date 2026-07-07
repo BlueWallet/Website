@@ -35,4 +35,7 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
+  {% if jekyll.environment == 'production' and site.pirsch_id %}
+    {% include pirsch-analytics.html %}
+  {% endif %}
 </head>

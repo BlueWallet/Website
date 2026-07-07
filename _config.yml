@@ -38,7 +38,10 @@ netlifycms: true
 analytics: false
 
 # Google analytics code, get your code here https://www.google.com/analytics/
-google_analytics: 
+google_analytics:
+
+# Pirsch analytics (privacy-friendly). Loaded in production when set.
+pirsch_id: AbENnz7D42uZTehyZVMM6LXr5OMyNFqF 
 
 
 # Compress HTML (in liquid via layouts/compress.html)
