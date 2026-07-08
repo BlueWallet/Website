@@ -109,16 +109,18 @@
 		}
 	}
 
-	/* Badges: side-by-side row, centered on mobile, left-aligned on desktop. */
+	/* Badges: stacked on mobile, side-by-side on desktop. */
 	.hero-badges {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
 		gap: 16px;
 		justify-content: center;
 		margin-top: 60px;
 		margin-bottom: 0;
 		@media (min-width: 960px) {
+			flex-direction: row;
+			align-items: flex-start;
 			justify-content: flex-start;
 			margin-top: 0;
 		}
