@@ -86,6 +86,44 @@
 .section-hero {
 	padding-top: 0;
 }
+.section-hero--features {
+	.hero-subtitle {
+		font-size: 1.2rem;
+		max-width: 600px;
+	}
+
+	/* The hero itself stretches to fill most of the viewport on desktop. */
+	@media (min-width: 960px) {
+		min-height: min(60vh, 460px);
+	}
+
+	/* Left flex column: title at top, badges pinned to bottom. */
+	.features-hero-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		@media (min-width: 960px) {
+			min-height: min(60vh, 460px);
+		}
+	}
+
+	/* Badges: side-by-side row, centered on mobile, left-aligned on desktop. */
+	.hero-badges {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 16px;
+		justify-content: center;
+		margin-top: 60px;
+		margin-bottom: 0;
+		@media (min-width: 960px) {
+			justify-content: flex-start;
+			margin-top: 0;
+		}
+	}
+}
 .section-hero--home {
 	background-color: #ffffff;
 	padding-top: 48px;
@@ -104,6 +142,13 @@
 	}
 	.uk-container {
 		z-index: 2;
+	}
+}
+
+.section-hero--home.section-hero--features {
+	@media (min-width: 960px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 .hero-bg {
