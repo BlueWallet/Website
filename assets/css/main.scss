@@ -49,6 +49,13 @@
 		transition: none;
 	}
 }
+
+.uk-navbar-sticky,
+.navbar-scrolled .uk-navbar-container {
+	background: #ffffff !important;
+	border-bottom: 1px solid #e8e8e8 !important;
+}
+
 .uk-navbar {
 	padding: 0px 0;
 	a {
