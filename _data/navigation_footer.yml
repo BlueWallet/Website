@@ -1,17 +1,16 @@
 # Footer navigation links
 
 - title: Bitcoin Wallet
-  url: /bitcoin-wallet
-
-- title: Desktop App
-  url: /desktop-bitcoin-wallet
-
-- title: LNDHub
-  url: /lndhub/
-
-- title: Apple Watch
-  url: /watch-app/
+  url: /bitcoin-wallet/
 
 - title: Blog
   url: /blog/
 
+- title: Contribute
+  url: /contribute/
+
+- title: Support
+  url: /docs/
+
+- title: Donate
+  url: https://donate.bluewallet.io

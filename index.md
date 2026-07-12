@@ -10,6 +10,8 @@ cover: home.png
 
 {% include home-features-grid.html %}
 
+{% include home-feedback.html %}
+
 {% include home-power-features.html %}
 
 {% include home-community.html %}

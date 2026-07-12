@@ -121,7 +121,7 @@
 <script type="module">
   import 'https://esm.sh/number-flow';
 
-  const VALUES  = [0, 0.0325, 0.1068];
+  const VALUES  = [0, 0.00110011, 0.2121, 6.15];
   const HOLD_MS = 3000;
   const ROLL_MS = 1000;
 
@@ -130,7 +130,7 @@
     if (!flow) return;
 
     /* Configure formatting and animation */
-    flow.format = { minimumFractionDigits: 1, maximumFractionDigits: 4 };
+    flow.format = { minimumFractionDigits: 1, maximumFractionDigits: 8 };
     flow.numberSuffix = ' BTC';
     flow.spinTiming = { duration: ROLL_MS, easing: 'ease-out' };
     flow.opacityTiming = { duration: ROLL_MS * 0.4, easing: 'ease-out' };

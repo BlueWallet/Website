@@ -371,7 +371,7 @@
 <script type="module">
   import 'https://esm.sh/number-flow';
 
-  const VALUES  = [0, 0.0325, 0.1068];
+  const VALUES  = [0, 0.00110011, 0.2121, 6.15];
   const HOLD_MS = 3000;
   const ROLL_MS = 1000;
 
@@ -380,7 +380,7 @@
     if (!flow) return;
 
     /* Configure formatting and animation */
-    flow.format = { minimumFractionDigits: 1, maximumFractionDigits: 4 };
+    flow.format = { minimumFractionDigits: 1, maximumFractionDigits: 8 };
     flow.numberSuffix = ' BTC';
     flow.spinTiming = { duration: ROLL_MS, easing: 'ease-out' };
     flow.opacityTiming = { duration: ROLL_MS * 0.4, easing: 'ease-out' };
@@ -466,6 +466,107 @@ if (window.rive) {
     if (window.rive) { clearInterval(_riv); initAllRiveCards(); }
   }, 50);
 }
+</script>
+
+<div class="uk-section section-home-feedback">
+  <div class="uk-container">
+    <div class="section-home-header">
+      <h2 class="uk-h1 uk-margin-remove-top">What people are saying</h2>
+      <p class="uk-text-lead uk-margin-small-top">From the Bitcoin community, around the world.</p>
+    </div>
+
+    <div class="feedback-slider-outer">
+      <div class="feedback-slider" id="feedback-slider">
+      <div class="feedback-slide">
+        <img src="https://bluewallet.io/uploads/feedback/feedback-jack.png" alt="Feedback from Jack" loading="lazy" />
+      </div>
+      <div class="feedback-slide">
+        <img src="https://bluewallet.io/uploads/feedback/feedback-elon.png" alt="Feedback from Elon" loading="lazy" />
+      </div>
+      <div class="feedback-slide">
+        <img src="https://bluewallet.io/uploads/feedback/feedback-africa.png" alt="Feedback from Africa" loading="lazy" />
+      </div>
+      <div class="feedback-slide">
+        <img src="https://bluewallet.io/uploads/feedback/feedback-stephan.png" alt="Feedback from Stephan" loading="lazy" />
+      </div>
+      <div class="feedback-slide">
+        <img src="https://bluewallet.io/uploads/feedback/feedback-mrhodl.png" alt="Feedback from Mr Hodl" loading="lazy" />
+      </div>
+      <div class="feedback-slide">
+        <img src="https://bluewallet.io/uploads/feedback/feedback-bitcoinheiros.png" alt="Feedback from Bitcoinheiros" loading="lazy" />
+      </div>
+      <div class="feedback-slide">
+        <img src="https://bluewallet.io/uploads/feedback/feedback-okin.png" alt="Feedback from Okin" loading="lazy" />
+      </div>
+      <div class="feedback-slide">
+        <img src="https://bluewallet.io/uploads/feedback/feedback-wicked.png" alt="Feedback from Wicked" loading="lazy" />
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var slider = document.getElementById('feedback-slider');
+  if (!slider) return;
+
+  var SPEED    = 0.4;  /* px per frame */
+  var PAUSE_MS = 2000; /* pause on user interaction */
+  var raf, pauseTimer, isDragging = false, startX = 0, startScroll = 0;
+
+  function step() {
+    if (isDragging) return;
+    /* Seamless loop: when we've scrolled past the halfway point, jump back */
+    var maxScroll = slider.scrollWidth / 2;
+    if (slider.scrollLeft >= maxScroll) {
+      slider.scrollLeft -= maxScroll;
+    }
+    slider.scrollLeft += SPEED;
+    raf = requestAnimationFrame(step);
+  }
+
+  function pause() {
+    cancelAnimationFrame(raf);
+    clearTimeout(pauseTimer);
+    pauseTimer = setTimeout(function () { raf = requestAnimationFrame(step); }, PAUSE_MS);
+  }
+
+  /* Duplicate slides for seamless loop */
+  var slides = Array.from(slider.children);
+  slides.forEach(function (slide) {
+    slider.appendChild(slide.cloneNode(true));
+  });
+
+  /* Drag support */
+  slider.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    startX = e.pageX - slider.offsetLeft;
+    startScroll = slider.scrollLeft;
+    slider.style.cursor = 'grabbing';
+    cancelAnimationFrame(raf);
+  });
+  slider.addEventListener('mousemove', function (e) {
+    if (!isDragging) return;
+    var x = e.pageX - slider.offsetLeft;
+    slider.scrollLeft = startScroll - (x - startX);
+  });
+  ['mouseup', 'mouseleave'].forEach(function (evt) {
+    slider.addEventListener(evt, function () {
+      if (!isDragging) return;
+      isDragging = false;
+      slider.style.cursor = '';
+      pause();
+    });
+  });
+
+  /* Touch support (native scroll handles drag) */
+  slider.addEventListener('touchstart', function () { cancelAnimationFrame(raf); }, { passive: true });
+  slider.addEventListener('touchend', pause, { passive: true });
+
+  /* Start */
+  raf = requestAnimationFrame(step);
+})();
 </script>
 
 <div class="uk-section section-power-features">
@@ -1395,50 +1496,50 @@ if (window.rive) {
     <div class="uk-padding-remove-horizontal">
        <div class="uk-container">
         
-            <div class="uk-child-width-expand@s" uk-grid>
+            <div>
                 <div>
-                     <h4 class="uk-h4 uk-text-left">Products</h4>
-                <ul class="uk-subnav">
-                    
+                    <h4 class="uk-h4 uk-text-left">More about</h4>
+                    <ul class="uk-subnav">
                         
+                            
+                            
+                            
+                                <li><a href="/bitcoin-wallet/" >Bitcoin Wallet</a></li>
+                            
                         
+                            
+                            
+                            
+                                <li><a href="/blog/" >Blog</a></li>
+                            
                         
-                            <li><a href="/bitcoin-wallet" >Bitcoin Wallet</a></li>
+                            
+                            
+                            
+                                <li><a href="/contribute/" >Contribute</a></li>
+                            
                         
-                    
+                            
+                            
+                            
+                                <li><a href="/docs/" >Support</a></li>
+                            
                         
+                            
+                            
+                            
+                                <li><a href="https://donate.bluewallet.io" target="_blank" >Donate</a></li>
+                            
                         
-                        
-                            <li><a href="/desktop-bitcoin-wallet" >Desktop App</a></li>
-                        
-                    
-                        
-                        
-                        
-                            <li><a href="/lndhub/" >LNDHub</a></li>
-                        
-                    
-                        
-                        
-                        
-                            <li><a href="/watch-app/" >Apple Watch</a></li>
-                        
-                    
-                        
-                        
-                        
-                            <li><a href="/blog/" >Blog</a></li>
-                        
-                    
-                </ul>
+                    </ul>
                 </div>
-                <div class="uk-margin-auto-vertical">
-                   <div class="uk-child-width-expand@s socialinks" uk-grid>
+                <div class="footer-social-row">
+                    <div class="socialinks" uk-grid>
                         
 <div class="uk-first-column uk-text-center">
     <a href="https://twitter.com/@bluewalletio" class="uk-icon-link uk-icon" target="_blank">
     <img src="https://bluewallet.io/uploads//twitter.svg" alt="twitter bluewallet">
-        Twitter
+        <span class="social-label">Twitter</span>
     </a>    
 </div>
 
@@ -1457,7 +1558,7 @@ if (window.rive) {
 <div class="uk-text-center">
     <a href="https://t.me/bluewallet" class="uk-icon-link uk-icon" target="_blank">
     <img src="https://bluewallet.io/uploads//telegram.svg" alt="telegram bluewallet">
-        Telegram
+        <span class="social-label">Telegram</span>
     </a>
 </div>
 
@@ -1465,11 +1566,11 @@ if (window.rive) {
 <div class="uk-text-center">
     <a href="https://github.com/bluewallet/bluewallet" class="uk-icon-link uk-icon" target="_blank">
     <img src="https://bluewallet.io/uploads//github.svg" alt="github bluewallet">
-        Github
+        <span class="social-label">Github</span>
     </a>
 </div>
 
-                   </div>
+                    </div>
                 </div>
             </div>
         </div>

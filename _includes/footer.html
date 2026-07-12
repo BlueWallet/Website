@@ -6,31 +6,31 @@
         {% if include.title %}
             <h3 class="uk-h3">{{ include.title }}</h3>
         {% endif %}
-            <div class="uk-child-width-expand@s" uk-grid>
+            <div>
                 <div>
-                     <h4 class="uk-h4 uk-text-left">Products</h4>
-                <ul class="uk-subnav">
-                    {% for link in site.data.navigation_footer %}
-                        {% if link.url contains 'http' %}
-                            {% assign domain = '' %}
-                        {% else %}
-                            {% assign domain = '' | relative_url %}
-                        {% endif %}
-                        {% if link.url == page.url %}
-                            {% assign current = ' class="uk-active"' %}
-                        {% else %}
-                            {% assign current = null %}
-                        {% endif %}
-                        {% if link.title %}
-                            <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+                    <h4 class="uk-h4 uk-text-left">More about</h4>
+                    <ul class="uk-subnav">
+                        {% for link in site.data.navigation_footer %}
+                            {% if link.url contains 'http' %}
+                                {% assign domain = '' %}
+                            {% else %}
+                                {% assign domain = '' | relative_url %}
+                            {% endif %}
+                            {% if link.url == page.url %}
+                                {% assign current = ' class="uk-active"' %}
+                            {% else %}
+                                {% assign current = null %}
+                            {% endif %}
+                            {% if link.title %}
+                                <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
                 </div>
-                <div class="uk-margin-auto-vertical">
-                   <div class="uk-child-width-expand@s socialinks" uk-grid>
+                <div class="footer-social-row">
+                    <div class="socialinks" uk-grid>
                         {% include social-networks.html %}
-                   </div>
+                    </div>
                 </div>
             </div>
         </div>

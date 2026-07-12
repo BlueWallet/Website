@@ -667,12 +667,14 @@ number-flow::part(suffix) {
 	}
 }
 .socialinks {
-	font-size: 19px;
-	font-weight: 600;
+	font-size: 15px;
+	font-weight: 500;
 	a {
-		padding: 12px 16px !important;
+		padding: 6px 8px !important;
 		color: #637082;
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
 		border-radius: 6px;
 		transition: all 0.3s ease;
 		&:hover {
@@ -1043,5 +1045,130 @@ number-flow::part(suffix) {
 	padding-bottom: var(--section-header-pad-bottom);
 	@media (min-width: 960px) {
 		--section-header-pad-bottom: 40px;
+	}
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
+footer.uk-section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+footer .uk-container + .uk-container {
+	margin-top: 24px;
+	padding-top: 24px;
+	border-top: 1px solid #f0f0f0;
+}
+
+footer .uk-h4 {
+	margin-bottom: 12px;
+}
+
+footer .uk-subnav {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.footer-social-row {
+	margin-top: 20px;
+}
+
+.socialinks {
+	flex-direction: row !important;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin: 0 !important;
+
+	> div {
+		width: auto !important;
+		flex: 0 0 auto !important;
+		padding: 0 !important;
+	}
+
+	.uk-icon-link {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 6px;
+	}
+}
+
+@media (max-width: 639px) {
+	.socialinks .social-label {
+		display: none;
+	}
+}
+
+/* ─── Home Feedback Slider ───────────────────────────────────────────────── */
+.section-home-feedback {
+	.section-home-header {
+		margin-bottom: 0;
+	}
+}
+
+.feedback-slider-outer {
+	overflow: hidden;
+	position: relative;
+	border-radius: 24px;
+
+	/* Fade edges */
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 60px;
+		z-index: 1;
+		pointer-events: none;
+	}
+	&::before {
+		left: 0;
+		background: linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0) 100%);
+	}
+	&::after {
+		right: 0;
+		background: linear-gradient(to left, #ffffff 0%, rgba(255,255,255,0) 100%);
+	}
+}
+
+.feedback-slider {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 24px 0;
+	overflow-x: scroll;
+	scroll-behavior: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	cursor: grab;
+	user-select: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.feedback-slide {
+	flex: 0 0 auto;
+	width: 340px;
+	background: #ffffff;
+	border-radius: 20px;
+	border: 0.5px solid #CDCCCC;
+	box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.012);
+	overflow: hidden;
+	padding: 16px;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		pointer-events: none;
+		border-radius: 12px;
+	}
+
+	@media (max-width: 767px) {
+		width: 280px;
 	}
 }
