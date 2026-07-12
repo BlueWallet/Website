@@ -212,17 +212,6 @@
         </div>
     </nav>
 </div>
-<script>
-(function () {
-  var wrapper = document.querySelector('[data-uk-sticky]');
-  if (!wrapper) return;
-  function update() {
-    wrapper.classList.toggle('navbar-scrolled', window.scrollY > 10);
-  }
-  window.addEventListener('scroll', update, { passive: true });
-  update();
-})();
-</script>
 
     
     <div class="uk-section section-hero section-hero--home uk-position-relative">
@@ -487,31 +476,56 @@ if (window.rive) {
     </div>
 
     <div class="feedback-slider-outer">
-      <div class="feedback-slider" id="feedback-slider">
-      <div class="feedback-slide">
-        <img src="https://bluewallet.io/uploads/feedback/feedback-jack.png" alt="Feedback from Jack" loading="lazy" />
-      </div>
-      <div class="feedback-slide">
-        <img src="https://bluewallet.io/uploads/feedback/feedback-elon.png" alt="Feedback from Elon" loading="lazy" />
-      </div>
-      <div class="feedback-slide">
-        <img src="https://bluewallet.io/uploads/feedback/feedback-africa.png" alt="Feedback from Africa" loading="lazy" />
-      </div>
-      <div class="feedback-slide">
-        <img src="https://bluewallet.io/uploads/feedback/feedback-stephan.png" alt="Feedback from Stephan" loading="lazy" />
-      </div>
-      <div class="feedback-slide">
-        <img src="https://bluewallet.io/uploads/feedback/feedback-mrhodl.png" alt="Feedback from Mr Hodl" loading="lazy" />
-      </div>
-      <div class="feedback-slide">
-        <img src="https://bluewallet.io/uploads/feedback/feedback-bitcoinheiros.png" alt="Feedback from Bitcoinheiros" loading="lazy" />
-      </div>
-      <div class="feedback-slide">
-        <img src="https://bluewallet.io/uploads/feedback/feedback-okin.png" alt="Feedback from Okin" loading="lazy" />
-      </div>
-      <div class="feedback-slide">
-        <img src="https://bluewallet.io/uploads/feedback/feedback-wicked.png" alt="Feedback from Wicked" loading="lazy" />
-      </div>
+      <div class="feedback-track" id="feedback-track">
+        <div class="feedback-slide">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-jack.png" alt="Feedback from Jack" loading="lazy" />
+        </div>
+        <div class="feedback-slide">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-elon.png" alt="Feedback from Elon" loading="lazy" />
+        </div>
+        <div class="feedback-slide">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-africa.png" alt="Feedback from Africa" loading="lazy" />
+        </div>
+        <div class="feedback-slide">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-stephan.png" alt="Feedback from Stephan" loading="lazy" />
+        </div>
+        <div class="feedback-slide">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-mrhodl.png" alt="Feedback from Mr Hodl" loading="lazy" />
+        </div>
+        <div class="feedback-slide">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-bitcoinheiros.png" alt="Feedback from Bitcoinheiros" loading="lazy" />
+        </div>
+        <div class="feedback-slide">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-okin.png" alt="Feedback from Okin" loading="lazy" />
+        </div>
+        <div class="feedback-slide">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-wicked.png" alt="Feedback from Wicked" loading="lazy" />
+        </div>
+        <!-- Duplicated for seamless loop -->
+        <div class="feedback-slide" aria-hidden="true">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-jack.png" alt="" loading="lazy" />
+        </div>
+        <div class="feedback-slide" aria-hidden="true">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-elon.png" alt="" loading="lazy" />
+        </div>
+        <div class="feedback-slide" aria-hidden="true">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-africa.png" alt="" loading="lazy" />
+        </div>
+        <div class="feedback-slide" aria-hidden="true">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-stephan.png" alt="" loading="lazy" />
+        </div>
+        <div class="feedback-slide" aria-hidden="true">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-mrhodl.png" alt="" loading="lazy" />
+        </div>
+        <div class="feedback-slide" aria-hidden="true">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-bitcoinheiros.png" alt="" loading="lazy" />
+        </div>
+        <div class="feedback-slide" aria-hidden="true">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-okin.png" alt="" loading="lazy" />
+        </div>
+        <div class="feedback-slide" aria-hidden="true">
+          <img src="https://bluewallet.io/uploads/feedback/feedback-wicked.png" alt="" loading="lazy" />
+        </div>
       </div>
     </div>
   </div>
@@ -519,64 +533,69 @@ if (window.rive) {
 
 <script>
 (function () {
-  var slider = document.getElementById('feedback-slider');
-  if (!slider) return;
+  var track = document.getElementById('feedback-track');
+  if (!track) return;
 
-  var SPEED    = 0.4;  /* px per frame */
-  var PAUSE_MS = 2000; /* pause on user interaction */
-  var raf, pauseTimer, isDragging = false, startX = 0, startScroll = 0;
+  var SPEED = 0.5;       /* px per frame */
+  var currentX = 0;
+  var halfWidth = 0;
+  var isDragging = false;
+  var lastPointerX = 0;
 
-  function step() {
-    if (isDragging) return;
-    /* Seamless loop: when we've scrolled past the halfway point, jump back */
-    var maxScroll = slider.scrollWidth / 2;
-    if (slider.scrollLeft >= maxScroll) {
-      slider.scrollLeft -= maxScroll;
+  function loop() {
+    if (!isDragging) {
+      currentX -= SPEED;
+      if (halfWidth > 0 && currentX <= -halfWidth) {
+        currentX += halfWidth;
+      }
     }
-    slider.scrollLeft += SPEED;
-    raf = requestAnimationFrame(step);
+    track.style.transform = 'translateX(' + currentX + 'px)';
+    requestAnimationFrame(loop);
   }
 
-  function pause() {
-    cancelAnimationFrame(raf);
-    clearTimeout(pauseTimer);
-    pauseTimer = setTimeout(function () { raf = requestAnimationFrame(step); }, PAUSE_MS);
+  function init() {
+    halfWidth = track.scrollWidth / 2;
+    requestAnimationFrame(loop);
   }
 
-  /* Duplicate slides for seamless loop */
-  var slides = Array.from(slider.children);
-  slides.forEach(function (slide) {
-    slider.appendChild(slide.cloneNode(true));
-  });
+  /* Start after layout is ready */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 
-  /* Drag support */
-  slider.addEventListener('mousedown', function (e) {
+  /* Mouse drag */
+  track.addEventListener('mousedown', function (e) {
     isDragging = true;
-    startX = e.pageX - slider.offsetLeft;
-    startScroll = slider.scrollLeft;
-    slider.style.cursor = 'grabbing';
-    cancelAnimationFrame(raf);
+    lastPointerX = e.clientX;
+    track.classList.add('is-dragging');
+    e.preventDefault();
   });
-  slider.addEventListener('mousemove', function (e) {
+  window.addEventListener('mousemove', function (e) {
     if (!isDragging) return;
-    var x = e.pageX - slider.offsetLeft;
-    slider.scrollLeft = startScroll - (x - startX);
+    currentX += e.clientX - lastPointerX;
+    lastPointerX = e.clientX;
   });
-  ['mouseup', 'mouseleave'].forEach(function (evt) {
-    slider.addEventListener(evt, function () {
-      if (!isDragging) return;
-      isDragging = false;
-      slider.style.cursor = '';
-      pause();
-    });
+  window.addEventListener('mouseup', function () {
+    if (!isDragging) return;
+    isDragging = false;
+    track.classList.remove('is-dragging');
   });
 
-  /* Touch support (native scroll handles drag) */
-  slider.addEventListener('touchstart', function () { cancelAnimationFrame(raf); }, { passive: true });
-  slider.addEventListener('touchend', pause, { passive: true });
-
-  /* Start */
-  raf = requestAnimationFrame(step);
+  /* Touch drag */
+  track.addEventListener('touchstart', function (e) {
+    isDragging = true;
+    lastPointerX = e.touches[0].clientX;
+  }, { passive: true });
+  track.addEventListener('touchmove', function (e) {
+    if (!isDragging) return;
+    currentX += e.touches[0].clientX - lastPointerX;
+    lastPointerX = e.touches[0].clientX;
+  }, { passive: true });
+  track.addEventListener('touchend', function () {
+    isDragging = false;
+  }, { passive: true });
 })();
 </script>
 

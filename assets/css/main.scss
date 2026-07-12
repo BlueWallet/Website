@@ -50,11 +50,7 @@
 	}
 }
 
-.uk-navbar-sticky,
-.navbar-scrolled .uk-navbar-container {
-	background: #ffffff !important;
-	border-bottom: 1px solid #e8e8e8 !important;
-}
+
 
 .uk-navbar {
 	padding: 0px 0;
@@ -1116,7 +1112,6 @@ footer .uk-subnav {
 .feedback-slider-outer {
 	overflow: hidden;
 	position: relative;
-	border-radius: 24px;
 
 	/* Fade edges */
 	&::before,
@@ -1139,21 +1134,19 @@ footer .uk-subnav {
 	}
 }
 
-.feedback-slider {
+.feedback-track {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: flex-start;
 	gap: 16px;
 	padding: 24px 0;
-	overflow-x: scroll;
-	scroll-behavior: auto;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	cursor: grab;
+	width: max-content;
+	will-change: transform;
 	user-select: none;
+	cursor: grab;
 
-	&::-webkit-scrollbar {
-		display: none;
+	&.is-dragging {
+		cursor: grabbing;
 	}
 }
 
