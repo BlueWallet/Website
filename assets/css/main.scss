@@ -93,11 +93,7 @@
 	.hero-subtitle {
 		font-size: 1.2rem;
 		max-width: 600px;
-	}
-
-	/* The hero itself stretches to fill most of the viewport on desktop. */
-	@media (min-width: 960px) {
-		min-height: min(60vh, 460px);
+		margin-bottom: 32px;
 	}
 
 	/* Left flex column: title at top, badges pinned to bottom. */
@@ -105,11 +101,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding-top: 32px;
-		padding-bottom: 32px;
-		@media (min-width: 960px) {
-			min-height: min(60vh, 460px);
-		}
 	}
 
 	/* Badges: stacked on mobile, side-by-side on desktop. */
@@ -291,6 +282,13 @@
 	padding: 0;
 }
 .hfg-card--fees .hfg-rive-canvas { max-height: 380px; }
+
+.hfg-card--pdeniability .hfg-card-media,
+.hfg-card--recover .hfg-card-media,
+.hfg-card--batch .hfg-card-media {
+	align-items: flex-end;
+	padding-bottom: 0;
+}
 
 /* Onchain wallet card media */
 .hfg-card-media--onchain {
@@ -709,8 +707,13 @@ number-flow::part(suffix) {
 .features {
 	background: #F1F4F6;
 	border-radius: 8px;
-	display: block;
-	box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+	border: 0.5px solid #CDCCCC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	max-height: 300px;
+	box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.012);
 	img {
 		max-width: 350px;
 		width: 100%;
@@ -718,6 +721,11 @@ number-flow::part(suffix) {
 	.special {
 		max-width: 490px;
 		width: 100%;
+	}
+	video {
+		max-height: 300px;
+		width: auto;
+		display: block;
 	}
 }
 .flex {
@@ -1099,6 +1107,40 @@ footer .uk-subnav {
 @media (max-width: 639px) {
 	.socialinks .social-label {
 		display: none;
+	}
+}
+
+/* ─── Features highlights (3-card row) ──────────────────────────────────── */
+.section-features-highlights {
+	padding-top: 48px;
+	padding-bottom: 48px;
+
+	@media (min-width: 960px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+}
+
+.fhl-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 16px;
+	align-items: stretch;
+
+	/* Reset all bento grid-row/column overrides */
+	.hfg-card {
+		grid-row: unset !important;
+		grid-column: unset !important;
+	}
+
+	/* Media area fills remaining card height equally */
+	.hfg-card-media {
+		flex: 1;
+		aspect-ratio: unset;
+	}
+
+	@media (max-width: 639px) {
+		grid-template-columns: 1fr;
 	}
 }
 

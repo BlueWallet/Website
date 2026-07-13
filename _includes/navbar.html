@@ -66,11 +66,37 @@
                                     <li><div class="uk-navbar-item"><a class="uk-button uk-button-{{ link.button }}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></div></li>
                                 {% else %}
                                     {% if link.url %}
+                                        {% if link.dropdown != null %}
+                                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+                                            <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; delay-hide: 200; offset: 0">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    {% for child in link.dropdown %}
+                                                    {% if child.url != null %}
+                                                        {% if child.url contains 'http' %}
+                                                            {% assign domain = '' %}
+                                                        {% else %}
+                                                            {% assign domain = '' | relative_url %}
+                                                        {% endif %}
+                                                        {% if child.url == page.url %}
+                                                            {% assign current = ' class="uk-active"' %}
+                                                        {% else %}
+                                                            {% assign current = null %}
+                                                        {% endif %}
+                                                        <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
+                                                    {% else %}
+                                                        <li class="uk-nav-header">{{ child.title }}</li>
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        {% else %}
                                         <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                                        {% endif %}
                                     {% else %}
                                         <li><a href="#">{{ link.title }}</a>
                                         {% if link.dropdown != null %}
-                                            <div class="uk-navbar-dropdown">
+                                            <div class="uk-navbar-dropdown" uk-dropdown="mode: hover; delay-hide: 200; offset: 0">
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     {% for child in link.dropdown %}
                                                     {% if child.url != null %}
@@ -142,11 +168,37 @@
                                     <li><div class="uk-navbar-item"><a class="uk-button uk-button-{{ link.button }}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></div></li>
                                 {% else %}
                                     {% if link.url %}
+                                        {% if link.dropdown != null %}
+                                        <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+                                            <div class="uk-navbar-dropdown uk-box-shadow-medium border-radius-medium border-light" uk-dropdown="mode: hover; delay-hide: 200; offset: 0">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    {% for child in link.dropdown %}
+                                                    {% if child.url != null %}
+                                                        {% if child.url contains 'http' %}
+                                                            {% assign domain = '' %}
+                                                        {% else %}
+                                                            {% assign domain = '' | relative_url %}
+                                                        {% endif %}
+                                                        {% if child.url == page.url %}
+                                                            {% assign current = ' class="uk-active"' %}
+                                                        {% else %}
+                                                            {% assign current = null %}
+                                                        {% endif %}
+                                                        <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
+                                                    {% else %}
+                                                        <li class="uk-nav-divider"></li>
+                                                    {% endif %}
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        {% else %}
                                         <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                                        {% endif %}
                                     {% else %}
                                         <li><a href="#">{{ link.title }}</a>
                                         {% if link.dropdown != null %}
-                                            <div class="uk-navbar-dropdown uk-box-shadow-medium border-radius-medium border-light" uk-dropdown="mode: click">
+                                            <div class="uk-navbar-dropdown uk-box-shadow-medium border-radius-medium border-light" uk-dropdown="mode: hover; delay-hide: 200; offset: 0">
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                                     {% for child in link.dropdown %}
                                                     {% if child.url != null %}

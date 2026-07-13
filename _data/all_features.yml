@@ -16,9 +16,6 @@
 - title: Coldcard support
   desc: Connect to your Coldcard wallet with ease. Support for PSBT and Watch-only wallets. Allows for receiving and sending transactions by signing them offline.
 
-- title: CoboVault support
-  desc: Support for Cobo Vault hardware wallet. With one of the first of its kind Air-gapped, PSBT with animated QR codes support.
-
 - title: Hardware Wallets
   desc: Ability to connect and work with Hardware Wallets that support PSBT. After importing your wallet on watch-only mode, go to the wallet options and turn on "hardware wallet" mode.
 
@@ -49,14 +46,14 @@
 - title: Dark mode
   desc: BlueWallet is now available in Dark mode for iOS and android.
 
-- title: LNurl
-  desc: Support for the LNurl protocol with LNurl-pay and LNurl-withdraw. This features allows you to have an easier interaction with the Lightning Network and services that support LNurl.
+- title: Passphrase
+  desc: Import wallets that use a BIP39 passphrase — sometimes called the "25th word". The same seed words with a different passphrase produce a completely different wallet.
 
-- title: Marketplace
-  desc: A Marketplace of Lightning enabled apps to help you discover new services on this new fast settlement protocol.
+- title: Taproot
+  desc: Support for Taproot addresses (BIP86). Smaller transactions, improved privacy, and the latest Bitcoin address standard.
 
-- title: Lightning Browser
-  desc: A Lightning browser supporting the webLN standard to help you use and discover new services.
+- title: BIP47 Paycode
+  desc: Share one reusable payment code instead of a new address every time. Behind the scenes, BlueWallet still uses unique on-chain addresses for each sender.
 
 - title: Multi-currency
   desc: BlueWallet supports more than 30 currencies, including USD, AUD, BRL, CAD, CHF, CZK, CNY, EUR, GDP, HRK, INR, JPY, MXN, MYR, RUB, and more.

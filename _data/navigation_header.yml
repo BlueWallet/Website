@@ -5,6 +5,7 @@ right:
     url: /
 
   - title: Features
+    url: /features/
     dropdown:
 
       - title: View All

@@ -1,5 +1,7 @@
 {% include features-hero.html %}
 
+{% include features-highlights.html %}
+
 <div class="uk-section">
    <div class="uk-container{{container}}">
       <div class="uk-child-width-1-2@m uk-grid-match uk-margin-medium-top" data-uk-grid>
@@ -12,9 +14,22 @@ Besides Bitcoin Wallets, Watch-only, Multisig Vaults and Lightning. Blue can imp
          </div>
          <div>
             <div class="uk-card features uk-text-center">
-               <video loop autoplay poster playsinline preload="auto" muted alt="multi bitcoin wallets">
-                  <source src="{{ site.uploads | absolute_url }}/features/multi-wallet.mp4" type="video/mp4">
-               </video>
+               <video id="multiwallet-video" loop autoplay playsinline preload="auto" muted alt="multi bitcoin wallets"></video>
+               <script>
+                 (function () {
+                   var v = document.getElementById('multiwallet-video');
+                   var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+                   var src = isSafari
+                     ? '{{ site.uploads | absolute_url }}/features/multiwallet.mov'
+                     : '{{ site.uploads | absolute_url }}/features/multiwallet.webm';
+                   var type = isSafari ? 'video/mp4; codecs=hvc1' : 'video/webm; codecs=vp9';
+                   var s = document.createElement('source');
+                   s.src = src;
+                   s.type = type;
+                   v.appendChild(s);
+                   v.load();
+                 })();
+               </script>
              </div>
          </div>
 
@@ -22,9 +37,22 @@ Besides Bitcoin Wallets, Watch-only, Multisig Vaults and Lightning. Blue can imp
       <div class="uk-child-width-1-2@m uk-grid-match uk-margin-xlarge flex" data-uk-grid>
          <div class="second-mobile">
              <div class="uk-card features uk-text-center">
-               <video loop autoplay poster playsinline preload="auto" muted alt="watch-only wallet">
-                  <source src="{{ site.uploads | absolute_url }}/features/watch-only.mp4" type="video/mp4">
-               </video>
+               <video id="watchonly-video" loop autoplay playsinline preload="auto" muted alt="watch-only wallet"></video>
+               <script>
+                 (function () {
+                   var v = document.getElementById('watchonly-video');
+                   var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+                   var src = isSafari
+                     ? '{{ site.uploads | absolute_url }}/features/watchonly.mov'
+                     : '{{ site.uploads | absolute_url }}/features/watchonly.webm';
+                   var type = isSafari ? 'video/mp4; codecs=hvc1' : 'video/webm; codecs=vp9';
+                   var s = document.createElement('source');
+                   s.src = src;
+                   s.type = type;
+                   v.appendChild(s);
+                   v.load();
+                 })();
+               </script>
              </div>
          </div>
          <div class="first-mobile">
@@ -46,115 +74,66 @@ Recommended for cold storage and large amounts.</p>
          </div>
          <div>
             <div class="uk-card features uk-text-center">
-               <video loop autoplay poster playsinline preload="auto" muted alt="multisig wallet">
-                  <source src="{{ site.uploads | absolute_url }}/features/multisig.mp4" type="video/mp4">
-               </video>
+               <video id="multisig-video" loop autoplay playsinline preload="auto" muted alt="multisig wallet"></video>
+               <script>
+                 (function () {
+                   var v = document.getElementById('multisig-video');
+                   var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+                   var src = isSafari
+                     ? '{{ site.uploads | absolute_url }}/features/multisig.mov'
+                     : '{{ site.uploads | absolute_url }}/features/multisig.webm';
+                   var type = isSafari ? 'video/mp4; codecs=hvc1' : 'video/webm; codecs=vp9';
+                   var s = document.createElement('source');
+                   s.src = src;
+                   s.type = type;
+                   v.appendChild(s);
+                   v.load();
+                 })();
+               </script>
              </div>
          </div>
       </div>
    </div>
 </div>
 
-<div class="uk-container{{container}}">
-   <hr class="uk-margin-large">
-</div>
-
-<div class="uk-section-large">
+<div class="uk-section section-features-highlights">
    <div class="uk-container{{container}}">
-      <div class="uk-child-width-1-2@m uk-grid-match uk-margin-medium-top" data-uk-grid>
-         <div>
-            <div class="uk-card">
-               <div class="features uk-text-center">
-                  <img src="{{ site.uploads | absolute_url }}/features/lightning.png" alt="lightning wallet">
-               </div>
-               <h2 class="uk-h3 uk-margin">Lightning Wallets</h2>
-               <p class="uk-text-meta">Allows you to seamlessly use the Lightning Network, with multiple account support by connecting to your own node and with full control.</p>
+      <div class="fhl-grid">
+         <div id="pdeniability" class="hfg-card hfg-card--image hfg-card--pdeniability">
+            <div class="hfg-card-media">
+               <img src="{{ site.uploads | absolute_url }}/features/pb.png" alt="plausible deniability">
+            </div>
+            <div class="hfg-card-body">
+               <h3 class="hfg-card-title">Plausible Deniability</h3>
+               <p class="hfg-card-desc">A feature thinking about your personal security. BlueWallet allows you to define a different password which will decrypt a "fake" wallet set up. For any situation where you are forced to disclose your access or for when you don't want to show your real wallet.</p>
             </div>
          </div>
-        <div>
-            <div id="bump" class="uk-card">
-               <div class="features uk-text-center">
-                  <img src="{{ site.uploads | absolute_url }}/features/fees.png" alt="fee estimation">
-               </div>
-               <h2 class="uk-h3 uk-margin">Fee & Transactions control</h2>
-               <p class="uk-text-meta">Provides you a fee estimation targeting confirmations in 10m, 3h or 1 day. With real time calculation on how much to spend. Ability to Bump and Cancel sent transactions with "Replace-by-fee" (RBF) or with "Child-pays-for-parent" (CPFP).</p>
+         <div class="hfg-card hfg-card--image hfg-card--recover">
+            <div class="hfg-card-media">
+               <img src="{{ site.uploads | absolute_url }}/features/recover.png" alt="recover wallets">
+            </div>
+            <div class="hfg-card-body">
+               <h3 class="hfg-card-title">Recover wallets</h3>
+               <p class="hfg-card-desc">A "magical form" where you can try to import whatever you got. It will do its best to understand the format and import your wallet into your BlueWallet app.</p>
+            </div>
+         </div>
+         <div class="hfg-card hfg-card--image hfg-card--batch">
+            <div class="hfg-card-media">
+               <img src="{{ site.uploads | absolute_url }}/features/batch.png" alt="batch transactions">
+            </div>
+            <div class="hfg-card-body">
+               <h3 class="hfg-card-title">Batch Transactions</h3>
+               <p class="hfg-card-desc">Send multiple transactions in one batch. This is useful if you more than one transaction and you want to spend less fees. All your transactions will be batched in a single transaction fee, making it less expensive.</p>
             </div>
          </div>
       </div>
    </div>
-</div>
-
-<div class="uk-container{{container}}">
-   <hr class="uk-margin-large">
 </div>
 
 <div class="uk-section">
-   <div class="uk-container{{container}}">
-      <div class="uk-grid-match uk-margin-medium-top" data-uk-grid>
-         <div class="uk-width-1-5@m"></div>
-         <div class="uk-width-expand@m">
-            <div id="pdeniability" class="uk-card uk-text-center">
-              
-               <h2 class="uk-h2 uk-margin">Plausible deniability</h2>
-               <p class="uk-text-lead">A feature thinking about your personal security. BlueWallet allows you to define a different password which will decrypt a "fake" wallet set up. For any situation where you are forced to disclose your access or for when you don't want to show your real wallet.</p>
-                <div class="features uk-inline uk-text-center uk-margin-large">
-                  <img class="special" src="{{ site.uploads | absolute_url }}/features/pb.png" alt="lightning wallet">
-               </div>
-            </div>
-         </div>
-         <div class="uk-width-1-5@m"></div>
-      </div>
-   </div>
-</div>
-
-<div class="uk-container{{container}}">
-   <hr class="uk-margin-large">
-</div>
-
-
-<div class="uk-section">
-   <div class="uk-container{{container}}">
-      <div class="uk-child-width-1-3@m uk-grid-match uk-margin-medium-top" data-uk-grid>
-         <div>
-            <div id="notifications" class="uk-card">
-               <div class="features uk-text-center">
-                  <img src="{{ site.uploads | absolute_url }}/features/notifications.png" alt="lightning wallet">
-               </div>
-               <h2 class="uk-h3 uk-margin">Notifications</h2>
-               <p class="uk-text-meta">We have developed Ground Control. A push notification service for bitcoin wallets that allows you to have mobile and desktop push notifications or to run your own push notification server.</p>
-            </div>
-         </div>
-         <div>
-            <div class="uk-card">
-               <div class="features uk-text-center">
-                  <img src="{{ site.uploads | absolute_url }}/features/recover.png" alt="fee estimation">
-               </div>
-               <h2 class="uk-h3 uk-margin">Recover wallets</h2>
-               <p class="uk-text-meta">A “magical form” where you can try to import whatever you got. It will do its best to understand the format and import your wallet into your BlueWallet app.</p>
-            </div>
-         </div>
-          <div>
-            <div class="uk-card">
-               <div class="features uk-text-center">
-                  <img src="{{ site.uploads | absolute_url }}/features/batch.png" alt="fee estimation">
-               </div>
-               <h2 class="uk-h3 uk-margin">Batch Transactions</h2>
-               <p class="uk-text-meta">Send multiple transactions in one batch. This is useful if you more than one transaction and you want to spend less fees. All your transactions will be batched in a single transaction fee, making it less expensive.</p>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-<div class="uk-container{{container}}">
-   <hr class="uk-margin-large">
-</div>
-
-
-<div class="uk-section-large">
   <div class="uk-container{{container}}">
-      <div class="uk-margin-xlarge">
-         <h2 class="uk-h1 uk-text-center">Plus so much more</h2>
+      <div class="uk-margin">
+         <h2 class="uk-h1">Plus so much more</h2>
       </div>
         <div class="uk-child-width-1-3@m uk-text-center uk-margin-medium-top uk-grid-small" uk-grid>
          {% for item in site.data.all_features %}
