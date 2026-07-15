@@ -29,7 +29,7 @@ If your wallet still is not listed, tap **Use custom derivation path** at the bo
 
 {% include phone-screenshot-image.html img="import-custom-derivation-04-custom-derivation.png" alt="Custom derivation path screen" %}
 
-Type the path for your wallet — for example `m/84'/0'/0'` for native SegWit (BIP84) or `m/49'/0'/0'` for nested SegWit (BIP49). BlueWallet checks several address types for that path and shows whether each was used on-chain.
+Type the path for your wallet, for example `m/84'/0'/0'` for native SegWit (BIP84) or `m/49'/0'/0'` for nested SegWit (BIP49). BlueWallet checks several address types for that path and shows whether each was used on-chain.
 
 Select the wallet type that shows **Found**, then tap **Import**.
 
@@ -42,5 +42,5 @@ Select the wallet type that shows **Found**, then tap **Import**.
 ## Tips
 
 - Common Bitcoin paths include `m/44'/0'/0'` (legacy), `m/49'/0'/0'` (nested SegWit), `m/84'/0'/0'` (native SegWit), and `m/86'/0'/0'` (Taproot).
-- A wrong path will not expose someone else's funds — it simply derives a different, empty wallet.
+- A wrong path will not expose someone else's funds. It simply derives a different, empty wallet.
 - If you also used a [BIP39 passphrase](/docs/import-passphrase/), enable **Passphrase** before importing so discovery uses the correct seed.

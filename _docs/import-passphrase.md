@@ -3,7 +3,7 @@ title: Import with a passphrase
 tags: [usage]
 ---
 
-Some wallets use a **BIP39 passphrase** — sometimes called the “25th word” — in addition to the 12 or 24 recovery words. The same seed words with a different passphrase produce a completely different wallet.
+Some wallets use a **BIP39 passphrase:** sometimes called the “25th word”, in addition to the 12 or 24 recovery words. The same seed words with a different passphrase produce a completely different wallet.
 
 If your backup was created with a passphrase, enable this option before you import.
 

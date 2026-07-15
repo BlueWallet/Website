@@ -3,7 +3,7 @@ title: Is it my address?
 tags: [usage]
 ---
 
-Before you send bitcoin to an address — or when someone sends you one to double-check — you can confirm whether it belongs to a wallet already in BlueWallet.
+Before you send bitcoin to an address, or when someone sends you one to double-check, you can confirm whether it belongs to a wallet already in BlueWallet.
 
 ## Open the tool
 
@@ -39,6 +39,6 @@ After entering an address, **View QR Code** opens the receive screen for that ad
 
 ## Tips
 
-- This tool only checks wallets stored in BlueWallet on this device — it cannot look up arbitrary addresses on the blockchain.
+- This tool only checks wallets stored in BlueWallet on this device. It cannot look up arbitrary addresses on the blockchain.
 - BIP21 links (`bitcoin:…`) are supported; the address part is extracted automatically.
 - Lightning invoices and non-Bitcoin addresses are not supported here.

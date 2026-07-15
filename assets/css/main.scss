@@ -487,6 +487,29 @@ number-flow::part(suffix) {
 		}
 	}
 }
+
+.section-docs-categories {
+	padding-top: 24px;
+	padding-bottom: 24px;
+
+	.docs-category-box {
+		padding: 16px;
+		width: 100%;
+		text-align: left;
+
+		.uk-card-title {
+			font-size: 1rem;
+			margin: 0 0 8px;
+		}
+
+		p {
+			margin: 0;
+			font-size: 0.875rem;
+			line-height: 1.45;
+			color: #4a5568;
+		}
+	}
+}
 .community-card {
 	border-radius: 24px;
 	padding: 32px;

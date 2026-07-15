@@ -12,14 +12,14 @@
     {% assign container = '' %}
 {% endif %}
 
-<div class="uk-section">
+<div class="uk-section section-docs-categories">
     <div class="uk-container{{container}}">
 
         <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top uk-grid-small" data-uk-grid>
         {% for item in site.data.boxes-docs %}
             
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-medium border-light">
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-inline border-radius-medium border-light docs-category-box">
                     {% if item.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}

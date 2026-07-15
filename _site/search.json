@@ -41,7 +41,7 @@
     } ,
   
     {
-      "title"    : "Coin control — select and manage coins",
+      "title"    : "Coin control: select and manage coins",
       "category" : "",
       "tags"     : "usage, featured",
       "url"      : "/docs/coin-control/",
@@ -209,10 +209,26 @@
     } ,
   
     {
+      "title"    : "Password Protected",
+      "category" : "",
+      "tags"     : "usage, featured",
+      "url"      : "/docs/password-protected/",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Pending transactions",
       "category" : "",
       "tags"     : "usage",
       "url"      : "/docs/pending-transactions/",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Plausible Deniability - Duress",
+      "category" : "",
+      "tags"     : "usage, featured",
+      "url"      : "/docs/plausible-deniability/",
       "date"     : ""
     } ,
   

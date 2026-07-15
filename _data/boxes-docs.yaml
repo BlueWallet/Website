@@ -1,13 +1,33 @@
-# Boxes include navigation
+# Docs page category boxes
 
-- title: Bitcoin Wallets
-  desc: How to create and recover wallets. Information about Transactions.
+- title: Getting started
+  desc: Create wallets, back them up, and learn the basics of BlueWallet.
   url: /docs/create-bitcoin-wallet/
 
-- title: Cold Storage
-  desc: Connect to your favourite device and learn how to do transactions offline.
+- title: Import & recovery
+  desc: Restore wallets from seed phrases, passphrases, and custom paths.
+  url: /docs/import-wallet/
+
+- title: Send & receive
+  desc: Send and receive Bitcoin, payment codes, batching, and broadcasting.
+  url: /docs/send-bitcoin-transaction/
+
+- title: Transactions & fees
+  desc: Track transactions, manage fees, coin control, and export history.
+  url: /docs/transaction-status/
+
+- title: Security & privacy
+  desc: Password protection, plausible deniability, and message signing.
+  url: /docs/password-protected/
+
+- title: Multisig
+  desc: Create and spend from multisig vaults for extra security.
+  url: /docs/multisig-wallet/
+
+- title: Cold storage & hardware
+  desc: Sign offline and connect Coldcard, Cobo Vault, and other devices.
   url: /docs/coldcard/
 
-- title: Multisig Vaults
-  desc: Understand Multisig, its complexities and how to better handle it for yourself.
-  url: /docs/multisig-wallet/
+- title: Lightning & LNDhub
+  desc: Self-host LNDhub and recover Lightning wallet accounts.
+  url: /docs/lndhub-ubuntu/

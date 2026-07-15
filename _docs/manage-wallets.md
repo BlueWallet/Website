@@ -38,5 +38,5 @@ Swipe left again and tap **Show** to bring the balance back.
 
 ## Tips
 
-- Hiding a balance is useful on a shared or demo device — it does not affect the wallet itself.
+- Hiding a balance is useful on a shared or demo device. It does not affect the wallet itself.
 - Use [search](/docs/search-wallets/) on this screen to find a wallet by name, address, transaction, or memo.

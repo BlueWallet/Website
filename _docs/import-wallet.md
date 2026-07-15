@@ -3,7 +3,7 @@ title: Import a wallet
 tags: [usage, featured]
 ---
 
-Instead of creating a new wallet, you can import one you already have — from another app, a paper backup, or a previous BlueWallet install.
+Instead of creating a new wallet, you can import one you already have, from another app, a paper backup, or a previous BlueWallet install.
 
 You can import using a **recovery phrase (mnemonic)**, a **private key**, or a **WIF**. BlueWallet detects the format automatically.
 
@@ -43,12 +43,12 @@ Tap **Scan** on the import screen to open the camera and scan a QR backup. You c
 
 Tap **⋯** on the import screen for extra options:
 
-- [Import with a passphrase](/docs/import-passphrase/) — if your backup uses a BIP39 passphrase (25th word)
-- [Search accounts on import](/docs/import-search-accounts/) — scan more derivation paths when recovering a wallet from another app
-- [Custom derivation path on import](/docs/import-custom-derivation/) — enter a specific BIP32 path when discovery does not find your wallet
+- [Import with a passphrase](/docs/import-passphrase/), if your backup uses a BIP39 passphrase (25th word)
+- [Search accounts on import](/docs/import-search-accounts/), scan more derivation paths when recovering a wallet from another app
+- [Custom derivation path on import](/docs/import-custom-derivation/), enter a specific BIP32 path when discovery does not find your wallet
 
 ## Tips
 
-- Import each wallet separately — there is no bulk import for multiple wallets at once.
+- Import each wallet separately, there is no bulk import for multiple wallets at once.
 - Double-check every word before importing. A single typo can make recovery fail.
 - Never enter your backup on a device you do not trust.

@@ -22,20 +22,20 @@ The receive screen shows a QR code and your Bitcoin address. Let the sender scan
 
 {% include phone-screenshot-image.html img="receive-bitcoin-02-qr-code.png" alt="Receive screen with QR code and address" %}
 
-If this is your first time receiving, BlueWallet may ask you to confirm that you understand address reuse — tap through that prompt to see the QR code.
+If this is your first time receiving, BlueWallet may ask you to confirm that you understand address reuse. Tap through that prompt to see the QR code.
 
 ## Request a specific amount (optional)
 
-Tap **Set amount** to add an amount and optional description to the QR code. This is useful when you want the payer to send an exact sum — wallets that support BIP21 will pre-fill the amount.
+Tap **Set amount** to add an amount and optional description to the QR code. This is useful when you want the payer to send an exact sum. Wallets that support BIP21 will pre-fill the amount.
 
 Tap **Save** to update the QR code. Share it the same way as before.
 
 ## After you receive
 
-Incoming payments appear in your wallet's transaction list. Tap a transaction to see its status — see [Transaction status screen](/docs/transaction-status/). Unconfirmed payments show as **Pending** until they get enough confirmations on the network.
+Incoming payments appear in your wallet's transaction list. Tap a transaction to see its status. See [Transaction status screen](/docs/transaction-status/). Unconfirmed payments show as **Pending** until they get enough confirmations on the network.
 
 ## Tips
 
 - For better privacy, use a new address for each payment when possible.
 - Double-check that the sender is using the correct network (Bitcoin mainnet, not a test network or another asset).
-- Lightning wallets use invoices instead of addresses — see [Create a Lightning wallet](/docs/create-lightning-wallet/) for receiving via Lightning.
+- Lightning wallets use invoices instead of addresses. See [Create a Lightning wallet](/docs/create-lightning-wallet/) for receiving via Lightning.

@@ -1,38 +1,44 @@
-- title: Help section
+- title: Getting started
   docs:
   - create-bitcoin-wallet
+  - create-lightning-wallet
+  - backup-wallet
+  - wallet-details
+  - manage-wallets
+  - search-wallets
+
+- title: Import & recovery
+  docs:
   - import-wallet
   - import-passphrase
   - import-search-accounts
   - import-custom-derivation
-  - create-lightning-wallet
-  - send-bitcoin-transaction
-  - receive-bitcoin-transaction
-  - backup-wallet
-  - wallet-details
-  - show-addresses
-  - bip47-paycodes
-  - sign-verify-message
-  - manage-wallets
-  - search-wallets
   - recover-wallet
   - manual-entropy
-  - batching
-  - coin-control
-  - transaction-status
-  - export-transaction-history
-  - pending-transactions
-  - is-it-my-address
-  - broadcast-transaction
   - seed-final-word
 
-- title: Cold storage
+- title: Send & receive
   docs:
-  - sign-offline
-  - coldcard
-  - coldcard-dropbox
-  - coldcard-watch
-  - cobo-vault
+  - send-bitcoin-transaction
+  - receive-bitcoin-transaction
+  - show-addresses
+  - bip47-paycodes
+  - batching
+  - broadcast-transaction
+
+- title: Transactions & fees
+  docs:
+  - transaction-status
+  - pending-transactions
+  - coin-control
+  - export-transaction-history
+  - is-it-my-address
+
+- title: Security & privacy
+  docs:
+  - password-protected
+  - plausible-deniability
+  - sign-verify-message
 
 - title: Multisig
   docs:
@@ -40,7 +46,15 @@
   - create-multisig-wallet
   - multisig-spend
 
-- title: LNDhub
+- title: Cold storage & hardware
+  docs:
+  - sign-offline
+  - coldcard
+  - coldcard-dropbox
+  - coldcard-watch
+  - cobo-vault
+
+- title: Lightning & LNDhub
   docs:
   - lndhub-ubuntu
   - lndhub-macos

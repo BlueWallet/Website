@@ -13,13 +13,13 @@
     }
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav) {
         transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
-        border-bottom: 1px solid $global-primary-background;
+        text-decoration: underline;
         color: $global-primary-background;        
     }
 
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav):hover {
-        border-bottom-color: lighten($global-primary-background, 25%);
-        text-decoration: none;
+        color: lighten($global-primary-background, 25%);
+        text-decoration: underline;
     }
 
     .link-secondary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav):hover {

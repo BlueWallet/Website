@@ -1,5 +1,5 @@
 ---
-title: Coin control — select and manage coins
+title: "Coin control: select and manage coins"
 tags: [usage, featured]
 ---
 
@@ -48,4 +48,4 @@ The blue **Coins selected** banner confirms which outputs will be used. Tap it t
 ## Tips
 
 - **Frozen** coins stay in the wallet but are skipped when building transactions unless you explicitly select them in Coin Control.
-- Coin control is available from **Send** as well — open the send screen menu and choose **Coin control** for the same view.
+- Coin control is available from **Send** as well. Open the send screen menu and choose **Coin control** for the same view.

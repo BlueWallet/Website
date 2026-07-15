@@ -10,7 +10,7 @@ cover: home.png
 
 {% include search.html %}
 
-{% include boxes-docs.html columns="3" title="What you can do with BlueWallet" subtitle="Besides receiving, sending and storing Bitcoin, you can do a lot more..." %}
+{% include boxes-docs.html columns="4" title="Browse by topic" subtitle="Step-by-step guides organized by what you want to do" %}
 
 {% include docs-featured-articles.html title="Support articles" subtitle="Step-by-step guides with screenshots" %}
 
