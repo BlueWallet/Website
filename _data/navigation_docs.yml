@@ -48,6 +48,7 @@
 
 - title: Cold storage & hardware
   docs:
+  - offline-cold-wallet
   - sign-offline
   - coldcard
   - coldcard-dropbox

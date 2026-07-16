@@ -209,6 +209,14 @@
     } ,
   
     {
+      "title"    : "Use BlueWallet offline as a cold wallet",
+      "category" : "",
+      "tags"     : "usage, featured",
+      "url"      : "/docs/offline-cold-wallet/",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Password Protected",
       "category" : "",
       "tags"     : "usage, featured",
