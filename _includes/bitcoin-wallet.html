@@ -1,123 +1,375 @@
-<div class="uk-section">
-   <div class="uk-container uk-text-center uk-scrollspy-inview uk-animation-slide-bottom-medium">
-     <h1 class="uk-heading-hero">Bitcoin Wallet</h1>
-     <p class="uk-text-lead">BlueWallet supports various Bitcoin wallet implementations, BIPs and different integrations with external services. You can easily import any wallet with our wallet recovery and import feature.</p>
-    <div class="uk-container-medium imghere uk-padding-remove@s uk-padding-remove-bottom uk-scrollspy-inview uk-animation-slide-bottom-medium">
-      <img src="{{ site.uploads | absolute_url }}/bitcoinwallets.png" alt="download bitcoin wallet for desktop">
+<div class="page-bitcoin-wallet">
+<div class="uk-section section-hero section-hero--bitcoin-wallet uk-position-relative uk-scrollspy-inview uk-animation-slide-bottom-medium">
+  <div class="uk-container uk-text-center uk-position-relative">
+    <h1 class="uk-heading-hero uk-margin-medium-bottom">A Bitcoin wallet built for you</h1>
+    <p class="uk-text-lead">Create a secure Bitcoin wallet in seconds, or import one you already use. Simple for beginners, powerful for experienced users.
+      <strong>Your keys. Your bitcoin. Your wallet.</strong></p>
+    <div class="hero-badges hero-badges--center">
+      <a href="https://apps.apple.com/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank" rel="noopener" data-pirsch-event="Download" data-pirsch-meta-platform="iOS" data-pirsch-meta-location="Bitcoin Wallet">
+        <img class="bounce" src="{{ site.uploads | absolute_url }}/app-store-badge-blue.svg" alt="download bitcoin wallet for ios">
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=io.bluewallet.bluewallet" target="_blank" rel="noopener" data-pirsch-event="Download" data-pirsch-meta-platform="Android" data-pirsch-meta-location="Bitcoin Wallet">
+        <img class="bounce" src="{{ site.uploads | absolute_url }}/play-store-badge-blue.svg" alt="download bitcoin wallet for android">
+      </a>
     </div>
-   </div>
+  </div>
+  <div class="hero-bottom-image">
+    <img src="{{ site.uploads | absolute_url }}/bitcoinwallets.png" alt="download bitcoin wallet for desktop">
+  </div>
 </div>
+
+{% include features-highlights.html title="The basics" subtitle="Powerful when you need it" %}
 
 <div class="uk-section-large">
   <div class="uk-container{{container}}">
-      <h1 class="uk-h1">Wallets supported</h1>
-
-
-<div uk-slider>
-  <div class="uk-position-relative">
-    <div class="uk-slider-container">
-        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-3@m">
-            <li>
-              <img src="{{ site.uploads | absolute_url }}/images/bitcoin-bech32.png" alt="">
-              <div class="uk-card uk-card-body">
-                  <h3 class="uk-h3">Native Segwit</h3>
-                <p>Native Segwit addresses wallet are the latest in terms of technology that allow you to save up to 40% in fees.</p>
-              </div>
-            </li>
-            <li>
-              <img src="{{ site.uploads | absolute_url }}/images/bitcoin-watch-only.png" alt="">
-              <div class="uk-card uk-card-body">
-                  <h3 class="uk-h3">Watch-only</h3>
-                <p>The Watch-only wallet, as the name suggests is a wallet that allows you to keep an eye on your balance and receive transactions without touching your private key. </p>
-              </div>
-            </li>
-            <li>
-              <img src="{{ site.uploads | absolute_url }}/images/bitcoin-vault.png" alt="">
-              <div class="uk-card uk-card-body">
-                  <h3 class="uk-h3">Multisig Vaults</h3>
-                <p>The Multisig Vault is a bitcoin wallet with multiple keys. It is advised for large amounts because it has the best security. It requires multiple keys to spend funds.</p>
-              </div>
-            </li>
-            <li>
-              <img src="{{ site.uploads | absolute_url }}/images/bitcoin-lightning.png" alt="">
-              <div class="uk-card uk-card-body">
-                  <h3 class="uk-h3">Lightning</h3>
-                <p>The Bitcoin Lightning wallet can be used on hosted fashion or self-hosted if you run your own node. This wallet provides the ability to receive lightning out of the box and send payments as well.</p>
-              </div>
-            </li>
-            <li>
-              <img src="{{ site.uploads | absolute_url }}/images/bitcoin-native-segwit.png" alt="">
-              <div class="uk-card uk-card-body">
-                  <h3 class="uk-h3">Wrapped Segwit</h3>
-                <p>The wrapped segwit Bitcoin wallet is available in the advanced mode. It provides the best compatibility with exchanges and old services.</p>
-              </div>   
-            </li>
-            <li>
-              <img src="{{ site.uploads | absolute_url }}/images/bitcoin-segwit.png" alt="">
-              <div class="uk-card uk-card-body">
-                  <h3 class="uk-h3">Single Address</h3>
-                <p>The Single address Bitcoin wallet, it's a Segwit compatible wallet that always will have the same receiving address. This is available in advanced mode.</p>
-              </div>   
-            </li>
-             <li>
-            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-legacy.png" alt="">
-            <div class="uk-card uk-card-body">
-                <h3 class="uk-h3">Legacy</h3>
-                <p>Legacy wallet types start by 1... they are still widely use and you can import them through the import feature.</p>
-              </div>     
-            </li>
-            <li>
-            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-electrum.png" alt="">
-            <div class="uk-card uk-card-body">
-                <h3 class="uk-h3">Electrum</h3>
-                <p>Electrum is a old Bitcoin wallet that has their own type that is not compatible with other apps. BlueWallet makes sure it can support it.</p>
-              </div>     
-            </li>
-            <li>
-            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-bread.png" alt="">
-            <div class="uk-card uk-card-body">
-                <h3 class="uk-h3">BRD/Bread</h3>
-                <p>Bread wallet has a custom wallet format, usually not supported by other wallets. We made sure we have that available in case you want to import your bread wallet.</p>
-              </div>     
-            </li>
-        </ul>
-    </div>
-
-    <div class="uk-hidden@s">
-        <a class="uk-position-center-left uk-position-small uk-label uk-light" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-label uk-light" href="#" uk-slidenav-next uk-slider-item="next"></a>
-    </div>
-
-    <div class="uk-visible@s">
-        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    <div class="section-home-header">
+      <h2 class="uk-h1 uk-margin-remove-top">Wallets supported</h2>
+      <p class="uk-text-lead uk-margin-small-top">BlueWallet supports a wide range of Bitcoin wallet formats, making it easier to recover old wallets and maintain compatibility with other services.</p>
     </div>
   </div>
-</div>
-</div>
+
+  <div class="feedback-slider-outer feedback-slider-outer--full">
+    <div class="feedback-track wallet-type-track" id="wallet-types-track">
+
+        <!-- Bitcoin Wallet -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-bech32.png" alt="Bitcoin Wallet">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Bitcoin Wallet</h3>
+              <span class="wallet-type-badge wallet-type-badge--recommended">Recommended</span>
+            </div>
+            <p class="wallet-type-lead">The best choice for most people.</p>
+            <p class="wallet-type-desc">Create a modern Native SegWit wallet with multiple addresses, lower transaction fees and full control over your bitcoin.</p>
+          </div>
+        </div>
+
+        <!-- Watch-only Wallet -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-watch-only.png" alt="Watch-only Wallet">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Watch-only Wallet</h3>
+            </div>
+            <p class="wallet-type-lead">Monitor your bitcoin without storing private keys on your phone.</p>
+            <p class="wallet-type-desc">Track balances, generate receiving addresses and review transactions while keeping your signing keys safely offline.</p>
+          </div>
+        </div>
+
+        <!-- Multisig Vault -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-vault.png" alt="Multisig Vault">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Multisig Vault</h3>
+            </div>
+            <p class="wallet-type-lead">Protect your bitcoin with multiple keys.</p>
+            <p class="wallet-type-desc">A multisig vault requires more than one key to approve a transaction, reducing the risk of losing funds if a single device or backup is compromised.</p>
+            <p class="wallet-type-desc">Ideal for larger balances, shared custody and long-term savings.</p>
+          </div>
+        </div>
+
+        <!-- Lightning Wallet -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-lightning.png" alt="Lightning Wallet">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Lightning Wallet</h3>
+            </div>
+            <p class="wallet-type-lead">Send and receive instant Bitcoin payments over the Lightning Network.</p>
+            <p class="wallet-type-desc">Connect BlueWallet to your own Lightning node and manage fast, low-cost payments from the same app.</p>
+          </div>
+        </div>
+
+        <!-- Wrapped SegWit -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-native-segwit.png" alt="Wrapped SegWit">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Wrapped SegWit</h3>
+              <span class="wallet-type-badge wallet-type-badge--muted">Advanced Mode</span>
+            </div>
+            <p class="wallet-type-lead">A SegWit wallet designed for compatibility with older exchanges and services.</p>
+          </div>
+        </div>
+
+        <!-- Single Address -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-segwit.png" alt="Single Address">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Single Address</h3>
+              <span class="wallet-type-badge wallet-type-badge--muted">Advanced Mode</span>
+            </div>
+            <p class="wallet-type-lead">A wallet that reuses the same receiving address.</p>
+            <p class="wallet-type-desc">Useful for specific workflows, but not recommended for everyday use because address reuse reduces privacy.</p>
+          </div>
+        </div>
+
+        <!-- Legacy -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-legacy.png" alt="Legacy">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Legacy</h3>
+            </div>
+            <p class="wallet-type-lead">Import older Bitcoin wallets with addresses beginning with 1.</p>
+            <p class="wallet-type-desc">Legacy wallets remain supported, although newer address formats generally provide better efficiency and lower fees.</p>
+          </div>
+        </div>
+
+        <!-- Electrum -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-electrum.png" alt="Electrum">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Electrum</h3>
+            </div>
+            <p class="wallet-type-lead">Import wallets created with Electrum-specific seed formats.</p>
+            <p class="wallet-type-desc">BlueWallet automatically recognizes supported Electrum seeds and restores the appropriate wallet.</p>
+          </div>
+        </div>
+
+        <!-- BRD and Breadwallet -->
+        <div class="wallet-type-card">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-bread.png" alt="BRD and Breadwallet">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">BRD and Breadwallet</h3>
+            </div>
+            <p class="wallet-type-lead">Recover wallets created with BRD or Breadwallet.</p>
+            <p class="wallet-type-desc">BlueWallet supports their custom recovery format, helping you regain access without depending on the original app.</p>
+          </div>
+        </div>
+
+        <!-- Duplicated for seamless loop -->
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-bech32.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Bitcoin Wallet</h3>
+              <span class="wallet-type-badge wallet-type-badge--recommended">Recommended</span>
+            </div>
+            <p class="wallet-type-lead">The best choice for most people.</p>
+            <p class="wallet-type-desc">Create a modern Native SegWit wallet with multiple addresses, lower transaction fees and full control over your bitcoin.</p>
+          </div>
+        </div>
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-watch-only.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Watch-only Wallet</h3>
+            </div>
+            <p class="wallet-type-lead">Monitor your bitcoin without storing private keys on your phone.</p>
+            <p class="wallet-type-desc">Track balances, generate receiving addresses and review transactions while keeping your signing keys safely offline.</p>
+          </div>
+        </div>
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-vault.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Multisig Vault</h3>
+            </div>
+            <p class="wallet-type-lead">Protect your bitcoin with multiple keys.</p>
+            <p class="wallet-type-desc">A multisig vault requires more than one key to approve a transaction, reducing the risk of losing funds if a single device or backup is compromised.</p>
+            <p class="wallet-type-desc">Ideal for larger balances, shared custody and long-term savings.</p>
+          </div>
+        </div>
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-lightning.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Lightning Wallet</h3>
+            </div>
+            <p class="wallet-type-lead">Send and receive instant Bitcoin payments over the Lightning Network.</p>
+            <p class="wallet-type-desc">Connect BlueWallet to your own Lightning node and manage fast, low-cost payments from the same app.</p>
+          </div>
+        </div>
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-native-segwit.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Wrapped SegWit</h3>
+              <span class="wallet-type-badge wallet-type-badge--muted">Advanced Mode</span>
+            </div>
+            <p class="wallet-type-lead">A SegWit wallet designed for compatibility with older exchanges and services.</p>
+          </div>
+        </div>
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-segwit.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Single Address</h3>
+              <span class="wallet-type-badge wallet-type-badge--muted">Advanced Mode</span>
+            </div>
+            <p class="wallet-type-lead">A wallet that reuses the same receiving address.</p>
+            <p class="wallet-type-desc">Useful for specific workflows, but not recommended for everyday use because address reuse reduces privacy.</p>
+          </div>
+        </div>
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-legacy.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Legacy</h3>
+            </div>
+            <p class="wallet-type-lead">Import older Bitcoin wallets with addresses beginning with 1.</p>
+            <p class="wallet-type-desc">Legacy wallets remain supported, although newer address formats generally provide better efficiency and lower fees.</p>
+          </div>
+        </div>
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-electrum.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">Electrum</h3>
+            </div>
+            <p class="wallet-type-lead">Import wallets created with Electrum-specific seed formats.</p>
+            <p class="wallet-type-desc">BlueWallet automatically recognizes supported Electrum seeds and restores the appropriate wallet.</p>
+          </div>
+        </div>
+        <div class="wallet-type-card" aria-hidden="true">
+          <div class="wallet-type-media">
+            <img src="{{ site.uploads | absolute_url }}/images/bitcoin-bread.png" alt="">
+          </div>
+          <div class="wallet-type-body">
+            <div class="wallet-type-heading">
+              <h3 class="wallet-type-title">BRD and Breadwallet</h3>
+            </div>
+            <p class="wallet-type-lead">Recover wallets created with BRD or Breadwallet.</p>
+            <p class="wallet-type-desc">BlueWallet supports their custom recovery format, helping you regain access without depending on the original app.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
 </div>
 
+<script>
+(function () {
+  function initMarquee(trackId, speed) {
+    var track = document.getElementById(trackId);
+    if (!track) return;
 
-<div class="uk-section">
+    var currentX = 0;
+    var halfWidth = 0;
+    var isDragging = false;
+    var lastPointerX = 0;
+
+    function loop() {
+      if (!isDragging) {
+        currentX -= speed;
+        if (halfWidth > 0 && currentX <= -halfWidth) {
+          currentX += halfWidth;
+        }
+      }
+      track.style.transform = 'translateX(' + currentX + 'px)';
+      requestAnimationFrame(loop);
+    }
+
+    function init() {
+      halfWidth = track.scrollWidth / 2;
+      requestAnimationFrame(loop);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+
+    track.addEventListener('mousedown', function (e) {
+      isDragging = true;
+      lastPointerX = e.clientX;
+      track.classList.add('is-dragging');
+      e.preventDefault();
+    });
+    window.addEventListener('mousemove', function (e) {
+      if (!isDragging) return;
+      currentX += e.clientX - lastPointerX;
+      lastPointerX = e.clientX;
+    });
+    window.addEventListener('mouseup', function () {
+      if (!isDragging) return;
+      isDragging = false;
+      track.classList.remove('is-dragging');
+    });
+
+    track.addEventListener('touchstart', function (e) {
+      isDragging = true;
+      lastPointerX = e.touches[0].clientX;
+    }, { passive: true });
+    track.addEventListener('touchmove', function (e) {
+      if (!isDragging) return;
+      currentX += e.touches[0].clientX - lastPointerX;
+      lastPointerX = e.touches[0].clientX;
+    }, { passive: true });
+    track.addEventListener('touchend', function () {
+      isDragging = false;
+    }, { passive: true });
+  }
+
+  initMarquee('wallet-types-track', 0.4);
+})();
+</script>
+
+
+<div class="uk-section section-wallet-guides">
   <div class="uk-container{{container}}">
     <div class="uk-child-width-1-2@m uk-grid-match uk-text-center uk-margin-medium-top uk-grid-small" data-uk-grid>
-          <div class="uk-width-1-3@m">
-              <div>
-                  <img src="{{ site.uploads | absolute_url }}/bitcoin-wallet/create.png" alt="">
-              </div>
-          </div>
           <div class="uk-width-expand@m">
               <div class="uk-card uk-card-body uk-text-left@m uk-text-center uk-margin-auto-vertical">
-                  <h2 class="uk-h1 uk-heading-primary">Create wallets</h2>
-                  <p>The create wallet options allows you to add wallet by simply choosing the type you want. The Bitcoin wallet (a multi address HD and segwit) is the default recommended one.</p>
+                  <h2 class="uk-h1 uk-heading-primary">Create a new Bitcoin wallet</h2>
+                  <p class="uk-text-lead uk-margin-small-top">Getting started takes only a few seconds.</p>
+                  <p class="uk-text-lead">Choose Bitcoin when creating a wallet and BlueWallet will generate a modern, multi-address Native SegWit wallet—the recommended option for most users.</p>
+                  <p class="uk-text-lead">Your recovery phrase is created on your device. Write it down, store it somewhere safe and never share it with anyone.</p>
+              </div>
+          </div>
+          <div class="uk-width-1-3@m uk-flex-first@m">
+              <div>
+                  <img src="{{ site.uploads | absolute_url }}/bitcoin-wallet/create.png" alt="">
               </div>
           </div>
     </div>
     <div class="uk-child-width-1-2@m uk-grid-match uk-text-center uk-margin-medium-top uk-grid-small" data-uk-grid>
       <div class="uk-width-expand@m">
           <div class="uk-card uk-card-body uk-text-left@m uk-text-center uk-margin-auto-vertical">
-              <h2 class="uk-h1 uk-heading-primary">Import wallets</h2>
-              <p>Bluewallet provides a “magic form” where you can try to import and recover whatever you got. It will do its best to understand the format and import your wallet into your BlueWallet app.</p>
+              <h2 class="uk-h1 uk-heading-primary">Bring your existing wallet</h2>
+              <p class="uk-text-lead uk-margin-small-top">Already have a Bitcoin wallet? Bring it with you.</p>
+              <p class="uk-text-lead">Paste or scan your recovery phrase, private key, public key or wallet backup. BlueWallet will identify the format and attempt to restore the correct wallet automatically.</p>
+              <p class="uk-text-lead">BlueWallet supports common Bitcoin standards as well as several wallet-specific recovery formats.</p>
           </div>
       </div>
       <div class="uk-width-1-3@m">
@@ -132,5 +384,7 @@
 {% include home-community.html %}
 
 {% include docs-featured-articles.html title="Support articles" subtitle="Step-by-step guides with screenshots" limit="3" id="bitcoin-wallet-featured-articles" see_all_url="/docs/" %}
+
+</div>
 
 

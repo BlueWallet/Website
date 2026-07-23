@@ -1,6 +1,15 @@
 <div class="uk-section section-features-highlights">
   <div class="uk-container">
 
+    {% if include.title %}
+    <div class="section-home-header">
+      <h2 class="uk-h1 uk-margin-remove-top">{{ include.title }}</h2>
+      {% if include.subtitle %}
+      <p class="uk-text-lead uk-margin-small-top">{{ include.subtitle }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+
     <div class="fhl-grid">
 
       <!-- Self-custody -->

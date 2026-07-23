@@ -147,6 +147,36 @@
 		padding-bottom: 40px;
 	}
 }
+.hero-badges--center {
+	justify-content: center;
+	margin-top: 32px;
+	margin-bottom: 0;
+}
+.section-hero--bitcoin-wallet {
+	display: flex;
+	flex-direction: column;
+	height: 93vh;
+	min-height: 420px;
+	padding-top: 64px;
+	padding-bottom: 0;
+	overflow: hidden;
+	@media (min-width: 768px) {
+		padding-top: 96px;
+	}
+	.hero-bottom-image {
+		margin-top: auto;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		img {
+			display: block;
+			width: 100%;
+			max-width: 600px;
+			height: auto;
+		}
+	}
+}
 .hero-bg {
 	position: absolute;
 	inset: 0;
@@ -1199,6 +1229,13 @@ footer .uk-subnav {
 	}
 }
 
+.feedback-slider-outer--full {
+	.feedback-track {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+
 .feedback-track {
 	display: flex;
 	flex-wrap: nowrap;
@@ -1235,5 +1272,129 @@ footer .uk-subnav {
 
 	@media (max-width: 767px) {
 		width: 280px;
+	}
+}
+
+/* ─── Wallet type / wallet format cards (reuses the feedback marquee) ───── */
+.wallet-type-card {
+	flex: 0 0 auto;
+	width: 320px;
+	background: #ffffff;
+	border-radius: 20px;
+	border: 0.5px solid #CDCCCC;
+	box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.012);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+	@media (max-width: 767px) {
+		width: 270px;
+	}
+}
+
+.wallet-type-media {
+	flex-shrink: 0;
+	background: #F2F4F7;
+	border-radius: 12px;
+	margin: 16px 16px 0;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		display: block;
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		max-height: 140px;
+		pointer-events: none;
+		object-fit: contain;
+	}
+}
+
+.wallet-type-body {
+	padding: 16px;
+}
+
+.wallet-type-heading {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 6px;
+}
+
+.wallet-type-title {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin: 0;
+	color: #0C2550;
+}
+
+.wallet-type-badge {
+	display: inline-block;
+	font-size: 0.7rem;
+	font-weight: 600;
+	line-height: 1;
+	padding: 4px 10px;
+	border-radius: 999px;
+	white-space: nowrap;
+}
+
+.wallet-type-badge--recommended {
+	background: #E6F4EA;
+	color: #1E7E34;
+}
+
+.wallet-type-badge--muted {
+	background: #F2F4F7;
+	color: #637082;
+}
+
+.wallet-type-lead {
+	font-weight: 600;
+	color: #0C2550;
+	margin: 0 0 6px;
+}
+
+.wallet-type-desc {
+	font-size: 0.875rem;
+	color: #6B7990;
+	margin: 0 0 8px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* ─── Wallet guides (Create / Bring your existing wallet) ───────────────── */
+.section-wallet-guides {
+	.uk-text-lead {
+		font-size: 1.25rem;
+		color: #686c7b;
+	}
+	.uk-text-lead + .uk-text-lead {
+		margin-top: 12px;
+	}
+}
+
+/* ─── Tighter section spacing on the bitcoin-wallet page ────────────────── */
+.page-bitcoin-wallet {
+	.uk-section-large {
+		padding-top: 48px;
+		padding-bottom: 48px;
+		@media (min-width: 960px) {
+			padding-top: 64px;
+			padding-bottom: 64px;
+		}
+	}
+	.section-home-header {
+		--section-header-pad-bottom: 16px;
+		padding-top: 24px;
+		@media (min-width: 960px) {
+			--section-header-pad-bottom: 20px;
+			padding-top: 24px;
+		}
 	}
 }
