@@ -152,7 +152,10 @@
 	margin-top: 32px;
 	margin-bottom: 0;
 }
-.section-hero--bitcoin-wallet {
+.section-hero--bitcoin-wallet,
+.section-hero--lightning,
+.section-hero--watch-only,
+.section-hero--multisig {
 	display: flex;
 	flex-direction: column;
 	height: 93vh;
