@@ -60,6 +60,8 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.9.0)
       jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.19.8)
@@ -121,6 +123,7 @@ DEPENDENCIES
   jekyll-github-metadata
   jekyll-paginate
   jekyll-seo-tag
+  jekyll-sitemap
   kramdown-parser-gfm
   tzinfo-data
 

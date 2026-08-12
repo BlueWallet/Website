@@ -13,6 +13,7 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-paginate'
 gem 'jekyll-github-metadata'
 gem 'jekyll-get-json'
+gem 'jekyll-sitemap'
 
 gem 'base64'
 gem 'csv'
