@@ -71,24 +71,30 @@ No browser extension is required — Jekyll handles reloads automatically.
 
 ## Production
 
-Build the static site for deployment. Set `JEKYLL_ENV=production` so production-only logic is enabled (for example, analytics and Disqus comments when configured in `_config.yml`).
+Production deploys are built automatically by GitHub Actions on every push to `master` (see [`.github/workflows/pages.yml`](.github/workflows/pages.yml)). The workflow runs:
 
 ```bash
 JEKYLL_ENV=production bundle exec jekyll build
 ```
 
-Output is written to the `_site/` directory. Serve it locally to verify the production build:
+and publishes `_site/` to GitHub Pages. You do not need to commit `_site/`.
+
+To preview a production build locally:
 
 ```bash
 JEKYLL_ENV=production bundle exec jekyll build
 bundle exec jekyll serve --skip-initial-build --no-watch
 ```
 
-Or use any static file server:
+Or:
 
 ```bash
 cd _site && python3 -m http.server 4000
 ```
+
+### One-time GitHub Pages setup
+
+In the repo on GitHub: **Settings → Pages → Build and deployment → Source → GitHub Actions**.
 
 ## Project layout
 

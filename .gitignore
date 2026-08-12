@@ -1,2 +1,7 @@
 node_modules
 bower_components
+.sass-cache/
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
