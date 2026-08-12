@@ -1,32 +1,46 @@
+{% assign maxRelated = 4 %}
+{% assign maxRelatedCounter = 0 %}
+{% assign hasCategoryMatches = false %}
+
+{% for post in site.posts %}
+  {% if post.url != page.url %}
+    {% for category in post.categories %}
+      {% if page.categories contains category %}
+        {% assign hasCategoryMatches = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% if hasCategoryMatches %}{% break %}{% endif %}
+{% endfor %}
+
 <div class="uk-margin-large-top">
     <h3>{{ site.data.translation[site.lang].related_posts | default: "Related Posts" }}</h3>
-
-    {% assign maxRelated = 4 %}
-    {% assign minCommonTags =  1 %}
-    {% assign maxRelatedCounter = 0 %}
-
     <ul class="uk-list link-secondary">
-    {% for post in site.posts %}
-
-    {% assign sameTagCount = 0 %}
-    {% assign commonTags = '' %}
-
-    {% for category in post.categories %}
+    {% if hasCategoryMatches %}
+      {% for post in site.posts %}
         {% if post.url != page.url %}
+          {% assign sameTagCount = 0 %}
+          {% for category in post.categories %}
             {% if page.categories contains category %}
-                {% assign sameTagCount = sameTagCount | plus: 1 %}
+              {% assign sameTagCount = sameTagCount | plus: 1 %}
             {% endif %}
+          {% endfor %}
+          {% if sameTagCount >= 1 %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+            {% if maxRelatedCounter >= maxRelated %}{% break %}{% endif %}
+          {% endif %}
         {% endif %}
-    {% endfor %}
-
-    {% if sameTagCount >= minCommonTags %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-        {% if maxRelatedCounter >= maxRelated %}
-            {% break %}
+      {% endfor %}
+    {% else %}
+      {% for post in site.posts %}
+        {% if post.url != page.url %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+          {% if maxRelatedCounter >= maxRelated %}{% break %}{% endif %}
         {% endif %}
+      {% endfor %}
     {% endif %}
-
-    {% endfor %}
     </ul>
 </div>

@@ -7,6 +7,9 @@
   {% if page.cover %}
   <meta property="og:image" content="{{ site.uploads | absolute_url }}cover/{{ page.cover }}"/>
   <meta name="twitter:image" content="{{ site.uploads | absolute_url }}cover/{{ page.cover }}" />
+  {% elsif page.image %}
+  <meta property="og:image" content="{{ site.uploads | absolute_url }}{{ page.image }}"/>
+  <meta name="twitter:image" content="{{ site.uploads | absolute_url }}{{ page.image }}" />
   {% else %}
   <meta property="og:image" content="{{ site.uploads | absolute_url }}cover/home.png"/>
   <meta name="twitter:image" content="{{ site.uploads | absolute_url }}cover/home.png" />

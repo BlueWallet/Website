@@ -93,10 +93,15 @@ author:
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
 authors:
-    nuno:
+    bluewallet:
       name:         BlueWallet
-      title:        Product & UX  
+      title:        Product & UX
       avatar:       nuno.png
+    nuno:
+      name:         bc1nuno
+      title:        Product & UX  
+      avatar:       bc1nuno.jpg
+      x:            https://x.com/bc1nuno
     igor:
       name:         Igor
       title:        Engineering     

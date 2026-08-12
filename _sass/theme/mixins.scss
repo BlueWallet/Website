@@ -232,9 +232,31 @@
             margin-top: 0 !important;
         }
     }
-    .card-post {
+    .uk-card.card-post {
+        overflow: hidden;
+        border-radius: 24px;
+        box-shadow: $global-small-box-shadow;
+        transition: box-shadow 0.1s ease-in-out;
+
+        &:hover {
+            box-shadow: $global-medium-box-shadow;
+        }
+
+        .uk-card-media-top {
+            padding: $global-gutter;
+            padding-bottom: 0;
+            overflow: hidden;
+
+            img {
+                display: block;
+                width: 100%;
+                max-height: 300px;
+                object-fit: cover;
+                border-radius: 16px;
+            }
+        }
         .uk-card-header{
-            padding-top: $global-medium-margin;
+            padding-top: $global-gutter;
             padding-bottom: 0;
             border-bottom: none;
             .avatar {
@@ -242,11 +264,11 @@
             }
         }
         .uk-card-body{
-            padding-top: $global-medium-margin / 2;
-            padding-bottom: $global-medium-margin / 2;
+            padding-top: $global-gutter / 2;
+            padding-bottom: $global-gutter / 2;
         }
         .uk-card-footer{
-            padding-bottom: $global-medium-margin * 0.9;
+            padding-bottom: $global-gutter * 0.9;
             padding-top: 0;
             border-top: none;
         }

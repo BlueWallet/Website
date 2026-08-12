@@ -10,12 +10,25 @@
   {% else %}
       {% assign domain = site.uploads | absolute_url %}
   {% endif %}
-  <img class="uk-border-circle avatar" src="{{ domain }}{{ author.avatar }}" alt="{{ author.name }}">
+  {% if author.x %}
+    <a href="{{ author.x }}" target="_blank" rel="noopener">
+      <img class="uk-border-circle avatar" src="{{ domain }}{{ author.avatar }}" alt="{{ author.name }}">
+    </a>
+  {% else %}
+    <img class="uk-border-circle avatar" src="{{ domain }}{{ author.avatar }}" alt="{{ author.name }}">
+  {% endif %}
 {% endif %}
 
 <div>
   {% if author.name %}
-    {{ site.data.translation[site.lang].written_by | default: "Written by" }} <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author.name }}</span></span><br>
+    {{ site.data.translation[site.lang].written_by | default: "Written by" }}
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      {% if author.x %}
+        <a href="{{ author.x }}" target="_blank" rel="noopener"><span itemprop="name">{{ author.name }}</span></a>
+      {% else %}
+        <span itemprop="name">{{ author.name }}</span>
+      {% endif %}
+    </span><br>
   {% endif %}
   <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
     {% assign date_format = site.date_format | default: "%b %-d, %Y" %}

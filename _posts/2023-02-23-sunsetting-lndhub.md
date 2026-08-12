@@ -2,7 +2,7 @@
 layout: post
 title: Sunsetting Lndhub.io
 date: 2023-02-23 10:27:00
-author: nuno
+author: bluewallet
 categories: [news, updates]
 ---
 

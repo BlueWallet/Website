@@ -3,13 +3,8 @@ layout: post
 title: High fees and transactions pending - What to do
 date: 2021-04-20 09:36:00
 categories: news, updates
+image: features/fees.png
 ---
-<div id="bump" class="uk-card">
-     <div class="features uk-text-center">
-           <img src="https://bluewallet.io/uploads//features/fees.png" alt="fee estimation">
-        </div>
-   </div>
-
 As could be [predicted a more mature fee market](https://bluewallet.io/Preparing-for-war-how-was-2019-and-a-glimpse-of-the-future-72637ffe58eb/) started to develop in this cycle, and we are witnessing a natural competition for block space. Think about block space as another very scarce property of the network, where participants are competing to get their transactions in.
 
 As I write this my bitcoin node is rejecting transactions below the 12 sat/vb mark, the network is full, the next block target is 200 sats/vb. Essentially, it is not looking good, so let's take a look from the user perspective on what can be done to mitigate this and save some satoshis at the same time.
