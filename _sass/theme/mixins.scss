@@ -460,6 +460,30 @@
     padding: 20px;
 }
 
+@mixin hook-accordion-misc(){
+    #faq .uk-accordion > li {
+        overflow: hidden;
+        border: solid 1px $border-light;
+        border-radius: $border-radius-small;
+        transition: box-shadow 0.2s ease;
+    }
+
+    #faq .uk-accordion > li:hover,
+    #faq .uk-accordion > li.uk-open {
+        box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    }
+
+    #faq .uk-accordion-title {
+        border: 0;
+        border-radius: 0;
+    }
+
+    #faq .uk-accordion-content {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
 @mixin hook-utility-misc(){
     .border-xlight {
         border: solid 1px $border-xlight;

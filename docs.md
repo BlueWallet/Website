@@ -14,4 +14,4 @@ cover: home.png
 
 {% include docs-featured-articles.html title="Support articles" subtitle="Step-by-step guides with screenshots" %}
 
-{% include faqs.html multiple="true" title="Frequently asked questions" category="problems" subtitle="Find quick answers to frequent questions asked by fellow bitcoiners" %}
+{% include faqs.html title="Frequently asked questions" category="docs" subtitle="Find quick answers to the questions people ask most" %}

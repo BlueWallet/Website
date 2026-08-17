@@ -1,5 +1,5 @@
-<div class="uk-section">
-    <div class="uk-container uk-container-small">
+<div class="uk-section" id="faq">
+    <div class="uk-container">
 
         {% if include.title %}
             <h2 class="uk-h2">{{ include.title }}</h2>
@@ -15,11 +15,11 @@
             {% assign faqs = site.faqs %}
         {% endif %}
 
-        <ul class="uk-margin-medium-top" data-uk-accordion{% if include.multiple %}="multiple: true"{% endif %}>
+        <ul class="uk-margin-medium-top" data-uk-accordion>
             {% for faq in faqs %}
                 <li>
-                    <a class="lightbox uk-accordion-title uk-box-shadow-hover-small" href="#">{{ faq.title }}</a>
-                    <div class="article-content uk-accordion-content link-primary">{{ faq.content }}</div>                
+                    <a class="uk-accordion-title" href="#">{{ faq.title }}</a>
+                    <div class="article-content uk-accordion-content link-primary">{{ faq.content }}</div>
                 </li>
             {% endfor %}
         </ul>
