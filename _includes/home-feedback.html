@@ -7,124 +7,23 @@
 
     <div class="feedback-slider-outer">
       <div class="feedback-track" id="feedback-track">
-        <div class="feedback-slide">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-jack.png" alt="Feedback from Jack" loading="lazy">
-        </div>
-        <div class="feedback-slide">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-elon.png" alt="Feedback from Elon" loading="lazy">
-        </div>
-        <div class="feedback-slide">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-africa.png" alt="Feedback from Africa" loading="lazy">
-        </div>
-        <div class="feedback-slide">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-stephan.png" alt="Feedback from Stephan" loading="lazy">
-        </div>
-        <div class="feedback-slide">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-mrhodl.png" alt="Feedback from Mr Hodl" loading="lazy">
-        </div>
-        <div class="feedback-slide">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-bitcoinheiros.png" alt="Feedback from Bitcoinheiros" loading="lazy">
-        </div>
-        <div class="feedback-slide">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-okin.png" alt="Feedback from Okin" loading="lazy">
-        </div>
-        <div class="feedback-slide">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-wicked.png" alt="Feedback from Wicked" loading="lazy">
-        </div>
-        <!-- Duplicated for seamless loop -->
-        <div class="feedback-slide" aria-hidden="true">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-jack.png" alt="" loading="lazy">
-        </div>
-        <div class="feedback-slide" aria-hidden="true">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-elon.png" alt="" loading="lazy">
-        </div>
-        <div class="feedback-slide" aria-hidden="true">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-africa.png" alt="" loading="lazy">
-        </div>
-        <div class="feedback-slide" aria-hidden="true">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-stephan.png" alt="" loading="lazy">
-        </div>
-        <div class="feedback-slide" aria-hidden="true">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-mrhodl.png" alt="" loading="lazy">
-        </div>
-        <div class="feedback-slide" aria-hidden="true">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-bitcoinheiros.png" alt="" loading="lazy">
-        </div>
-        <div class="feedback-slide" aria-hidden="true">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-okin.png" alt="" loading="lazy">
-        </div>
-        <div class="feedback-slide" aria-hidden="true">
-          <img src="{{ site.uploads | absolute_url }}feedback/feedback-wicked.png" alt="" loading="lazy">
-        </div>
+        {% include feedback-slide.html name="jack" alt="Feedback from Jack" height="283" %}
+        {% include feedback-slide.html name="elon" alt="Feedback from Elon" height="431" %}
+        {% include feedback-slide.html name="africa" alt="Feedback from Africa" height="391" %}
+        {% include feedback-slide.html name="stephan" alt="Feedback from Stephan" height="279" %}
+        {% include feedback-slide.html name="mrhodl" alt="Feedback from Mr Hodl" height="213" %}
+        {% include feedback-slide.html name="bitcoinheiros" alt="Feedback from Bitcoinheiros" height="204" %}
+        {% include feedback-slide.html name="okin" alt="Feedback from Okin" height="345" %}
+        {% include feedback-slide.html name="wicked" alt="Feedback from Wicked" height="423" %}
+        {% include feedback-slide.html name="jack" alt="" height="283" hidden=true %}
+        {% include feedback-slide.html name="elon" alt="" height="431" hidden=true %}
+        {% include feedback-slide.html name="africa" alt="" height="391" hidden=true %}
+        {% include feedback-slide.html name="stephan" alt="" height="279" hidden=true %}
+        {% include feedback-slide.html name="mrhodl" alt="" height="213" hidden=true %}
+        {% include feedback-slide.html name="bitcoinheiros" alt="" height="204" hidden=true %}
+        {% include feedback-slide.html name="okin" alt="" height="345" hidden=true %}
+        {% include feedback-slide.html name="wicked" alt="" height="423" hidden=true %}
       </div>
     </div>
   </div>
 </div>
-
-<script>
-(function () {
-  var track = document.getElementById('feedback-track');
-  if (!track) return;
-
-  var SPEED = 0.5;       /* px per frame */
-  var currentX = 0;
-  var halfWidth = 0;
-  var isDragging = false;
-  var lastPointerX = 0;
-
-  function loop() {
-    if (!isDragging) {
-      currentX -= SPEED;
-      if (halfWidth > 0 && currentX <= -halfWidth) {
-        currentX += halfWidth;
-      }
-    }
-    track.style.transform = 'translateX(' + currentX + 'px)';
-    requestAnimationFrame(loop);
-  }
-
-  function init() {
-    halfWidth = track.scrollWidth / 2;
-    requestAnimationFrame(loop);
-  }
-
-  /* Start after layout is ready */
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-
-  /* Mouse drag */
-  track.addEventListener('mousedown', function (e) {
-    isDragging = true;
-    lastPointerX = e.clientX;
-    track.classList.add('is-dragging');
-    e.preventDefault();
-  });
-  window.addEventListener('mousemove', function (e) {
-    if (!isDragging) return;
-    currentX += e.clientX - lastPointerX;
-    lastPointerX = e.clientX;
-  });
-  window.addEventListener('mouseup', function () {
-    if (!isDragging) return;
-    isDragging = false;
-    track.classList.remove('is-dragging');
-  });
-
-  /* Touch drag */
-  track.addEventListener('touchstart', function (e) {
-    isDragging = true;
-    lastPointerX = e.touches[0].clientX;
-  }, { passive: true });
-  track.addEventListener('touchmove', function (e) {
-    if (!isDragging) return;
-    currentX += e.touches[0].clientX - lastPointerX;
-    lastPointerX = e.touches[0].clientX;
-  }, { passive: true });
-  track.addEventListener('touchend', function () {
-    isDragging = false;
-  }, { passive: true });
-})();
-</script>

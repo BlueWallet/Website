@@ -31,6 +31,10 @@
 		max-width: 90%;
 		margin-left: auto;
 	}
+	picture {
+		display: block;
+		width: 100%;
+	}
 }
 .hero-preview-img {
 	width: 100%;
@@ -336,6 +340,10 @@
 	display: inline-block;
 	max-width: 270px;
 	width: 100%;
+
+	picture {
+		display: block;
+	}
 }
 
 .hfg-onchain-img {
@@ -1246,12 +1254,30 @@ footer .uk-subnav {
 	gap: 16px;
 	padding: 24px 0;
 	width: max-content;
-	will-change: transform;
 	user-select: none;
-	cursor: grab;
+	animation: feedback-marquee 90s linear infinite;
+}
 
-	&.is-dragging {
-		cursor: grabbing;
+.feedback-slider-outer:hover .feedback-track,
+.feedback-slider-outer:focus-within .feedback-track {
+	animation-play-state: paused;
+}
+
+@keyframes feedback-marquee {
+	from { transform: translateX(0); }
+	to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.feedback-slider-outer {
+		overflow-x: auto;
+	}
+	.feedback-track {
+		animation: none;
+	}
+	.feedback-slide[aria-hidden="true"],
+	.wallet-type-card[aria-hidden="true"] {
+		display: none;
 	}
 }
 

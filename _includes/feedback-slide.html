@@ -1,0 +1,12 @@
+<div class="feedback-slide"{% if include.hidden %} aria-hidden="true"{% endif %}>
+  <picture>
+    <source type="image/webp" srcset="{{ site.uploads | absolute_url }}feedback/feedback-{{ include.name }}.webp">
+    <img
+      src="{{ site.uploads | absolute_url }}feedback/feedback-{{ include.name }}.png"
+      alt="{% unless include.hidden %}{{ include.alt }}{% endunless %}"
+      width="680"
+      height="{{ include.height }}"
+      loading="lazy"
+      decoding="async">
+  </picture>
+</div>

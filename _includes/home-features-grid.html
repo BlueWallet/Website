@@ -11,14 +11,7 @@
       <!-- Self-custody — tall image card, col 1 row 1-2 -->
       <div class="hfg-card hfg-card--image hfg-card--self-custody">
         <div class="hfg-card-media hfg-card-media--onchain">
-          <div class="hfg-onchain-wrap">
-            <img src="{{ site.uploads }}home-feat/onchain.png" alt="" aria-hidden="true" class="hfg-onchain-img">
-            <div class="hfg-onchain-counter">
-              <div class="hfg-onchain-amount">
-                <number-flow id="hfg-flow"></number-flow>
-              </div>
-            </div>
-          </div>
+          {% include onchain-preview.html flow_id="hfg-flow" %}
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Self-custody — Your keys, your bitcoin</h3>
@@ -40,7 +33,7 @@
       <!-- Fees & Transactions — tall Rive card, col 3 row 1-2 -->
       <div class="hfg-card hfg-card--image hfg-card--fees">
         <div class="hfg-card-media hfg-card-media--rive">
-          <canvas id="hfg-rive-fees" class="hfg-rive-canvas" width="600" height="440"></canvas>
+          <canvas id="hfg-rive-fees" class="hfg-rive-canvas" width="600" height="440" data-rive-src="{{ site.uploads }}home-feat/pending.riv" data-rive-artboard="Artboard" data-rive-sm="State Machine 1" data-rive-align="BottomCenter"></canvas>
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Fees &amp; Transactions control</h3>
@@ -62,7 +55,7 @@
       <!-- Notifications — tall Rive card, col 1 row 3-4 -->
       <div class="hfg-card hfg-card--image hfg-card--notifications">
         <div class="hfg-card-media hfg-card-media--rive">
-          <canvas id="hfg-rive-notifications" class="hfg-rive-canvas" width="300" height="160"></canvas>
+          <canvas id="hfg-rive-notifications" class="hfg-rive-canvas" width="300" height="160" data-rive-src="{{ site.uploads }}home-feat/notifications.riv" data-rive-artboard="animation" data-rive-sm="State Machine 1" data-rive-align="Center"></canvas>
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Notifications</h3>
@@ -84,7 +77,7 @@
       <!-- Open source — tall Rive card, col 3 row 3-4 -->
       <div class="hfg-card hfg-card--image hfg-card--foss">
         <div class="hfg-card-media">
-          <canvas id="hfg-rive-foss" class="hfg-rive-canvas" width="120" height="140"></canvas>
+          <canvas id="hfg-rive-foss" class="hfg-rive-canvas" width="120" height="140" data-rive-src="{{ site.uploads }}home-feat/foss.riv" data-rive-artboard="Artboard" data-rive-sm="State Machine 1" data-rive-align="Center"></canvas>
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Open source &amp; privacy-first</h3>
@@ -118,102 +111,4 @@
   </div>
 </div>
 
-<script type="module">
-  import 'https://esm.sh/number-flow';
-
-  const VALUES  = [0, 0.00110011, 0.2121, 6.15];
-  const HOLD_MS = 3000;
-  const ROLL_MS = 1000;
-
-  function start() {
-    const flow = document.getElementById('hfg-flow');
-    if (!flow) return;
-
-    /* Configure formatting and animation */
-    flow.format = { minimumFractionDigits: 1, maximumFractionDigits: 8 };
-    flow.numberSuffix = ' BTC';
-    flow.spinTiming = { duration: ROLL_MS, easing: 'ease-out' };
-    flow.opacityTiming = { duration: ROLL_MS * 0.4, easing: 'ease-out' };
-
-    /* Show initial value (no animation), then loop */
-    flow.update(VALUES[0]);
-    let idx = 1;
-    setTimeout(function loop() {
-      flow.update(VALUES[idx]);
-      idx = (idx + 1) % VALUES.length;
-      setTimeout(loop, ROLL_MS + HOLD_MS);
-    }, HOLD_MS);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', start);
-  } else {
-    start();
-  }
-</script>
-
-<script>
-/* Helper: init a Rive animation and use ResizeObserver to resize the drawing
-   surface whenever the canvas gets real dimensions (fixes zero-size WebGL errors). */
-function initRiveCard(canvasId, src, artboard, stateMachine, alignment) {
-  var canvas = document.getElementById(canvasId);
-  if (!canvas || !window.rive) return;
-
-  var r = new rive.Rive({
-    src: src,
-    canvas: canvas,
-    artboard: artboard,
-    stateMachines: stateMachine,
-    autoplay: true,
-    autoBind: true,
-    layout: new rive.Layout({
-      fit: rive.Fit.Contain,
-      alignment: alignment || rive.Alignment.Center,
-    }),
-    onLoad: function () {
-      /* Only resize once the canvas has non-zero dimensions */
-      if (canvas.offsetWidth > 0 && canvas.offsetHeight > 0) {
-        r.resizeDrawingSurfaceToCanvas();
-      }
-    },
-  });
-
-  /* ResizeObserver fires whenever the canvas size changes (including first layout) */
-  if (window.ResizeObserver) {
-    new ResizeObserver(function () {
-      if (canvas.offsetWidth > 0 && canvas.offsetHeight > 0) {
-        r.resizeDrawingSurfaceToCanvas();
-      }
-    }).observe(canvas);
-  }
-}
-
-function initAllRiveCards() {
-  initRiveCard(
-    'hfg-rive-notifications',
-    '{{ site.uploads }}home-feat/notifications.riv',
-    'animation', 'State Machine 1',
-    rive.Alignment.Center
-  );
-  initRiveCard(
-    'hfg-rive-fees',
-    '{{ site.uploads }}home-feat/pending.riv',
-    'Artboard', 'State Machine 1',
-    rive.Alignment.BottomCenter
-  );
-  initRiveCard(
-    'hfg-rive-foss',
-    '{{ site.uploads }}home-feat/foss.riv',
-    'Artboard', 'State Machine 1',
-    rive.Alignment.Center
-  );
-}
-
-if (window.rive) {
-  initAllRiveCards();
-} else {
-  var _riv = setInterval(function () {
-    if (window.rive) { clearInterval(_riv); initAllRiveCards(); }
-  }, 50);
-}
-</script>
+{% include lazy-home-media.html %}

@@ -15,14 +15,7 @@
       <!-- Self-custody -->
       <div class="hfg-card hfg-card--image hfg-card--self-custody">
         <div class="hfg-card-media hfg-card-media--onchain">
-          <div class="hfg-onchain-wrap">
-            <img src="{{ site.uploads }}home-feat/onchain.png" alt="" aria-hidden="true" class="hfg-onchain-img">
-            <div class="hfg-onchain-counter">
-              <div class="hfg-onchain-amount">
-                <number-flow id="fhl-flow"></number-flow>
-              </div>
-            </div>
-          </div>
+          {% include onchain-preview.html flow_id="fhl-flow" %}
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Self-custody — Your keys, your bitcoin</h3>
@@ -33,7 +26,7 @@
       <!-- Notifications -->
       <div class="hfg-card hfg-card--image hfg-card--notifications">
         <div class="hfg-card-media hfg-card-media--rive">
-          <canvas id="fhl-rive-notifications" class="hfg-rive-canvas" width="300" height="160"></canvas>
+          <canvas id="fhl-rive-notifications" class="hfg-rive-canvas" width="300" height="160" data-rive-src="{{ site.uploads }}home-feat/notifications.riv" data-rive-artboard="animation" data-rive-sm="State Machine 1" data-rive-align="Center"></canvas>
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Notifications</h3>
@@ -44,7 +37,7 @@
       <!-- Fees & Transactions -->
       <div class="hfg-card hfg-card--image hfg-card--fees">
         <div class="hfg-card-media hfg-card-media--rive">
-          <canvas id="fhl-rive-fees" class="hfg-rive-canvas" width="600" height="440"></canvas>
+          <canvas id="fhl-rive-fees" class="hfg-rive-canvas" width="600" height="440" data-rive-src="{{ site.uploads }}home-feat/pending.riv" data-rive-artboard="Artboard" data-rive-sm="State Machine 1" data-rive-align="BottomCenter"></canvas>
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Fees &amp; Transactions control</h3>
@@ -57,72 +50,4 @@
   </div>
 </div>
 
-<script type="module">
-  import 'https://esm.sh/number-flow';
-  const VALUES = [0, 0.00110011, 0.2121, 6.15];
-  const HOLD_MS = 3000, ROLL_MS = 1000;
-  function start() {
-    const flow = document.getElementById('fhl-flow');
-    if (!flow) return;
-    flow.format = { minimumFractionDigits: 1, maximumFractionDigits: 8 };
-    flow.numberSuffix = ' BTC';
-    flow.spinTiming = { duration: ROLL_MS, easing: 'ease-out' };
-    flow.opacityTiming = { duration: ROLL_MS * 0.4, easing: 'ease-out' };
-    flow.update(VALUES[0]);
-    let idx = 1;
-    setTimeout(function loop() {
-      flow.update(VALUES[idx]);
-      idx = (idx + 1) % VALUES.length;
-      setTimeout(loop, ROLL_MS + HOLD_MS);
-    }, HOLD_MS);
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', start);
-  } else {
-    start();
-  }
-</script>
-
-<script>
-(function () {
-  function initRiveCard(canvasId, src, artboard, stateMachine, alignment) {
-    var canvas = document.getElementById(canvasId);
-    if (!canvas || !window.rive) return;
-    var r = new rive.Rive({
-      src: src,
-      canvas: canvas,
-      artboard: artboard,
-      stateMachines: stateMachine,
-      autoplay: true,
-      autoBind: true,
-      layout: new rive.Layout({
-        fit: rive.Fit.Contain,
-        alignment: alignment || rive.Alignment.Center,
-      }),
-      onLoad: function () {
-        if (canvas.offsetWidth > 0 && canvas.offsetHeight > 0) {
-          r.resizeDrawingSurfaceToCanvas();
-        }
-      },
-    });
-    if (window.ResizeObserver) {
-      new ResizeObserver(function () {
-        if (canvas.offsetWidth > 0 && canvas.offsetHeight > 0) {
-          r.resizeDrawingSurfaceToCanvas();
-        }
-      }).observe(canvas);
-    }
-  }
-
-  function init() {
-    initRiveCard('fhl-rive-notifications', '{{ site.uploads }}home-feat/notifications.riv', 'animation', 'State Machine 1', rive.Alignment.Center);
-    initRiveCard('fhl-rive-fees', '{{ site.uploads }}home-feat/pending.riv', 'Artboard', 'State Machine 1', rive.Alignment.BottomCenter);
-  }
-
-  if (window.rive) {
-    init();
-  } else {
-    var t = setInterval(function () { if (window.rive) { clearInterval(t); init(); } }, 50);
-  }
-})();
-</script>
+{% include lazy-home-media.html %}

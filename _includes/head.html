@@ -30,8 +30,17 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "uploads/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
-  <script src="https://unpkg.com/@rive-app/webgl2@2"></script>
+  {% if page.url == '/' or page.path == 'index.md' %}
+  <link
+    rel="preload"
+    as="image"
+    type="image/webp"
+    href="{{ site.uploads | absolute_url }}bluewallet-preview-400.webp"
+    imagesrcset="{{ site.uploads | absolute_url }}bluewallet-preview-400.webp 400w, {{ site.uploads | absolute_url }}bluewallet-preview-800.webp 800w"
+    imagesizes="(min-width: 960px) 40vw, 90vw"
+    fetchpriority="high">
+  {% endif %}
+  <script src="{{ "/assets/js/main.js" | relative_url }}" defer></script>
   {% if page.hero.search or site.navbar.search %}
     {% include search-js.html %}
   {% endif %}
