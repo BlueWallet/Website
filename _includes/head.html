@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "uploads/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  {% if page.url == '/' or page.path == 'index.md' %}
+  {% if page.url == '/' or page.path == 'index.md' or page.url == '/download/' %}
   <link
     rel="preload"
     as="image"
