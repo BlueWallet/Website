@@ -30,18 +30,7 @@
                         <ul id="search-hero-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
                     </div>
 
-                    <script>
-                    SimpleJekyllSearch({
-                        searchInput: document.getElementById('search-hero'),
-                        resultsContainer: document.getElementById('search-hero-results'),
-                        noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
-                        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                        json: '/search.json'
-                    });
-
-                    searchResults("search-hero");
-
-                    </script>
+                    <script>initSiteSearch("search-hero");</script>
 
                 </div>
                 {% endif %}

@@ -138,16 +138,7 @@
                                     <ul id="search-navbar-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
                                 </div>
                             </div>
-                            <script>
-                            SimpleJekyllSearch({
-                                searchInput: document.getElementById('search-navbar'),
-                                resultsContainer: document.getElementById('search-navbar-results'),
-                                noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
-                                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                                json: '/search.json'
-                            });
-                            searchResults("search-navbar");
-                            </script>
+                            <script>initSiteSearch("search-navbar");</script>
                         {% endunless %}
                     {% endif %}
 

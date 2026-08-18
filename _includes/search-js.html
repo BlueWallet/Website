@@ -1,4 +1,27 @@
 <script>
+function initSiteSearch(formId) {
+    function start() {
+        var input = document.getElementById(formId);
+        var results = document.getElementById(formId + "-results");
+        if (typeof SimpleJekyllSearch !== "function" || !input || !results) {
+            return;
+        }
+        SimpleJekyllSearch({
+            searchInput: input,
+            resultsContainer: results,
+            noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
+            searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+            json: '{{ "/search.json" | relative_url }}'
+        });
+        searchResults(formId);
+    }
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", start);
+    } else {
+        start();
+    }
+}
+
 function searchResults(form) {
 
     var currentItem = null;

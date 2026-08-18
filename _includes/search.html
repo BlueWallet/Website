@@ -14,18 +14,8 @@
                     <br />
                      <p class="uk-text-lead uk-text-center">or contact the team for any doubts <span class="uk-label">bluewallet@bluewallet.io</span></p>
 
-                    <script>
-                    SimpleJekyllSearch({
-                        searchInput: document.getElementById('search-hero'),
-                        resultsContainer: document.getElementById('search-hero-results'),
-                        noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
-                        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                        json: '/search.json'
-                    });
-
-                    searchResults("search-hero");
-
-                    </script>
+                    {% include search-js.html %}
+                    <script>initSiteSearch("search-hero");</script>
             </div>
 	</div>
 </div>
