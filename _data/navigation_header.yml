@@ -25,5 +25,8 @@ right:
       - title: Lightning Wallet
         url: /lightning/
 
+  - title: Download
+    url: /download/
+
   - title: Support
     url: /docs/

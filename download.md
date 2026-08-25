@@ -2,9 +2,9 @@
 layout: page
 width: expand
 permalink: /download/
-title: Download BlueWallet - Bitcoin wallet for iOS, Android and Desktop
-description: Download BlueWallet, a Bitcoin wallet for iOS, Android and desktop. Open source, self-custodial, and available on the App Store, Google Play, and GitHub.
+title: Download BlueWallet — Official iOS, Android & macOS install
+description: Official download page for BlueWallet, the self-custody Bitcoin wallet. Install from the App Store, Google Play, GitHub, or macOS. How to verify releases and avoid phishing sites.
 cover: home.png
 ---
 
-{% include home-hero.html %}
+{% include download-page.html %}

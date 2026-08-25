@@ -145,6 +145,74 @@
 	}
 }
 
+.section-hero--download {
+	background-color: #ffffff;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	overflow: hidden;
+	.uk-heading-hero {
+		font-size: 2.4rem;
+		line-height: 1.1;
+		@media (min-width: 960px) {
+			font-size: 4rem;
+		}
+	}
+	@media (min-width: 768px) {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+	.download-hero-lead {
+		color: #686c7b;
+		font-size: 1.125rem;
+		max-width: 540px;
+		margin-top: 16px;
+		margin-bottom: 0;
+	}
+	.hero-badges--download {
+		margin-top: 32px;
+		@media (min-width: 768px) {
+			margin-top: 40px;
+		}
+	}
+}
+
+.download-platforms {
+	padding-top: 0;
+}
+.download-platform-card {
+	height: 100%;
+	.uk-card-title {
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+	p:last-of-type {
+		margin-bottom: 16px;
+	}
+	code {
+		font-size: 0.8125rem;
+		word-break: break-all;
+	}
+}
+.download-platform-links {
+	margin-bottom: 20px;
+}
+.download-verify {
+	padding-top: 0;
+}
+.download-alert {
+	border-radius: 8px;
+	h3 {
+		font-weight: 700;
+	}
+}
+.download-support {
+	padding-top: 0;
+	padding-bottom: 64px;
+	@media (min-width: 960px) {
+		padding-bottom: 80px;
+	}
+}
+
 .section-hero--home.section-hero--features {
 	@media (min-width: 960px) {
 		padding-top: 40px;
