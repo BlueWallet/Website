@@ -1,10 +1,9 @@
 # specify main menu items here
+# Legacy file — primary nav uses _data/navigation_header.yml
 
 - text: Home
   url: /
-- text: About
-  url: /about
-- text: Contact
-  url: /contact
+- text: Support
+  url: /docs/
 - text: Blog
-  url: /blog
+  url: /blog/

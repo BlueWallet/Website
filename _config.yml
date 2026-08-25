@@ -186,3 +186,24 @@ defaults:
       layout:       doc
       seo:
         type:       WebPage
+  # Internal and legacy paths — keep out of sitemap.xml
+  - scope:
+      path:         "admin/**"
+    values:
+      sitemap:      false
+  - scope:
+      path:         "oldsite-backup/**"
+    values:
+      sitemap:      false
+  - scope:
+      path:         "marketplace/**"
+    values:
+      sitemap:      false
+  - scope:
+      path:         "marketplace-btc/**"
+    values:
+      sitemap:      false
+  - scope:
+      path:         "testpage/**"
+    values:
+      sitemap:      false
