@@ -1,0 +1,74 @@
+<div class="uk-section section-hero section-hero--download uk-position-relative">
+  <div class="uk-container uk-position-relative">
+    <div class="uk-grid-match" uk-grid>
+      <div class="uk-width-3-5@m">
+        <div class="uk-margin-auto-vertical">
+          <h1 class="uk-heading-hero uk-text-left@m uk-text-center">Download<br>BlueWallet</h1>
+          <p class="download-hero-lead uk-text-left@m uk-text-center">Official builds. Your keys stay on your device. Get it only from the sources below.</p>
+          <div class="hero-badges hero-badges--download uk-flex-left@m uk-flex-center">
+            <a href="https://apps.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank" rel="noopener" data-pirsch-event="Download" data-pirsch-meta-platform="iOS" data-pirsch-meta-location="Download Page">
+              <img class="bounce" src="{{ site.uploads | absolute_url }}/app-store-badge-blue.svg" alt="Download BlueWallet on the App Store" width="248" height="73">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=io.bluewallet.bluewallet" target="_blank" rel="noopener" data-pirsch-event="Download" data-pirsch-meta-platform="Android" data-pirsch-meta-location="Download Page">
+              <img class="bounce" src="{{ site.uploads | absolute_url }}/play-store-badge-blue.svg" alt="Get BlueWallet on Google Play" width="248" height="73">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-2-5@m uk-visible@m">
+        <div class="hero-preview-stack">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="{{ site.uploads | absolute_url }}bluewallet-preview-400.webp 400w, {{ site.uploads | absolute_url }}bluewallet-preview-800.webp 800w"
+              sizes="(min-width: 960px) 40vw, 90vw">
+            <img
+              src="{{ site.uploads | absolute_url }}bluewallet-preview.png"
+              alt="BlueWallet app preview"
+              class="hero-preview-img"
+              width="1062"
+              height="1838"
+              loading="lazy"
+              decoding="async">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-section download-platforms">
+  <div class="uk-container">
+    <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-grid-match uk-grid-medium" uk-grid>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium border-radius-medium border-light download-platform-card">
+          <h3 class="uk-card-title">Android APK</h3>
+          <p>Sideload from GitHub if you need to install offline or without Play Services.</p>
+          <ul class="uk-list uk-list-bullet download-platform-links">
+            <li><a href="https://github.com/BlueWallet/BlueWallet/releases" target="_blank" rel="noopener" data-pirsch-event="Download" data-pirsch-meta-platform="Android APK" data-pirsch-meta-location="Download Page">GitHub releases</a>, latest <code>.apk</code> and <code>.apk.sig</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium border-radius-medium border-light download-platform-card">
+          <h3 class="uk-card-title">macOS</h3>
+          <p>BlueWallet desktop is macOS only. There is no official Windows or Linux build.</p>
+          <ul class="uk-list uk-list-bullet download-platform-links">
+            <li><a href="https://apps.apple.com/app/bluewallet-bitcoin-wallet/id1376878040" target="_blank" rel="noopener" data-pirsch-event="Download" data-pirsch-meta-platform="macOS App Store" data-pirsch-meta-location="Download Page">Mac App Store</a></li>
+            <li><a href="https://github.com/BlueWallet/BlueWallet/releases" target="_blank" rel="noopener" data-pirsch-event="Download" data-pirsch-meta-platform="macOS DMG" data-pirsch-meta-location="Download Page">GitHub releases</a>, <code>.dmg</code> when published</li>
+            <li><a href="https://formulae.brew.sh/cask/bluewallet" target="_blank" rel="noopener">Homebrew</a>, <code>brew install --cask bluewallet</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p class="download-sources-line uk-text-center">Only from this page, the App Store, Google Play, and github.com/BlueWallet.</p>
+  </div>
+</div>
+
+<div class="uk-section download-support">
+  <div class="uk-container uk-text-center">
+    <p class="uk-text-lead">Need help setting up? Read the <a href="{{ site.baseurl }}/docs/">support docs</a>. Still stuck? Email <a href="mailto:bluewallet@bluewallet.io">bluewallet@bluewallet.io</a>.</p>
+  </div>
+</div>
