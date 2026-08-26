@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to set up a watch-only wallet in BlueWallet"
-date: 2026-08-26 12:00:00
+date: 2026-08-26 08:00:00
 author: nuno
 categories: [guides, watch-only]
 description: "Watch balances and build transactions without putting keys on that phone. Import an XPUB, not a seed."
