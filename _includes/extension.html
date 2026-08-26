@@ -1,7 +1,198 @@
-<div class="uk-section">
-  <div class="uk-container uk-container-small">
-    <p class="uk-text-meta uk-text-uppercase">Work in progress</p>
-    <h1 class="uk-heading-primary">BlueWallet browser extension</h1>
-    <p class="uk-text-lead">We're building a browser extension for BlueWallet. This page is a placeholder while we finish the first version. Check back soon.</p>
+<div class="page-extension">
+
+<div class="uk-section section-hero section-hero--extension uk-position-relative" id="get-extension">
+  <div class="uk-container uk-position-relative">
+    <div class="uk-grid-match uk-flex-middle" uk-grid>
+      <div class="uk-width-1-2@m">
+        <div class="uk-margin-auto-vertical extension-hero-copy uk-text-left@m uk-text-center">
+          <p class="extension-kicker">Chrome extension</p>
+          <h1 class="uk-heading-hero">BlueWallet Portfolio</h1>
+          <p class="extension-hero-lead">Built for Bitcoin users. Stack sats and watch your portfolio grow. See live Bitcoin price moves, mempool state with next blocks, and current fee estimates.</p>
+          <div class="hero-badges uk-flex-left@m uk-flex-center">
+            {% include chrome-store-badge.html location="Extension Hero" %}
+          </div>
+          <p class="extension-hero-note">Watch-only. Live price. Mempool view.</p>
+        </div>
+      </div>
+      <div class="uk-width-1-2@m">
+        <div class="extension-hero-media">
+          <img src="{{ site.uploads | absolute_url }}extension/extension-hero.png" alt="BlueWallet Portfolio Chrome extension showing Bitcoin price and portfolio views side by side" width="888" height="710" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="uk-section section-extension-points">
+  <div class="uk-container">
+    <div class="section-home-header">
+      <h2 class="uk-h1 uk-margin-remove-top">Watch your Bitcoin safely</h2>
+      <p class="uk-text-lead uk-margin-small-top">Everything is watch-only. You can see balances and history-related metrics, but you cannot send, spend, or import private keys.</p>
+    </div>
+    <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-small" data-uk-grid>
+      <div>
+        <div class="extension-point-card">
+          <h3 class="extension-point-title">Addresses or xpubs</h3>
+          <p class="extension-point-desc">Add a Bitcoin address or an xpub / ypub / zpub to track funds as they move in.</p>
+        </div>
+      </div>
+      <div>
+        <div class="extension-point-card">
+          <h3 class="extension-point-title">Optional labels</h3>
+          <p class="extension-point-desc">Give each account a name, for example “Cold storage”, so the list stays readable.</p>
+        </div>
+      </div>
+      <div>
+        <div class="extension-point-card">
+          <h3 class="extension-point-title">Watch-only by design</h3>
+          <p class="extension-point-desc">See balances and history-related metrics. There is no way to send or import keys.</p>
+        </div>
+      </div>
+      <div>
+        <div class="extension-point-card">
+          <h3 class="extension-point-title">Remove anytime</h3>
+          <p class="extension-point-desc">Drop a watched account from your list whenever you no longer need it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-section section-power-features section-extension-features">
+  <div class="uk-container">
+    <div class="power-features-list">
+
+      <div class="power-feature-card power-feature-card--neutral">
+        <div class="uk-grid uk-grid-large uk-flex-middle" data-uk-grid>
+          <div class="uk-width-1-2@m">
+            <h3 class="power-feature-title">Portfolio at a glance</h3>
+            <p class="power-feature-desc">
+              See your total value in USD, with your BTC balance right underneath.<br>
+              Browse how holdings changed over 1 week, 1 month, 6 months, 1 year, or all.<br>
+              Review unrealized return, average buy price, and cost basis, based on when your confirmed coins first appeared.
+            </p>
+          </div>
+          <div class="uk-width-1-2@m power-feature-media">
+            <img class="extension-shot" src="{{ site.uploads | absolute_url }}extension/extension-metrics.png" alt="Portfolio view with total USD value, BTC balance, chart, unrealized return, average buy price, and cost basis" width="402" height="877" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+
+      <div class="power-feature-card power-feature-card--accent">
+        <div class="uk-grid uk-grid-large uk-flex-middle power-feature-grid--reverse-desktop" data-uk-grid>
+          <div class="uk-width-1-2@m power-feature-text">
+            <h3 class="power-feature-title">Mempool and fees</h3>
+            <p class="power-feature-desc">
+              See mempool depth and the latest blocks as they come in.<br>
+              Check estimated fees for the next block, ~30 minutes, or ~1 hour.<br>
+              Follow the live BTC price in USD, with a chart for 1 hour, 6 hours, or 1 day.
+            </p>
+          </div>
+          <div class="uk-width-1-2@m power-feature-media">
+            <img class="extension-shot" src="{{ site.uploads | absolute_url }}extension/extension-fees.png" alt="Mempool queue, latest blocks, and estimated fees, with a live Bitcoin price chart" width="403" height="878" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+
+      <div class="power-feature-card power-feature-card--neutral">
+        <div class="uk-grid uk-grid-large uk-flex-middle" data-uk-grid>
+          <div class="uk-width-1-2@m">
+            <h3 class="power-feature-title">Understand your coins</h3>
+            <p class="power-feature-desc">
+              Open a UTXO breakdown of confirmed coins.<br>
+              For each coin, see amount, current USD value, and cost basis.<br>
+              Tap a coin for more detail, including when it showed up and the historical price used for cost basis.
+            </p>
+          </div>
+          <div class="uk-width-1-2@m power-feature-media power-feature-media--wide">
+            <img class="extension-shot extension-shot--wide" src="{{ site.uploads | absolute_url }}extension/extension-utxo.png" alt="UTXO details showing amount, historical Bitcoin price, and cost basis for a confirmed coin" width="442" height="270" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="uk-section section-extension-fit">
+  <div class="uk-container">
+    <div class="section-home-header">
+      <h2 class="uk-h1 uk-margin-remove-top">Fits how you browse</h2>
+      <p class="uk-text-lead uk-margin-small-top">Keep it beside the page you’re on, or open it full-width when you want more room.</p>
+    </div>
+    <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-grid-small" data-uk-grid>
+      <div>
+        <div class="extension-point-card">
+          <h3 class="extension-point-title">Side panel</h3>
+          <p class="extension-point-desc">Opens from the toolbar so it stays beside whatever you’re already looking at.</p>
+        </div>
+      </div>
+      <div>
+        <div class="extension-point-card">
+          <h3 class="extension-point-title">Full-page view</h3>
+          <p class="extension-point-desc">More room when you want it. Price and portfolio sit side by side on wider screens.</p>
+        </div>
+      </div>
+      <div>
+        <div class="extension-point-card">
+          <h3 class="extension-point-title">Light or dark</h3>
+          <p class="extension-point-desc">Follows your system appearance automatically.</p>
+        </div>
+      </div>
+      <div>
+        <div class="extension-point-card">
+          <h3 class="extension-point-title">Remembers the tab</h3>
+          <p class="extension-point-desc">Comes back to Price or Portfolio, whichever you looked at last.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-section section-extension-limits">
+  <div class="uk-container">
+    <div class="section-home-header">
+      <h2 class="uk-h1 uk-margin-remove-top">What it won’t do</h2>
+      <p class="uk-text-lead uk-margin-small-top">By design. If you need to send, recover a wallet, or hold keys, use the BlueWallet app.</p>
+    </div>
+    <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-match uk-grid-small" data-uk-grid>
+      <div>
+        <div class="extension-limit-card">
+          <h3 class="extension-point-title">No sending or seeds</h3>
+          <p class="extension-point-desc">No sending, Lightning, or wallet recovery from seed phrases. Private keys never belong here.</p>
+        </div>
+      </div>
+      <div>
+        <div class="extension-limit-card">
+          <h3 class="extension-point-title">USD only</h3>
+          <p class="extension-point-desc">Values are shown in US dollars. That’s the unit for price, portfolio, and cost basis.</p>
+        </div>
+      </div>
+      <div>
+        <div class="extension-limit-card">
+          <h3 class="extension-point-title">Confirmed coins</h3>
+          <p class="extension-point-desc">Cost basis and the UTXO list track confirmed coins. Unconfirmed activity isn’t treated the same way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-section section-extension-cta">
+  <div class="uk-container uk-text-center">
+    <h2 class="uk-h1">Add it beside your tabs</h2>
+    <p class="uk-text-lead">Watch-only Bitcoin, in Chrome. No keys. No sending.</p>
+    <div class="hero-badges hero-badges--center">
+      {% include chrome-store-badge.html location="Extension Bottom" %}
+    </div>
+  </div>
+</div>
+
+{% include faqs.html
+  title="Frequently asked questions"
+  category="extension"
+  subtitle="Quick answers about the watch-only Chrome extension" %}
+
+{% include home-community.html %}
+
 </div>

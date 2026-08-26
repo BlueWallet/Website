@@ -45,6 +45,13 @@
     imagesizes="(min-width: 960px) 40vw, 90vw"
     fetchpriority="high">
   {% endif %}
+  {% if page.url == '/extension/' %}
+  <link
+    rel="preload"
+    as="image"
+    href="{{ site.uploads | absolute_url }}extension/extension-hero.png"
+    fetchpriority="high">
+  {% endif %}
   <script src="{{ "/assets/js/main.js" | relative_url }}" defer></script>
   {% if page.hero.search or site.navbar.search %}
     {% include search-js.html %}
