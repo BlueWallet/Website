@@ -2,8 +2,8 @@
 layout: page
 width: expand
 permalink: /desktop-bitcoin-wallet/
-title: Desktop Bitcoin Wallet - Bitcoin and Lightning wallet for Desktop, macOS, Linux and Windows
-description: Desktop Bitcoin Wallet - Bitcoin and Lightning wallet for Desktop, macOS, Linux and Windows
+title: BlueWallet for Mac. Self-custody Bitcoin wallet for macOS
+description: Official BlueWallet for macOS. Mac App Store or Homebrew.
 cover: desktop.png
 ---
 
