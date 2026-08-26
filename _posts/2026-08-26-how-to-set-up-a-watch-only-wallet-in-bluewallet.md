@@ -5,14 +5,14 @@ date: 2026-08-26 09:00:00
 author: nuno
 categories: [guides, watch-only]
 description: "Watch balances and build transactions without putting keys on that phone. Import an XPUB, not a seed."
-image: blog/watch-only-wallet.jpg
+image: blog/watch-only-cover.jpg
 ---
 
 A watch-only wallet is a pair of glasses, not a vault. It can see your bitcoin. It cannot spend it. The keys live somewhere else: an old phone in airplane mode, a hardware wallet, a paper backup you do not want on this device.
 
 That is the whole trick. You get a live view of cold storage on the phone you actually carry, and the private keys never take the trip.
 
-If you wanted a complete tour of self-custody, that post already exists. This one does one job: put a watch-only wallet on BlueWallet.
+If you wanted a complete tour of self-custody, that post already exists: [Self-Custody Bitcoin: The Complete Guide](/self-custody-bitcoin-guide/). This one does one job: put a watch-only wallet on BlueWallet.
 
 ## What a watch-only wallet actually is
 
@@ -73,4 +73,4 @@ You do not need a new gadget to start watching. You need the public key, and the
 
 ---
 
-*Related reading: [Watch-only Wallet](/watch-only/) · [How to Turn an Old Phone Into a Bitcoin Cold Wallet](/old-phone-bitcoin-cold-wallet/) · [Sign a transaction offline](/docs/sign-offline/) · [Use BlueWallet offline as a cold wallet](/docs/offline-cold-wallet/)*
+*Related reading: [Self-Custody Bitcoin: The Complete Guide](/self-custody-bitcoin-guide/) · [Watch-only Wallet](/watch-only/) · [How to Turn an Old Phone Into a Bitcoin Cold Wallet](/old-phone-bitcoin-cold-wallet/) · [Sign a transaction offline](/docs/sign-offline/) · [Use BlueWallet offline as a cold wallet](/docs/offline-cold-wallet/)*
