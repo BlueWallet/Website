@@ -1,0 +1,279 @@
+# Auto-generated intrinsic sizes for docs images.
+# Regenerate: python3 scripts/gen_image_dimensions.py
+
+"1.png":
+  width: 1600
+  height: 615
+"10.png":
+  width: 668
+  height: 301
+"11.png":
+  width: 1076
+  height: 1112
+"2.png":
+  width: 404
+  height: 317
+"20-sided-dice-roll-manual-entropy.png":
+  width: 828
+  height: 1792
+"3.png":
+  width: 812
+  height: 308
+"4.png":
+  width: 802
+  height: 374
+"5.png":
+  width: 472
+  height: 356
+"6-sided-dice-roll-manual-entropy.png":
+  width: 828
+  height: 1792
+"6.png":
+  width: 569
+  height: 268
+"7.png":
+  width: 528
+  height: 164
+"8.png":
+  width: 603
+  height: 639
+"9.png":
+  width: 767
+  height: 370
+"add-bitcoin-wallet-with-advanced-options.png":
+  width: 828
+  height: 1792
+"add-bitcoin-wallet.png":
+  width: 828
+  height: 1792
+"add-lightning-wallet-with-advanced-options.png":
+  width: 828
+  height: 1792
+"add-manual-entropy.png":
+  width: 828
+  height: 1792
+"backup-wallet-01-wallet-transactions.png":
+  width: 1206
+  height: 2622
+"backup-wallet-02-wallet-details.png":
+  width: 1206
+  height: 2622
+"backup-wallet-03-export-button.png":
+  width: 1206
+  height: 2622
+"backup-wallet-04-export-screen.png":
+  width: 470
+  height: 1024
+"bip47-paycodes-01-enable.png":
+  width: 472
+  height: 1024
+"bip47-paycodes-03-contacts.png":
+  width: 472
+  height: 1024
+"bip47-paycodes-04-send-contact.png":
+  width: 472
+  height: 1024
+"bluewallet-first-page.png":
+  width: 828
+  height: 1792
+"broadcast-transaction-01-screen.png":
+  width: 1206
+  height: 2622
+"coin-control-01-wallet-details-coins.png":
+  width: 1206
+  height: 2622
+"coin-control-02-coin-control-overview.png":
+  width: 1206
+  height: 2622
+"coin-control-03-coin-detail.png":
+  width: 1206
+  height: 2622
+"coin-control-04-coin-selected.png":
+  width: 1206
+  height: 2622
+"coin-control-05-send-with-selected-coins.png":
+  width: 1206
+  height: 2622
+"coin-flip-manual-entropy.png":
+  width: 828
+  height: 1792
+"export-transaction-history-01-csv-menu.png":
+  width: 470
+  height: 1024
+"import-custom-derivation-01-seed-entered.png":
+  width: 1206
+  height: 2622
+"import-custom-derivation-02-search-enabled.png":
+  width: 1206
+  height: 2622
+"import-custom-derivation-03-discovery.png":
+  width: 1206
+  height: 2622
+"import-custom-derivation-04-custom-derivation.png":
+  width: 1206
+  height: 2622
+"import-passphrase-01-import-screen.png":
+  width: 1206
+  height: 2622
+"import-passphrase-02-import-menu.png":
+  width: 1206
+  height: 2622
+"import-passphrase-03-passphrase-enabled.png":
+  width: 1206
+  height: 2622
+"import-search-accounts-01-import-screen.png":
+  width: 1206
+  height: 2622
+"import-search-accounts-02-import-menu.png":
+  width: 1206
+  height: 2622
+"import-search-accounts-03-search-accounts-enabled.png":
+  width: 1206
+  height: 2622
+"import-wallet-01-add-wallet.png":
+  width: 1206
+  height: 2622
+"import-wallet-02-import-screen.png":
+  width: 1206
+  height: 2622
+"import-wallet-03-mnemonic-entered.png":
+  width: 1206
+  height: 2622
+"import-wallet-04-import-actions.png":
+  width: 1206
+  height: 2622
+"incomplete-manual-entropy.png":
+  width: 828
+  height: 1792
+"is-it-my-address-01-screen.png":
+  width: 1206
+  height: 2622
+"manage-wallets-01-home.png":
+  width: 1206
+  height: 2622
+"manage-wallets-02-manage-screen.png":
+  width: 1206
+  height: 2622
+"manage-wallets-03-swipe-hide.png":
+  width: 1206
+  height: 2622
+"manage-wallets-04-balance-hidden.png":
+  width: 1206
+  height: 2622
+"manual-entropy-used.png":
+  width: 828
+  height: 1792
+"offline-cold-wallet-01-offline-mode-badge.png":
+  width: 1024
+  height: 810
+"offline-cold-wallet-02-electrum-offline-toggle.png":
+  width: 472
+  height: 1024
+"password-protected-01-unlock.png":
+  width: 472
+  height: 1024
+"password-protected-02-security-enabled.png":
+  width: 472
+  height: 1024
+"password-protected-03-enable-encryption.png":
+  width: 470
+  height: 1024
+"password-protected-04-security-disabled.png":
+  width: 470
+  height: 1024
+"pending-transaction-01-status.png":
+  width: 470
+  height: 1024
+"plausible-deniability-01-unlock.png":
+  width: 472
+  height: 1024
+"plausible-deniability-02-security-enabled.png":
+  width: 472
+  height: 1024
+"plausible-deniability-03-enable-encryption.png":
+  width: 470
+  height: 1024
+"plausible-deniability-04-plausible-deniability-screen.png":
+  width: 472
+  height: 1024
+"plausible-deniability-05-decrypt-confirmation.png":
+  width: 472
+  height: 1024
+"receive-bitcoin-01-wallet.png":
+  width: 1206
+  height: 2622
+"receive-bitcoin-02-qr-code.png":
+  width: 1206
+  height: 2622
+"screenshot-2019-08-21-at-16.57.46.png":
+  width: 1198
+  height: 836
+"screenshot-2019-08-21-at-16.57.54.png":
+  width: 1198
+  height: 838
+"search-wallets-01-bluewllet.png":
+  width: 1206
+  height: 2622
+"search-wallets-02-testing.png":
+  width: 1206
+  height: 2622
+"seed-final-word-01-screen.png":
+  width: 1206
+  height: 2622
+"seed-final-word-02-generated.png":
+  width: 1206
+  height: 2622
+"send-bitcoin-01-wallet.png":
+  width: 470
+  height: 1024
+"send-bitcoin-02-send-details.png":
+  width: 470
+  height: 1024
+"send-bitcoin-03-confirm.png":
+  width: 470
+  height: 1024
+"settings-tools-01-menu.png":
+  width: 1206
+  height: 2622
+"show-addresses-01-wallet-details.png":
+  width: 1206
+  height: 2622
+"show-addresses-02-receive-addresses.png":
+  width: 470
+  height: 1024
+"show-addresses-03-address-detail.png":
+  width: 470
+  height: 1024
+"sign-verify-message-01-screen.png":
+  width: 1206
+  height: 2622
+"sign-verify-message-02-filled.png":
+  width: 1206
+  height: 2622
+"sign-verify-message-03-verified.png":
+  width: 1206
+  height: 2622
+"tip2.png":
+  width: 981
+  height: 396
+"tip3.png":
+  width: 981
+  height: 396
+"tip4.png":
+  width: 981
+  height: 396
+"tip5.png":
+  width: 981
+  height: 396
+"transaction-status-01-overview.png":
+  width: 470
+  height: 1024
+"transaction-status-02-advanced.png":
+  width: 470
+  height: 1024
+"wallet-details-01-overview.png":
+  width: 470
+  height: 1024
+"wallet-details-02-options-advanced.png":
+  width: 470
+  height: 1024

@@ -13,7 +13,7 @@ tags:
 
 Let’s create a self-sovereign mobile lightning wallet using nothing but a Mac, a mobile phone and some software supplied by the fantastic open source community!
 
-![](/assets/img/uploads/1.png)
+{% include image.html img="/assets/img/uploads/1.png" alt="LNDHub Mac setup screenshot 1" %}
 
 Step 1, LND
 
@@ -25,7 +25,7 @@ Setup guide here:
 
 **[Easiest Bitcoin Lightning Guide](https://medium.com/lightning-power-users/windows-macos-lightning-network-284bd5034340)**
 
-![](/assets/img/uploads/2.png)
+{% include image.html img="/assets/img/uploads/2.png" alt="LNDHub Mac setup screenshot 2" %}
 
 Launch Bitcoin and LND
 
@@ -48,17 +48,17 @@ cd LndHub
 
 2B, Copy in the LND Macaroon `admin.macaroon`to the LndHub directory. Quick find from NodeLauncher, “**Show Macroons**”:
 
-![](/assets/img/uploads/3.png)
+{% include image.html img="/assets/img/uploads/3.png" alt="LNDHub Mac setup screenshot 3" %}
 
 Click “Show Macaroons”
 
 2C, Copy in the `tls.cert` file. Quick find by Nodelauncher “**Advanced**” menu, then “S**how lnd.conf**”
 
-![](/assets/img/uploads/4.png)
+{% include image.html img="/assets/img/uploads/4.png" alt="LNDHub Mac setup screenshot 4" %}
 
 Click “Show lnd.conf”
 
-![](/assets/img/uploads/5.png)
+{% include image.html img="/assets/img/uploads/5.png" alt="LNDHub Mac setup screenshot 5" %}
 
 Copy this file into LndHub folder
 
@@ -86,11 +86,11 @@ sudo nano /usr/local/etc/redis.conf
 
 Change the supervision `supervised systemd` :
 
-![](/assets/img/uploads/6.png)
+{% include image.html img="/assets/img/uploads/6.png" alt="LNDHub Mac setup screenshot 6" %}
 
 Change the working directory to `dir /Users/<user>/LndHub/redis` :
 
-![](/assets/img/uploads/7.png)
+{% include image.html img="/assets/img/uploads/7.png" alt="LNDHub Mac setup screenshot 7" %}
 
 Get stuck? Additional tutorial [here](https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298): <https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298>
 
@@ -132,11 +132,11 @@ Since LndHub is running locally, we need to forward external ports.
 
 5C, Navigate to “Games and Services” to find “Port Forwarding” and add your LndHub as a forwarded port on 3000. My local IP was `192.168.0.13`
 
-![](/assets/img/uploads/8.png)
+{% include image.html img="/assets/img/uploads/8.png" alt="LNDHub Mac setup screenshot 8" %}
 
 5C, Navigate to “LAN” and then locate the “DHCP Reservation Lease” pane. Bind your Local IP to your MAC Address:
 
-![](/assets/img/uploads/9.png)
+{% include image.html img="/assets/img/uploads/9.png" alt="LNDHub Mac setup screenshot 9" %}
 
 All this is doing is forwarding external requests on port 3000 direct to your local IP and directly to your Mac’s Address.
 
@@ -144,7 +144,7 @@ Now find your external IP address (google “what’s my IP” if you don’t kn
 
 [http://<YOUR-IP-ADDRESS>:3000/](http://144.132.69.213:3000/)
 
-![](/assets/img/uploads/10.png)
+{% include image.html img="/assets/img/uploads/10.png" alt="LNDHub Mac setup screenshot 10" %}
 
 LndHub Running!
 
@@ -152,4 +152,4 @@ Step 6: Connect to BlueWallet
 
 Now head to BlueWallet and add the above url to in Lightning Settings. You are self-sovereign!
 
-![](/assets/img/uploads/11.png)
+{% include image.html img="/assets/img/uploads/11.png" alt="LNDHub Mac setup screenshot 11" %}

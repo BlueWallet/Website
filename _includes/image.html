@@ -1,12 +1,20 @@
 {% if include.img contains 'http' %}
   {% assign img_src = include.img %}
+  {% assign img_key = include.img | split: '/' | last %}
+{% elsif include.img contains '/assets/' %}
+  {% assign img_src = include.img | relative_url %}
+  {% assign img_key = include.img | split: '/' | last %}
 {% else %}
   {% assign img_src = site.uploads | append: include.img | relative_url %}
+  {% assign img_key = include.img | split: '/' | last %}
 {% endif %}
+{% assign img_dims = site.data.image_dimensions[img_key] %}
+{% assign img_width = include.width | default: img_dims.width %}
+{% assign img_height = include.height | default: img_dims.height %}
 {% if include.lightbox == 'true' %}
 <figure data-uk-lightbox="animation: slide" class="{{ include.class }}">
     <a class="uk-inline" href="{{ img_src }}"{% if include.caption %} caption="{{ include.caption }}"{% endif %}>
-        <img src="{{ img_src }}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}>
+        <img src="{{ img_src }}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}{% if img_width %} width="{{ img_width }}"{% endif %}{% if img_height %} height="{{ img_height }}"{% endif %} loading="lazy" decoding="async">
         <div class="uk-position-center">
             <span data-uk-overlay-icon></span>
         </div>
@@ -15,7 +23,7 @@
 </figure>
 {% else %}
 <figure class="{{ include.class }}">
-    <img src="{{ img_src }}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}>
+    <img src="{{ img_src }}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}{% if img_width %} width="{{ img_width }}"{% endif %}{% if img_height %} height="{{ img_height }}"{% endif %} loading="lazy" decoding="async">
     {% if include.caption %}<figcaption data-uk-grid class="uk-flex-right"><span class="uk-width-auto">{{ include.caption }}</span></figcaption>{% endif %}
 </figure>
 {% endif %}

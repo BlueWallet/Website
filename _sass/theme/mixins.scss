@@ -331,6 +331,12 @@
             &.phone-screenshot-image {
               margin: 40px auto;
               max-width: 350px;
+
+              img {
+                width: 100%;
+                height: auto;
+                display: block;
+              }
             }
 
             img + div .uk-overlay-icon {
