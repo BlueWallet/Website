@@ -24,6 +24,6 @@ You can use Electrum wallet on desktop (electrum.org) to recover this wallets at
 3. Options > bip39
 4. Enter seed
 
-![](/assets/img/uploads/screenshot-2019-08-21-at-16.57.54.png)
+{% include image.html img="/assets/img/uploads/screenshot-2019-08-21-at-16.57.54.png" alt="Electrum restore wallet seed options" %}
 
-![](/assets/img/uploads/screenshot-2019-08-21-at-16.57.46.png)
+{% include image.html img="/assets/img/uploads/screenshot-2019-08-21-at-16.57.46.png" alt="Electrum restore wallet seed entry" %}
