@@ -1576,37 +1576,88 @@ footer .uk-subnav {
 			padding-top: 16px;
 		}
 	}
-	.power-feature-card {
-		padding: 24px 20px;
-		@media (min-width: 960px) {
-			padding: 40px;
+	.section-extension-features {
+		.power-feature-card {
+			padding: 24px 20px;
+			overflow: hidden;
+			@media (min-width: 960px) {
+				padding: 40px;
+			}
 		}
-	}
-	.power-feature-media {
-		align-items: center;
-		justify-content: center;
-		align-self: center;
-		margin-top: 0;
-		padding: 0;
-		@media (min-width: 960px) {
+		// uk-grid-large uses a negative left margin; on mobile without
+		// matching cell padding the screenshots shift and get clipped.
+		.uk-grid {
+			@media (max-width: 959px) {
+				margin-left: 0;
+			}
+		}
+		.uk-grid > * {
+			@media (max-width: 959px) {
+				padding-left: 0;
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+		.power-feature-media {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			align-self: stretch;
+			margin-top: 0;
 			padding: 0;
+			min-width: 0;
+			box-sizing: border-box;
+			@media (max-width: 959px) {
+				width: 100%;
+				max-width: 100%;
+				justify-content: center;
+			}
 		}
-	}
-	.power-feature-grid--reverse-desktop .power-feature-media {
-		justify-content: center;
-	}
-	.power-feature-media img.extension-shot {
-		width: auto;
-		max-width: 280px;
-		height: auto;
-		border-radius: 20px;
-		flex-shrink: 0;
-	}
-	.power-feature-media--wide {
-		align-items: center;
-		padding-bottom: 0;
-		img.extension-shot--wide {
-			max-width: 420px;
+		.power-feature-grid--reverse-desktop .power-feature-media {
+			@media (max-width: 959px) {
+				justify-content: center;
+			}
+			// Keep centered in the column; flex-start sits in the
+			// uk-grid-large negative margin and clips on desktop.
+			@media (min-width: 1200px) {
+				justify-content: center;
+			}
+		}
+		.power-feature-media img.extension-shot {
+			display: block;
+			max-width: 280px;
+			height: auto;
+			aspect-ratio: auto;
+			border-radius: 20px;
+			object-fit: contain;
+			@media (max-width: 959px) {
+				width: 100%;
+				flex-shrink: 1;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@media (min-width: 960px) {
+				width: auto;
+				flex-shrink: 0;
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+		.power-feature-media--wide {
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 0;
+			@media (min-width: 960px) {
+				justify-content: center;
+			}
+			img.extension-shot--wide {
+				@media (max-width: 959px) {
+					max-width: 100%;
+				}
+				@media (min-width: 960px) {
+					max-width: 420px;
+				}
+			}
 		}
 	}
 }
