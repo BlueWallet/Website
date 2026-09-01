@@ -30,7 +30,7 @@ No sending. No Lightning. No recovery from a seed. Private keys are not accepted
 
 USD only, for now. Cost basis and the coin list track confirmed coins. Unconfirmed activity is not treated the same way.
 
-If you need to move coins, recover a wallet, or hold keys, that is the BlueWallet app. The extension is glasses. The app is the vault, or the hot wallet, depending on what you imported.
+If you need to move coins, recover a wallet, or hold keys, that is the [BlueWallet app](/download/). The extension is glasses. The app is the vault, or the hot wallet, depending on what you imported.
 
 ## Address or xpub
 
@@ -43,6 +43,8 @@ An xpub cannot spend. It can show every address and balance in that account. Add
 ## Why a browser at all
 
 You already live in tabs. Checking a cold stack should not mean unlocking the phone that holds the seed, or importing those words "just to see the number." The number can live next to the article you are reading. The keys stay where they were.
+
+And if you just want to watch the live Bitcoin price feed like a maniac, the side panel does that too. No keys required.
 
 Hyperbitcoinization is not a slogan if the only portfolio view you have is an exchange.
 
