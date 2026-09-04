@@ -22,7 +22,7 @@
       <!-- Multisig Vault — short text card, col 2 row 1 -->
       <div class="hfg-card hfg-card--text">
         <div class="hfg-card-icon">
-          <img src="{{ site.uploads | absolute_url }}ms-vault.svg" alt="" aria-hidden="true">
+            <img src="{{ site.uploads | absolute_url }}ms-vault.svg" alt="" aria-hidden="true" width="48" height="48">
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Multisig Vault Wallets</h3>
@@ -33,7 +33,9 @@
       <!-- Fees & Transactions — tall Rive card, col 3 row 1-2 -->
       <div class="hfg-card hfg-card--image hfg-card--fees">
         <div class="hfg-card-media hfg-card-media--rive">
-          <canvas id="hfg-rive-fees" class="hfg-rive-canvas" width="600" height="440" data-rive-src="{{ site.uploads }}home-feat/pending.riv" data-rive-artboard="Artboard" data-rive-sm="State Machine 1" data-rive-align="BottomCenter"></canvas>
+          <div class="hfg-rive-frame">
+            <canvas id="hfg-rive-fees" class="hfg-rive-canvas" width="600" height="440" data-rive-src="{{ site.uploads }}home-feat/pending.riv" data-rive-artboard="Artboard" data-rive-sm="State Machine 1" data-rive-align="BottomCenter"></canvas>
+          </div>
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Fees &amp; Transactions control</h3>
@@ -44,7 +46,7 @@
       <!-- Hardware wallets — short text card, col 2 row 2 -->
       <div class="hfg-card hfg-card--text">
         <div class="hfg-card-icon">
-          <img src="{{ site.uploads | absolute_url }}watch-only.svg" alt="" aria-hidden="true">
+            <img src="{{ site.uploads | absolute_url }}watch-only.svg" alt="" aria-hidden="true" width="48" height="48">
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Hardware wallets support</h3>
@@ -55,7 +57,9 @@
       <!-- Notifications — tall Rive card, col 1 row 3-4 -->
       <div class="hfg-card hfg-card--image hfg-card--notifications">
         <div class="hfg-card-media hfg-card-media--rive">
-          <canvas id="hfg-rive-notifications" class="hfg-rive-canvas" width="300" height="160" data-rive-src="{{ site.uploads }}home-feat/notifications.riv" data-rive-artboard="animation" data-rive-sm="State Machine 1" data-rive-align="Center"></canvas>
+          <div class="hfg-rive-frame">
+            <canvas id="hfg-rive-notifications" class="hfg-rive-canvas" width="300" height="160" data-rive-src="{{ site.uploads }}home-feat/notifications.riv" data-rive-artboard="animation" data-rive-sm="State Machine 1" data-rive-align="Center"></canvas>
+          </div>
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Notifications</h3>
@@ -66,7 +70,7 @@
       <!-- Plausible Deniability — short text card, col 2 row 3 -->
       <div class="hfg-card hfg-card--text">
         <div class="hfg-card-icon">
-          <img src="{{ site.uploads | absolute_url }}pdeniability.svg" alt="" aria-hidden="true">
+            <img src="{{ site.uploads | absolute_url }}pdeniability.svg" alt="" aria-hidden="true" width="48" height="48">
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Plausible Deniability</h3>
@@ -76,8 +80,10 @@
 
       <!-- Open source — tall Rive card, col 3 row 3-4 -->
       <div class="hfg-card hfg-card--image hfg-card--foss">
-        <div class="hfg-card-media">
-          <canvas id="hfg-rive-foss" class="hfg-rive-canvas" width="120" height="140" data-rive-src="{{ site.uploads }}home-feat/foss.riv" data-rive-artboard="Artboard" data-rive-sm="State Machine 1" data-rive-align="Center"></canvas>
+        <div class="hfg-card-media hfg-card-media--rive">
+          <div class="hfg-rive-frame">
+            <canvas id="hfg-rive-foss" class="hfg-rive-canvas" width="120" height="140" data-rive-src="{{ site.uploads }}home-feat/foss.riv" data-rive-artboard="Artboard" data-rive-sm="State Machine 1" data-rive-align="Center"></canvas>
+          </div>
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Open source &amp; privacy-first</h3>
@@ -88,7 +94,7 @@
       <!-- Recover wallets — short text card, col 2 row 4 -->
       <div class="hfg-card hfg-card--text">
         <div class="hfg-card-icon">
-          <img src="{{ site.uploads | absolute_url }}fees.svg" alt="" aria-hidden="true">
+            <img src="{{ site.uploads | absolute_url }}fees.svg" alt="" aria-hidden="true" width="48" height="48">
         </div>
         <div class="hfg-card-body">
           <h3 class="hfg-card-title">Import & Recover wallets</h3>

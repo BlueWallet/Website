@@ -24,11 +24,11 @@
         <a href="{{ latest_post.url | relative_url }}" class="community-card community-card--blog">
           {% if latest_post.image %}
             <div class="community-blog-image">
-              <img src="{% if latest_post.image contains 'http' %}{{ latest_post.image }}{% else %}{{ site.uploads | relative_url }}{{ latest_post.image }}{% endif %}" alt="" loading="lazy">
+              <img src="{% if latest_post.image contains 'http' %}{{ latest_post.image }}{% else %}{{ site.uploads | relative_url }}{{ latest_post.image }}{% endif %}" alt="" width="1200" height="630" loading="lazy" decoding="async">
             </div>
           {% elsif latest_post.cover %}
             <div class="community-blog-image">
-              <img src="{% if latest_post.cover contains 'http' %}{{ latest_post.cover }}{% else %}{{ site.uploads | relative_url }}{{ latest_post.cover }}{% endif %}" alt="" loading="lazy">
+              <img src="{% if latest_post.cover contains 'http' %}{{ latest_post.cover }}{% else %}{{ site.uploads | relative_url }}{{ latest_post.cover }}{% endif %}" alt="" width="1200" height="630" loading="lazy" decoding="async">
             </div>
           {% else %}
             <div class="community-blog-image community-blog-image--placeholder" aria-hidden="true"></div>

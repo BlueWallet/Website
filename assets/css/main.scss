@@ -27,6 +27,7 @@
 }
 .hero-preview-stack {
 	width: 100%;
+	aspect-ratio: 1062 / 1838;
 	@media (min-width: 768px) {
 		max-width: 90%;
 		margin-left: auto;
@@ -34,12 +35,14 @@
 	picture {
 		display: block;
 		width: 100%;
+		height: 100%;
 	}
 }
 .hero-preview-img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: block;
+	object-fit: contain;
 	transform-origin: center center;
 	transition: transform 0.45s ease;
 }
@@ -89,6 +92,25 @@
 			}
 		}
 	}
+}
+.site-navbar--sticky {
+	position: sticky;
+	top: 0;
+	z-index: 980;
+	.uk-navbar-container {
+		border-bottom: solid 1px transparent;
+	}
+}
+@supports (animation-timeline: scroll()) {
+	.site-navbar--sticky .uk-navbar-container {
+		animation: site-navbar-border linear both;
+		animation-timeline: unquote("scroll()");
+		animation-range: unquote("0px 12px");
+	}
+}
+@keyframes site-navbar-border {
+	from { border-bottom-color: transparent; }
+	to { border-bottom-color: #EEF1F4; }
 }
 .section-hero {
 	padding-top: 0;
@@ -349,6 +371,9 @@
 
 	.hfg-card-media {
 		flex: 1;
+		min-width: 0;
+		min-height: 0;
+		box-sizing: border-box;
 		background: #f2f4f7;
 		border-radius: 12px;
 		display: flex;
@@ -371,19 +396,37 @@
 	}
 }
 
-/* Rive canvas — sized like the static images they replace */
+/* Grey media box fills the card. The inner frame holds the Rive canvas so
+   bitmap resize (devicePixelRatio) cannot blow out or clip the overlay. */
+.hfg-card-media--rive {
+	width: 100%;
+}
+.hfg-rive-frame {
+	position: relative;
+	width: 100%;
+	flex: 0 0 auto;
+	overflow: hidden;
+}
 .hfg-rive-canvas {
+	position: absolute;
+	inset: 0;
 	display: block;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
-.hfg-card--notifications .hfg-rive-canvas { max-height: 180px; }
+.hfg-card--notifications .hfg-rive-frame {
+	max-width: 220px;
+	aspect-ratio: 300 / 160;
+}
 .hfg-card--fees .hfg-card-media {
 	align-items: flex-end;
 	padding: 0;
 }
-.hfg-card--fees .hfg-rive-canvas { max-height: 380px; }
+.hfg-card--fees .hfg-rive-frame {
+	aspect-ratio: 600 / 440;
+	max-height: 380px;
+}
 
 .hfg-card--pdeniability .hfg-card-media,
 .hfg-card--recover .hfg-card-media,
@@ -446,8 +489,10 @@ number-flow::part(suffix) {
 	opacity: 0.9;
 }
 
-/* Per-card canvas heights */
-.hfg-card--foss .hfg-rive-canvas { max-height: 140px; }
+.hfg-card--foss .hfg-rive-frame {
+	max-width: 96px;
+	aspect-ratio: 120 / 140;
+}
 
 .hfg-card--text {
 	padding: 16px;
@@ -1266,6 +1311,8 @@ footer .uk-subnav {
 	/* Media area fills remaining card height equally */
 	.hfg-card-media {
 		flex: 1;
+	}
+	.hfg-card-media--onchain {
 		aspect-ratio: unset;
 	}
 
@@ -1284,6 +1331,11 @@ footer .uk-subnav {
 .feedback-slider-outer {
 	overflow: hidden;
 	position: relative;
+	min-height: 296px;
+
+	@media (max-width: 767px) {
+		min-height: 258px;
+	}
 
 	/* Fade edges */
 	&::before,
