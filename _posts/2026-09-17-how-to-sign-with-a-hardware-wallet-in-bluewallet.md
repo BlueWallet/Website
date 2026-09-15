@@ -45,7 +45,7 @@ Take the PSBT to the device the way that device expects:
 - **QR:** scan what BlueWallet shows. Sign on the device. Scan the signed result back into BlueWallet.
 - **File / SD:** export the PSBT from BlueWallet, move it to the device, sign, bring the signed file back.
 
-Exact menus differ by brand. The shape does not: unsigned PSBT out, signed PSBT in. Toggle-level steps for one common SD workflow live in [Coldcard with BlueWallet](/docs/coldcard/). Animated QR air-gap is the same idea as [Cobo Vault](/docs/cobo-vault/). The generic dance is [Sign a transaction offline](/docs/sign-offline/).
+Exact menus differ by brand. The shape does not: unsigned PSBT out, signed PSBT in. The generic dance is [Sign a transaction offline](/docs/sign-offline/).
 
 Verify the address and amount on the hardware screen before you approve. The phone can lie. The device that holds the keys should not.
 
