@@ -59,6 +59,19 @@
 
 
 
+/* Apply UIkit grid/navbar layout before JS adds the classes. Without this,
+   desktop docs (and other grids) paint stacked, then snap — a large CLS. */
+[data-uk-grid],
+[uk-grid] {
+	display: flex;
+	flex-wrap: wrap;
+}
+[data-uk-navbar],
+[uk-navbar] {
+	display: flex;
+	position: relative;
+}
+
 .uk-navbar {
 	padding: 0px 0;
 	a {

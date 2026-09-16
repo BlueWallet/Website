@@ -330,7 +330,15 @@
         figure {
             &.phone-screenshot-image {
               margin: 40px auto;
+              width: 100%;
               max-width: 350px;
+
+              // uk-inline is inline-block and shrinks to the overlay icon
+              // (~47px) until the image loads, which is the docs CLS culprit.
+              a.uk-inline {
+                display: block;
+                width: 100%;
+              }
 
               img {
                 width: 100%;
