@@ -125,14 +125,24 @@
     nodes.forEach(function (node) { io.observe(node); });
   }
 
-  function init() {
-    observeRive();
-    observeNumberFlow();
+  function whenIdle(fn) {
+    if (window.requestIdleCallback) {
+      requestIdleCallback(fn, { timeout: 2500 });
+      return;
+    }
+    setTimeout(fn, 1500);
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
+  function init() {
+    whenIdle(function () {
+      observeRive();
+      observeNumberFlow();
+    });
+  }
+
+  if (document.readyState === 'complete') {
     init();
+  } else {
+    window.addEventListener('load', init);
   }
 })();
