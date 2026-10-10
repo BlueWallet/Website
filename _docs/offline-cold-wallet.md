@@ -12,7 +12,7 @@ This is the same idea behind [signing a transaction offline](/docs/sign-offline/
 
 - **No remote attack surface.** A device that never connects to Wi-Fi, mobile data, or Bluetooth cannot be reached by malware, phishing sites, or a compromised Electrum server.
 - **Seed phrase never touches an online device.** You create or import the recovery phrase directly on the offline phone, so it is never typed, copied, or displayed on a computer connected to the internet.
-- **Works with your existing setup.** Pair the offline device with a watch-only (zpub) wallet on your everyday phone, exactly like [Sign a transaction offline](/docs/sign-offline/) or a [Coldcard](/docs/coldcard/) hardware wallet.
+- **Works with your existing setup.** Pair the offline device with a watch-only (zpub) wallet on your everyday phone, exactly like [Sign a transaction offline](/docs/sign-offline/) or any air-gapped hardware wallet (Passport, Jade, Keystone, and others).
 - **Low cost.** Any old phone you already own can become a dedicated signer. No extra hardware to buy.
 - **Full control.** Unlike a hardware wallet, you can inspect, back up, and restore the same seed phrase in any BIP39-compatible wallet.
 
