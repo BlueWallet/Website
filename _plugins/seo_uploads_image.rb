@@ -38,6 +38,15 @@ end
 
 Liquid::Template.register_filter(Jekyll::UploadsImageFilter)
 
+# site.uploads is "/uploads/" and many templates append another slash.
+# Collapse that in rendered HTML so the built site has no "/uploads//".
+Jekyll::Hooks.register [:pages, :posts, :documents], :post_render do |doc|
+  output = doc.output
+  next unless output.is_a?(String) && output.include?("/uploads//")
+
+  doc.output = output.gsub(%r{/uploads//+}, "/uploads/")
+end
+
 module Jekyll
   class SeoTag
     class ImageDrop
