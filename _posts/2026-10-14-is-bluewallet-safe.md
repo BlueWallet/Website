@@ -8,8 +8,6 @@ image: blog/bluewallet-threat-table.jpg
 
 Security is a question with two halves: what are you protecting against, and what does each tool actually stop? BlueWallet gives you six setups. Each one closes different doors. This guide is a simple threat model: it maps each setup to the attacks it stops, so you can pick the ones that match the risks you really face. For the full list of what the app does, see [Features](/features/).
 
-![Which BlueWallet setup stops which threat](/uploads/blog/bluewallet-threat-table.jpg)
-
 A half mark means the setup helps, but leaves a gap you need to cover another way.
 
 ## The setups
