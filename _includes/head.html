@@ -13,8 +13,7 @@
   <meta property="og:image" content="{{ site.uploads | absolute_url }}cover/{{ page.cover }}"/>
   <meta name="twitter:image" content="{{ site.uploads | absolute_url }}cover/{{ page.cover }}" />
   {% elsif page.image %}
-  <meta property="og:image" content="{{ site.uploads | absolute_url }}{{ page.image }}"/>
-  <meta name="twitter:image" content="{{ site.uploads | absolute_url }}{{ page.image }}" />
+  {% comment %}jekyll-seo-tag emits the only og:image, twitter:image, and JSON-LD image.{% endcomment %}
   {% else %}
   <meta property="og:image" content="{{ site.uploads | absolute_url }}cover/home.png"/>
   <meta name="twitter:image" content="{{ site.uploads | absolute_url }}cover/home.png" />
