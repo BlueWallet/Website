@@ -1,20 +1,54 @@
 # frozen_string_literal: true
 
-# Front matter `image:` is a path under /uploads/, same as the post cover.
-# jekyll-seo-tag joins a relative path to the page URL, so `image: blog/x.jpg`
-# becomes https://bluewallet.io/<slug>/blog/x.jpg and 404s. Make it root-relative
-# before render so og:image, twitter:image, and JSON-LD use /uploads/.
+# Front matter `image:` stays a path under /uploads/ (`blog/x.jpg`). Templates
+# prefix that themselves. jekyll-seo-tag must not read a rewritten copy of the
+# same field, or those prefixes become /uploads//uploads/. Resolve the social
+# URL here, and give templates one filter that collapses a repeated /uploads/.
 
-Jekyll::Hooks.register [:pages, :posts, :documents], :pre_render do |doc, payload|
-  image = doc.data["image"]
-  next unless image.is_a?(String)
-  next if image.empty?
-  next if image.start_with?("/", "http://", "https://")
+require "jekyll-seo-tag"
 
-  image = "/uploads/#{image.delete_prefix("/")}"
-  doc.data["image"] = image
+module Jekyll
+  module UploadsImage
+    module_function
 
-  # Pages copy front matter into the payload before this hook. Posts read data live.
-  page = payload["page"] if payload.respond_to?(:[])
-  page["image"] = image if page.is_a?(Hash)
+    def normalize(input)
+      return if input.nil?
+
+      path = input.to_s.strip
+      return if path.empty?
+      return path if path.start_with?("http://", "https://")
+      return path if path.start_with?("/") && !path.match?(%r{\A/uploads(?:/|$)}i)
+
+      stripped = path.dup
+      stripped.sub!(%r{\A/uploads/+}i, "") while stripped.match?(%r{\A/uploads/+}i)
+      stripped.sub!(%r{\Auploads/+}i, "") while stripped.match?(%r{\Auploads/+}i)
+      stripped = stripped.sub(%r{\A/+}, "")
+      return path if stripped.empty?
+
+      "/uploads/#{stripped}"
+    end
+  end
+
+  module UploadsImageFilter
+    def uploads_src(input)
+      Jekyll::UploadsImage.normalize(input)
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::UploadsImageFilter)
+
+module Jekyll
+  class SeoTag
+    class ImageDrop
+      private
+
+      def build_absolute_path
+        path = raw_path
+        return path unless path.is_a?(String) && absolute_url?(path) == false
+
+        filters.absolute_url(Jekyll::UploadsImage.normalize(path))
+      end
+    end
+  end
 end
