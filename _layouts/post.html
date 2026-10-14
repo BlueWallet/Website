@@ -13,12 +13,7 @@ layout: default
             </div>
 
             {% if page.image %}
-                {% assign cover_src = page.image %}
-                {% assign cover_lead = cover_src | slice: 0 %}
-                {% if cover_lead != "/" %}
-                  {% assign cover_src = site.uploads | append: cover_src %}
-                {% endif %}
-                <img class="uk-width-1-1 uk-border-rounded uk-margin-medium-bottom" src="{{ cover_src | relative_url }}" alt="{{ page.title | escape }}">
+                <img class="uk-width-1-1 uk-border-rounded uk-margin-medium-bottom" src="{{ page.image | uploads_src }}" alt="{{ page.title | escape }}">
             {% endif %}
 
             <div class="article-content link-primary">

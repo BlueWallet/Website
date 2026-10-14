@@ -12,7 +12,7 @@ title: Blog
             <a class="uk-position-cover" href="{{ post.url | relative_url }}"></a>
             {% if post.image %}
                 <div class="uk-card-media-top">
-                    <img src="{{ site.uploads | relative_url }}{{ post.image }}" alt="{{ post.title | escape }}">
+                    <img src="{{ post.image | uploads_src }}" alt="{{ post.title | escape }}">
                 </div>
             {% endif %}
             <div class="uk-card-header">
