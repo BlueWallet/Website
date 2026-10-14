@@ -22,7 +22,7 @@ In the table above, a half mark means the setup helps, but leaves a gap you need
 
 **Hardware wallet signing.** Your phone holds a watch-only wallet. The keys stay on a separate device that signs offline. See [How to sign with a hardware wallet in BlueWallet](/how-to-sign-with-a-hardware-wallet-in-bluewallet/).
 
-**Offline phone signer.** The same idea with a spare phone. Install BlueWallet on an old phone, put it in airplane mode for good, and keep the keys there. Your everyday phone holds a watch-only wallet and builds the payment. The offline phone signs it by QR code, and the everyday phone broadcasts it. See [Sign a transaction offline](/docs/sign-offline/).
+**Offline phone signer.** The same idea with a spare phone. Install BlueWallet on an old phone, put it in airplane mode for good, and keep the keys there. Your everyday phone holds a watch-only wallet and builds the payment. The offline phone signs it by QR code, and the everyday phone broadcasts it. It's a cheaper take on hardware signing, not a stronger one, because a hardware wallet is built for signing and nothing else. See [Sign a transaction offline](/docs/sign-offline/).
 
 **Multisig vault.** A wallet that needs several keys to spend, 2 of 3 by default. Put each key on a hardware wallet from a different brand, in a different place. See [Multisig vault](/multisig-wallet/) and [How to create a multisig vault in BlueWallet](/how-to-create-a-multisig-vault-in-bluewallet/).
 
