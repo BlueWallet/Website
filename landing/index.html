@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blueberry — Private Bitcoin wallet</title>
+  <meta name="description" content="Bitcoin wallet. Syncs with compact block filters over the peer-to-peer network. Broadcasts through Tor.">
+  <style>
+    /* Hallmark · pre-emit critique: P5 H5 E5 S4 R4 V4 */
+    :root {
+      --color-bg: #ffffff;
+      --color-band: #f3f6f8;
+      --color-ink: #1d282e;
+      --color-muted: #5c6b73;
+      --color-line: #e3e9ed;
+      --color-accent: #0070ff;
+      --color-accent-press: #005acc;
+      --font-display: system-ui, sans-serif;
+      --font-body: system-ui, sans-serif;
+      --space: clamp(1.25rem, 4vw, 2.5rem);
+    }
+    html, body {
+      overflow-x: clip;
+      margin: 0;
+      background: var(--color-bg);
+      color: var(--color-ink);
+      font-family: var(--font-body);
+    }
+    a { color: var(--color-accent); }
+    .wrap {
+      box-sizing: border-box;
+      width: min(68rem, 100%);
+      margin: 0 auto;
+      padding-left: var(--space);
+      padding-right: var(--space);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 2.5rem;
+      align-items: center;
+      padding-top: clamp(2.5rem, 8vw, 5.5rem);
+      padding-bottom: clamp(2.5rem, 8vw, 5rem);
+    }
+    h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(2.4rem, 6vw, 4.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      overflow-wrap: anywhere;
+      min-width: 0;
+    }
+    .lede {
+      margin: 1rem 0 0;
+      max-width: 34rem;
+      color: var(--color-muted);
+      font-size: 1.2rem;
+      line-height: 1.45;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+    }
+    a.join {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.9rem 1.2rem;
+      background: var(--color-accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.2;
+      text-decoration: none;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+    a.join:hover, a.join:focus { background: var(--color-accent-press); }
+    a.join svg { width: 1.15rem; height: 1.15rem; flex: none; display: block; }
+    .more {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      margin: 1rem 0 0;
+      font-size: 1rem;
+    }
+    .more a { white-space: nowrap; }
+    .hero-art {
+      margin: 0;
+      min-width: 0;
+    }
+    .hero-art img {
+      display: block;
+      width: min(100%, 22rem);
+      height: auto;
+      margin-left: auto;
+    }
+    .band {
+      background: var(--color-band);
+      padding-top: clamp(2.5rem, 6vw, 4.5rem);
+      padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+    }
+    h2 {
+      margin: 0 0 1.5rem;
+      font-family: var(--font-display);
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(1.7rem, 3vw, 2.25rem);
+      letter-spacing: -0.03em;
+      overflow-wrap: anywhere;
+    }
+    .feature-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1rem;
+    }
+    .card {
+      background: var(--color-bg);
+      border-radius: 12px;
+      padding: 1.25rem 1.2rem 1.4rem;
+      min-width: 0;
+    }
+    .card h3 {
+      margin: 0;
+      font-style: normal;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+    .card p {
+      margin: 0.55rem 0 0;
+      color: var(--color-muted);
+      line-height: 1.45;
+    }
+    .phones {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1rem;
+      min-width: 0;
+    }
+    .phone {
+      width: min(15rem, 22vw);
+      min-width: 0;
+      margin: 0;
+      padding: 0.55rem;
+      background: var(--color-ink);
+      border-radius: 2rem;
+    }
+    .phone img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 1.55rem;
+    }
+    footer {
+      padding: 2.5rem 0 3rem;
+      color: var(--color-muted);
+      font-size: 0.95rem;
+    }
+    footer h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    .subnav, .socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 1.25rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .subnav a, .socials a {
+      color: var(--color-muted);
+      text-decoration: none;
+    }
+    .subnav a:hover, .socials a:hover { color: var(--color-ink); }
+    .socials {
+      margin-top: 0;
+      gap: 1.5rem;
+    }
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      white-space: nowrap;
+    }
+    .socials img { width: 22px; height: 22px; }
+    footer .copy {
+      margin: 2rem 0 0.75rem;
+      color: var(--color-ink);
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      .hero, .feature-row { grid-template-columns: 1fr; }
+      .phones { width: 100%; }
+      .phone { width: auto; flex: 1 1 0; }
+      .hero-art { order: -1; max-width: 16rem; }
+      .hero-art img { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="wrap hero">
+      <div>
+        <h1>Blueberry</h1>
+        <p class="lede">Private neutrino-based Bitcoin wallet for iOS, Android &amp; desktop</p>
+        <div class="actions">
+          <a class="join" href="https://testflight.apple.com/join/CcVzRvkt"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.5.9s-1.8-.8-3-.8c-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.3 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-.1 2.9-2.3c.7-1 1.2-2 1.5-3.1-3.9-1.5-3.8-5.2-3.8-5.3zM14.7 6.2c.6-.8 1.1-1.9.9-3-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.8-.9 2.9 1 .1 2-.5 2.6-1.3z"/></svg>Test on iPhone</a>
+          <a class="join" href="https://play.google.com/apps/testing/io.bluewallet.blueberry"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.6 9.5l1.8-3.1c.1-.2 0-.5-.2-.6-.2-.1-.5 0-.6.2l-1.8 3.2A8.4 8.4 0 0 0 12 8.2c-1.7 0-3.3.4-4.7 1.1L5.4 6c-.1-.2-.4-.3-.6-.2-.2.1-.3.4-.2.6l1.8 3.1C4.3 10.7 3 12.7 3 15.1h18c0-2.4-1.3-4.4-3.4-5.6zM8.2 13.4a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8zm7.6 0a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8zM6.2 16.2l-1.5 2.6c-.1.2 0 .5.2.6.2.1.5 0 .6-.2l1.6-2.7c1.4.8 3.1 1.2 4.9 1.2s3.5-.4 4.9-1.2l1.6 2.7c.1.2.4.3.6.2.2-.1.3-.4.2-.6l-1.5-2.6C16.4 17.4 14.3 18.2 12 18.2s-4.4-.8-5.8-2z"/></svg>Test on Android</a>
+        </div>
+        <p class="more">
+          <a href="https://github.com/BlueWallet/Blueberry.kmp/releases/download/v2026.10.09/blueberry-2026-10-09-android.apk">Download the APK</a>
+          <a href="https://github.com/BlueWallet/Blueberry.kmp/releases/latest">Desktop downloads</a>
+        </p>
+      </div>
+      <figure class="hero-art">
+        <img src="mark.png" alt="">
+      </figure>
+    </section>
+    <section class="band">
+      <div class="wrap">
+        <h2>Features</h2>
+        <div class="feature-row">
+          <div class="cards">
+            <article class="card">
+              <h3>Compact block filters</h3>
+              <p>Sync connects to Bitcoin peer-to-peer network directly. There is no server that can track your balance.</p>
+            </article>
+            <article class="card">
+              <h3>Broadcast via Tor</h3>
+              <p>Outgoing transactions are broadcast through a minimalistic Tor implemention built into the app.</p>
+            </article>
+            <article class="card">
+              <h3>Private send</h3>
+	      <p>Private send goes through <a href="https://rocketx.exchange">RocketX</a>. Normal send does not.</p>
+            </article>
+            <article class="card">
+              <h3>Coin control</h3>
+              <p>Advanced UTXO management, labeling, selecting, inspection</p>
+            </article>
+          </div>
+          <div class="phones">
+            <figure class="phone">
+              <img src="screen.png" alt="">
+            </figure>
+            <figure class="phone">
+              <img src="screen-2.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <ul class="socials">
+        <li><a href="https://twitter.com/@bluewalletio"><img src="https://bluewallet.io/uploads/twitter.svg" alt="">Twitter</a></li>
+        <li><a href="https://t.me/bluewallet"><img src="https://bluewallet.io/uploads/telegram.svg" alt="">Telegram</a></li>
+        <li><a href="https://github.com/BlueWallet/Blueberry.kmp"><img src="https://bluewallet.io/uploads/github.svg" alt="">Github</a></li>
+      </ul>
+      <p class="copy">© BlueWallet</p>
+      <ul class="subnav">
+        <li><a href="https://bluewallet.io/tos/">Terms of use</a></li>
+        <li><a href="https://bluewallet.io/privacy/">Privacy policy</a></li>
+        <li><a href="https://bluewallet.io/about/">About</a></li>
+        <li><a href="https://bluewallet.io/pgp/">PGP</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
