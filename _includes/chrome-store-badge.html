@@ -7,6 +7,6 @@
   {% assign badge_external = false %}
 {% endif %}
 {% assign badge_location = include.location | default: "Extension" %}
-<a class="chrome-store-badge" href="{{ badge_href }}"{% if badge_external %} target="_blank" rel="noopener"{% endif %} data-pirsch-event="Download" data-pirsch-meta-platform="Chrome" data-pirsch-meta-location="{{ badge_location }}">
+<a class="chrome-store-badge" href="{{ badge_href }}"{% if badge_external %} target="_blank" rel="noopener"{% endif %}>
   <img class="bounce" src="{{ site.uploads | absolute_url }}extension/chrome-badge.svg" alt="Available in the Chrome Web Store" width="248" height="73">
 </a>
